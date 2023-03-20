@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/HomePage.css";
 
+
 import Introduction from "../components/Introduction";
 import WhatWeDo from "../components/WhatWeDo";
 import Statistics from "../components/Statistics";

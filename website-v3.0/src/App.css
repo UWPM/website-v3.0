@@ -4,5 +4,11 @@
   color: white;
 }
 
+h1 {
+  font-family: 'Syne';
+  font-weight: 720;
+  font-size: 48px;
+}
+
 /* THIS IS WHERE THE NAV BAR STYLES CAN GO */
 
