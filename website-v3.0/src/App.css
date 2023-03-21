@@ -24,12 +24,12 @@ h3 {
 
 /* THIS IS WHERE THE NAV BAR STYLES CAN GO */
 
-.nav-link {
+#nav-link {
   font-family: 'Syne';
   font-weight: 720;
-  font-size: 24px;
+  font-size: 1.8vh;
   color: #FFEEED !important;
-  margin-left: 1vw;
+  margin-left: 3vh;
 }
 
 .logo {
@@ -56,12 +56,22 @@ h3 {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(240, 92, 91)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.footer {
+#footer {
   background-color: #26303a;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 .copyright {
   font-family: 'Syne';
   font-weight: 720;
-  font-size: 12px;
+  font-size: 13px;
+  width: 100%;
+  text-align: end;
+  margin-right: 12px;
+}
+
+#social-links {
+  display: flex;
+  flex-direction: row;
 }
