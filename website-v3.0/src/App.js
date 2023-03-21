@@ -30,7 +30,7 @@ function App() {
             className="logo"
             alt="University of Waterloo Product Management Club Logo"
           /></Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle id='navbar-toggler' className="custom-toggler" aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto nav-right">
               <Nav.Link as={Link} to="/about">About</Nav.Link>
@@ -67,15 +67,12 @@ function App() {
               className="logo"
               alt="University of Waterloo Product Management Club Logo"
             /></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ml-auto">
-                <Nav.Link href="https://www.instagram.com/uwaterloopm/?hl=en" target="_blank">Instagram</Nav.Link>
-                <Nav.Link href="https://www.facebook.com/uwaterloopm/" target="_blank">Facebook</Nav.Link>
-                <Nav.Link href="https://www.linkedin.com/company/uw-pm/" target="_blank">LinkedIn</Nav.Link>
-                <Nav.Link href="https://uwaterloo-pm.medium.com/" target="_blank">Medium</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
+            <Nav className="ml-auto">
+              <Nav.Link href="https://www.instagram.com/uwaterloopm/?hl=en" target="_blank">Instagram</Nav.Link>
+              <Nav.Link href="https://www.facebook.com/uwaterloopm/" target="_blank">Facebook</Nav.Link>
+              <Nav.Link href="https://www.linkedin.com/company/uw-pm/" target="_blank">LinkedIn</Nav.Link>
+              <Nav.Link href="https://uwaterloo-pm.medium.com/" target="_blank">Medium</Nav.Link>
+            </Nav>
             <div className='copyright'>@ UWPM 2023</div>
           </Container>
         </Navbar>

@@ -33,6 +33,7 @@ h3 {
 }
 
 .logo {
+  margin-left: 15px;
   width: 50px;
   height: 50px;
 }
@@ -40,6 +41,19 @@ h3 {
 .nav-right {
   margin-left: auto; 
   margin-right: 0;
+}
+
+#navbar-toggler,
+#navbar-toggler:focus,
+#navbar-toggler:active,
+#navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(240, 92, 91)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .footer {
