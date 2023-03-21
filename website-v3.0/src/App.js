@@ -10,30 +10,29 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import logo from "./images/logos/pmlogo.svg";
+
+
 function App() {
   return (
     <div className={`App w-100`}>
 
       {/* Default bootstrap react navbar */}
-      <Navbar bg="light" expand="lg">
+      <Navbar className="navbar" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home"><img
+                  src={logo}
+                  className="logo"
+                  alt="University of Waterloo Product Management Club Logo"
+                /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#community">Community</Nav.Link>
+            <Nav.Link href="#pm-guide">PM Guide</Nav.Link>
+            <Nav.Link href="#pm-jobs">PM Jobs</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
