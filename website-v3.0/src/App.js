@@ -1,14 +1,11 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
-import { useState } from "react";
 import { Routes, Route, Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive'
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
 import logo from "./images/uwpm-brand/pmlogo.svg";
 
 import HomePage from './pages/HomePage'
