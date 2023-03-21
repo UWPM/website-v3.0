@@ -41,13 +41,9 @@ function App() {
         </Container>
       </Navbar>
 
-      <div style={{ height: "100vh", }}>
-        <HomePage />
-      </div>
-
-      <div>
+      <div style={{ height: "100vh"}}>
         <Routes>
-          <Route exact path="/" element={App} />
+          <Route exact path="/" element={<HomePage />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/community" element={<Community />} />
           <Route exact path="/pm-guide" element={<PMGuide />} />
