@@ -18,7 +18,7 @@ function App() {
     <div className={`App w-100`}>
 
       {/* Default bootstrap react navbar */}
-      <Navbar className="navbar" expand="lg">
+      <Navbar expand="lg">
       <Container>
         <Navbar.Brand href="#home"><img
                   src={logo}
@@ -27,7 +27,7 @@ function App() {
                 /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ml-auto nav-right">
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#community">Community</Nav.Link>
             <Nav.Link href="#pm-guide">PM Guide</Nav.Link>
