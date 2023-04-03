@@ -1,1 +1,6 @@
 /* THIS IS WHERE ALL HOME PAGE COMPONENT STYLING GOES */
+
+.company-image {
+    display: flex;
+    justify-content: center;
+}
