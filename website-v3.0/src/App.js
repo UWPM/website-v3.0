@@ -41,7 +41,7 @@ function App() {
         </Container>
       </Navbar>
 
-      <div style={{ height: "100vh"}}>
+      <div>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/about" element={<About />} />

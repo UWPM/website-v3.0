@@ -5,7 +5,8 @@ import "../App.css"
 export default function PastEvents({ show }) {
   return (
     <>
-      <div>---Past Events---</div>
+      <h2>Past Events</h2>
+      <div style={{minHeight: "200px"}}>Insert Code Here</div>
     </>
   );
 }

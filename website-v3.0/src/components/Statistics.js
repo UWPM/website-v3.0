@@ -5,7 +5,8 @@ import "../App.css"
 export default function Statistics({ show }) {
   return (
     <>
-      <div>---Statistics---</div>
+      <h2>Statistics</h2>
+      <div style={{minHeight: "200px"}}>Insert Code Here</div>
     </>
   );
 }

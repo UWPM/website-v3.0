@@ -23,9 +23,9 @@ import Col from 'react-bootstrap/Col';
 
 export default function WorkedAt({ show }) {
   return (
-    <>
+    <div style={{minHeight: "fit-content"}}>
       <h2>Our Community has Worked At</h2>
-      <Container fluid className="mt-5">
+      <Container fluid className="my-5">
         <Row>
         <Col xs={4} md={2} className="company-image"><img height={60} src={Salesforce} alt={"Sales Force"}/></Col>
         <Col xs={4} md={2} className="company-image"><img height={60} src={Meta} alt={"Meta"}/></Col>
@@ -43,6 +43,6 @@ export default function WorkedAt({ show }) {
         <Col xs={4} md={2} className="company-image"><img height={80} src={Autodesk} alt={"Autodesk"}/></Col>
         </Row>
       </Container>
-    </>
+    </div>
   );
 }
