@@ -75,3 +75,43 @@ h3 {
   display: flex;
   flex-direction: row;
 }
+
+.fade-in { animation: fadein 1s; }
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.scroll-top {
+    border-width: 0px;
+    background-color: transparent;
+    font-size: 20px;
+    position: fixed;
+    right: 6vh;
+    bottom: 16vh;
+    z-index: 2
+}
+
+.scroll-container{
+    position: relative;
+    z-index: 2
+}
+
+#hexagon-scroll {
+    width: 60px;
+    height: 50px;
+}
+
+.spacer {
+  height: 5vw;
+}
+
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
