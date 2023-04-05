@@ -27,9 +27,9 @@ h3 {
 #nav-link {
   font-family: 'Syne';
   font-weight: 720;
-  font-size: 1.8vh;
+  font-size: 1.65vh;
   color: #FFEEED !important;
-  margin-left: 3vh;
+  margin-left: 1.5vh;
 }
 
 .logo {
@@ -68,7 +68,7 @@ h3 {
   font-size: 13px;
   width: 100%;
   text-align: end;
-  margin-right: 12px;
+  margin-right: 20px;
 }
 
 #social-links {
