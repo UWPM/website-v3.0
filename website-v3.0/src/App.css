@@ -27,9 +27,9 @@ h3 {
 #nav-link {
   font-family: 'Syne';
   font-weight: 720;
-  font-size: 1.8vh;
+  font-size: 1.65vh;
   color: #FFEEED !important;
-  margin-left: 3vh;
+  margin-left: 1.5vh;
 }
 
 .logo {
@@ -68,10 +68,50 @@ h3 {
   font-size: 13px;
   width: 100%;
   text-align: end;
-  margin-right: 12px;
+  margin-right: 20px;
 }
 
 #social-links {
   display: flex;
   flex-direction: row;
+}
+
+.fade-in { animation: fadein 1s; }
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.scroll-top {
+    border-width: 0px;
+    background-color: transparent;
+    font-size: 20px;
+    position: fixed;
+    right: 6vh;
+    bottom: 16vh;
+    z-index: 2
+}
+
+.scroll-container{
+    position: relative;
+    z-index: 2
+}
+
+#hexagon-scroll {
+    width: 60px;
+    height: 50px;
+}
+
+.spacer {
+  height: 5vw;
+}
+
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }

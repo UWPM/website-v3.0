@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
+import { useState } from "react";
 import { Routes, Route, Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive'
 import Container from 'react-bootstrap/Container';
@@ -15,11 +16,22 @@ import PMGuide from './pages/PMGuide'
 import PMJobs from './pages/PMJobs'
 import Contact from './pages/Contact'
 
+import ScrollTop from "./components/ScrollTop";
+
 function App() {
+  const [isVisible, setIsVisible] = useState(false)
+  window.onscroll = function(ev) {
+      if ( window.scrollY > 100) {
+        setIsVisible(true)
+      }
+      else if (window.scrollY === 0) {
+        setIsVisible(false)
+      }
+  };
 
   return (
     <div className={`App w-100`}>
-
+      <ScrollTop isVisible={isVisible} />
       {/* Default bootstrap react navbar */}
       <Navbar expand="lg">
         <Container>
@@ -51,7 +63,6 @@ function App() {
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </div>
-
       <div>
         <Navbar id="footer" expand="lg">
           <Container>
