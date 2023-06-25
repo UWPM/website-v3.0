@@ -1,6 +1,195 @@
 /* THIS IS WHERE ALL HOME PAGE COMPONENT STYLING GOES */
 
 .company-image {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* WHAT WE DO STYLES */
+
+.custom-card-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hexagon-container {
+  width: 220px;
+  height: 195px;
+  margin-left: -110px;
+  z-index: 1;
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.hexagon-image {
+  width: 100%;
+  height: 100%;
+  transform: translateX(50%);
+  object-fit: cover;
+  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+
+.grey-card {
+  width: 635px;
+  height: 195px;
+  background: rgba(251, 234, 233, 0.25);
+  border: 0.5px solid rgba(255, 238, 237, 0.5);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding: 30px 30px 30px 130px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.red-button {
+  width: 150px;
+  height: 50px;
+  background: #f05c5b;
+  border-radius: 10px;
+  border-color: transparent;
+  font-size: 12px;
+  font-family: "Montserrat"; /* Need to change to IBM Plex Mono */
+  font-weight: 600;
+}
+
+.red-button:active,
+.red-button:hover {
+  background: #9b3837 !important;
+  border-color: transparent !important;
+}
+
+.staggered-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.card-container:nth-child(1) {
+  margin-right: auto;
+}
+
+.card-container:nth-child(2) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-container:last-child {
+  margin-left: auto;
+}
+
+@media (max-width: 950px) {
+  .staggered-cards {
+    padding: 0 20px;
+  }
+
+  .hexagon-container {
+    width: 220px;
+    height: 175px;
+  }
+
+  .grey-card {
+    width: 100%;
+    height: 175px;
+    padding: 20px 20px 20px 130px;
+  }
+
+  .red-button {
+    width: 110px;
+    height: 40px;
+  }
+
+  .custom-card-container h3 {
+    font-size: 22px;
+  }
+
+  .custom-card-container p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .grey-card {
+    height: 150px;
+    padding-left: 95px;
+  }
+
+  .red-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+
+  .card-container:nth-child(1),
+  .card-container:nth-child(2),
+  .card-container:last-child {
+    margin: 20px 0;
+  }
+
+  .hexagon-container {
+    width: 130px;
+    height: 100px;
+  }
+
+  .hexagon-image {
+    transform: translateX(75%);
+  }
+
+  .custom-card-container {
+    align-items: flex-start;
+  }
+
+  .custom-card-container h3 {
+    font-size: 18px;
+  }
+
+  .custom-card-container p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .grey-card {
+    width: 100%;
+    height: 150px;
+    padding-top: 5px;
+    padding-right: 0;
+  }
+
+  .red-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 8px;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .custom-card-container h3 {
+    font-size: 16px;
+  }
+
+  .custom-card-container p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 385px) {
+  .grey-card {
+    height: 170px;
+  }
+
+  .custom-card-container h3 {
+    font-size: 14px;
+  }
+
+  .custom-card-container p {
+    font-size: 11px;
+  }
 }
