@@ -12,15 +12,39 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    gap: 20%;
+    justify-content: space-between;
+    gap: 50px;
     width: 75%;
 }
 
-.file-contents p {
-    font-size: 18px;
+.event-description, 
+.event-date {
+    font-size: 20px;
     font-family: Montserrat;
 }
 
 .event-img {
-    width: 35%;
+    width: 20rem;
+}
+
+@media (max-width: 1024px) {
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none;
+    }
+    .event-description {
+        display: none;
+    }
+
+    .event-img {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-img {
+        width: 8rem;
+        height: 8rem;
+    }
 }
