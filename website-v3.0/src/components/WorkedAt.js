@@ -23,7 +23,7 @@ import Col from 'react-bootstrap/Col';
 
 export default function WorkedAt({ show }) {
   return (
-    <div className="mt-5" style={{minHeight: "fit-content"}}>
+    <div style={{minHeight: "fit-content", marginTop:"120px"}}>
       <h2>Our Community has Worked At</h2>
       <Container fluid className="my-5">
         <Row>
