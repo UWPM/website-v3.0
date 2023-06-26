@@ -1,9 +1,9 @@
-import React, { useState } from "react";
 import "../styles/HomePage.css";
 import "../App.css"
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
 
-//Photos
+//Event Photos
 import win23IceCream from "../images/events/win23-ice-cream.png"
 import fall22Prodcon  from "../images/events/fall22-prodcon.png"
 import win23ProductPanel  from "../images/events/win23-product-panel.png"
@@ -50,9 +50,9 @@ export default function PastEvents({ show }) {
                   alt="Carousel Slide"/>
                 <div className="file-contents">
                     <div className="event-text">
-                      <h3>{event.name}</h3>
-                      <p>{event.date}</p>
-                      <p className="mt-5">{event.description}</p>
+                      <h3 className="event-name">{event.name}</h3>
+                      <p className="event-date">{event.date}</p>
+                      <p className="event-description mt-5">{event.description}</p>
                     </div>
                     <img className="event-img" src={event.image} alt="Event"></img>
                 </div>
@@ -60,6 +60,13 @@ export default function PastEvents({ show }) {
           </Carousel.Item>
         )}
       </Carousel>
+      <div className="d-flex justify-content-center my-4">
+        <Link to="/about">
+          <button class='button-red-gradiant'>
+            VIEW ALL EVENTS
+          </button>
+        </Link>
+      </div>
     </>
   );
 }
