@@ -7,7 +7,7 @@ export default function Introduction({ show }) {
   return (
     <>
       <h2 className="mt-5">Welcome</h2>
-      <div style={{minHeight: "200px"}}>Insert Code Here</div>
+      <div style={{ minHeight: "200px" }}>Insert Code Here</div>
       <div>
         <div class="button-container">
           <Link to="/about">
@@ -18,7 +18,7 @@ export default function Introduction({ show }) {
           <Link to="/community">
             <button class='button-transparent'>
               GET INVOLVED
-            </button> 
+            </button>
           </Link>
         </div>
       </div>

@@ -235,6 +235,12 @@
 }
 
 @media (max-width: 768px) {
+    .event-name {
+      font-size: 15px;
+    }
+    .event-date {
+      font-size: 15px;
+    }
     .event-img {
         width: 8rem;
         height: 8rem;
@@ -245,7 +251,7 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-
+    margin-bottom: 5vh;
     margin-top: 20px;
   }
 
@@ -303,13 +309,13 @@
 #statistic_num {
     font-family: 'Syne';
     font-weight: 720;
-    font-size: 48px;
+    font-size: 36px;
 }
 
 #statistic_word {
     font-family: 'Montserrat';
     font-weight: 500;
-    font-size: 36px;
+    font-size: 20px;
 }
 
 .file-contents p {
