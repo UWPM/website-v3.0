@@ -1,10 +1,22 @@
 /* THIS IS WHERE ALL HOME PAGE COMPONENT STYLING GOES */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
 
 .company-image {
     display: flex;
     justify-content: center;
 }
 
+#statistic_num {
+    font-family: 'Syne';
+    font-weight: 720;
+    font-size: 48px;
+}
+
+#statistic_word {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+  
 .file-contents {
     display: flex;
     flex-direction: row;
