@@ -1,5 +1,6 @@
 /* THIS IS WHERE ALL HOME PAGE COMPONENT STYLING GOES */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
 
 .company-image {
     display: flex;
@@ -63,4 +64,36 @@
 
 .inroduction-about-us {
     margin-right: 50px;
+}
+
+#statistic_num {
+    font-family: 'Syne';
+    font-weight: 720;
+    font-size: 48px;
+}
+
+#statistic_word {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.file-contents {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 20%;
+    width: 75%;
+}
+
+.file-contents p {
+    font-size: 18px;
+    font-family: Montserrat;
+}
+
+.event-img {
+    width: 35%;
 }
