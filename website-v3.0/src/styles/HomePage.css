@@ -325,10 +325,10 @@
 
 .desktop-hex {
   width: auto;
-  height: auto;
+  height:auto;
   position: absolute;
   right: -4.7%;
-  top: -2vh;
+  top: -2%;
   scale: 1.05;
   pointer-events: none;
   float: right;
@@ -340,7 +340,7 @@
   height: auto;
   position: absolute;
   right: 32.6%;
-  top: 3.3vh;
+  top: 3.3%;
   scale: 1.05;
   pointer-events: none;
   float: right;
@@ -352,7 +352,7 @@
   height: auto;
   position: absolute;
   right: 50.6%;
-  top: 71.7vh;
+  top: 71.7%;
   scale: 1.1;
   pointer-events: none;
   float: right;
@@ -364,7 +364,7 @@
   height: auto;
   position: absolute;
   right: 22.6%;
-  top: 46.5vh;
+  top: 46.5%;
   scale: 1.1;
   pointer-events: none;
   float: right;
@@ -376,7 +376,7 @@
   height: auto;
   position: absolute;
   right: -5.2%;
-  top: 20.5vh;
+  top: 20.5%;
   scale: 1.1;
   pointer-events: none;
   float: right;
@@ -388,7 +388,7 @@
   height: auto;
   position: absolute;
   right: 4.2%;
-  top: 63.3vh;
+  top: 63.3%;
   scale: 1.1;
   pointer-events: none;
   float: right;
@@ -400,9 +400,318 @@
   height: auto;
   position: absolute;
   right: 23.2%;
-  top: 79.8vh;
+  top: 79.8%;
   scale: 1.1;
   pointer-events: none;
   float: right;
   z-index: 2;
+}
+
+@media (max-width: 1399px) {
+  .desktop-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -4.7%;
+    top: -2%;
+    scale: 1.05;
+    pointer-events: none;
+    float: right;
+    z-index: 0;
+  }
+  
+  .grad-cap-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 38.5%;
+    top: 3.3%;
+    scale: 1.05;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .mic-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 59.5%;
+    top: 71.7%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .pencil-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 27%;
+    top: 46.5vh;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .headphone-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -5.2%;
+    top: 20.5%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .bow-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 6%;
+    top: 63.3%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .flower-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 27.8%;
+    top: 79.8%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1199px) {
+  .desktop-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -4.7%;
+    top: -2%;
+    scale: 1.05;
+    pointer-events: none;
+    float: right;
+    z-index: 0;
+  }
+  
+  .grad-cap-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 47%;
+    top: 3.3vh;
+    scale: 1.05;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .mic-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 72%;
+    top: 71.7%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .pencil-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 33.2%;
+    top: 46.5%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .headphone-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -5.2%;
+    top: 20.5%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .bow-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 8%;
+    top: 63.3%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .flower-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 34%;
+    top: 79.8%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 991px) {
+  .desktop-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -20%;
+    top: -2%;
+    scale: 1.05;
+    pointer-events: none;
+    float: right;
+    z-index: 0;
+  }
+  
+  .grad-cap-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 49.5%;
+    top: 3.3%;
+    scale: 1.05;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .mic-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 83%;
+    top: 71.7%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .pencil-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 31%;
+    top: 46.5%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .headphone-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -21%;
+    top: 20.5%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .bow-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -3%;
+    top: 63.3%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+  
+  .flower-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 32%;
+    top: 79.8%;
+    scale: 1.1;
+    pointer-events: none;
+    float: right;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -50%;
+    top: -4%;
+    scale: 1;
+    pointer-events: none;
+    float: right;
+    z-index: 0;
+  }
+  .grad-cap-hex {
+    display: none;
+  }
+  
+  .mic-hex {
+    display: none;
+  }
+  
+  .pencil-hex {
+    display: none;
+  }
+  
+  .headphone-hex {
+    display: none;
+  }
+  
+  .bow-hex {
+    display: none;
+  }
+  
+  .flower-hex {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .desktop-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -70%;
+    top: -4vh;
+    scale: 0.95;
+    pointer-events: none;
+    float: right;
+    z-index: 0;
+  }
 }

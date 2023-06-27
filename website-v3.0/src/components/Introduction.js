@@ -12,7 +12,7 @@ import flowerHex from "../images/background/flower-hex.svg";
 
 export default function Introduction({ show }) {
   return (
-    <div id="homeIntro" style={{ position: "relative", zIndex: 100, minHeight: "100vh" }}>
+    <div id="homeIntro" style={{ position: "relative", minHeight: "830px" }}>
       {!show && (
         <>
           <div className="desktop-hex">
