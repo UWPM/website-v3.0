@@ -3,9 +3,9 @@ import CustomCard from "./CustomCard";
 import "../styles/HomePage.css";
 import "../App.css";
 
-import WhatWeDoImage1 from "../images/whatwedo.jpeg";
-import WhatWeDoImage2 from "../images/whatwedo.jpeg";
-import WhatWeDoImage3 from "../images/whatwedo.jpeg";
+import WhatWeDoImage1 from "../images/what-we-do-1.png";
+import WhatWeDoImage2 from "../images/what-we-do-2.png";
+import WhatWeDoImage3 from "../images/what-we-do-3.png";
 
 const cardData = [
   {
@@ -14,6 +14,7 @@ const cardData = [
     button: "PM GUIDE",
     link: "https://example.com/card1",
     image: WhatWeDoImage1,
+    alt: "Presenters at a UWPM event",
   },
   {
     title: "Exposure",
@@ -21,6 +22,7 @@ const cardData = [
     button: "PM JOBS",
     link: "https://example.com/card2",
     image: WhatWeDoImage2,
+    alt: "A group of students holding DataDog shirts",
   },
   {
     title: "Network",
@@ -28,6 +30,7 @@ const cardData = [
     button: "COMMUNITY",
     link: "https://example.com/card3",
     image: WhatWeDoImage3,
+    alt: "Audience attending a UWPM presentation",
   },
 ];
 

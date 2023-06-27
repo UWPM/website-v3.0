@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Card, Button, Row, Col } from "react-bootstrap";
 
 export default function CustomCard({ card }) {
-  const { title, description, button, link, image } = card;
+  const { title, description, button, link, image, alt } = card;
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function CustomCard({ card }) {
   return (
     <div className="custom-card-container">
       <div className="hexagon-container">
-        <img src={image} alt="Happy Waterloo Students" className="hexagon-image" />
+        <img src={image} alt={alt} className="hexagon-image" />
       </div>
       <Card className="grey-card">
         <Card.Body>
