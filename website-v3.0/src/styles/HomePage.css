@@ -322,3 +322,87 @@
     font-size: 18px;
     font-family: Montserrat;
 }
+
+.desktop-hex {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: -4.7%;
+  top: -2vh;
+  scale: 1.05;
+  pointer-events: none;
+  float: right;
+  z-index: 0;
+}
+
+.grad-cap-hex {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 32.6%;
+  top: 3.3vh;
+  scale: 1.05;
+  pointer-events: none;
+  float: right;
+  z-index: 2;
+}
+
+.mic-hex {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 50.6%;
+  top: 71.7vh;
+  scale: 1.1;
+  pointer-events: none;
+  float: right;
+  z-index: 2;
+}
+
+.pencil-hex {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 22.6%;
+  top: 46.5vh;
+  scale: 1.1;
+  pointer-events: none;
+  float: right;
+  z-index: 2;
+}
+
+.headphone-hex {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: -5.2%;
+  top: 20.5vh;
+  scale: 1.1;
+  pointer-events: none;
+  float: right;
+  z-index: 2;
+}
+
+.bow-hex {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 4.2%;
+  top: 63.3vh;
+  scale: 1.1;
+  pointer-events: none;
+  float: right;
+  z-index: 2;
+}
+
+.flower-hex {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 23.2%;
+  top: 79.8vh;
+  scale: 1.1;
+  pointer-events: none;
+  float: right;
+  z-index: 2;
+}
