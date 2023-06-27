@@ -11,7 +11,7 @@ export default function Introduction({ show }) {
       <div>
         <div class="button-container">
           <Link to="/about">
-            <button class='button-red inroduction-about-us'>
+            <button class='button-red-gradiant inroduction-about-us'>
               ABOUT US
             </button>
           </Link>
