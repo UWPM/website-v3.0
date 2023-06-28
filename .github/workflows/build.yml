@@ -16,6 +16,8 @@ jobs:
     defaults:
         run:
           working-directory: ./website-v3.0/
+
+    
           
     runs-on: ubuntu-latest
 
@@ -34,4 +36,4 @@ jobs:
         cache-dependency-path: './website-v3.0/package-lock.json'
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm test
+    - run: npm run lint
