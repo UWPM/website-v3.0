@@ -255,7 +255,7 @@
     margin-top: 20px;
   }
 
-.button-red-gradiant {
+  .button-red-gradiant {
     box-sizing: border-box;
     padding-inline: 20px;
     height: 52px;
@@ -272,7 +272,7 @@
   }
   
 
-.button-transparent {
+  .button-transparent {
     box-sizing: border-box;
     font-family: 'IBM Plex Mono';
     font-style: normal;
