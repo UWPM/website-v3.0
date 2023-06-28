@@ -11,6 +11,8 @@ on:
 
 jobs:
   build:
+    env:
+     CI: false
     defaults:
         run:
           working-directory: ./website-v3.0/
