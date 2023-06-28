@@ -13,10 +13,10 @@ export default function ScrollTop({ isVisible }) {
         {isVisible && (
           <div className="fade-in">
             <button className="scroll-top" onClick={scrollToTop}>
-              <img id="hexagon-scroll" src={hexagonScroll}/>
+              <img id="hexagon-scroll" alt="" src={hexagonScroll} />
             </button>
           </div>
-        )}  
+        )}
       </div>
     </>
   );

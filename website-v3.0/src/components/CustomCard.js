@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Card, Button, Row, Col } from "react-bootstrap";
 
 export default function CustomCard({ card }) {
-  const { title, description, button, link, image } = card;
+  const { title, description, button, image } = card;
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
