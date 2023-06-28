@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import CustomCard from "./CustomCard";
 import "../styles/HomePage.css";
 import "../App.css";
