@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Card, Button, Row, Col } from "react-bootstrap";
 
 export default function CustomCard({ card }) {
@@ -34,7 +35,9 @@ export default function CustomCard({ card }) {
             </Col>
             {!isMobile && (
               <Col xs="auto" className="d-flex align-items-end justify-content-end">
-                <Button className="red-button">{button}</Button>
+                <Link to={link}>
+                  <Button className="red-button">{button}</Button>
+                </Link>
               </Col>
             )}
           </Row>
