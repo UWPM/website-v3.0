@@ -9,6 +9,11 @@
 
 /* WHAT WE DO STYLES */
 
+.what-we-do-container {
+  /* min-height: ; */
+  margin-bottom: 80px;
+}
+
 .custom-card-container {
   display: flex;
   align-items: center;
@@ -76,7 +81,7 @@
 .card-container {
   display: flex;
   align-items: center;
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 .card-container:nth-child(2) {

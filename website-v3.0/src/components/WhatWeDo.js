@@ -40,13 +40,15 @@ export default function WhatWeDo({ show }) {
   return (
     <>
       <h2>What We Do</h2>
-      <div className="staggered-cards">
-        <div className="background-image"></div>
-        {cardData.map((card, index) => (
-          <div className="card-container">
-            <CustomCard key={index} card={card} />
-          </div>
-        ))}
+      <div className="what-we-do-container">
+        <div className="staggered-cards">
+          <div className="background-image"></div>
+          {cardData.map((card, index) => (
+            <div className="card-container">
+              <CustomCard key={index} card={card} />
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
