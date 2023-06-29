@@ -7,6 +7,8 @@ import WhatWeDoImage1 from "../images/what-we-do-1.png";
 import WhatWeDoImage2 from "../images/what-we-do-2.png";
 import WhatWeDoImage3 from "../images/what-we-do-3.png";
 
+import WeAreUWPM from "../images/we-are-uw-pm.svg";
+
 const cardData = [
   {
     title: "Educate",
@@ -30,7 +32,7 @@ const cardData = [
     button: "COMMUNITY",
     link: "/community",
     image: WhatWeDoImage3,
-    alt: "Audience attending a UWPM presentation",
+    alt: "Students attending a UWPM presentation",
   },
 ];
 
@@ -39,6 +41,7 @@ export default function WhatWeDo({ show }) {
     <>
       <h2>What We Do</h2>
       <div className="staggered-cards">
+        <div className="background-image"></div>
         {cardData.map((card, index) => (
           <div className="card-container">
             <CustomCard key={index} card={card} />
