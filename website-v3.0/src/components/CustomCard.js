@@ -18,7 +18,7 @@ export default function CustomCard({ card }) {
     };
   }, []);
 
-  const isMobile = windowWidth <= 500;
+  const isMobile = windowWidth <= 525;
 
   return (
     <div className="custom-card-container">
