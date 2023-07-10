@@ -6,8 +6,14 @@ import { Link } from 'react-router-dom';
 export default function Introduction({ show }) {
   return (
     <>
-      <h2 className="mt-5">Welcome</h2>
-      <div style={{minHeight: "200px"}}>Insert Code Here</div>
+      <div className="main-text-box">
+        <h1 className="main-text">Fostering the </h1>
+          <div className="position-relative d-inline">
+            <img className="red-circle" alt="Red Circle" src={require("../images/background/red-circle.png")}></img>
+            <h1 className="position-absolute start-0 main-text">Creative</h1>
+          </div>
+        <h1 className="main-text">Product Management Community @ UWaterloo.</h1>
+      </div>
       <div>
         <div class="button-container">
           <Link to="/about">
