@@ -340,7 +340,6 @@
   right: 32.6%;
   top: 3.3%;
   scale: 1.05;
-  pointer-events: none;
   float: right;
   z-index: 2;
 }
@@ -352,7 +351,6 @@
   right: 50.6%;
   top: 71.7%;
   scale: 1.1;
-  pointer-events: none;
   float: right;
   z-index: 2;
 }
@@ -364,7 +362,6 @@
   right: 22.6%;
   top: 46.5%;
   scale: 1.1;
-  pointer-events: none;
   float: right;
   z-index: 2;
 }
@@ -376,7 +373,6 @@
   right: -5.2%;
   top: 20.5%;
   scale: 1.1;
-  pointer-events: none;
   float: right;
   z-index: 2;
 }
@@ -388,7 +384,6 @@
   right: 4.2%;
   top: 63.3%;
   scale: 1.1;
-  pointer-events: none;
   float: right;
   z-index: 2;
 }
@@ -403,6 +398,58 @@
   pointer-events: none;
   float: right;
   z-index: 2;
+}
+
+.image-container-mic-hex-popover {
+    position: relative;
+    margin-left: -11.8%;
+    margin-bottom: -1.7%;
+    z-index: 3;
+}
+
+.image-container-bow-hex-popover {
+    position: relative;
+    margin-left: -11.8%;
+    margin-bottom: -1.7%;
+    z-index: 3;
+}
+
+.image-container-headphone-hex-popover {
+    position: relative;
+    margin-left: -5.8%;
+    margin-bottom: -1.7%;
+    z-index: 3;
+}
+
+.image-container-grad-cap-hex-popover {
+    position: relative;
+    margin-left: -10.3%;
+    margin-bottom: -1.7%;
+    z-index: 3;
+}
+
+.text-popover-hex {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    width: 90%;
+    max-width: 400px;
+}
+
+.text-popover-grad-cap-hex {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    width: 90%;
+    max-width: 400px;
 }
 
 @media (max-width: 1399px) {
@@ -425,7 +472,6 @@
     right: 38.5%;
     top: 3.3%;
     scale: 1.05;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -437,7 +483,6 @@
     right: 59.5%;
     top: 71.7%;
     scale: 1.1;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -449,7 +494,6 @@
     right: 27%;
     top: 46.5vh;
     scale: 1.1;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -461,7 +505,6 @@
     right: -5.2%;
     top: 20.5%;
     scale: 1.1;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -473,7 +516,6 @@
     right: 6%;
     top: 63.3%;
     scale: 1.1;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -488,6 +530,13 @@
     pointer-events: none;
     float: right;
     z-index: 2;
+  }
+
+  .image-container-headphone-hex-popover {
+    position: relative;
+    margin-left: -11.3%;
+    margin-bottom: -1.7%;
+    z-index: 3;
   }
 }
 
@@ -511,7 +560,6 @@
     right: 47%;
     top: 3.3vh;
     scale: 1.05;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -523,7 +571,6 @@
     right: 72%;
     top: 71.7%;
     scale: 1.1;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -535,7 +582,6 @@
     right: 33.2%;
     top: 46.5%;
     scale: 1.1;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -547,7 +593,6 @@
     right: -5.2%;
     top: 20.5%;
     scale: 1.1;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -559,7 +604,6 @@
     right: 8%;
     top: 63.3%;
     scale: 1.1;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -574,6 +618,34 @@
     pointer-events: none;
     float: right;
     z-index: 2;
+  }
+
+  .image-container-mic-hex-popover {
+    position: relative;
+    margin-left: -14.4%;
+    margin-bottom: -1.7%;
+    z-index: 3;
+  }
+
+  .image-container-bow-hex-popover {
+    position: relative;
+    margin-left: -14.8%;
+    margin-bottom: -1.7%;
+    z-index: 3;
+   }
+
+   .image-container-headphone-hex-popover {
+    position: relative;
+    margin-left: -11.4%;
+    margin-bottom: -1.7%;
+    z-index: 3;
+  }
+
+  .image-container-grad-cap-hex-popover {
+    position: relative;
+    margin-left: -12.3%;
+    margin-bottom: -1.7%;
+    z-index: 3;
   }
 }
 
@@ -597,7 +669,6 @@
     right: 49.5%;
     top: 3.3%;
     scale: 1.05;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -609,7 +680,6 @@
     right: 83%;
     top: 71.7%;
     scale: 1.1;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -621,7 +691,6 @@
     right: 31%;
     top: 46.5%;
     scale: 1.1;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -633,7 +702,6 @@
     right: -21%;
     top: 20.5%;
     scale: 1.1;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -645,7 +713,6 @@
     right: -3%;
     top: 63.3%;
     scale: 1.1;
-    pointer-events: none;
     float: right;
     z-index: 2;
   }
@@ -660,6 +727,38 @@
     pointer-events: none;
     float: right;
     z-index: 2;
+  }
+
+  .image-container-mic-hex-popover {
+    position: relative;
+    margin-left: 16%;
+    margin-bottom: -1.7%;
+    z-index: 3;
+  }
+
+  .hex-popover-img {
+    scale: -1 1;
+  }
+
+  .image-container-bow-hex-popover {
+    position: relative;
+    margin-left: -17.8%;
+    margin-bottom: -2.1%;
+    z-index: 3;
+  }
+
+  .image-container-headphone-hex-popover {
+    position: relative;
+    margin-left: -4.7%;
+    margin-bottom: -1.7%;
+    z-index: 3;
+  }
+
+  .image-container-grad-cap-hex-popover {
+    position: relative;
+    margin-left: -14.3%;
+    margin-bottom: -1.7%;
+    z-index: 3;
   }
 }
 
