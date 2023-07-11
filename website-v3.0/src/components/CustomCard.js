@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Card, Button, Row, Col } from "react-bootstrap";
 
 export default function CustomCard({ card }) {
-  const { title, description, button, link, image } = card;
+  const { title, description, button, link, image, alt } = card;
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -17,12 +18,12 @@ export default function CustomCard({ card }) {
     };
   }, []);
 
-  const isMobile = windowWidth <= 500;
+  const isMobile = windowWidth <= 525;
 
   return (
     <div className="custom-card-container">
       <div className="hexagon-container">
-        <img src={image} alt="Happy Waterloo Students" className="hexagon-image" />
+        <img src={image} alt={alt} className="hexagon-image" />
       </div>
       <Card className="grey-card">
         <Card.Body>
@@ -34,7 +35,9 @@ export default function CustomCard({ card }) {
             </Col>
             {!isMobile && (
               <Col xs="auto" className="d-flex align-items-end justify-content-end">
-                <Button className="red-button">{button}</Button>
+                <Link to={link}>
+                  <Button className="red-button">{button}</Button>
+                </Link>
               </Col>
             )}
           </Row>
