@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/HomePage.css";
 import "../App.css"
 
@@ -24,7 +24,7 @@ export default function Statistics({ show }) {
         </div>
       </div>
       <hr></hr>
-      <div style={{minHeight: "100px"}}></div>
+      <div style={{ minHeight: "100px" }}></div>
     </>
   );
 }
