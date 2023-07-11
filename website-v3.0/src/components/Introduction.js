@@ -62,6 +62,15 @@ export default function Introduction({ show }) {
   
 
   return (
+    <>
+      <div className="main-text-box">
+        <h1 className="main-text">Fostering the </h1>
+          <div className="position-relative d-inline">
+            <img className="red-circle" alt="Red Circle" src={require("../images/background/red-circle.png")}></img>
+            <h1 className="position-absolute start-0 main-text">Creative</h1>
+          </div>
+        <h1 className="main-text">Product Management Community @ UWaterloo.</h1>
+      </div>
     <div id="homeIntro" style={{ position: "relative", minHeight: "830px" }}>
       {!show && (
         <>

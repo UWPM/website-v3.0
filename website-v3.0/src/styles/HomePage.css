@@ -2,6 +2,25 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
 
+.main-text {
+    font-size: 48px;
+    display: inline;
+    color: #FFEEED;
+}
+
+.main-text-box {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    width: 60%;
+}
+
+.red-circle {
+    position: relative;
+    margin-bottom: -10px;
+    top: -12px;
+}
+
+
 .company-image {
   display: flex;
   justify-content: center;
@@ -309,6 +328,17 @@
 }
 
 @media (max-width: 768px) {
+ 
+  .main-text-box {
+        width: 100%;
+  }
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-block: 100px;
+  }
   .event-name {
     font-size: 15px;
   }
@@ -319,14 +349,6 @@
     width: 8rem;
     height: 8rem;
   }
-}
-
-.button-container {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin-bottom: 5vh;
-  margin-top: 20px;
 }
 
 .button-red-gradient {
