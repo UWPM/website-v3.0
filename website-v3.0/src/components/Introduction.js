@@ -23,8 +23,8 @@ export default function Introduction({ show }) {
       <img src={rectangle2} alt="" className="hex-popover-img">
       </img>
       <div className="text-popover-hex">
-      <p>Hello! did you know that UWPM has a podcast</p>
-      <p>Go check it out on our community page</p>
+        <p>Hello! did you know that UWPM has a podcast</p>
+        <p>Go check it out on our community page</p>
       </div>
     </div>
   );
@@ -34,8 +34,8 @@ export default function Introduction({ show }) {
       <img src={rectangle1} alt="">
       </img>
       <div className="text-popover-hex">
-      <p>hi, im one of the many members of the uw pm community.</p>
-      <p>around me are students and alumnus</p>
+        <p>hi, im one of the many members of the uw pm community.</p>
+        <p>around me are students and alumnus</p>
       </div>
     </div>
   );
@@ -45,7 +45,7 @@ export default function Introduction({ show }) {
       <img src={rectangle4} alt="">
       </img>
       <div className="text-popover-hex">
-      <p>Hi, I'm an aspiring PM in my second year at UW</p>
+        <p>Hi, I'm an aspiring PM in my second year at UW</p>
       </div>
     </div>
   );
@@ -55,89 +55,88 @@ export default function Introduction({ show }) {
       <img src={rectangle3} alt="">
       </img>
       <div className="text-popover-grad-cap-hex">
-      <p>Hey, nice to meet you! I'm a UW PM alumni</p>
+        <p>Hey, nice to meet you! I'm a UW PM alumni</p>
       </div>
     </div>
   );
-  
+
 
   return (
     <>
-      <div className="main-text-box">
-        <h1 className="main-text">Fostering the </h1>
+      <div id="homeIntro" style={{ position: "relative", minHeight: "830px" }}>
+        {!show && (
+          <>
+            <div className="desktop-hex">
+              <img src={desktopHexagons} alt="" />
+            </div>
+            <div className="grad-cap-hex">
+              <OverlayTrigger
+                trigger={['hover', 'click']}
+                placement="bottom"
+                overlay={popoverGradCap}
+              >
+                <img src={gradCapHex} alt="" />
+              </OverlayTrigger>
+            </div>
+            <div className="mic-hex">
+              <OverlayTrigger
+                trigger={['hover', 'click']}
+                placement="top"
+                overlay={popoverMic}
+              >
+                <img src={micHex} alt="" />
+              </OverlayTrigger>
+            </div>
+            <div className="pencil-hex">
+
+              <img src={pencilHex} alt="" />
+            </div>
+            <div className="headphone-hex">
+              <OverlayTrigger
+                trigger={['hover', 'click']}
+                placement="top"
+                overlay={popoverHeadphone}
+              >
+                <img src={headphoneHex} alt="" />
+              </OverlayTrigger>
+            </div>
+            <div className="bow-hex">
+              <OverlayTrigger
+                trigger={['hover', 'click']}
+                placement="top"
+                overlay={popoverBow}
+              >
+                <img src={bowHex} alt="" />
+              </OverlayTrigger>
+            </div>
+            <div className="flower-hex">
+              <img src={flowerHex} alt="" />
+            </div>
+          </>
+        )}
+        <div className="main-text-box">
+          <h1 className="main-text">Fostering the </h1>
           <div className="position-relative d-inline">
             <img className="red-circle" alt="Red Circle" src={require("../images/background/red-circle.png")}></img>
             <h1 className="position-absolute start-0 main-text">Creative</h1>
           </div>
-        <h1 className="main-text">Product Management Community @ UWaterloo.</h1>
-      </div>
-    <div id="homeIntro" style={{ position: "relative", minHeight: "830px" }}>
-      {!show && (
-        <>
-          <div className="desktop-hex">
-            <img src={desktopHexagons} alt="" />
+          <h1 className="main-text">Product Management Community @ UWaterloo.</h1>
+        </div>
+        <div>
+          <div className="button-container">
+            <Link to="/about">
+              <button className='button-red-gradiant inroduction-about-us'>
+                ABOUT US
+              </button>
+            </Link>
+            <Link to="/community">
+              <button className='button-transparent'>
+                GET INVOLVED
+              </button>
+            </Link>
           </div>
-          <div className="grad-cap-hex">
-          <OverlayTrigger
-              trigger={['hover', 'click']}
-              placement="bottom"
-              overlay={popoverGradCap}
-            >
-              <img src={gradCapHex} alt="" />
-            </OverlayTrigger>
-          </div>
-          <div className="mic-hex">
-            <OverlayTrigger
-              trigger={['hover', 'click']}
-              placement="top"
-              overlay={popoverMic}
-            >
-              <img src={micHex} alt="" />
-            </OverlayTrigger>
-          </div>
-          <div className="pencil-hex">
-          
-              <img src={pencilHex} alt=""/>
-          </div>
-          <div className="headphone-hex">
-            <OverlayTrigger
-              trigger={['hover', 'click']}
-              placement="top"
-              overlay={popoverHeadphone}
-            >
-              <img src={headphoneHex} alt="" />
-            </OverlayTrigger>
-          </div>
-          <div className="bow-hex">
-            <OverlayTrigger
-              trigger={['hover', 'click']}
-              placement="top"
-              overlay={popoverBow}
-            >
-              <img src={bowHex} alt="" />
-            </OverlayTrigger>
-          </div>
-          <div className="flower-hex">
-            <img src={flowerHex} alt="" />
-          </div>
-        </>
-      )}
-      <h2 className="mt-5">Welcome</h2>
-      <div style={{ minHeight: "200px" }}>Insert Code Here</div>
-      <div>
-        <div className="button-container">
-          <Link to="/about">
-            <button className='button-red-gradiant inroduction-about-us'>
-              ABOUT US
-            </button>
-          </Link>
-          <Link to="/community">
-            <button className='button-transparent'>
-              GET INVOLVED
-            </button>
-          </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 }
