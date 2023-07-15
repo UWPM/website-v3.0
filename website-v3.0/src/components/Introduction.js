@@ -66,7 +66,7 @@ export default function Introduction({ show }) {
       <div id="homeIntro" style={{ position: "relative", minHeight: "830px" }}>
         {!show && (
           <>
-            <div className="desktop-hex">
+          <div className="desktop-hex">
               <img src={desktopHexagons} alt="" />
             </div>
             <div className="grad-cap-hex">
