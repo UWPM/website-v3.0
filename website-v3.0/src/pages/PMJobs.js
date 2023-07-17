@@ -1,11 +1,17 @@
 import React from "react";
-
+import "../styles/PMJobs.css";
+import "../App.css";
+import titleImage from "../images/pmjobs/title.svg";
 
 export default function PMJobs({ show }) {
 
   return (
     <>
-      <div>This is the PM Jobs page</div>
+      <div className="head-container">
+        <div class="titleImage">
+          <img src={titleImage} alt=""></img>
+        </div>
+      </div>
     </>
   );
 }

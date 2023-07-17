@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+  .titleImage {
+    scale: 0.85;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .head-container {
+    margin-left: 5vw;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .titleImage {
+    scale: 0.7;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .head-container {
+    margin-left: -5vw;
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+}
