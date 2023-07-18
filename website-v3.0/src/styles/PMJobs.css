@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
+
+.mobile-show {
+  display: none !important;
+}
+
+.header-container {
+  background-color: rgba(112, 105, 113, 0.9);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.body-container {
+  background-color: rgba(87, 87, 95, 0.9);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.pm-jobs-table {
+  border-radius: 10px;
+  margin: auto;
+  margin-block: 50px;
+  max-width: 80%;
+  padding: 0;
+}
+
+.table-headers {
+  font-family: "Syne";
+  font-size: 16;
+  color: #ffeeed;
+  padding-block: 45px;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.table-items {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  text-transform: capitalize;
+  color: #ffeeed;
+  padding-block: 40px;
+  text-align: left;
+  border-bottom: 0.5px solid #ffffff;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ffeeed;
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #9b9b9b;
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .table-headers {
+    font-size: 12px;
+  }
+
+  .table-items {
+    font-family: "Montserrat";
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-hide {
+    display: none !important;
+  }
+  .mobile-show {
+    display: flex !important;
+  }
+  .table-headers {
+    font-size: 16px;
+  }
+
+  .table-headers {
+    padding-block: 20px;
+  }
+
+  .table-items {
+    padding-block: 25px;
+  }
+}
