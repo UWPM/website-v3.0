@@ -1,13 +1,14 @@
 import React from "react";
+import JobsTable from "../components/JobsTable";
 import "../styles/PMJobs.css";
 import "../App.css";
 import titleImage from "../images/pmjobs/title.svg";
 import desktopHexagons from "../images/background/desktop-hexagons.svg";
 
 export default function PMJobs({ show }) {
-
   return (
     <>
+
       <div id="homeIntro" style={{ position: "relative", minHeight: "830px" }}>
         {!show && (
           <>
@@ -21,6 +22,7 @@ export default function PMJobs({ show }) {
           </>
         )}
       </div>
+<JobsTable />
     </>
   );
 }
