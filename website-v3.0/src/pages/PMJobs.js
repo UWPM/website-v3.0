@@ -1,11 +1,19 @@
 import React from "react";
-
+import desktopHexagons from "../images/background/desktop-hexagons.svg";
 
 export default function PMJobs({ show }) {
 
   return (
     <>
-      <div>This is the PM Jobs page</div>
+      <div id="homeIntro" style={{ position: "relative", minHeight: "830px" }}>
+        {!show && (
+          <>
+            <div className="desktop-hex">
+              <img src={desktopHexagons} alt="" />
+            </div>
+          </>
+        )}
+      </div>
     </>
   );
 }
