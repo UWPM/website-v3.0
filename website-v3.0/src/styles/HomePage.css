@@ -146,6 +146,16 @@
 }
 
 @media (max-width: 1200px) {
+  .arrow-container {
+    transform: translateX(-4.5em);
+  }
+
+  .fun-fact {
+    transform: translateX(3em);
+  }
+}
+
+@media (max-width: 991px) {
   .background-image,
   .arrow-container,
   .fun-fact {
@@ -403,18 +413,18 @@
 }
 
 @media (max-width: 767px) {
-    .button-container {
-      flex-wrap: nowrap;
-    }
-
-    .button-red-gradiant {
-        margin-right: 20px;
-    }
-
-    .button-transparent {
-        margin-left: 20px;
-    }
+  .button-container {
+    flex-wrap: nowrap;
   }
+
+  .button-red-gradiant {
+    margin-right: 20px;
+  }
+
+  .button-transparent {
+    margin-left: 20px;
+  }
+}
 
 #statistic_num {
   font-family: "Syne";
@@ -435,7 +445,7 @@
 
 .desktop-hex {
   width: auto;
-  height:auto;
+  height: auto;
   position: absolute;
   right: -4.7%;
   top: -2%;
@@ -513,55 +523,55 @@
 }
 
 .image-container-mic-hex-popover {
-    position: relative;
-    margin-left: -11.8%;
-    margin-bottom: -1.7%;
-    z-index: 3;
+  position: relative;
+  margin-left: -11.8%;
+  margin-bottom: -1.7%;
+  z-index: 3;
 }
 
 .image-container-bow-hex-popover {
-    position: relative;
-    margin-left: -11.8%;
-    margin-bottom: -1.7%;
-    z-index: 3;
+  position: relative;
+  margin-left: -11.8%;
+  margin-bottom: -1.7%;
+  z-index: 3;
 }
 
 .image-container-headphone-hex-popover {
-    position: relative;
-    margin-left: -5.8%;
-    margin-bottom: -1.7%;
-    z-index: 3;
+  position: relative;
+  margin-left: -5.8%;
+  margin-bottom: -1.7%;
+  z-index: 3;
 }
 
 .image-container-grad-cap-hex-popover {
-    position: relative;
-    margin-left: -10.3%;
-    margin-bottom: -1.7%;
-    z-index: 3;
+  position: relative;
+  margin-left: -10.3%;
+  margin-bottom: -1.7%;
+  z-index: 3;
 }
 
 .text-popover-hex {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 10px;
-    text-align: left;
-    width: 90%;
-    max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  text-align: left;
+  width: 90%;
+  max-width: 400px;
 }
 
 .text-popover-grad-cap-hex {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 10px;
-    text-align: left;
-    width: 90%;
-    max-width: 400px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  text-align: left;
+  width: 90%;
+  max-width: 400px;
 }
 
 @media (max-width: 1399px) {
@@ -576,7 +586,7 @@
     float: right;
     z-index: 0;
   }
-  
+
   .grad-cap-hex {
     width: auto;
     height: auto;
@@ -587,7 +597,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .mic-hex {
     width: auto;
     height: auto;
@@ -598,7 +608,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .pencil-hex {
     width: auto;
     height: auto;
@@ -609,7 +619,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .headphone-hex {
     width: auto;
     height: auto;
@@ -620,7 +630,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .bow-hex {
     width: auto;
     height: auto;
@@ -631,7 +641,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .flower-hex {
     width: auto;
     height: auto;
@@ -664,7 +674,7 @@
     float: right;
     z-index: 0;
   }
-  
+
   .grad-cap-hex {
     width: auto;
     height: auto;
@@ -675,7 +685,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .mic-hex {
     width: auto;
     height: auto;
@@ -686,7 +696,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .pencil-hex {
     width: auto;
     height: auto;
@@ -697,7 +707,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .headphone-hex {
     width: auto;
     height: auto;
@@ -708,7 +718,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .bow-hex {
     width: auto;
     height: auto;
@@ -719,7 +729,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .flower-hex {
     width: auto;
     height: auto;
@@ -744,9 +754,9 @@
     margin-left: -14.8%;
     margin-bottom: -1.7%;
     z-index: 3;
-   }
+  }
 
-   .image-container-headphone-hex-popover {
+  .image-container-headphone-hex-popover {
     position: relative;
     margin-left: -11.4%;
     margin-bottom: -1.7%;
@@ -773,7 +783,7 @@
     float: right;
     z-index: 0;
   }
-  
+
   .grad-cap-hex {
     width: auto;
     height: auto;
@@ -784,7 +794,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .mic-hex {
     width: auto;
     height: auto;
@@ -795,7 +805,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .pencil-hex {
     width: auto;
     height: auto;
@@ -806,7 +816,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .headphone-hex {
     width: auto;
     height: auto;
@@ -817,7 +827,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .bow-hex {
     width: auto;
     height: auto;
@@ -828,7 +838,7 @@
     float: right;
     z-index: 2;
   }
-  
+
   .flower-hex {
     width: auto;
     height: auto;
@@ -889,23 +899,23 @@
   .grad-cap-hex {
     display: none;
   }
-  
+
   .mic-hex {
     display: none;
   }
-  
+
   .pencil-hex {
     display: none;
   }
-  
+
   .headphone-hex {
     display: none;
   }
-  
+
   .bow-hex {
     display: none;
   }
-  
+
   .flower-hex {
     display: none;
   }
