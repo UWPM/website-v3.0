@@ -17,7 +17,6 @@ import rectangle4 from "../images/popup-bubbles/Rectangle4.png"
 
 export default function Introduction({ show }) {
 
-
   const popoverMic = (
     <div className="image-container-mic-hex-popover">
       <img src={rectangle2} alt="" className="hex-popover-img">
@@ -66,7 +65,7 @@ export default function Introduction({ show }) {
       <div id="homeIntro" style={{ position: "relative", minHeight: "830px" }}>
         {!show && (
           <>
-          <div className="desktop-hex">
+            <div className="desktop-hex">
               <img src={desktopHexagons} alt="" />
             </div>
             <div className="grad-cap-hex">

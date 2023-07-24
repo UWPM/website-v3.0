@@ -1,6 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
 
+.desktop-hex {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: -4.7%;
+  top: -2%;
+  scale: 1.05;
+  pointer-events: none;
+  float: right;
+  z-index: 0;
+}
+
+.main-text {
+  font-size: 48px;
+  display: inline;
+  color: #FFEEED;
+}
+
+.main-text-box {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  width: 60%;
+}
+
+.sub-text {
+  width: 80%;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
 .mobile-show {
   display: none !important;
 }
@@ -47,19 +77,19 @@
   border-bottom: 0.5px solid #ffffff;
 }
 
-a:link {
+a.role-links:link {
   text-decoration: none;
   color: #ffeeed;
   text-decoration: underline;
 }
 
-a:visited {
+a.role-links:visited {
   text-decoration: none;
   color: #9b9b9b;
   text-decoration: underline;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .table-headers {
     font-size: 12px;
   }
@@ -68,9 +98,21 @@ a:visited {
     font-family: "Montserrat";
     font-size: 12px;
   }
+
+  .desktop-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -20%;
+    top: -2%;
+    scale: 1.05;
+    pointer-events: none;
+    float: right;
+    z-index: 0;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .titleImage {
     scale: 0.85;
     margin-bottom: 20px;
@@ -113,5 +155,58 @@ a:visited {
     margin-left: -5vw;
     margin-top: 10%;
     margin-bottom: 15%;
+  }
+
+  .desktop-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -50%;
+    top: -4%;
+    scale: 1;
+    pointer-events: none;
+    float: right;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 1399px) {
+  .desktop-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -4.7%;
+    top: -2%;
+    scale: 1.05;
+    pointer-events: none;
+    float: right;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .desktop-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -4.7%;
+    top: -2%;
+    scale: 1.05;
+    pointer-events: none;
+    float: right;
+    z-index: 0;
+  }
+}
+@media (max-width: 650px) {
+  .desktop-hex {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: -70%;
+    top: -4vh;
+    scale: 0.95;
+    pointer-events: none;
+    float: right;
+    z-index: 0;
   }
 }
