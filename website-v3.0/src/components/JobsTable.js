@@ -8,7 +8,12 @@ const roleLinks = [
   <a className="role-links" href="https://jobs.cisco.com/jobs/ProjectDetail/Product-Management-Specialist-Intern-United-States/1380418?source=LinkedIn/" target="_blank" rel="noreferrer">
     Product Management Intern
   </a>,
-  <a className="role-links" href="https://www.weareroku.com/jobs/product-manager-intern-ad-measurement-new-york-united-states?source=linkedin_limited_listing&utm_source=linkedin_limited_listing&gh_src=v5thu41&gh_src=v5thu41&gh_src=9dbe5a101us" target="_blank" rel="noreferrer">
+  <a
+    className="role-links"
+    href="https://www.weareroku.com/jobs/product-manager-intern-ad-measurement-new-york-united-states?source=linkedin_limited_listing&utm_source=linkedin_limited_listing&gh_src=v5thu41&gh_src=v5thu41&gh_src=9dbe5a101us"
+    target="_blank"
+    rel="noreferrer"
+  >
     Product Manager Intern
   </a>,
   <a className="role-links" href="https://boards.greenhouse.io/addepar1/jobs/6487468002?gh_src=31a4a9852&source=LinkedIn" target="_blank" rel="noreferrer">
@@ -29,7 +34,6 @@ const roleLinks = [
   <a className="role-links" href="https://www.lifeatspotify.com/jobs/summer-internship-technical-product-management-music-mission-us" target="_blank" rel="noreferrer">
     Technical Product Management Intern
   </a>,
-
 ];
 
 const pmJobsList = [
@@ -78,51 +82,3 @@ export default function JobsOpportunities({ show }) {
     </>
   );
 }
-// export default function JobsOpportunities({ show }) {
-//   return (
-//     <>
-//       <div className="pm-jobs-table">
-//         <Container className="header-container px-5">
-//           <Row className="table-headers">
-//             <Col xs={12} sm={6} md={2}>
-//               Company
-//             </Col>
-//             <Col xs={12} sm={6} md={4}>
-//               Role
-//             </Col>
-//             <Col className="mobile-hide" md={2}>
-//               Location
-//             </Col>
-//             <Col className="mobile-hide" md={2}>
-//               Session
-//             </Col>
-//             <Col className="mobile-hide" md={2}>
-//               Added
-//             </Col>
-//           </Row>
-//         </Container>
-//         <Container className="body-container pb-4 px-5">
-//           {pmJobsList.map((item, index) => (
-//             <Row className="table-items" key={index}>
-//               <Col xs={12} sm={6} md={2}>
-//                 {item.company}
-//               </Col>
-//               <Col xs={12} sm={6} md={4}>
-//                 {item.role}
-//               </Col>
-//               <Col className="mobile-hide" md={2}>
-//                 {item.location}
-//               </Col>
-//               <Col className="mobile-hide" md={2}>
-//                 {item.session}
-//               </Col>
-//               <Col className="mobile-hide" md={2}>
-//                 {item.added}
-//               </Col>
-//             </Row>
-//           ))}
-//         </Container>
-//       </div>
-//     </>
-//   );
-// }
