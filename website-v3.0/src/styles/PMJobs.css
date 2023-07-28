@@ -16,13 +16,13 @@
 .main-text {
   font-size: 48px;
   display: inline;
-  color: #FFEEED;
+  color: #ffeeed;
 }
 
 .main-text-box {
   margin-top: 200px;
-  margin-bottom: 100px;
-  width: 60%;
+  margin-bottom: 120px;
+  max-width: 550px;
 }
 
 .sub-text {
@@ -36,23 +36,28 @@
 }
 
 .header-container {
-  background-color: rgba(112, 105, 113, 0.9);
+  background-color: rgba(112, 105, 113, 0.7);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  backdrop-filter: blur(8px);
 }
 
 .body-container {
-  background-color: rgba(87, 87, 95, 0.9);
+  background-color: rgba(87, 87, 95, 0.7);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  backdrop-filter: blur(8px);
 }
 
 .pm-jobs-table {
   border-radius: 10px;
-  margin: auto;
   margin-block: 50px;
-  max-width: 80%;
   padding: 0;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 100px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border: 0.5px solid #aaa3a6;
 }
 
 .table-headers {
@@ -90,13 +95,27 @@ a.role-links:visited {
 }
 
 @media (max-width: 991px) {
+  .main-text {
+    font-size: 42px;
+  }
+
+  .main-text-box {
+    max-width: 320px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+
+  .sub-text {
+    font-size: 16px;
+    width: 100%;
+  }
+
   .table-headers {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .table-items {
-    font-family: "Montserrat";
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .desktop-hex {
@@ -118,7 +137,7 @@ a.role-links:visited {
     margin-bottom: 20px;
     position: relative;
   }
-  
+
   .head-container {
     margin-left: 5vw;
     margin-top: 10%;
@@ -127,6 +146,30 @@ a.role-links:visited {
 }
 
 @media (max-width: 767px) {
+  .main-text {
+    font-size: 24px;
+  }
+
+  .main-text-box {
+    max-width: 290px;
+  }
+
+  .sub-text {
+    font-size: 14px;
+  }
+
+  .table-headers {
+    font-size: 12px;
+  }
+
+  .table-items {
+    font-size: 12px;
+  }
+
+  .pm-jobs-table {
+    margin-bottom: 70px;
+  }
+
   .mobile-hide {
     display: none !important;
   }
@@ -150,7 +193,7 @@ a.role-links:visited {
     margin-bottom: 20px;
     position: relative;
   }
-  
+
   .head-container {
     margin-left: -5vw;
     margin-top: 10%;
