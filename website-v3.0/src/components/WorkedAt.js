@@ -37,10 +37,10 @@ export default function WorkedAt({ show }) {
         <Row className={"my-4"}>
           <Col xs={4} md={2} className="company-image"><img height={60} src={Lyft} alt={"Lyft"} /></Col>
           <Col xs={4} md={2} className="company-image"><img height={30} src={Wish} alt={"Wish"} /></Col>
-          <Col xs={4} md={2} className="company-image"><img height={25} src={Datadog} alt={"Datadog"} /></Col>
+          <Col xs={4} md={2} className="company-image"><img height={30} src={Datadog} alt={"Datadog"} /></Col>
           <Col xs={4} md={2} className="company-image"><img height={50} src={AmericanExpress} alt={"AmericanExpress"} /></Col>
           <Col xs={4} md={2} className="company-image"><img height={30} src={Shopify} alt={"Shopify"} /></Col>
-          <Col xs={4} md={2} className="company-image"><img height={80} src={Autodesk} alt={"Autodesk"} /></Col>
+          <Col xs={4} md={2} className="company-image"><img height={35} src={Autodesk} alt={"Autodesk"} /></Col>
         </Row>
         <div className="spacer"></div>
       </Container>
