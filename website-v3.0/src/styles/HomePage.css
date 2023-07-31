@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
 
-.main-text {
+.title-text {
     font-size: 48px;
     display: inline;
     color: #FFEEED;
 }
 
-.main-text-box {
+.title-text-box {
     margin-top: 200px;
     margin-bottom: 100px;
     width: 60%;
@@ -162,6 +162,15 @@
   .fun-fact {
     display: none;
   }
+
+  .red-circle {
+    width: 210px;
+    margin-right: 25px;
+  }
+
+  .title-text-box {
+    width: 70%;
+  }
 }
 
 @media (max-width: 991.5px) {
@@ -218,6 +227,16 @@
 }
 
 @media (max-width: 800px) {
+  .title-text {
+    font-size: 34px;
+  }
+
+  .red-circle {
+    width: 160px;
+    margin: 0;
+    top: -5px;
+  }
+
   .grey-card {
     height: 150px;
     padding: 20px 20px 20px 95px;
@@ -339,9 +358,12 @@
 }
 
 @media (max-width: 768px) {
+  .red-circle {
+    margin-right: 10px;
+  }
  
-  .main-text-box {
-        width: 100%;
+  .title-text-box {
+        width: 80%;
   }
 
 .button-container {
