@@ -4,6 +4,10 @@
   color: white;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 h1 {
   font-family: "Syne";
   font-weight: 720;
@@ -126,4 +130,3 @@ img {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-
