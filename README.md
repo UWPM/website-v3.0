@@ -10,7 +10,7 @@ To set up the development environment, follow these steps:
 `git clone https://github.com/UWPM/website-v3.0.git`
 
 1. Navigate to the project directory:  
-`cd uwpm-website`
+`cd website-v3.0`
 
 1. Install dependencies using npm:  
 `npm install`
