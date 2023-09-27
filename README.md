@@ -29,3 +29,5 @@ We follow a specific GitHub workflow for working on new tickets. Please refer to
 - Create a pull request (PR)
 
 Happy coding! If you have any questions or need assistance, feel free to message in the `#engineering-team` channel on Discord!
+
+<img src="https://i.pinimg.com/originals/26/67/52/266752f852c44959006c7dac91f74864.gif" alt="Dancing Cat" width="200">
