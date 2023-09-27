@@ -6,7 +6,7 @@
 ## Details
 <!-- Include details on how you completed your ticket. -->
 
-## Type of change
+## Type of Change
 - [ ] Bug fix 
 - [ ] New feature 
 - [ ] Existing feature
