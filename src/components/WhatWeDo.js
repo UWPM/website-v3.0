@@ -13,8 +13,8 @@ const cardData = [
   {
     title: "Educate",
     description: "Providing resources & training of product management skills",
-    button: "PM GUIDE",
-    link: "/pm-guide",
+    button: "EVENTS",
+    link: "/events",
     image: WhatWeDoImage1,
     alt: "Presenters at a UWPM event",
   },

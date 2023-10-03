@@ -1,8 +1,7 @@
 import React from "react";
 import desktopHexagons from "../images/background/desktop-hexagons.svg";
 
-export default function PMGuide({ show }) {
-
+export default function Events({ show }) {
   return (
     <>
       <div className="desktop-hex">
