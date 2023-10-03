@@ -1,7 +1,6 @@
 import React from "react";
-import "../styles/HomePage.css";
-import Container from 'react-bootstrap/Container';
-
+import "../styles/Home.css";
+import Container from "react-bootstrap/Container";
 
 import Introduction from "../components/Introduction";
 import WhatWeDo from "../components/WhatWeDo";
@@ -9,8 +8,7 @@ import Statistics from "../components/Statistics";
 import PastEvents from "../components/PastEvents";
 import WorkedAt from "../components/WorkedAt";
 
-export default function HomePage({ show }) {
-
+export default function Home({ show }) {
   return (
     <Container>
       <Introduction show={show} />

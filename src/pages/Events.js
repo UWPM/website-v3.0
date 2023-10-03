@@ -1,5 +1,7 @@
 import React from "react";
 import desktopHexagons from "../images/background/desktop-hexagons.svg";
+import "../styles/Events.css";
+import "../App.css";
 
 export default function Events({ show }) {
   return (
@@ -7,6 +9,7 @@ export default function Events({ show }) {
       <div className="desktop-hex">
         <img src={desktopHexagons} alt="" />
       </div>
+      <div>This is the events page</div>
     </>
   );
 }

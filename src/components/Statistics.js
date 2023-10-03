@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/HomePage.css";
-import "../App.css"
+import "../styles/Home.css";
+import "../App.css";
 
 export default function Statistics({ show }) {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import CustomCard from "./CustomCard";
-import "../styles/HomePage.css";
+import "../styles/Home.css";
 import "../App.css";
 
 import WhatWeDoImage1 from "../images/what-we-do-1.png";

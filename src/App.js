@@ -9,7 +9,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "./images/uwpm-brand/pmlogo.svg";
 
-import HomePage from "./pages/HomePage";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Community from "./pages/Community";
 import Events from "./pages/Events";
@@ -62,10 +62,10 @@ function App() {
 
       <div>
         <Routes>
-          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/community" element={<Community />} />
-          <Route exact path="/pm-guide" element={<Events />} />
+          <Route exact path="/events" element={<Events />} />
           <Route exact path="/pm-jobs" element={<PMJobs />} />
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
