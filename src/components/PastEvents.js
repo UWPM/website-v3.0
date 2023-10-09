@@ -62,7 +62,7 @@ export default function PastEvents({ show }) {
         ))}
       </Carousel>
       <div className="d-flex justify-content-center my-4">
-        <Link to="/about">
+        <Link to="/events">
           <button class="button-red-gradiant">VIEW ALL EVENTS</button>
         </Link>
       </div>
