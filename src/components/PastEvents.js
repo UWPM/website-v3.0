@@ -25,15 +25,15 @@ export default function PastEvents() {
   ];
   return (
     <Container>
-      <h1 className="main-text">Past events</h1>
+      <h2>Past events</h2>
       <hr></hr>
       <Container className="my-10">
         {imageRows.map((x) => (
           <Row>
             {x.map(([imageSource, instagramURL]) => (
-              <Col className="pb-4">
+              <Col className="p-4">
                 <a href={instagramURL}>
-                  <Image fluid src={imageSource} />
+                  <Image fluid src={imageSource} alt="" />
                 </a>
               </Col>
             ))}

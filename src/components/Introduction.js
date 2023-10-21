@@ -10,7 +10,6 @@ import headphoneHex from "../images/background/headphone-hex.svg";
 import bowHex from "../images/background/bow-hex.svg";
 import flowerHex from "../images/background/flower-hex.svg";
 import { OverlayTrigger } from "react-bootstrap";
-import rectangle1 from "../images/popup-bubbles/Rectangle1.png";
 import rectangle2 from "../images/popup-bubbles/Rectangle2.png";
 import rectangle3 from "../images/popup-bubbles/Rectangle3.png";
 import rectangle4 from "../images/popup-bubbles/Rectangle4.png";
