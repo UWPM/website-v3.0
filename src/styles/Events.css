@@ -1,4 +1,3 @@
-
 .container-full{
     margin-right: 20%;
     margin-left: 20%;
@@ -65,9 +64,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+
+
+
+.horizontal-images-container {
+  margin-left: 5em;
+  margin-right: 5em;
+  justify-content: center;
+  display: flex;
 }
 
+.horizontal-image-item {
+  flex: 0 0 auto;
+  justify-content: center;
+  margin: 0 auto;
+}
 
+.resized-image {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  width: 90%;
+  height: auto; 
+}
 
 .description{
     width: 500px;
@@ -114,3 +136,38 @@
     background: #9b3837 !important;
     border-color: transparent !important;
   }
+
+.main-text-event {
+    color: #FFEEED;
+    font-family: Syne;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1em;
+}
+
+.video-responsive {
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 10em;
+    margin-top: 2em;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .individual-team-container { 
+    position: relative; 
+    padding-top: 80px;
+  }
+

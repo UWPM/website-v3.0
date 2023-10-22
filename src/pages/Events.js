@@ -1,16 +1,35 @@
 import React from "react";
-import desktopHexagons from "../images/background/desktop-hexagons.svg";
+import Container from "react-bootstrap/Container";
+import ProdConn from "../components/ProdCon";
 import "../styles/Events.css";
 import "../App.css";
 import UpcomingEventsCard from "../components/UpcomingEvents.js";
 import context from "react-bootstrap/esm/AccordionContext";
 import placeholder from '../images/events/placeholder.png';
+import PastEvents from "../components/PastEvents";
 
 export default function Events({ show }) {
   return (
-    <>
-      <div className="desktop-hex">
-        <img src={desktopHexagons} alt="" />
+    <Container>
+      <div>
+        {!show && (
+          <>
+            <div>
+              <h1 className="main-text-event">ProdCon 2022 Recap </h1>
+              <div className="video-responsive">
+                <iframe
+                  src="https://www.youtube.com/embed/C0DPdy98e4c"
+                  width="853"
+                  height="480"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title="Embedded youtube"
+                />{" "}
+              </div>
+              <h1 className="main-text-event">ProdCon 2022 Recap Gallery</h1>
+            </div>
+          </>
+        )}
       </div>
         <UpcomingEventsCard
           title="Upcoming Event"
@@ -26,7 +45,9 @@ export default function Events({ show }) {
           point4="Win Prizes"
           imagePath={placeholder}
         />
-    </>
+      <ProdConn />
+      <div>This is the events page</div>
+      <PastEvents />
+    </Container>
   );
 }
-
