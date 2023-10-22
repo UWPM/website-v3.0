@@ -3,6 +3,8 @@ import "../App.css";
 import "../styles/Events.css";
 import AliceCarousel from 'react-alice-carousel';
 import Modal from 'react-modal';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 // ProdCon Event Photos
 import pc1 from "../images/prodcon/prodcon1.JPG";
@@ -45,7 +47,16 @@ export default function ProjectsTeam() {
     pc7,
     pc8,
     pc9,
+    pc10,
   ];
+
+  const renderNextButton = ({ isDisabled }) => {
+    return <ArrowForwardIosIcon style={{ position: "absolute", right: "-2.3vw", top: "5vw" }} />
+  };
+
+  const renderPrevButton = ({ isDisabled }) => {
+    return <ArrowBackIosIcon style={{ position: "absolute", left: "-1.7vw", top: "5vw" }} />
+  };
 
   const [modalIsOpen, setModalIsOpen] = useState(Array(items.length).fill(false));
 
@@ -91,7 +102,11 @@ export default function ProjectsTeam() {
         infinite={true}
         animationEasingFunction="ease"
         buttonsDisabled={true}
-        disableButtonsControls={true}
+        renderPrevButton={renderPrevButton}
+        renderNextButton={renderNextButton}
+        autoPlay="true"
+        autoPlayInterval={2500}
+        disableDotsControls="true"
       />
     </div>
   );
