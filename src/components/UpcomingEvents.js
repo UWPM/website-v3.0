@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Events.css";
-import upcomingEventPost from "../images/events/placeholder.png";
+import upcomingEventPost from "../images/events/prodcon-event-post.png";
 import { Container } from "react-bootstrap";
 
 const UpcomingEventsCard = () => {
