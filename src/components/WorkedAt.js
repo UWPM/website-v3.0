@@ -40,7 +40,7 @@ export default function WorkedAt({ show }) {
           <Col xs={6} md={2} className="company-image pb-4"><img height={30} src={Datadog} alt={"Datadog"} /></Col>
           <Col xs={6} md={2} className="company-image pb-4"><img height={50} src={AmericanExpress} alt={"AmericanExpress"} /></Col>
           <Col xs={6} md={2} className="company-image pb-4"><img height={30} src={Shopify} alt={"Shopify"} /></Col>
-          <Col xs={6} md={2} className="company-image pb-4"><img height={30} src={Autodesk} alt={"Autodesk"} /></Col>
+          <Col xs={6} md={2} className="company-image pb-4"><img height={30} width={"100%"} src={Autodesk} alt={"Autodesk"} /></Col>
         </Row>
         <div className="spacer"></div>
       </Container>

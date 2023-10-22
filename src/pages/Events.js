@@ -2,6 +2,8 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import ProdConn from "../components/ProdCon";
 import "../styles/Events.css";
+import "../App.css";
+import PastEvents from "../components/PastEvents";
 
 export default function Events({ show }) {
   return (
@@ -26,8 +28,10 @@ export default function Events({ show }) {
           </>
         )}
       </div>
-    <ProdConn />
-    </Container>
+      <ProdConn />
+      <div>This is the events page</div>
+      <PastEvents />
+    </>
   );
 }
 
