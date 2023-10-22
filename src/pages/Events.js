@@ -7,10 +7,19 @@ import UpcomingEventsCard from "../components/UpcomingEvents.js";
 import context from "react-bootstrap/esm/AccordionContext";
 import placeholder from '../images/events/placeholder.png';
 import PastEvents from "../components/PastEvents";
+import desktopHexagons from "../images/background/desktop-hexagons.svg";
 
 export default function Events({ show }) {
   return (
     <Container>
+      <div className="events-container">
+            <div className="hex-container">
+              <img src={desktopHexagons} alt="" />
+            </div>
+            <div className="figCaption">
+              <h1 className="title-text">Gain product skills through our case competition, workshops, and more.</h1>
+            </div>
+      </div>
       <UpcomingEventsCard
                 title="Upcoming Event"
                 date="November 18th 2023" 

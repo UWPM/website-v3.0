@@ -1,3 +1,69 @@
+.events-container{
+    position: relative;
+    min-height: 830px; 
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.figCaption{
+    position: absolute;
+    top: 2rem;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-right: 20%;
+    width: 75%;
+}
+
+.title-text{
+    font-size: 48px;
+    display: inline;
+    color: #FFEEED;
+}
+
+
+@media (max-width: 1199px) {
+    .hex-container{
+        margin-left: -30%;
+    }
+
+}
+@media (max-width: 995px) {
+    .hex-container{
+        margin-left: -40%;
+    }
+    .figCaption{
+        width: 85%;
+    }
+    .title-text{
+        font-size: 38px;
+    }
+}
+@media (max-width: 800px) {
+    .hex-container{
+        margin-left: -50%;
+    }
+}
+
+@media (max-width: 775px) {
+    .hex-container{
+        margin-left: -60%;
+    }
+    .figCaption{
+        width: 75%;
+    }
+    .title-text{
+        font-size: 38px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .hex-container{
+        margin-left: -60%;
+    }
+}
+
 .container-full{
     margin-right: 20%;
     margin-left: 20%;

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration:none; 
+} 
+
+a:hover {
+    color: rgb(222, 222, 222);
+}
+
+.about-container{
+    position: relative;
+    min-height: 830px; 
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.about-caption{
+    position: absolute;
+    top: 2rem;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-right: 20%;
+    width: 60%;
+}
+
+.mission-vision-row{
+    margin-top: -205px;
+    z-index: 10;
+}
+
+.about-us-card{
+    /* position: relative; */
+    margin-top: -200;
+    padding: 50px;
+    height: 325px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+}
+
+.card-title-parent{
+    display: flex;
+    justify-content: center;
+}
+
+.card-title{
+    z-index: 100;
+    position: relative;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(240, 92, 91, 0.7), rgba(240, 92, 91, 0.7)),
+    linear-gradient(180deg, rgba(255, 238, 237, 0.04) 0%, rgba(7, 57, 72, 0.124) 100%);
+
+}
+
+.card-body{
+    margin-top: -30px;
+    z-index: 99;
+    height: 220px;
+    padding: 35px;
+    background: #7b6a73;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.about-header-text{
+    font-family: "Syne";
+    font-weight: 700;
+    font-style: unset;
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+.mission-text{
+    /* border: 1px solid white; */
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 17px;
+    color: white;
+}
+
+.logo-row{
+    position: relative;
+    z-index: 101;
+    margin-top: -145px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 1199px) {
+    .about-us-card{
+        width: 100vw;
+    }
+
+}
+
+
