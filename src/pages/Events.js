@@ -31,7 +31,7 @@ export default function Events({ show }) {
       <ProdConn />
       <div>This is the events page</div>
       <PastEvents />
-    </>
+    </Container>
   );
 }
 
