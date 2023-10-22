@@ -131,3 +131,17 @@ img {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
+@media (max-width: 500px) {
+  #nav-link {
+    font-size: 1em;
+    margin-left: 1.5vh;
+  }
+}
+
+@media (max-width: 400px) {
+  #nav-link {
+    font-size: 0.87em;
+    margin-left: 1.5vh;
+  }
+}

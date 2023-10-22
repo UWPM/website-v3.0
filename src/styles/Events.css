@@ -82,21 +82,21 @@
   margin-right: 10rem;
 }
 
-@media screen and (max-width: 1620px) {
+@media (max-width: 1620px) {
   .container-full {
     margin-right: 10%;
     margin-left: 10%;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .container-full {
     margin-right: 5%;
     margin-left: 5%;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
   .main-section {
     display: flex;
     flex-direction: column;
@@ -123,7 +123,7 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media (max-width: 550px) {
   inner-section {
     width: 100%;
   }

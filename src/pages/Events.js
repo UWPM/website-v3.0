@@ -4,7 +4,6 @@ import ProdConn from "../components/ProdCon";
 import "../styles/Events.css";
 import "../App.css";
 import UpcomingEventsCard from "../components/UpcomingEvents.js";
-import context from "react-bootstrap/esm/AccordionContext";
 import PastEvents from "../components/PastEvents";
 import desktopHexagons from "../images/background/desktop-hexagons.svg";
 
