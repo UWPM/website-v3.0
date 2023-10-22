@@ -1,15 +1,26 @@
 import React from "react";
 import "../styles/Events.css";
+import upcomingEventPost from "../images/events/placeholder.png";
+import { Container } from "react-bootstrap";
 
-const UpcomingEventsCard = ({ title, date, location, cto, about, description, subtitle, point1, point2, point3, point4, imagePath }) => {
+const UpcomingEventsCard = () => {
+  const title = "Upcoming Event";
+  const date = "November 18th 2023";
+  const location = "Location TBD";
+  const cto = "APPLY NOW";
+  const about = "About";
+  const description = "ProdCon UW PM’s flagship event that typically happens every fall. ProdCon is a day-long product management case study competition, where students compete in teams of two to four to tackle an industry product challenge.";
+  const subtitle = "Why Attend ProdCon?";
+  const points = ["Network with industry PM and like-minded students", "Build experiential product skills", "Solve real-world problems", "Win Prizes"];
+
   return (
-    <div className="container-full">
+    <Container>
       <div className="title-section">
         <h2>{title}</h2>
         <hr />
       </div>
       <div className="main-section">
-        <div>
+        <div className="upcoming-event-text">
           <div className="section">
             <div className="inner-section">
               <h2 className> ProdCon</h2>
@@ -26,16 +37,15 @@ const UpcomingEventsCard = ({ title, date, location, cto, about, description, su
           <div className="inner-section">
             <p className="sub-title">{subtitle}</p>
             <ul>
-              <li>{point1}</li>
-              <li>{point2}</li>
-              <li>{point3}</li>
-              <li>{point4}</li>
+              {points.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
             </ul>
           </div>
         </div>
-        <img className="image" src={imagePath} alt="" />
+        <img className="upcoming-events-post" src={upcomingEventPost} alt="" />
       </div>
-    </div>
+    </Container>
   );
 };
 
