@@ -26,7 +26,14 @@ export default function Events({ show }) {
             <div>
               <h1 className="main-text-event">ProdCon 2022 Recap </h1>
               <div className="video-responsive">
-                <iframe src="https://www.youtube.com/embed/C0DPdy98e4c" width="853" height="480" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title="Embedded youtube" />{" "}
+                <iframe
+                  src="https://www.youtube.com/embed/SzZuCmgPiFQ?si=m2YBCin5-ocj-hfh"
+                  width="853"
+                  height="480"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title="Embedded youtube"
+                />{" "}
               </div>
               <h1 className="main-text-event">ProdCon 2022 Recap Gallery</h1>
             </div>
