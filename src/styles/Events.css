@@ -1,135 +1,128 @@
-.events-container{
-    position: relative;
-    min-height: 830px; 
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+.events-container {
+  position: relative;
+  min-height: 830px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-.figCaption{
-    position: absolute;
-    top: 2rem;
-    margin-top: 200px;
-    margin-bottom: 100px;
-    margin-right: 20%;
-    width: 75%;
+.figCaption {
+  position: absolute;
+  top: 2rem;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-right: 20%;
+  width: 75%;
 }
 
-.title-text{
-    font-size: 48px;
-    display: inline;
-    color: #FFEEED;
+.title-text {
+  font-size: 48px;
+  display: inline;
+  color: #ffeeed;
 }
-
 
 @media (max-width: 1199px) {
-    .hex-container{
-        margin-left: -30%;
-    }
-
+  .hex-container {
+    margin-left: -30%;
+  }
 }
 @media (max-width: 995px) {
-    .hex-container{
-        margin-left: -40%;
-    }
-    .figCaption{
-        width: 85%;
-    }
-    .title-text{
-        font-size: 38px;
-    }
+  .hex-container {
+    margin-left: -40%;
+  }
+  .figCaption {
+    width: 85%;
+  }
+  .title-text {
+    font-size: 38px;
+  }
 }
 @media (max-width: 800px) {
-    .hex-container{
-        margin-left: -50%;
-    }
+  .hex-container {
+    margin-left: -50%;
+  }
 }
 
 @media (max-width: 775px) {
-    .hex-container{
-        margin-left: -60%;
-    }
-    .figCaption{
-        width: 75%;
-    }
-    .title-text{
-        font-size: 38px;
-    }
+  .hex-container {
+    margin-left: -60%;
+  }
+  .figCaption {
+    width: 75%;
+  }
+  .title-text {
+    font-size: 38px;
+  }
 }
-
 
 @media (max-width: 700px) {
-    .hex-container{
-        margin-left: -60%;
-    }
+  .hex-container {
+    margin-left: -60%;
+  }
 }
 
-.container-full{
-    margin-right: 20%;
-    margin-left: 20%;
-
+.container-full {
+  margin-right: 20%;
+  margin-left: 20%;
 }
-.title-section{
-    margin-bottom: 40px;
-}
-
-.main-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+.title-section {
+  margin-bottom: 40px;
 }
 
-.image{
-    width: 375px;
-    height: 375px;
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 375px;
+  height: 375px;
 }
 
 @media screen and (max-width: 1620px) {
-    .container-full{
-        margin-right: 10%;
-        margin-left: 10%;
-    }
+  .container-full {
+    margin-right: 10%;
+    margin-left: 10%;
   }
+}
 
-  @media screen and (max-width: 1200px) {
-    .container-full{
-        margin-right: 5%;
-        margin-left: 5%;
-    }
+@media screen and (max-width: 1200px) {
+  .container-full {
+    margin-right: 5%;
+    margin-left: 5%;
   }
+}
 
-  @media screen and (max-width: 991px) {
-    .main-section{
-        display: flex;
-        flex-direction: column;
-       align-items: center;
-    }
-    
-    .container-full{
-        display: flex;
-        flex-direction: column;
-       align-items: center;
-    }
-    
-    .title-section{
-        text-align: left;
-        min-width: 500px;
-    }
-
-    .image{
-        width: 500px;
-        height: 500px;
-    }
-  }
-
-  
-
-
-.section{
+@media screen and (max-width: 991px) {
+  .main-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+  }
+
+  .container-full {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-section {
+    text-align: left;
+    min-width: 500px;
+  }
+
+  .image {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @import "react-alice-carousel/lib/alice-carousel.css";
@@ -153,86 +146,85 @@
   justify-content: center;
   display: flex;
   width: 90%;
-  height: auto; 
+  height: auto;
 }
 
-.description{
-    width: 500px;
+.description {
+  width: 500px;
 }
 
-.line{
-    width: 100%;
+.line {
+  width: 100%;
 }
 
-.inner-section{
-    margin-bottom: 30px;
+.inner-section {
+  margin-bottom: 30px;
 }
 
-.about{
-    font-weight: bold;
-    margin-bottom: 5px;
+.about {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.sub-title{
-    margin-top: 30px;
-    margin-bottom: 5px;
+.sub-title {
+  margin-top: 30px;
+  margin-bottom: 5px;
 }
 
 .red-button {
-    box-sizing: border-box;
-    width: 150px;
-    height: 48px;
-    left: 134px;
-    top: 597px;
-    background: linear-gradient(180deg, rgba(240, 92, 91, 0.75) 0%, rgba(240, 92, 91, 0.2325) 100%);
-    border: 1px solid rgba(240, 92, 91, 0.1);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 12px 7px rgba(46, 56, 68, 0.25);
-    border-radius: 10px;
-    font-family: "IBM Plex Mono";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
-    color: #fdeceb;
-  }
-  
+  box-sizing: border-box;
+  width: 150px;
+  height: 48px;
+  left: 134px;
+  top: 597px;
+  background: linear-gradient(180deg, rgba(240, 92, 91, 0.75) 0%, rgba(240, 92, 91, 0.2325) 100%);
+  border: 1px solid rgba(240, 92, 91, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 12px 7px rgba(46, 56, 68, 0.25);
+  border-radius: 10px;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fdeceb;
+}
+
 .red-button:active,
 .red-button:hover {
-    background: #9b3837 !important;
-    border-color: transparent !important;
+  background: #9b3837 !important;
+  border-color: transparent !important;
 }
 
 .main-text-event {
-    color: #FFEEED;
-    font-family: Syne;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 1em;
+  color: #ffeeed;
+  font-family: Syne;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1em;
 }
 
 .video-responsive {
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 5em;
-    margin-top: 2em;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 5em;
+  margin-top: 2em;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
-  
+
 .video-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  }
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 
-  .individual-team-container { 
-    position: relative; 
-    padding-top: 80px;
-  }
-
+.individual-team-container {
+  position: relative;
+  padding-top: 80px;
+}

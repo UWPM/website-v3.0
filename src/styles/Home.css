@@ -3,41 +3,39 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
 
 .hero-container {
-    position: relative;
-    min-height: 830px; 
+  position: relative;
+  min-height: 830px;
 }
 
 .hero-text {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .title-text {
-    font-size: 48px;
-    display: inline;
-    color: #FFEEED;
+  font-size: 48px;
+  display: inline;
+  color: #ffeeed;
 }
 
 .title-text-box {
-    margin-top: 200px;
-    margin-bottom: 100px;
-    width: 60%;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  width: 60%;
 }
 
-.hexagon-box{
-    display: flex;
-    justify-content: center;
-    border: 1px solid transparent;
-    margin-top: 50px;
+.hexagon-box {
+  display: flex;
+  justify-content: center;
+  border: 1px solid transparent;
+  margin-top: 50px;
 }
 
 .red-circle {
-    position: relative;
-    margin-bottom: -10px;
-    top: -12px;
+  position: relative;
+  margin-bottom: -10px;
+  top: -12px;
 }
-
-
 
 .company-image {
   display: flex;
@@ -378,12 +376,12 @@
   .red-circle {
     margin-right: 10px;
   }
- 
+
   .title-text-box {
-        width: 80%;
+    width: 80%;
   }
 
-.button-container {
+  .button-container {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -562,7 +560,7 @@
   z-index: 2;
 }
 
-.overlay-container{
+.overlay-container {
   position: relative;
 }
 
@@ -710,11 +708,11 @@
 }
 
 @media (max-width: 1199px) {
-  .hexagon-box{
+  .hexagon-box {
     display: flex;
     width: 100vw;
   }
-  
+
   .desktop-hex {
     width: auto;
     height: auto;
@@ -862,7 +860,6 @@
   .hex-popover-img {
     scale: -1 1;
   }
-
 }
 
 @media (max-width: 767px) {
@@ -904,7 +901,7 @@
 }
 
 @media (max-width: 650px) {
-  .hexagon-box{
+  .hexagon-box {
     display: flex;
     width: 100vw;
     height: 100vh;

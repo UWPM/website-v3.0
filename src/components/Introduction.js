@@ -63,24 +63,12 @@ export default function Introduction({ show }) {
               <img src={desktopHexagons} alt="" />
             </div>
             <div className="grad-cap-hex">
-              <OverlayTrigger
-                className="overlay-container"
-                delay={{ show: 250, hide: 400 }}
-                trigger={["hover", "click"]}
-                placement="left"
-                overlay={popoverGradCap}
-              >
+              <OverlayTrigger className="overlay-container" delay={{ show: 250, hide: 400 }} trigger={["hover", "click"]} placement="left" overlay={popoverGradCap}>
                 <img src={gradCapHex} alt="" />
               </OverlayTrigger>
             </div>
             <div className="mic-hex">
-              <OverlayTrigger
-                className="overlay-container"
-                delay={{ show: 250, hide: 400 }}
-                trigger={["hover", "click"]}
-                placement="top"
-                overlay={popoverMic}
-              >
+              <OverlayTrigger className="overlay-container" delay={{ show: 250, hide: 400 }} trigger={["hover", "click"]} placement="top" overlay={popoverMic}>
                 <img src={micHex} alt="" />
               </OverlayTrigger>
             </div>
@@ -88,24 +76,12 @@ export default function Introduction({ show }) {
               <img src={pencilHex} alt="" />
             </div>
             <div className="headphone-hex">
-              <OverlayTrigger
-                className="overlay-container"
-                delay={{ show: 250, hide: 400 }}
-                trigger={["hover", "click"]}
-                placement="top"
-                overlay={popoverHeadphone}
-              >
+              <OverlayTrigger className="overlay-container" delay={{ show: 250, hide: 400 }} trigger={["hover", "click"]} placement="top" overlay={popoverHeadphone}>
                 <img src={headphoneHex} alt="" />
               </OverlayTrigger>
             </div>
             <div className="bow-hex">
-              <OverlayTrigger
-                className="overlay-container"
-                delay={{ show: 250, hide: 400 }}
-                trigger={["hover", "click"]}
-                placement="top"
-                overlay={popoverBow}
-              >
+              <OverlayTrigger className="overlay-container" delay={{ show: 250, hide: 400 }} trigger={["hover", "click"]} placement="top" overlay={popoverBow}>
                 <img src={bowHex} alt="" />
               </OverlayTrigger>
             </div>
@@ -118,23 +94,15 @@ export default function Introduction({ show }) {
           <div className="title-text-box">
             <h1 className="title-text">Fostering the </h1>
             <div className="position-relative d-inline">
-              <img
-                className="red-circle"
-                alt="Red Circle"
-                src={require("../images/background/red-circle.png")}
-              ></img>
+              <img className="red-circle" alt="Red Circle" src={require("../images/background/red-circle.png")}></img>
               <h1 className="position-absolute start-0 title-text">Creative</h1>
             </div>
-            <h1 className="title-text">
-              Product Management Community @ UWaterloo.
-            </h1>
+            <h1 className="title-text">Product Management Community @ UWaterloo.</h1>
           </div>
           <div>
             <div className="button-container">
               <Link to="/about">
-                <button className="button-red-gradiant inroduction-about-us">
-                  ABOUT US
-                </button>
+                <button className="button-red-gradiant inroduction-about-us">ABOUT US</button>
               </Link>
               <Link to="/community">
                 <button className="button-transparent">GET INVOLVED</button>
