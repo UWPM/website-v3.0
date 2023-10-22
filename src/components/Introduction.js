@@ -101,12 +101,12 @@ export default function Introduction({ show }) {
           </div>
           <div>
             <div className="button-container">
-              <Link to="/about">
-                <button className="button-red-gradiant inroduction-about-us">ABOUT US</button>
+              <Link to="/events">
+                <button className="button-red-gradiant inroduction-about-us">APPLY TO PRODCON</button>
               </Link>
-              <Link to="/community">
+              {/* <Link to="/community">
                 <button className="button-transparent">GET INVOLVED</button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

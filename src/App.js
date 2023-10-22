@@ -19,6 +19,7 @@ import Contact from "./pages/Contact";
 import ScrollTop from "./components/ScrollTop";
 
 function App() {
+  document.title = "UW PM"
   const [isVisible, setIsVisible] = useState(false);
   window.onscroll = function (ev) {
     if (window.scrollY > 100) {
@@ -43,18 +44,18 @@ function App() {
               <Nav.Link id="nav-link" as={Link} to="/about">
                 About
               </Nav.Link>
-              <Nav.Link id="nav-link" as={Link} to="/community">
+              {/* <Nav.Link id="nav-link" as={Link} to="/community">
                 Community
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link id="nav-link" as={Link} to="/events">
                 Events
               </Nav.Link>
               <Nav.Link id="nav-link" as={Link} to="/pm-jobs">
                 PM Jobs
               </Nav.Link>
-              <Nav.Link id="nav-link" as={Link} to="/contact">
+              {/* <Nav.Link id="nav-link" as={Link} to="/contact">
                 Contact
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
