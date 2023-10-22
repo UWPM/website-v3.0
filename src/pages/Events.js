@@ -38,7 +38,6 @@ export default function Events({ show }) {
         {!show && (
           <>
             <div>
-            
               <h1 className="main-text-event">ProdCon 2022 Recap </h1>
               <div className="video-responsive">
                 <iframe

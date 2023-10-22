@@ -137,6 +137,7 @@
 .horizontal-images-container {
   margin-left: 5em;
   margin-right: 5em;
+  margin-bottom: 30px;
   justify-content: center;
   display: flex;
 }
@@ -212,9 +213,9 @@
 }
 
 .video-responsive {
-    margin-left: 5em;
-    margin-right: 5em;
-    margin-bottom: 10em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 5em;
     margin-top: 2em;
     overflow: hidden;
     padding-bottom: 56.25%;
