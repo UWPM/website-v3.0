@@ -64,11 +64,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
 @import "react-alice-carousel/lib/alice-carousel.css";
-
-
-
 
 .horizontal-images-container {
   margin-left: 5em;
@@ -135,7 +133,7 @@
 .red-button:hover {
     background: #9b3837 !important;
     border-color: transparent !important;
-  }
+}
 
 .main-text-event {
     color: #FFEEED;
@@ -156,9 +154,9 @@
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
-  }
+}
   
-  .video-responsive iframe {
+.video-responsive iframe {
     left: 0;
     top: 0;
     height: 100%;

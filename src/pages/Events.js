@@ -11,10 +11,25 @@ import PastEvents from "../components/PastEvents";
 export default function Events({ show }) {
   return (
     <Container>
+      <UpcomingEventsCard
+                title="Upcoming Event"
+                date="November 18th 2023" 
+                location="Location TBD"
+                cto="APPLY NOW"
+                about="About"
+                description="ProdCon UW PM’s flagship event that typically happens every fall. ProdCon is a day-long product management case study competition, where students compete in teams of two to four to tackle an industry product challenge."
+                subtitle="Why Attend ProdCon?"
+                point1="Network with industry PM and like-minded students"
+                point2="Build experiential product skills"
+                point3="Solve real-world problems"
+                point4="Win Prizes"
+                imagePath={placeholder}
+      />
       <div>
         {!show && (
           <>
             <div>
+            
               <h1 className="main-text-event">ProdCon 2022 Recap </h1>
               <div className="video-responsive">
                 <iframe
@@ -31,22 +46,7 @@ export default function Events({ show }) {
           </>
         )}
       </div>
-        <UpcomingEventsCard
-          title="Upcoming Event"
-          date="November 18th 2023" 
-          location="Location TBD"
-          cto="APPLY NOW"
-          about="About"
-          description="ProdCon UW PM’s flagship event that typically happens every fall. ProdCon is a day-long product management case study competition, where students compete in teams of two to four to tackle an industry product challenge."
-          subtitle="Why Attend ProdCon?"
-          point1="Network with industry PM and like-minded students"
-          point2="Build experiential product skills"
-          point3="Solve real-world problems"
-          point4="Win Prizes"
-          imagePath={placeholder}
-        />
       <ProdConn />
-      <div>This is the events page</div>
       <PastEvents />
     </Container>
   );
