@@ -37,7 +37,7 @@ const cardData = [
 ];
 
 const factIntro = 'HEY! DID YOU KNOW?';
-const funFact = 'INSERT VERY FUN FACT ABOUT UWPM HERE';
+const funFact = 'UWPM WAS ORIGINALLY FOUNDED IN 2012';
 
 export default function WhatWeDo({ show }) {
   return (

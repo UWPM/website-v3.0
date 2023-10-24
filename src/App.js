@@ -58,9 +58,9 @@ function App() {
               <Nav.Link id="nav-link" as={Link} to="/events">
                 Events
               </Nav.Link>
-              <Nav.Link id="nav-link" as={Link} to="/pm-jobs">
+              {/* <Nav.Link id="nav-link" as={Link} to="/pm-jobs">
                 PM Jobs
-              </Nav.Link>
+              </Nav.Link> */}
               {/* <Nav.Link id="nav-link" as={Link} to="/contact">
                 Contact
               </Nav.Link> */}

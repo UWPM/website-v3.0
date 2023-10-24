@@ -34,7 +34,9 @@ const UpcomingEventsCard = () => {
                 {date} <br /> {location}
               </p>
             </div>
-            <button className="red-button">{cto}</button>
+            <a href="https://forms.gle/sBnTSueM3r5Gp2H28">
+              <button className="red-button">{cto}</button>
+            </a>
           </div>
           <div className="inner-section">
             <p className="about">{about}</p>

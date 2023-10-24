@@ -32,7 +32,7 @@ export default function CustomCard({ card }) {
               <Card.Title as="h3" style={{ color: 'white' }}>
                 {title}
               </Card.Title>
-              <Card.Text>{description}</Card.Text>
+              <Card.Text style={{ color: 'white' }}>{description}</Card.Text>
               {/* {isMobile && <Button className="red-button">{button}</Button>} */}
             </Col>
             {/* {!isMobile && (

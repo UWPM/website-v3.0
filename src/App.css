@@ -151,3 +151,33 @@ img {
     margin-left: 1.5vh;
   }
 }
+
+.red-button {
+  box-sizing: border-box;
+  width: 150px;
+  height: 48px;
+  left: 134px;
+  top: 597px;
+  background: linear-gradient(
+    180deg,
+    rgba(240, 92, 91, 0.75) 0%,
+    rgba(240, 92, 91, 0.2325) 100%
+  );
+  border: 1px solid rgba(240, 92, 91, 0.1);
+  box-shadow:
+    0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 12px 7px rgba(46, 56, 68, 0.25);
+  border-radius: 10px;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fdeceb;
+}
+
+.red-button:active,
+.red-button:hover {
+  background: #9b3837 !important;
+  border-color: transparent !important;
+}
