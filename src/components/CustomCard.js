@@ -29,7 +29,9 @@ export default function CustomCard({ card }) {
         <Card.Body>
           <Row className="d-flex justify-content-center">
             <Col>
-              <Card.Title as="h3">{title}</Card.Title>
+              <Card.Title as="h3" style={{ color: 'white' }}>
+                {title}
+              </Card.Title>
               <Card.Text>{description}</Card.Text>
               {/* {isMobile && <Button className="red-button">{button}</Button>} */}
             </Col>
