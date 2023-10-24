@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
 
 .desktop-hex {
   width: auto;
@@ -61,7 +61,7 @@
 }
 
 .table-headers {
-  font-family: "Syne";
+  font-family: 'Syne';
   font-size: 16;
   color: #ffeeed;
   padding-block: 45px;
@@ -70,7 +70,7 @@
 }
 
 .table-items {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;

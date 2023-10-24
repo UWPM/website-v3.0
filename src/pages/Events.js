@@ -1,11 +1,11 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
-import ProdConn from "../components/ProdCon";
-import "../styles/Events.css";
-import "../App.css";
-import UpcomingEventsCard from "../components/UpcomingEvents.js";
-import PastEvents from "../components/PastEvents";
-import desktopHexagons from "../images/background/desktop-hexagons.svg";
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import ProdConn from '../components/ProdCon';
+import '../styles/Events.css';
+import '../App.css';
+import UpcomingEventsCard from '../components/UpcomingEvents.js';
+import PastEvents from '../components/PastEvents';
+import desktopHexagons from '../images/background/desktop-hexagons.svg';
 
 export default function Events({ show }) {
   return (
@@ -15,7 +15,10 @@ export default function Events({ show }) {
           <img src={desktopHexagons} alt="" />
         </div>
         <div className="figCaption">
-          <h1 className="title-text">Gain product skills through our case competition, workshops, and more.</h1>
+          <h1 className="title-text">
+            Gain product skills through our case competition, workshops, and
+            more.
+          </h1>
         </div>
       </div>
       <UpcomingEventsCard />
@@ -32,7 +35,7 @@ export default function Events({ show }) {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   title="Embedded youtube"
-                />{" "}
+                />{' '}
               </div>
               <h1 className="main-text-event">ProdCon 2022 Recap Gallery</h1>
             </div>

@@ -1,17 +1,23 @@
-import React from "react";
-import "../styles/Events.css";
-import upcomingEventPost from "../images/events/prodcon-event-post.png";
-import { Container } from "react-bootstrap";
+import React from 'react';
+import '../styles/Events.css';
+import upcomingEventPost from '../images/events/prodcon-event-post.png';
+import { Container } from 'react-bootstrap';
 
 const UpcomingEventsCard = () => {
-  const title = "Upcoming Event";
-  const date = "November 18th 2023";
-  const location = "Location TBD";
-  const cto = "APPLY NOW";
-  const about = "About";
-  const description = "ProdCon UW PM’s flagship event that typically happens every fall. ProdCon is a day-long product management case study competition, where students compete in teams of two to four to tackle an industry product challenge.";
-  const subtitle = "Why Attend ProdCon?";
-  const points = ["Network with industry PM and like-minded students", "Build experiential product skills", "Solve real-world problems", "Win Prizes"];
+  const title = 'Upcoming Event';
+  const date = 'November 18th 2023';
+  const location = 'Location TBD';
+  const cto = 'APPLY NOW';
+  const about = 'About';
+  const description =
+    'ProdCon UW PM’s flagship event that typically happens every fall. ProdCon is a day-long product management case study competition, where students compete in teams of two to four to tackle an industry product challenge.';
+  const subtitle = 'Why Attend ProdCon?';
+  const points = [
+    'Network with industry PM and like-minded students',
+    'Build experiential product skills',
+    'Solve real-world problems',
+    'Win Prizes',
+  ];
 
   return (
     <Container>
