@@ -1,25 +1,25 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import React from "react";
-import { useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import MediaQuery from "react-responsive";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import logo from "./images/uwpm-brand/pmlogo.svg";
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import MediaQuery from 'react-responsive';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import logo from './images/uwpm-brand/pmlogo.svg';
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Community from "./pages/Community";
-import Events from "./pages/Events";
-import PMJobs from "./pages/PMJobs";
-import Contact from "./pages/Contact";
+import Home from './pages/Home';
+import About from './pages/About';
+import Community from './pages/Community';
+import Events from './pages/Events';
+import PMJobs from './pages/PMJobs';
+import Contact from './pages/Contact';
 
-import ScrollTop from "./components/ScrollTop";
+import ScrollTop from './components/ScrollTop';
 
 function App() {
-  document.title = "UW PM"
+  document.title = 'UW PM';
   const [isVisible, setIsVisible] = useState(false);
   window.onscroll = function (ev) {
     if (window.scrollY > 100) {
@@ -36,9 +36,17 @@ function App() {
       <Navbar expand="lg">
         <Container>
           <Navbar.Brand as={Link} to="/">
-            <img src={logo} className="logo" alt="University of Waterloo Product Management Club Logo" />
+            <img
+              src={logo}
+              className="logo"
+              alt="University of Waterloo Product Management Club Logo"
+            />
           </Navbar.Brand>
-          <Navbar.Toggle id="navbar-toggler" className="custom-toggler" aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle
+            id="navbar-toggler"
+            className="custom-toggler"
+            aria-controls="basic-navbar-nav"
+          />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto nav-right">
               <Nav.Link id="nav-link" as={Link} to="/about">
@@ -76,20 +84,40 @@ function App() {
           <Container>
             <MediaQuery minWidth={768}>
               <Navbar.Brand as={Link} to="/">
-                <img src={logo} className="logo" alt="University of Waterloo Product Management Club Logo" />
+                <img
+                  src={logo}
+                  className="logo"
+                  alt="University of Waterloo Product Management Club Logo"
+                />
               </Navbar.Brand>
             </MediaQuery>
             <Nav className="me-auto" id="social-links">
-              <Nav.Link id="nav-link" href="https://www.instagram.com/uwaterloopm/?hl=en" target="_blank">
+              <Nav.Link
+                id="nav-link"
+                href="https://www.instagram.com/uwaterloopm/?hl=en"
+                target="_blank"
+              >
                 Instagram
               </Nav.Link>
-              <Nav.Link id="nav-link" href="https://www.facebook.com/uwaterloopm/" target="_blank">
+              <Nav.Link
+                id="nav-link"
+                href="https://www.facebook.com/uwaterloopm/"
+                target="_blank"
+              >
                 Facebook
               </Nav.Link>
-              <Nav.Link id="nav-link" href="https://www.linkedin.com/company/uw-pm/" target="_blank">
+              <Nav.Link
+                id="nav-link"
+                href="https://www.linkedin.com/company/uw-pm/"
+                target="_blank"
+              >
                 LinkedIn
               </Nav.Link>
-              <Nav.Link id="nav-link" href="https://uwaterloo-pm.medium.com/" target="_blank">
+              <Nav.Link
+                id="nav-link"
+                href="https://uwaterloo-pm.medium.com/"
+                target="_blank"
+              >
                 Medium
               </Nav.Link>
             </Nav>

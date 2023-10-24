@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { Card, Button, Row, Col } from "react-bootstrap";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Card, Button, Row, Col } from 'react-bootstrap';
 
 export default function CustomCard({ card }) {
   const { title, description, button, link, image, alt } = card;
@@ -11,10 +11,10 @@ export default function CustomCard({ card }) {
       setWindowWidth(window.innerWidth);
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 

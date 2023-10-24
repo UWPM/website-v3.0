@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import WorkedAt from '../components/WorkedAt';
 
 export default function Contact({ show }) {
   return (

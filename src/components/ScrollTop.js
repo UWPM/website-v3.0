@@ -1,7 +1,7 @@
-import React from "react";
-import "../App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import hexagonScroll from "../images/uwpm-brand/scrolltop.svg";
+import React from 'react';
+import '../App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import hexagonScroll from '../images/uwpm-brand/scrolltop.svg';
 
 export default function ScrollTop({ isVisible }) {
   const scrollToTop = () => {

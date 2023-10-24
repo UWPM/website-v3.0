@@ -1,6 +1,6 @@
-import React from "react";
-import "../styles/Home.css";
-import "../App.css";
+import React from 'react';
+import '../styles/Home.css';
+import '../App.css';
 
 export default function Statistics({ show }) {
   return (
@@ -24,7 +24,7 @@ export default function Statistics({ show }) {
         </div>
       </div>
       <hr></hr>
-      <div style={{ minHeight: "100px" }}></div>
+      <div style={{ minHeight: '100px' }}></div>
     </>
   );
 }

@@ -1,19 +1,19 @@
-import React from "react";
-import "../styles/Home.css";
-import "../App.css";
-import { Link } from "react-router-dom";
-import desktopHexagons from "../images/background/desktop-hexagons.svg";
-import gradCapHex from "../images/background/grad-cap-hex.svg";
-import micHex from "../images/background/mic-hex.svg";
-import pencilHex from "../images/background/pencil-hex.svg";
-import headphoneHex from "../images/background/headphone-hex.svg";
-import bowHex from "../images/background/bow-hex.svg";
-import flowerHex from "../images/background/flower-hex.svg";
-import { OverlayTrigger } from "react-bootstrap";
-import rectangle2 from "../images/popup-bubbles/Rectangle2.png";
-import rectangle3 from "../images/popup-bubbles/Rectangle3.png";
-import rectangle4 from "../images/popup-bubbles/Rectangle4.png";
-import rectangle5 from "../images/popup-bubbles/Rectangle5.png";
+import React from 'react';
+import '../styles/Home.css';
+import '../App.css';
+import { Link } from 'react-router-dom';
+import desktopHexagons from '../images/background/desktop-hexagons.svg';
+import gradCapHex from '../images/background/grad-cap-hex.svg';
+import micHex from '../images/background/mic-hex.svg';
+import pencilHex from '../images/background/pencil-hex.svg';
+import headphoneHex from '../images/background/headphone-hex.svg';
+import bowHex from '../images/background/bow-hex.svg';
+import flowerHex from '../images/background/flower-hex.svg';
+import { OverlayTrigger } from 'react-bootstrap';
+import rectangle2 from '../images/popup-bubbles/Rectangle2.png';
+import rectangle3 from '../images/popup-bubbles/Rectangle3.png';
+import rectangle4 from '../images/popup-bubbles/Rectangle4.png';
+import rectangle5 from '../images/popup-bubbles/Rectangle5.png';
 
 export default function Introduction({ show }) {
   const popoverMic = (
@@ -63,12 +63,24 @@ export default function Introduction({ show }) {
               <img src={desktopHexagons} alt="" />
             </div>
             <div className="grad-cap-hex">
-              <OverlayTrigger className="overlay-container" delay={{ show: 250, hide: 400 }} trigger={["hover", "click"]} placement="left" overlay={popoverGradCap}>
+              <OverlayTrigger
+                className="overlay-container"
+                delay={{ show: 250, hide: 400 }}
+                trigger={['hover', 'click']}
+                placement="left"
+                overlay={popoverGradCap}
+              >
                 <img src={gradCapHex} alt="" />
               </OverlayTrigger>
             </div>
             <div className="mic-hex">
-              <OverlayTrigger className="overlay-container" delay={{ show: 250, hide: 400 }} trigger={["hover", "click"]} placement="top" overlay={popoverMic}>
+              <OverlayTrigger
+                className="overlay-container"
+                delay={{ show: 250, hide: 400 }}
+                trigger={['hover', 'click']}
+                placement="top"
+                overlay={popoverMic}
+              >
                 <img src={micHex} alt="" />
               </OverlayTrigger>
             </div>
@@ -76,12 +88,24 @@ export default function Introduction({ show }) {
               <img src={pencilHex} alt="" />
             </div>
             <div className="headphone-hex">
-              <OverlayTrigger className="overlay-container" delay={{ show: 250, hide: 400 }} trigger={["hover", "click"]} placement="top" overlay={popoverHeadphone}>
+              <OverlayTrigger
+                className="overlay-container"
+                delay={{ show: 250, hide: 400 }}
+                trigger={['hover', 'click']}
+                placement="top"
+                overlay={popoverHeadphone}
+              >
                 <img src={headphoneHex} alt="" />
               </OverlayTrigger>
             </div>
             <div className="bow-hex">
-              <OverlayTrigger className="overlay-container" delay={{ show: 250, hide: 400 }} trigger={["hover", "click"]} placement="top" overlay={popoverBow}>
+              <OverlayTrigger
+                className="overlay-container"
+                delay={{ show: 250, hide: 400 }}
+                trigger={['hover', 'click']}
+                placement="top"
+                overlay={popoverBow}
+              >
                 <img src={bowHex} alt="" />
               </OverlayTrigger>
             </div>
@@ -94,15 +118,23 @@ export default function Introduction({ show }) {
           <div className="title-text-box">
             <h1 className="title-text">Fostering the </h1>
             <div className="position-relative d-inline">
-              <img className="red-circle" alt="Red Circle" src={require("../images/background/red-circle.png")}></img>
+              <img
+                className="red-circle"
+                alt="Red Circle"
+                src={require('../images/background/red-circle.png')}
+              ></img>
               <h1 className="position-absolute start-0 title-text">Creative</h1>
             </div>
-            <h1 className="title-text">Product Management Community @ UWaterloo.</h1>
+            <h1 className="title-text">
+              Product Management Community @ UWaterloo.
+            </h1>
           </div>
           <div>
             <div className="button-container">
               <Link to="/events">
-                <button className="button-red-gradiant inroduction-about-us">APPLY TO PRODCON</button>
+                <button className="button-red-gradiant inroduction-about-us">
+                  APPLY TO PRODCON
+                </button>
               </Link>
               {/* <Link to="/community">
                 <button className="button-transparent">GET INVOLVED</button>

@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -61,7 +61,16 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
-  background: linear-gradient(0deg, rgba(240, 92, 91, 0.7), rgba(240, 92, 91, 0.7)), linear-gradient(180deg, rgba(255, 238, 237, 0.04) 0%, rgba(7, 57, 72, 0.124) 100%);
+  background: linear-gradient(
+      0deg,
+      rgba(240, 92, 91, 0.7),
+      rgba(240, 92, 91, 0.7)
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 238, 237, 0.04) 0%,
+      rgba(7, 57, 72, 0.124) 100%
+    );
 }
 
 .card-body {
@@ -76,7 +85,7 @@ a:hover {
 }
 
 .about-header-text {
-  font-family: "Syne";
+  font-family: 'Syne';
   font-weight: 700;
   font-style: unset;
   font-size: 35px;
@@ -86,7 +95,7 @@ a:hover {
 .mission-text {
   /* border: 1px solid white; */
   text-align: center;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 17px;
   color: white;
 }
