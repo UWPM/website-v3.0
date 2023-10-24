@@ -31,7 +31,7 @@ export default function CustomCard({ card }) {
             <Col>
               <Card.Title as="h3">{title}</Card.Title>
               <Card.Text>{description}</Card.Text>
-              {isMobile && <Button className="red-button">{button}</Button>}
+              {/* {isMobile && <Button className="red-button">{button}</Button>} */}
             </Col>
             {/* {!isMobile && (
               <Col xs="auto" className="d-flex align-items-end justify-content-end">
