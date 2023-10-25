@@ -321,7 +321,7 @@
   }
 }
 
-@media (max-width: 390) {
+@media screen and (max-width: 390px) {
   .grey-card {
     height: 170px;
   }
@@ -331,7 +331,7 @@
   }
 
   .custom-card-container p {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 

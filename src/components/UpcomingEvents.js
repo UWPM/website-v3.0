@@ -4,7 +4,7 @@ import upcomingEventPost from '../images/events/prodcon-event-post.png';
 import { Container } from 'react-bootstrap';
 
 const UpcomingEventsCard = () => {
-  const title = 'Upcoming Event';
+  const title = 'Upcoming Events';
   const date = 'November 18th 2023';
   const location = 'Location TBD';
   const cto = 'APPLY NOW';
@@ -34,7 +34,7 @@ const UpcomingEventsCard = () => {
                 {date} <br /> {location}
               </p>
             </div>
-            <a href="https://forms.gle/sBnTSueM3r5Gp2H28">
+            <a href="https://forms.gle/sBnTSueM3r5Gp2H28" target="_blank">
               <button className="red-button">{cto}</button>
             </a>
           </div>

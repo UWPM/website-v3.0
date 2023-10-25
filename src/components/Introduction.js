@@ -131,11 +131,12 @@ export default function Introduction({ show }) {
           </div>
           <div>
             <div className="button-container">
-              <Link to="/events">
+              <a href="https://forms.gle/sBnTSueM3r5Gp2H28" target="_blank">
                 <button className="button-red-gradiant inroduction-about-us">
                   APPLY TO PRODCON
                 </button>
-              </Link>
+              </a>
+
               {/* <Link to="/community">
                 <button className="button-transparent">GET INVOLVED</button>
               </Link> */}

@@ -29,14 +29,24 @@ export default function CustomCard({ card }) {
         <Card.Body>
           <Row className="d-flex justify-content-center">
             <Col>
-              <Card.Title as="h3" style={{ color: 'white' }}>
+              <Card.Title
+                className="what-we-do-title"
+                as="h3"
+                style={{
+                  color: 'white',
+                  width: '100%', // adjust as needed
+                }}
+              >
                 {title}
               </Card.Title>
               <Card.Text style={{ color: 'white' }}>{description}</Card.Text>
               {/* {isMobile && <Button className="red-button">{button}</Button>} */}
             </Col>
             {/* {!isMobile && (
-              <Col xs="auto" className="d-flex align-items-end justify-content-end">
+              <Col
+                xs="auto"
+                className="d-flex align-items-end justify-content-end"
+              >
                 <Link to={link}>
                   <Button className="red-button">{button}</Button>
                 </Link>
