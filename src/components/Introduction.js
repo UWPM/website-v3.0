@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useState, useEffect } from 'react';
 import '../styles/Home.css';
 import '../App.css';
 import { Link } from 'react-router-dom';
@@ -16,6 +16,14 @@ import rectangle4 from '../images/popup-bubbles/Rectangle4.png';
 import rectangle5 from '../images/popup-bubbles/Rectangle5.png';
 
 export default function Introduction({ show }) {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const popoverMic = (
     <div className="image-container-mic-hex-popover">
       <img src={rectangle5} alt="" className="hex-popover-img"></img>
@@ -57,7 +65,7 @@ export default function Introduction({ show }) {
   return (
     <>
       <div id="homeIntro" className="hero-container">
-        {!show && (
+        {windowWidth > 500 && (
           <div className="hexagon-box">
             <div className="desktop-hex">
               <img src={desktopHexagons} alt="" />
@@ -129,19 +137,17 @@ export default function Introduction({ show }) {
               Product Management Community @ UWaterloo.
             </h1>
           </div>
-          <div>
+          <a href="https://forms.gle/sBnTSueM3r5Gp2H28" target="_blank">
             <div className="button-container">
-              <a href="https://forms.gle/sBnTSueM3r5Gp2H28" target="_blank">
-                <button className="button-red-gradiant inroduction-about-us">
-                  APPLY TO PRODCON
-                </button>
-              </a>
+              <button className="button-red-gradiant inroduction-about-us">
+                APPLY TO PRODCON
+              </button>
 
               {/* <Link to="/community">
                 <button className="button-transparent">GET INVOLVED</button>
               </Link> */}
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </>

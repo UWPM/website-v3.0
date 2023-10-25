@@ -7,17 +7,17 @@ export default function Statistics({ show }) {
     <>
       <h2>Our Impact</h2>
       <hr></hr>
-      <div class="container text-center">
-        <div class="row row-cols-3">
-          <div class="col">
+      <div className="container text-center">
+        <div className="row row-cols-3">
+          <div className="col">
             <div id="statistic_num">100+</div>
             <div id="statistic_word">members</div>
           </div>
-          <div class="col">
+          <div className="col">
             <div id="statistic_num">50+</div>
             <div id="statistic_word">workshops</div>
           </div>
-          <div class="col">
+          <div className="col">
             <div id="statistic_num">50+</div>
             <div id="statistic_word">events</div>
           </div>
