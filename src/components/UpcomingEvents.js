@@ -5,12 +5,12 @@ import { Container } from 'react-bootstrap';
 
 const UpcomingEventsCard = () => {
   const title = 'Upcoming Events';
-  const date = 'November 18th 2023';
-  const location = 'Location TBD';
+  const date = 'Saturday, November 18th 2023';
+  const location = 'Location: Science Technology Center (STC 1012)';
   const cto = 'APPLY NOW';
   const about = 'About';
   const description =
-    'ProdCon UW PM’s flagship event that typically happens every fall. ProdCon is a day-long product management case study competition, where students compete in teams of two to four to tackle an industry product challenge.';
+    'ProdCon UW PM’s flagship event that typically happens every fall. ProdCon is a day-long product management case study competition, where students compete in teams of two to five to tackle an industry product challenge.';
   const subtitle = 'Why Attend ProdCon?';
   const points = [
     'Network with industry PM and like-minded students',
@@ -51,7 +51,14 @@ const UpcomingEventsCard = () => {
             </ul>
           </div>
         </div>
-        <img className="upcoming-events-post" src={upcomingEventPost} alt="" />
+        {/* TODO: Add link to IG post */}
+        <a>
+          <img
+            className="upcoming-events-post"
+            src={upcomingEventPost}
+            alt=""
+          />
+        </a>
       </div>
     </Container>
   );
