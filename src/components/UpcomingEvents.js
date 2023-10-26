@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap';
 const UpcomingEventsCard = () => {
   const title = 'Upcoming Events';
   const date = 'Saturday, November 18th 2023';
-  const location = 'Location: Science Technology Center (STC 1012)';
+  const location = 'Science Technology Center (STC 1012)';
   const cto = 'APPLY NOW';
   const about = 'About';
   const description =
