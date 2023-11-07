@@ -36,7 +36,7 @@ a:hover {
   z-index: 10;
 }
 
-.what-we-do-row{
+.what-we-do-row {
   margin-top: -50px;
   z-index: 10;
   display: flex;
@@ -53,7 +53,7 @@ a:hover {
   justify-content: center;
 }
 
-.card-bg{
+.card-bg {
   padding: 50px;
   background-color: rgb(83, 71, 71);
   border-radius: 10px;
@@ -86,7 +86,7 @@ a:hover {
     );
 }
 
-.big-card-title{
+.big-card-title {
   z-index: 100;
   position: relative;
   width: 400px;
@@ -108,7 +108,6 @@ a:hover {
     );
 }
 
-
 .card-body {
   margin-top: -30px;
   z-index: 99;
@@ -118,7 +117,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color:rgba(204, 171, 170, 0.414);
+  background-color: rgba(204, 171, 170, 0.414);
 }
 
 .big-card-body {
@@ -130,7 +129,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color:rgba(204, 171, 170, 0.414);
+  background-color: rgba(204, 171, 170, 0.414);
 }
 
 .about-header-text {
@@ -148,7 +147,7 @@ a:hover {
   color: white;
 }
 
-.big-card-text{
+.big-card-text {
   font-family: 'Montserrat';
   font-size: 17px;
   color: white;
@@ -174,14 +173,14 @@ a:hover {
     display: flex;
     justify-content: center;
   }
-  .logo-row{
+  .logo-row {
     visibility: hidden;
     border: 1px solid white;
   }
-  .mission-vision-row{
+  .mission-vision-row {
     width: 100%;
   }
-  .what-we-do-row{
+  .what-we-do-row {
     margin-top: -60px;
     width: 100%;
   }
@@ -202,7 +201,7 @@ a:hover {
 }
 
 @media (max-width: 991px) {
-  .what-we-do-row{
+  .what-we-do-row {
     margin-top: -20px;
   }
   .card-title-parent {
@@ -217,7 +216,7 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .what-we-do-row{
+  .what-we-do-row {
     margin-top: -15px;
   }
   .card-body {
@@ -231,7 +230,7 @@ a:hover {
 }
 
 @media (max-width: 550px) {
-  .what-we-do-row{
+  .what-we-do-row {
     margin-top: 100px;
     height: 600px;
   }
@@ -249,7 +248,7 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-  .what-we-do-row{
+  .what-we-do-row {
     margin-top: 140px;
     height: 600px;
   }
@@ -265,4 +264,3 @@ a:hover {
     padding: 60px;
   }
 }
-
