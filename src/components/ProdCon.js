@@ -16,7 +16,6 @@ import pc7 from '../images/prodcon/prodcon7.JPG';
 import pc8 from '../images/prodcon/prodcon8.JPG';
 import pc9 from '../images/prodcon/prodcon9.JPG';
 import pc10 from '../images/prodcon/prodcon10.JPG';
-import { NoEncryption } from '@mui/icons-material';
 
 const customStyles = {
   content: {
