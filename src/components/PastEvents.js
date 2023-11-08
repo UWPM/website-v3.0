@@ -16,6 +16,7 @@ export default function PastEvents() {
     setIsMobile(window.innerWidth < 768);
   };
 
+  // Event listener for dynamic width changing
   useEffect(() => {
     window.addEventListener('resize', handleResize);
 
@@ -24,6 +25,7 @@ export default function PastEvents() {
     };
   }, []);
 
+  // Array of [imageUrl, instagramUrl]
   const flatImages = [
     [speakerSneakPeak, 'https://www.instagram.com/p/CuinX2tANsc/'],
     [blueprintUWPM, 'https://www.instagram.com/p/CuVlp-SJFqk/'],
@@ -33,6 +35,7 @@ export default function PastEvents() {
     [fall22Prodcon, 'https://www.instagram.com/p/CjycXW0gcyo/'],
   ];
 
+  // Change number of rows dynamically
   const getCols = (data) => {
     const colsPerRow = isMobile ? 2 : 3;
     const rows = [];
