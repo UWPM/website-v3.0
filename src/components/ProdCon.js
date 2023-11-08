@@ -16,6 +16,7 @@ import pc7 from '../images/prodcon/prodcon7.JPG';
 import pc8 from '../images/prodcon/prodcon8.JPG';
 import pc9 from '../images/prodcon/prodcon9.JPG';
 import pc10 from '../images/prodcon/prodcon10.JPG';
+import { NoEncryption } from '@mui/icons-material';
 
 const customStyles = {
   content: {
@@ -25,7 +26,6 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    backgroundColor: '#073948',
     border: 'none',
   },
 };
@@ -41,17 +41,17 @@ export default function ProjectsTeam() {
 
   const renderNextButton = ({ isDisabled }) => {
     return (
-      <ArrowForwardIosIcon
-        style={{ position: 'absolute', right: '-2.3vw', top: '5vw' }}
-      />
+      <div class="prodcon_forward_arrow">
+        <ArrowForwardIosIcon />
+      </div>
     );
   };
 
   const renderPrevButton = ({ isDisabled }) => {
     return (
-      <ArrowBackIosIcon
-        style={{ position: 'absolute', left: '-1.7vw', top: '5vw' }}
-      />
+      <div class="prodcon_prev_arrow">
+        <ArrowBackIosIcon />
+      </div>
     );
   };
 
@@ -90,8 +90,8 @@ export default function ProjectsTeam() {
                   onRequestClose={() => closeModal(index)}
                   style={customStyles}
                   contentLabel="Example Modal"
+                  class="small-modal"
                 >
-                  <h2>Hello</h2>
                   <img
                     src={item}
                     alt={`Image ${index + 1}`}

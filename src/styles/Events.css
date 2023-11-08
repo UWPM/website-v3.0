@@ -21,6 +21,27 @@
   color: #ffeeed;
 }
 
+.prodcon_forward_arrow {
+  position: absolute;
+  right: -2vw;
+  top: 4vw;
+}
+
+.prodcon_prev_arrow {
+  position: absolute;
+  left: -2vw;
+  top: 4vw;
+}
+
+.video_carousel_text {
+  margin-top: 3vh;
+  font: Syne;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1199px) {
   .hex-container {
     margin-left: -30%;
@@ -53,13 +74,36 @@
   .title-text {
     font-size: 38px;
   }
+
+  .video_carousel_text {
+    text-align: center;
+    font: Syne;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28.8px;
+    margin-bottom: 1em;
+    color: #FFEEED;
+  }
 }
 
 @media (max-width: 700px) {
   .hex-container {
     margin-left: -60%;
   }
+
+  .prodcon_forward_arrow {
+    position: absolute;
+    right: -7vw;
+    top: 8vw;
+  }
+
+  .prodcon_prev_arrow {
+    position: absolute;
+    left: -7vw;
+    top: 8vw;
+  }
 }
+
 
 .title-section {
   margin-bottom: 40px;
@@ -143,8 +187,8 @@
 @import 'react-alice-carousel/lib/alice-carousel.css';
 
 .horizontal-images-container {
-  margin-left: 5em;
-  margin-right: 5em;
+  margin-left: 2em;
+  margin-right: 2em;
   margin-bottom: 30px;
   justify-content: center;
   display: flex;
@@ -155,6 +199,7 @@
   justify-content: center;
   margin: 0 auto;
 }
+
 
 .resized-image {
   margin: 0 auto;
@@ -193,10 +238,9 @@
 }
 
 .video-responsive {
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 5em;
-  margin-top: 2em;
+  margin-left: 2.8em;
+  margin-right: 2.8em;
+  margin-bottom: 1em;
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
