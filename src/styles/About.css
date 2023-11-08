@@ -248,19 +248,159 @@ a:hover {
 }
 
 @media (max-width: 500px) {
+  .card-title-parent {
+    width: 350px;
+  }
+  .about-header-text {
+    font-size: 30px;
+  }
+  .about-us-card {
+    height: 400px;
+  }
   .what-we-do-row {
-    margin-top: 140px;
+    margin-top: 115px;
     height: 600px;
   }
-
   .card-body {
     width: 400px;
     padding: 60px;
   }
-
   .big-card-body {
     width: 400px;
     height: 550px;
     padding: 60px;
+  }
+}
+
+@media (max-width: 460px) {
+  .what-we-do-row {
+    margin-top: 175px;
+    height: 600px;
+  }
+  .card-body {
+    width: 350px;
+    padding: 60px;
+  }
+  .big-card-body {
+    width: 350px;
+    height: 600px;
+    padding: 60px;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-title-parent {
+    width: 300px;
+  }
+  .about-us-card {
+    height: 350px;
+  }
+  .about-header-text {
+    font-size: 25px;
+  }
+  .what-we-do-row {
+    margin-top: 115px;
+  }
+  .card-body {
+    width: 325px;
+    padding: 50px;
+  }
+  .big-card-body {
+    width: 325px;
+    height: 700px;
+    padding: 50px;
+  }
+  .mission-text {
+    font-size: 15px;
+  }
+  .big-card-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-title-parent {
+    width: 275px;
+  }
+  .about-header-text {
+    font-size: 25px;
+  }
+  .what-we-do-row {
+    margin-top: 120px;
+    height: 600px;
+  }
+  .card-body {
+    width: 300px;
+    padding: 40px;
+  }
+  .big-card-body {
+    width: 300px;
+    padding: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-title-parent {
+    width: 275px;
+  }
+  .about-header-text {
+    font-size: 25px;
+  }
+  .what-we-do-row {
+    margin-top: 145px;
+  }
+  .card-body {
+    width: 300px;
+    padding: 30px;
+  }
+  .big-card-body {
+    width: 300px;
+    padding: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-title-parent {
+    width: 250px;
+  }
+  .about-header-text {
+    font-size: 22px;
+  }
+  .what-we-do-row {
+    margin-top: 170px;
+  }
+  .card-body {
+    width: 275px;
+    padding: 30px;
+  }
+  .big-card-body {
+    width: 275px;
+    padding: 50px;
+  }
+}
+
+@media (max-width: 330px) {
+  .card-title-parent {
+    width: 200px;
+  }
+  .about-header-text {
+    font-size: 18px;
+  }
+  .what-we-do-row {
+    margin-top: 100px;
+  }
+  .card-body {
+    width: 250px;
+    padding: 30px;
+  }
+  .big-card-body {
+    width: 250px;
+    padding: 40px;
+  }
+  .mission-text {
+    font-size: 13px;
+  }
+  .big-card-text {
+    font-size: 13px;
   }
 }
