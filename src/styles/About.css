@@ -484,7 +484,7 @@ a:hover {
 
   .title-div {
     align-self: self-start;
-    margin-left: 90px;
+    margin-left: 40px;
   }
 }
 
@@ -493,18 +493,18 @@ a:hover {
     padding: 20px 2px 20px 20px;
   }
   .title-div {
-    margin-left: 80px;
+    margin-left: 50px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .title-div {
-    margin-left: 80px;
+    margin-left: 55px;
   }
 }
 
 @media screen and (max-width: 350px) {
   .title-div {
-    margin-left: 55px;
+    margin-left: 40px;
   }
 }
