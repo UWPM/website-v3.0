@@ -43,7 +43,7 @@ export default function About({ show }) {
                 <h3 className="about-header-text">Mission</h3>
               </a>
             </Row>
-            <div className="card-body">
+            <div className="about-card-body">
               <h4 className="mission-text">
                 UW PM is dedicated to creating a thriving product management
                 community and offering students exposure to the field of
@@ -57,7 +57,7 @@ export default function About({ show }) {
                 <h3 className="about-header-text">Vision</h3>
               </a>
             </Row>
-            <div className="card-body">
+            <div className="about-card-body">
               <h4 className="mission-text">
                 Inspire product-level thinking and explore the rationale behind
                 what we should build and why that will propel students towards
@@ -78,7 +78,7 @@ export default function About({ show }) {
                 <h3 className="about-header-text">What Do We Do</h3>
               </a>
             </Row>
-            <div className="big-card-body">
+            <div className="big-about-card-body">
               <h4 className="big-card-text">
                 We host a wide array of events running from product case
                 competitions, resume reviews, mock interviews, panel discussions

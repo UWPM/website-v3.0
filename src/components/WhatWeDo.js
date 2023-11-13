@@ -1,7 +1,5 @@
 import React from 'react';
 import CustomCard from './CustomCard';
-import '../styles/Home.css';
-import '../App.css';
 
 import WhatWeDoImage1 from '../images/what-we-do-1.png';
 import WhatWeDoImage2 from '../images/what-we-do-2.png';
