@@ -67,6 +67,32 @@ export default function About({ show }) {
             <img src={uwPMCircleLogo} alt="" />
           </Col>
         </Row>
+        <Row className="what-we-do-row" id="whatDoWeDo">
+          <Col lg={8} className="about-us-card">
+            <Row className="card-title-parent">
+              <a className="big-card-title" href="#whatDoWeDo">
+                <h3 className="about-header-text">What Do We Do</h3>
+              </a>
+            </Row>
+            <div className="big-card-body">
+              <h4 className="big-card-text">
+                We host a wide array of events running from product case
+                competitions, resume reviews, mock interviews, panel discussions
+                with alumni, and more!
+                <br />
+                <br />
+                Our events aim to help students learn more about the world of
+                product management, whether it is through building first-hand
+                skills or learning from industry experts.
+                <br />
+                <br />
+                Stay tuned for ProdCon, our flagship product case competition
+                running every fall, allowing students to tackle a product-style
+                case study with teammates and compete for prizes.
+              </h4>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </>
   );
