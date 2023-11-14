@@ -1,5 +1,4 @@
 import { React, useState, useEffect } from 'react';
-import '../styles/Home.css';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import desktopHexagons from '../images/background/desktop-hexagons.svg';

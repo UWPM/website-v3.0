@@ -1,6 +1,4 @@
 import React from 'react';
-import '../styles/Home.css';
-import '../App.css';
 
 //import images
 import Salesforce from '../images/company-logos/salesforce.png';
