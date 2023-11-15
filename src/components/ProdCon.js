@@ -31,6 +31,7 @@ const customStyles = {
     maxHeight: '80%',
     overflow: 'hidden',
     backgroundColor: '#F2F3F4',
+    cursor: 'pointer',
   },
 };
 
