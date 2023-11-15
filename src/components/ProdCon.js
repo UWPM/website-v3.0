@@ -26,6 +26,11 @@ const customStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     border: 'none',
+    width: 'auto',
+    maxWidth: '50%',
+    maxHeight: '80%',
+    overflow: 'hidden',
+    backgroundColor: '#F2F3F4',
   },
 };
 

@@ -7,16 +7,16 @@ Welcome to the UW Product Management Club's website redesign project!
 To set up the development environment, follow these steps:
 
 1. Clone the repository to your local desktop:  
-`git clone https://github.com/UWPM/website-v3.0.git`
+   `git clone https://github.com/UWPM/website-v3.0.git`
 
 1. Navigate to the project directory:  
-`cd website-v3.0`
+   `cd website-v3.0`
 
 1. Install dependencies using npm:  
-`npm install`
+   `npm install`
 
 1. Start the development client:  
-`npm start`
+   `npm start`
 
 Now you can access the development version of the website at `http://localhost:3000`.
 
