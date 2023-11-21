@@ -8,6 +8,7 @@ import innovationImg from '../images/about/Group 5850.png';
 import empowermentImg from '../images/about/Group 5851.png';
 import learningImg from '../images/about/Group 5852.png';
 import communityImg from '../images/about/Group 5853.png';
+import blankGray from '../images/about/exec-profiles/blank-profile-gray-circle.png';
 
 export default function About({ show }) {
   return (
@@ -159,6 +160,170 @@ export default function About({ show }) {
             </div>
           </div>
         </div>
+        <Row className="meet-team-container">
+          <Col>
+            <Row className="team-title-parent">
+              <a className="team-title">
+                <h3 className="about-header-text">Meet the Team</h3>
+              </a>
+            </Row>
+            <Row>
+              <p className="team-paragraph">
+                The UW Product Management Club consists of a passionate group of
+                students with a great deal of skills in marketing,
+                communication, partnerships, finance, web development, and
+                graphic design.
+              </p>
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Internal</h3>
+              <p className="team-paragraph">
+                The Internal Team is the backbone of UW PM! They are responsible
+                for setting term goals and providing support and guidance to the
+                rest of the teams as-needed.
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Events</h3>
+              <p className="team-paragraph">
+                Events is a fast-paced, ambitious team that is responsible for
+                organizing product-related events for our student community.
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Outreach</h3>
+              <p className="team-paragraph">
+                The Outreach Team bridges our gap from the university bubble to
+                different industry partners and also manages our finances.
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Engineering</h3>
+              <p className="team-paragraph">
+                The Engineering Team works on multiple different assignments
+                throughout the term, including creating and updating the UW PM
+                website!
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Marketing</h3>
+              <p className="team-paragraph">
+                The Podcast and Newsletter Team produce our weekly podcast and
+                newsletter about PM!
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={blankGray} className="profile-pic"></img>
+                <h4>John Smith</h4>
+                <p>Role</p>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
       </Container>
     </>
   );

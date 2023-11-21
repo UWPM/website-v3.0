@@ -167,6 +167,61 @@ a:hover {
   justify-content: center;
 }
 
+.meet-team-container {
+  position: relative;
+  min-height: 830px;
+  display: flex;
+  margin-top: 100px;
+}
+
+.team-type{
+  margin-top: 50px;
+}
+
+.team-title {
+  z-index: 100;
+  position: relative;
+  width: 377px;
+  height: 53px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 24px;
+  background: linear-gradient(0deg, rgba(255, 183, 179, 0.25), rgba(255, 183, 179, 0.25)),
+  linear-gradient(180deg, rgba(255, 238, 237, 0.04) 0%, rgba(7, 57, 72, 0.124) 100%);
+}
+
+.team-paragraph{
+  padding: 30px;
+  font-size: 18px;
+}
+
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  /*border: 1px solid white;*/
+}
+
+.profile-pic{
+  width: 150px;
+}
+
+@media (max-width: 1199px) {
+  .profile-card{
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .profile-card{
+    width: 100%;
+  }
+}
+
+
 @media (max-width: 1199px) {
   .about-us-card {
     width: 100vw;
