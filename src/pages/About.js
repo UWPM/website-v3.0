@@ -8,7 +8,30 @@ import innovationImg from '../images/about/Group 5850.png';
 import empowermentImg from '../images/about/Group 5851.png';
 import learningImg from '../images/about/Group 5852.png';
 import communityImg from '../images/about/Group 5853.png';
-import blankGray from '../images/about/exec-profiles/blank-profile-gray-circle.png';
+import PMHeadshot from '../images/about/exec-profiles/UWPMHeadshot.png';
+import Yash from '../images/about/exec-profiles/YashHeadshot.png';
+import May from '../images/about/exec-profiles/MayHeadshot.png';
+import Prakruti from '../images/about/exec-profiles/PrakrutiHeadshot.png';
+import Maggie from '../images/about/exec-profiles/MaggieHeadshot.png';
+import Ahmed from '../images/about/exec-profiles/AhmedHeadshot.png';
+import Sineha from '../images/about/exec-profiles/SinehaHeadshot.png';
+import Laura from '../images/about/exec-profiles/LauraHeadshot.png';
+import Brooklyn from '../images/about/exec-profiles/BrooklynHeadshot.png';
+import Isabelle from '../images/about/exec-profiles/IsabelleHeadshot.png';
+import Johnson from '../images/about/exec-profiles/JohnsonHeadshot.png';
+import Jennifer from '../images/about/exec-profiles/JenniferHeadshot.png';
+import Navdeep from '../images/about/exec-profiles/NavdeepHeadshot.png';
+import Dat from '../images/about/exec-profiles/DatHeadshot.png';
+import Rachelle from '../images/about/exec-profiles/RachelleHeadshot.png';
+import Cloris from '../images/about/exec-profiles/ClorisHeadshot.png';
+import Hillary from '../images/about/exec-profiles/HillaryHeadshot.png';
+import Fianna from '../images/about/exec-profiles/FiannaHeadshot.png';
+import Phuong from '../images/about/exec-profiles/PhuongHeadshot.png';
+import Albert from '../images/about/exec-profiles/AlbertHeadshot.png';
+import Joshua from '../images/about/exec-profiles/JoshuaHeadshot.png';
+import Peter from '../images/about/exec-profiles/PeterHeadshot.png';
+import Shushawn from '../images/about/exec-profiles/ShushawnHeadshot.png';
+import Petch from '../images/about/exec-profiles/PetchHeadshot.png';
 
 export default function About({ show }) {
   return (
@@ -175,7 +198,7 @@ export default function About({ show }) {
                 graphic design.
               </p>
             </Row>
-            <Row className="team-type">
+            <Row className="team-type" style={{ marginTop: 20 }}>
               <h3 team-title>Internal</h3>
               <p className="team-paragraph">
                 The Internal Team is the backbone of UW PM! They are responsible
@@ -185,24 +208,18 @@ export default function About({ show }) {
             </Row>
             <Row className="profile-row">
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Yash} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Yash Gajaria</h4>
+                  <p className="centered-box">President</p>
+                </div>
               </Col>
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
-              </Col>
-              <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
-              </Col>
-              <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={May} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">May Ly</h4>
+                  <p className="centered-box">Social Lead</p>
+                </div>
               </Col>
             </Row>
             <Row className="team-type">
@@ -214,24 +231,32 @@ export default function About({ show }) {
             </Row>
             <Row className="profile-row">
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Prakruti} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Prakruti Gajera</h4>
+                  <p className="centered-box">Events Lead</p>
+                </div>
               </Col>
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Maggie} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Maggie Li</h4>
+                  <p className="centered-box">Events Director</p>
+                </div>
               </Col>
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Ahmed} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Ahmed Ahmed</h4>
+                  <p className="centered-box">Events Director</p>
+                </div>
               </Col>
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Sineha} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Sineha Manivannan</h4>
+                  <p className="centered-box">Events Director</p>
+                </div>
               </Col>
             </Row>
             <Row className="team-type">
@@ -243,24 +268,25 @@ export default function About({ show }) {
             </Row>
             <Row className="profile-row">
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Laura} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Laura Persichini</h4>
+                  <p className="centered-box">Outreach Lead</p>
+                </div>
               </Col>
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Brooklyn} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Brooklyn Wong</h4>
+                  <p className="centered-box">Outreach Director</p>
+                </div>
               </Col>
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
-              </Col>
-              <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Isabelle} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Isabelle Lau</h4>
+                  <p className="centered-box">Outreach Director</p>
+                </div>
               </Col>
             </Row>
             <Row className="team-type">
@@ -273,53 +299,168 @@ export default function About({ show }) {
             </Row>
             <Row className="profile-row">
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Johnson} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Johnson Duong</h4>
+                  <p className="centered-box">Engineering Co-Lead</p>
+                </div>
               </Col>
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Jennifer} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Jennifer Ying</h4>
+                  <p className="centered-box">Engineering Co-Lead</p>
+                </div>
               </Col>
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Navdeep} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Navdeep Gill</h4>
+                  <p className="centered-box">Project Developer</p>
+                </div>
               </Col>
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Dat} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Dat Bui</h4>
+                  <p className="centered-box">Project Developer</p>
+                </div>
+              </Col>
+            </Row>
+            <Row className="profile-row" style={{ marginTop: '20px' }}>
+              <Col xs={3} className="profile-card">
+                <img src={PMHeadshot} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Krishna Joshi</h4>
+                  <p className="centered-box">Project Developer</p>
+                </div>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={PMHeadshot} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Simon He</h4>
+                  <p className="centered-box">Project Developer</p>
+                </div>
               </Col>
             </Row>
             <Row className="team-type">
               <h3 team-title>Marketing</h3>
               <p className="team-paragraph">
-                The Podcast and Newsletter Team produce our weekly podcast and
-                newsletter about PM!
+                The Marketing Team produces and distributes our promotional
+                content, including the podcast, newsletter, and announcements!
               </p>
             </Row>
             <Row className="profile-row">
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Rachelle} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Rachelle Dong</h4>
+                  <p className="centered-box">Marketing Lead</p>
+                </div>
               </Col>
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={PMHeadshot} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Jessica Luong</h4>
+                  <p className="centered-box">Marketing Director</p>
+                </div>
               </Col>
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Cloris} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Cloris Zhang</h4>
+                  <p className="centered-box">Marketing Director</p>
+                </div>
+              </Col>
+            </Row>
+
+            <Row className="team-type">
+              <h3 team-title>Design</h3>
+              <p className="team-paragraph">
+                The Design team collaborates with Marketing to create all the
+                cool graphics you see! They are also responsible for maintaining
+                our fabulous design system.
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <Col xs={3} className="profile-card">
+                <img src={Hillary} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Hillary Huang</h4>
+                  <p className="centered-box">Design Lead</p>
+                </div>
               </Col>
               <Col xs={3} className="profile-card">
-                <img src={blankGray} className="profile-pic"></img>
-                <h4>John Smith</h4>
-                <p>Role</p>
+                <img src={Fianna} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Fianna Tran</h4>
+                  <p className="centered-box">Design Director</p>
+                </div>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={PMHeadshot} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Amie Ahn</h4>
+                  <p className="centered-box">Design/Marketing Director</p>
+                </div>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={Phuong} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Phuong Tu</h4>
+                  <p className="centered-box">Design Director</p>
+                </div>
+              </Col>
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Podcast</h3>
+              <p className="team-paragraph">
+                The Podcast Team produce our weekly podcast about PM!
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <Col xs={3} className="profile-card">
+                <img src={Albert} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Albert Huynh</h4>
+                  <p className="centered-box">Podcast Lead</p>
+                </div>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={Peter} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Peter Huang</h4>
+                  <p className="centered-box">Podcast Director</p>
+                </div>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={Joshua} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Joshua Chang</h4>
+                  <p className="centered-box">Podcast Director</p>
+                </div>
+              </Col>
+              <Col xs={3} className="profile-card">
+                <img src={Shushawn} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Shushawn Saha</h4>
+                  <p className="centered-box">Podcast Director</p>
+                </div>
+              </Col>
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Newsletter</h3>
+              <p className="team-paragraph">
+                The Newsletter Team produce our weekly newsletter about PM!
+              </p>
+            </Row>
+            <Row className="profile-row" style={{ marginBottom: '50px' }}>
+              <Col xs={3} className="profile-card">
+                <img src={Petch} className="profile-pic"></img>
+                <div className="exec-text">
+                  <h4 className="centered-box">Petch Lomtakul</h4>
+                  <p className="centered-box">Newsletter Lead</p>
+                </div>
               </Col>
             </Row>
           </Col>

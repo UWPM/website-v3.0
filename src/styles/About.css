@@ -207,7 +207,18 @@ a:hover {
 }
 
 .profile-pic{
-  width: 150px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.exec-text{
+  margin-top: 20px;
+}
+
+.centered-box{
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1199px) {
