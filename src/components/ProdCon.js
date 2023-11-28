@@ -20,7 +20,7 @@ import pc10 from '../images/prodcon/prodcon10.JPG';
 
 const customStyles = {
   overlay: {
-    backgroundColor: 'rgba(242, 243, 244, 0.5)', // Adjust the color and transparency as needed
+    backgroundColor: 'rgba(242, 243, 244, 0.3)', // Adjust the color and transparency as needed
   },
   content: {
     top: '50%',
@@ -46,6 +46,8 @@ export default function ProjectsTeam() {
     1024: { items: 4 },
   };
 
+  const [currentImageIndex, setCurrentImageIndex] = useState(0); // Add this line
+
   const items = [pc1, pc2, pc3, pc5, pc7, pc8, pc9, pc10];
 
   const renderNextButton = ({ isDisabled }) => {
@@ -66,7 +68,12 @@ export default function ProjectsTeam() {
 
   const renderCloseButton = (index) => {
     return (
-      <div className="close-button" onClick={() => closeModal(index)}>
+      <div
+        className="close-button"
+        onClick={() => {
+          closeModal(index);
+        }}
+      >
         <CloseButton></CloseButton>
       </div>
     );
@@ -77,6 +84,7 @@ export default function ProjectsTeam() {
   );
 
   const openModal = (index) => {
+    setCurrentImageIndex(index); // Add this line
     const updatedModalIsOpen = [...modalIsOpen];
     updatedModalIsOpen[index] = true;
     setModalIsOpen(updatedModalIsOpen);
@@ -86,6 +94,16 @@ export default function ProjectsTeam() {
     const updatedModalIsOpen = [...modalIsOpen];
     updatedModalIsOpen[index] = false;
     setModalIsOpen(updatedModalIsOpen);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % items.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? items.length - 1 : prevIndex - 1,
+    );
   };
 
   return (
@@ -100,7 +118,13 @@ export default function ProjectsTeam() {
                   src={item}
                   alt={`Image ${index + 1}`}
                   className="resized-image"
-                  onClick={() => openModal(index)}
+                  onClick={() => {
+                    if (modalIsOpen[index]) {
+                      closeModal(index);
+                    } else {
+                      openModal(index);
+                    }
+                  }}
                 />
                 <Modal
                   isOpen={modalIsOpen[index]}
@@ -110,12 +134,19 @@ export default function ProjectsTeam() {
                   class="small-modal"
                 >
                   {renderCloseButton(index)}
-                  <img
-                    src={item}
-                    alt={`Image ${index + 1}`}
-                    className="resized-image"
-                    onClick={() => closeModal(index)}
-                  />
+                  <div className="modal-content">
+                    <button className="modal_prev_arrow" onClick={prevImage}>
+                      <ArrowBackIosIcon />
+                    </button>
+                    <button className="modal_forward_arrow" onClick={nextImage}>
+                      <ArrowForwardIosIcon />
+                    </button>
+                    <img
+                      src={items[currentImageIndex]}
+                      alt={`Image ${currentImageIndex + 1}`}
+                      className="resized-image"
+                    />
+                  </div>
                 </Modal>
               </div>
             </div>

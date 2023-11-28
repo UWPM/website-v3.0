@@ -25,13 +25,21 @@
 
 
 .prodcon_forward_arrow,
-.prodcon_prev_arrow {
+.prodcon_prev_arrow,
+.modal_prev_arrow,
+.modal_forward_arrow {
   position: absolute;
-  top: 40%;
+  top: 43%;
   transform: translateY(-50%);
   cursor: pointer;
+  background-color: rgba(242, 243, 244, 0);
+  border: none;
 }
 
+.modal_prev_arrow,
+.modal_forward_arrow {
+  top: 41%;
+}
 
 .prodcon_forward_arrow {
   right: -4%;
@@ -40,6 +48,10 @@
 
 .prodcon_prev_arrow {
   left: -3%;
+}
+
+.modal_forward_arrow {
+  right: 0%;
 }
 
 
@@ -57,9 +69,13 @@
 
 .close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 3px;
+  right: 3px;
   cursor: pointer;
+}
+
+.modal-content {
+  padding-bottom: 100px;
 }
 
 
@@ -83,6 +99,14 @@
 @media (max-width: 800px) {
   .hex-container {
     margin-left: -50%;
+  }
+
+  .modal_forward_arrow {
+    right: -7.5%;
+  }
+
+  .modal_prev_arrow {
+    left: -5%;
   }
 }
 
@@ -114,6 +138,11 @@
 @media (max-width: 700px) {
   .hex-container {
     margin-left: -60%;
+  }
+
+  .modal_prev_arrow,
+  .modal_forward_arrow {
+    top: 32%;
   }
 }
 
