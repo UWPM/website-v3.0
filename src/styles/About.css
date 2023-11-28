@@ -197,6 +197,10 @@ a:hover {
   font-size: 18px;
 }
 
+.profile-row{
+  margin-bottom: 50px;
+}
+
 .profile-card{
   display: flex;
   flex-direction: column;
