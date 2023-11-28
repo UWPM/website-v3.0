@@ -8,24 +8,6 @@ import innovationImg from '../images/about/Group 5850.png';
 import empowermentImg from '../images/about/Group 5851.png';
 import learningImg from '../images/about/Group 5852.png';
 import communityImg from '../images/about/Group 5853.png';
-import PMHeadshot from '../images/about/exec-profiles/UWPMHeadshot.png';
-import Laura from '../images/about/exec-profiles/LauraHeadshot.png';
-import Brooklyn from '../images/about/exec-profiles/BrooklynHeadshot.png';
-import Isabelle from '../images/about/exec-profiles/IsabelleHeadshot.png';
-import Johnson from '../images/about/exec-profiles/JohnsonHeadshot.png';
-import Jennifer from '../images/about/exec-profiles/JenniferHeadshot.png';
-import Navdeep from '../images/about/exec-profiles/NavdeepHeadshot.png';
-import Dat from '../images/about/exec-profiles/DatHeadshot.png';
-import Rachelle from '../images/about/exec-profiles/RachelleHeadshot.png';
-import Cloris from '../images/about/exec-profiles/ClorisHeadshot.png';
-import Hillary from '../images/about/exec-profiles/HillaryHeadshot.png';
-import Fianna from '../images/about/exec-profiles/FiannaHeadshot.png';
-import Phuong from '../images/about/exec-profiles/PhuongHeadshot.png';
-import Albert from '../images/about/exec-profiles/AlbertHeadshot.png';
-import Joshua from '../images/about/exec-profiles/JoshuaHeadshot.png';
-import Peter from '../images/about/exec-profiles/PeterHeadshot.png';
-import Shushawn from '../images/about/exec-profiles/ShushawnHeadshot.png';
-import Petch from '../images/about/exec-profiles/PetchHeadshot.png';
 import TeamProfileCard from '../components/TeamProfileCard';
 import { ExecList } from '../components/ExecList';
 
@@ -119,10 +101,12 @@ export default function About({ show }) {
           </Col>
         </Row>
         <div>
-          <div className="values-title-wrapper">
-            <div className="title-div">
-              <h2>Values</h2>
-            </div>
+          <div className="values-title-wrapper" id="values">
+            <a href="#values">
+              <div className="title-div">
+                <h2>Values</h2>
+              </div>
+            </a>
             <div className="grid-container">
               <div className="grid-item">
                 <img src={innovationImg} className="icons-image" />
@@ -195,12 +179,12 @@ export default function About({ show }) {
                 graphic design.
               </p>
             </Row>
-            <Row className="team-type" style={{ marginTop: 20 }}>
+            <Row className="team-type">
               <h3 team-title>Internal</h3>
               <p className="team-paragraph">
                 The Internal Team is the backbone of UW PM! They are responsible
                 for setting term goals and providing support and guidance to the
-                rest of the teams as-needed.
+                rest of the teams.
               </p>
             </Row>
             <Row className="profile-row">
@@ -253,8 +237,8 @@ export default function About({ show }) {
             <Row className="team-type">
               <h3 team-title>Outreach</h3>
               <p className="team-paragraph">
-                The Outreach Team bridges our gap from the university bubble to
-                different industry partners and also manages our finances.
+                The Outreach Team manages our finances and bridges the gap
+                between our university and industry partners.
               </p>
             </Row>
             <Row className="profile-row">
@@ -327,7 +311,7 @@ export default function About({ show }) {
               <h3 team-title>Marketing</h3>
               <p className="team-paragraph">
                 The Marketing Team produces and distributes our promotional
-                content, including the podcast, newsletter, and announcements!
+                content, including podcasts, newsletters, and announcements!
               </p>
             </Row>
             <Row className="profile-row">

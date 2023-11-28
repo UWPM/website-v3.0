@@ -13,6 +13,7 @@ import Jennifer from '../images/about/exec-profiles/JenniferHeadshot.png';
 import Navdeep from '../images/about/exec-profiles/NavdeepHeadshot.png';
 import Dat from '../images/about/exec-profiles/DatHeadshot.png';
 import Krishna from '../images/about/exec-profiles/KrishnaHeadshot.png';
+import Simon from '../images/about/exec-profiles/SimonHeadshot.png';
 import Rachelle from '../images/about/exec-profiles/RachelleHeadshot.png';
 import Cloris from '../images/about/exec-profiles/ClorisHeadshot.png';
 import Hillary from '../images/about/exec-profiles/HillaryHeadshot.png';
@@ -113,7 +114,7 @@ export const ExecList = {
     name: 'Simon He',
     role: 'Project Developer',
     link: 'https://www.linkedin.com/in/simeng-he/',
-    image: PMHeadshot,
+    image: Simon,
   },
   RachelleInfo: {
     name: 'Rachelle Dong',
@@ -124,7 +125,7 @@ export const ExecList = {
   JessicaInfo: {
     name: 'Jessica Luong',
     role: 'Marketing Director',
-    link: '',
+    link: 'https://www.linkedin.com/in/jessicaluong1/',
     image: PMHeadshot,
   },
   ClorisInfo: {
