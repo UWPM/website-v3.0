@@ -5,19 +5,23 @@ import AliceCarousel from 'react-alice-carousel';
 import Modal from 'react-modal';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import CloseButton from 'react-bootstrap/CloseButton';
 
 // ProdCon Event Photos
 import pc1 from '../images/prodcon/prodcon1.JPG';
 import pc2 from '../images/prodcon/prodcon2.JPG';
 import pc3 from '../images/prodcon/prodcon3.JPG';
 import pc5 from '../images/prodcon/prodcon5.JPG';
-import pc6 from '../images/prodcon/prodcon6.JPG';
-import pc7 from '../images/prodcon/prodcon7.JPG';
+import pc7 from '../images/prodcon/prodcon6.JPG';
+import pc16 from '../images/prodcon/prodcon7.JPG';
 import pc8 from '../images/prodcon/prodcon8.JPG';
 import pc9 from '../images/prodcon/prodcon9.JPG';
 import pc10 from '../images/prodcon/prodcon10.JPG';
 
 const customStyles = {
+  overlay: {
+    backgroundColor: 'rgba(242, 243, 244, 0.5)', // Adjust the color and transparency as needed
+  },
   content: {
     top: '50%',
     left: '50%',
@@ -30,7 +34,7 @@ const customStyles = {
     maxWidth: '75%',
     maxHeight: '80%',
     overflow: 'hidden',
-    backgroundColor: '#F2F3F4',
+    backgroundColor: 'rgba(242, 243, 244, 0)', // Adjust the color and transparency as needed
     cursor: 'pointer',
   },
 };
@@ -42,7 +46,7 @@ export default function ProjectsTeam() {
     1024: { items: 4 },
   };
 
-  const items = [pc1, pc2, pc3, pc5, pc6, pc7, pc8, pc9, pc10];
+  const items = [pc1, pc2, pc3, pc5, pc7, pc8, pc9, pc10];
 
   const renderNextButton = ({ isDisabled }) => {
     return (
@@ -56,6 +60,14 @@ export default function ProjectsTeam() {
     return (
       <div class="prodcon_prev_arrow">
         <ArrowBackIosIcon />
+      </div>
+    );
+  };
+
+  const renderCloseButton = (index) => {
+    return (
+      <div className="close-button" onClick={() => closeModal(index)}>
+        <CloseButton></CloseButton>
       </div>
     );
   };
@@ -97,6 +109,7 @@ export default function ProjectsTeam() {
                   contentLabel="Example Modal"
                   class="small-modal"
                 >
+                  {renderCloseButton(index)}
                   <img
                     src={item}
                     alt={`Image ${index + 1}`}
