@@ -12,28 +12,30 @@ export default function Contact({ show }) {
   return (
     <>
       <div className="contact-container">
-      <img src={desktopHexagonsHalf} className="hexagons" />
-      <div className="content">
-        <h2>Get in Touch With Us!</h2>
-        <p className="contact-text"> Have a question or interested in joining? Shoot us an email or connect 
-          with us on social media! We look forward to connecting with you and sharing 
-          our passion for product management!
-        </p>
-        <div>
-        <a href="https://www.instagram.com/uwaterloopm/?hl=en"> 
-        <img src={instagramImg} className="contact-icons" />
-        </a>
-        <a href="https://ca.linkedin.com/company/uw-pm"> 
-        <img src={linkedinImg} className="contact-icons" />
-        </a>
-        <a href="https://www.facebook.com/uwaterloopm/"> 
-        <img src={facebookImg} className="contact-icons" />
-        </a>
-        <a href="https://twitter.com/uwaterloopm?lang=en"> 
-        <img src={twitterImg} className="contact-icons" />
-        </a>
+        <img src={desktopHexagonsHalf} className="hexagons" />
+        <div className="content">
+          <h2>Get in Touch With Us!</h2>
+          <p className="contact-text">
+            {' '}
+            Have a question or interested in joining? Shoot us an email or
+            connect with us on social media! We look forward to connecting with
+            you and sharing our passion for product management!
+          </p>
+          <div>
+            <a href="https://www.instagram.com/uwaterloopm/?hl=en">
+              <img src={instagramImg} className="contact-icons" />
+            </a>
+            <a href="https://ca.linkedin.com/company/uw-pm">
+              <img src={linkedinImg} className="contact-icons" />
+            </a>
+            <a href="https://www.facebook.com/uwaterloopm/">
+              <img src={facebookImg} className="contact-icons" />
+            </a>
+            <a href="https://twitter.com/uwaterloopm?lang=en">
+              <img src={twitterImg} className="contact-icons" />
+            </a>
+          </div>
         </div>
-      </div>
       </div>
     </>
   );
