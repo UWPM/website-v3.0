@@ -62,6 +62,12 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/sineha-manivannan/',
     image: Sineha,
   },
+  ShushawnInfo: {
+    name: 'Shushawn Saha',
+    role: 'Events Director',
+    link: 'https://www.linkedin.com/in/shushawn/',
+    image: Shushawn,
+  },
   LauraInfo: {
     name: 'Laura Persichini',
     role: 'Outreach Lead',
@@ -94,25 +100,25 @@ export const ExecList = {
   },
   NavdeepInfo: {
     name: 'Navdeep Gill',
-    role: 'Project Developer',
+    role: 'Full Stack Developer',
     link: 'https://www.linkedin.com/in/navdeep-g/',
     image: Navdeep,
   },
   DatInfo: {
     name: 'Dat Bui',
-    role: 'Project Developer',
+    role: 'Full Stack Developer',
     link: 'https://www.linkedin.com/in/datbui246/',
     image: Dat,
   },
   KrishnaInfo: {
     name: 'Krishna Joshi',
-    role: 'Project Developer',
+    role: 'Full Stack Developer',
     link: 'https://www.linkedin.com/in/krishna-joshi-b78ba7240/',
     image: Krishna,
   },
   SimonInfo: {
     name: 'Simon He',
-    role: 'Project Developer',
+    role: 'Full Stack Developer',
     link: 'https://www.linkedin.com/in/simeng-he/',
     image: Simon,
   },
@@ -147,16 +153,10 @@ export const ExecList = {
     image: Peter,
   },
   JoshuaInfo: {
-    name: 'Albert Huynh',
+    name: 'Joshua Chang',
     role: 'Podcast Director',
     link: 'https://www.linkedin.com/in/joshjchang/',
     image: Joshua,
-  },
-  ShushawnInfo: {
-    name: 'Shushawn Saha',
-    role: 'Podcast Director',
-    link: 'https://www.linkedin.com/in/shushawn/',
-    image: Shushawn,
   },
   PetchInfo: {
     name: 'Petch Lomtakul',

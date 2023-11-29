@@ -102,8 +102,8 @@ export default function About({ show }) {
         </Row>
         <div>
           <div className="values-title-wrapper" id="values">
-            <a href="#values">
-              <div className="title-div">
+            <a className="title-div" href="#values">
+              <div>
                 <h2>Values</h2>
               </div>
             </a>
@@ -166,8 +166,8 @@ export default function About({ show }) {
         </div>
         <Row className="meet-team-container">
           <Col>
-            <Row className="team-title-parent">
-              <a className="team-title">
+            <Row className="team-title-parent" id="meet-the-team">
+              <a className="team-title" href="#meet-the-team">
                 <h3 className="about-header-text">Meet the Team</h3>
               </a>
             </Row>
@@ -232,6 +232,12 @@ export default function About({ show }) {
                 role={Execs.SinehaInfo.role}
                 link={Execs.SinehaInfo.link}
                 image={Execs.SinehaInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.ShushawnInfo.name}
+                role={Execs.ShushawnInfo.role}
+                link={Execs.ShushawnInfo.link}
+                image={Execs.ShushawnInfo.image}
               />
             </Row>
             <Row className="team-type">
@@ -358,12 +364,6 @@ export default function About({ show }) {
                 role={Execs.JoshuaInfo.role}
                 link={Execs.JoshuaInfo.link}
                 image={Execs.JoshuaInfo.image}
-              />
-              <TeamProfileCard
-                name={Execs.ShushawnInfo.name}
-                role={Execs.ShushawnInfo.role}
-                link={Execs.ShushawnInfo.link}
-                image={Execs.ShushawnInfo.image}
               />
             </Row>
             <Row className="team-type">
