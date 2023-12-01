@@ -20,7 +20,8 @@ import pc10 from '../images/prodcon/prodcon10.JPG';
 
 const customStyles = {
   overlay: {
-    backgroundColor: 'rgba(242, 243, 244, 0.3)', // Adjust the color and transparency as needed
+    backgroundColor: 'rgba(242, 243, 244, 0)', // Adjust the color and transparency as needed
+    backdropFilter: 'blur(5px)',
   },
   content: {
     top: '50%',
@@ -74,7 +75,7 @@ export default function ProjectsTeam() {
           closeModal(index);
         }}
       >
-        <CloseButton></CloseButton>
+        <CloseButton variant="white" style={{ fontSize: '20px' }} />
       </div>
     );
   };
