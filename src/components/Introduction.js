@@ -141,10 +141,6 @@ export default function Introduction({ show }) {
               <button className="button-red-gradiant inroduction-about-us">
                 APPLY TO PRODCON
               </button>
-
-              {/* <Link to="/community">
-                <button className="button-transparent">GET INVOLVED</button>
-              </Link> */}
             </div>
           </a>
         </div>

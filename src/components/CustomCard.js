@@ -40,18 +40,7 @@ export default function CustomCard({ card }) {
                 {title}
               </Card.Title>
               <Card.Text style={{ color: 'white' }}>{description}</Card.Text>
-              {/* {isMobile && <Button className="red-button">{button}</Button>} */}
             </Col>
-            {/* {!isMobile && (
-              <Col
-                xs="auto"
-                className="d-flex align-items-end justify-content-end"
-              >
-                <Link to={link}>
-                  <Button className="red-button">{button}</Button>
-                </Link>
-              </Col>
-            )} */}
           </Row>
         </Card.Body>
       </Card>

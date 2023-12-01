@@ -1,11 +1,13 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import ProdConn from '../components/ProdCon';
+import ProdCon from '../components/ProdCon';
 import '../styles/Events.css';
 import '../App.css';
 import UpcomingEventsCard from '../components/UpcomingEvents.js';
 import PastEvents from '../components/PastEvents';
 import desktopHexagons from '../images/background/desktop-hexagons.svg';
+
+// TODO: Reorganize the following code into src/components. See src/pages/Home.js as a reference
 
 export default function Events({ show }) {
   return (
@@ -44,7 +46,7 @@ export default function Events({ show }) {
           </>
         )}
       </div>
-      <ProdConn />
+      <ProdCon />
       <PastEvents />
     </Container>
   );

@@ -8,6 +8,8 @@ import linkedinImg from '../images/contact/linkedin-icon.png';
 import facebookImg from '../images/contact/facebook-icon.png';
 import twitterImg from '../images/contact/twitter-icon.png';
 
+// TODO: Reorganize the following code into src/components. See src/pages/Home.js as a reference
+
 export default function Contact({ show }) {
   return (
     <>
@@ -22,16 +24,19 @@ export default function Contact({ show }) {
             you and sharing our passion for product management!
           </p>
           <div>
-            <a href="https://www.instagram.com/uwaterloopm/?hl=en">
+            <a
+              href="https://www.instagram.com/uwaterloopm/?hl=en"
+              target="_blank"
+            >
               <img src={instagramImg} className="contact-icons" />
             </a>
-            <a href="https://ca.linkedin.com/company/uw-pm">
+            <a href="https://ca.linkedin.com/company/uw-pm" target="_blank">
               <img src={linkedinImg} className="contact-icons" />
             </a>
-            <a href="https://www.facebook.com/uwaterloopm/">
+            <a href="https://www.facebook.com/uwaterloopm/" target="_blank">
               <img src={facebookImg} className="contact-icons" />
             </a>
-            <a href="https://twitter.com/uwaterloopm?lang=en">
+            <a href="https://twitter.com/uwaterloopm?lang=en" target="_blank">
               <img src={twitterImg} className="contact-icons" />
             </a>
           </div>

@@ -5,6 +5,11 @@ import '../App.css';
 import desktopHexagons from '../images/background/desktop-hexagons.svg';
 import Container from 'react-bootstrap/Container';
 
+/*
+  This is dead code as we have decided to not include this on the site.
+  However if plans to bring this back arise then the code is here
+*/
+
 export default function PMJobs({ show }) {
   return (
     <Container>

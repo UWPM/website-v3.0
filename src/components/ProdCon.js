@@ -40,7 +40,7 @@ const customStyles = {
   },
 };
 
-export default function ProjectsTeam() {
+export default function ProdConCarousel() {
   const responsive = {
     0: { items: 2 },
     568: { items: 3 },

@@ -11,6 +11,8 @@ import communityImg from '../images/about/Group 5853.png';
 import TeamProfileCard from '../components/TeamProfileCard';
 import { ExecList } from '../components/ExecList';
 
+// TODO: Reorganize the following code into src/components. See src/pages/Home.js as a reference
+
 export default function About({ show }) {
   const Execs = ExecList;
   return (
