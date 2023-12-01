@@ -174,11 +174,11 @@ a:hover {
   margin-top: 100px;
 }
 
-.internal-team-row{
+.internal-team-row {
   margin-top: 20px;
 }
 
-.team-type{
+.team-type {
   margin-top: 50px;
 }
 
@@ -192,20 +192,28 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   border-radius: 24px;
-  background: linear-gradient(0deg, rgba(255, 183, 179, 0.25), rgba(255, 183, 179, 0.25)),
-  linear-gradient(180deg, rgba(255, 238, 237, 0.04) 0%, rgba(7, 57, 72, 0.124) 100%);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 183, 179, 0.25),
+      rgba(255, 183, 179, 0.25)
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 238, 237, 0.04) 0%,
+      rgba(7, 57, 72, 0.124) 100%
+    );
 }
 
-.team-paragraph{
+.team-paragraph {
   padding: 30px;
   font-size: 18px;
 }
 
-.profile-row{
+.profile-row {
   margin-bottom: 50px;
 }
 
-.profile-card{
+.profile-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,17 +221,17 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.profile-pic{
+.profile-pic {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
-.exec-text{
+.exec-text {
   margin-top: 20px;
 }
 
-.centered-box{
+.centered-box {
   display: flex;
   justify-content: center;
 }
@@ -259,7 +267,7 @@ a:hover {
   .big-about-card-body {
     padding: 70px;
   }
-  .profile-card{
+  .profile-card {
     width: 50%;
   }
 }
@@ -293,7 +301,7 @@ a:hover {
     width: 500px;
     padding: 60px;
   }
-  .team-title{
+  .team-title {
     width: 350px;
     height: 53px;
     margin-left: 5px;
@@ -314,7 +322,7 @@ a:hover {
     height: 550px;
     padding: 60px;
   }
-  .team-title{
+  .team-title {
     margin-left: 15px;
   }
 }
@@ -342,7 +350,7 @@ a:hover {
     height: 550px;
     padding: 60px;
   }
-  .profile-card{
+  .profile-card {
     width: 100%;
   }
 }
@@ -413,7 +421,7 @@ a:hover {
     width: 300px;
     padding: 50px;
   }
-  .team-title{
+  .team-title {
     width: 300px;
     margin-left: 15px;
   }
@@ -465,7 +473,7 @@ a:hover {
   .big-card-text {
     font-size: 13px;
   }
-  .team-title{
+  .team-title {
     width: 250px;
     margin-left: 5px;
   }
