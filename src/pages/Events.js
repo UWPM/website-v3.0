@@ -1,11 +1,13 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import ProdConn from '../components/ProdCon';
+import ProdCon from '../components/ProdCon';
 import '../styles/Events.css';
 import '../App.css';
 import UpcomingEventsCard from '../components/UpcomingEvents.js';
 import PastEvents from '../components/PastEvents';
 import desktopHexagons from '../images/background/desktop-hexagons.svg';
+
+// TODO: Reorganize the following code into src/components. See src/pages/Home.js as a reference
 
 export default function Events({ show }) {
   return (
@@ -26,7 +28,7 @@ export default function Events({ show }) {
         {!show && (
           <>
             <div>
-              <h1 className="main-text-event">ProdCon 2022 Recap </h1>
+              <h1 className="video_carousel_text">ProdCon 2022 Recap </h1>
               <div className="video-responsive">
                 <iframe
                   src="https://www.youtube.com/embed/SzZuCmgPiFQ?si=m2YBCin5-ocj-hfh"
@@ -37,12 +39,14 @@ export default function Events({ show }) {
                   title="Embedded youtube"
                 />{' '}
               </div>
-              <h1 className="main-text-event">ProdCon 2022 Recap Gallery</h1>
+              <h1 className="video_carousel_text">
+                ProdCon 2022 Recap Gallery
+              </h1>
             </div>
           </>
         )}
       </div>
-      <ProdConn />
+      <ProdCon />
       <PastEvents />
     </Container>
   );

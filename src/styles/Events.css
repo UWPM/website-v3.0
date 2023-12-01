@@ -21,6 +21,56 @@
   color: #ffeeed;
 }
 
+.prodcon_forward_arrow,
+.prodcon_prev_arrow,
+.modal_prev_arrow,
+.modal_forward_arrow {
+  position: absolute;
+  top: 43%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: rgba(242, 243, 244, 0);
+  color: white;
+  border: none;
+}
+
+.modal_prev_arrow,
+.modal_forward_arrow {
+  top: 41%;
+}
+
+.prodcon_forward_arrow {
+  right: -4%;
+}
+
+.prodcon_prev_arrow {
+  left: -3%;
+}
+
+.modal_forward_arrow {
+  right: 0%;
+}
+
+.video_carousel_text {
+  margin-top: 3vh;
+  font: Syne;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  margin-bottom: 30px;
+}
+
+.close-button {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  cursor: pointer;
+}
+
+.modal-content {
+  padding-bottom: 100px;
+}
+
 @media (max-width: 1199px) {
   .hex-container {
     margin-left: -30%;
@@ -41,6 +91,14 @@
   .hex-container {
     margin-left: -50%;
   }
+
+  .modal_forward_arrow {
+    right: -7.5%;
+  }
+
+  .modal_prev_arrow {
+    left: -5%;
+  }
 }
 
 @media (max-width: 775px) {
@@ -53,11 +111,26 @@
   .title-text {
     font-size: 38px;
   }
+
+  .video_carousel_text {
+    text-align: center;
+    font: Syne;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28.8px;
+    margin-bottom: 1em;
+    color: #ffeeed;
+  }
 }
 
 @media (max-width: 700px) {
   .hex-container {
     margin-left: -60%;
+  }
+
+  .modal_prev_arrow,
+  .modal_forward_arrow {
+    top: 32%;
   }
 }
 
@@ -143,8 +216,8 @@
 @import 'react-alice-carousel/lib/alice-carousel.css';
 
 .horizontal-images-container {
-  margin-left: 5em;
-  margin-right: 5em;
+  margin-left: 2em;
+  margin-right: 2em;
   margin-bottom: 30px;
   justify-content: center;
   display: flex;
@@ -162,6 +235,12 @@
   display: flex;
   width: 90%;
   height: auto;
+  cursor: pointer;
+}
+
+.alice-carousel__stage-item {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .line {
@@ -193,10 +272,9 @@
 }
 
 .video-responsive {
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 5em;
-  margin-top: 2em;
+  margin-left: 2.8em;
+  margin-right: 2.8em;
+  margin-bottom: 1em;
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;

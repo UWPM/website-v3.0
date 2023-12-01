@@ -1,5 +1,4 @@
 import { React, useState, useEffect } from 'react';
-import '../styles/Home.css';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import desktopHexagons from '../images/background/desktop-hexagons.svg';
@@ -142,10 +141,6 @@ export default function Introduction({ show }) {
               <button className="button-red-gradiant inroduction-about-us">
                 APPLY TO PRODCON
               </button>
-
-              {/* <Link to="/community">
-                <button className="button-transparent">GET INVOLVED</button>
-              </Link> */}
             </div>
           </a>
         </div>

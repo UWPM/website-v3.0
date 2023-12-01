@@ -5,19 +5,24 @@ import AliceCarousel from 'react-alice-carousel';
 import Modal from 'react-modal';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import CloseButton from 'react-bootstrap/CloseButton';
 
 // ProdCon Event Photos
 import pc1 from '../images/prodcon/prodcon1.JPG';
 import pc2 from '../images/prodcon/prodcon2.JPG';
 import pc3 from '../images/prodcon/prodcon3.JPG';
 import pc5 from '../images/prodcon/prodcon5.JPG';
-import pc6 from '../images/prodcon/prodcon6.JPG';
-import pc7 from '../images/prodcon/prodcon7.JPG';
+import pc7 from '../images/prodcon/prodcon6.JPG';
+import pc16 from '../images/prodcon/prodcon7.JPG';
 import pc8 from '../images/prodcon/prodcon8.JPG';
 import pc9 from '../images/prodcon/prodcon9.JPG';
 import pc10 from '../images/prodcon/prodcon10.JPG';
 
 const customStyles = {
+  overlay: {
+    backgroundColor: 'rgba(242, 243, 244, 0)', // Adjust the color and transparency as needed
+    backdropFilter: 'blur(5px)',
+  },
   content: {
     top: '50%',
     left: '50%',
@@ -25,33 +30,53 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    backgroundColor: '#073948',
     border: 'none',
+    width: 'auto',
+    maxWidth: '75%',
+    maxHeight: '80%',
+    overflow: 'hidden',
+    backgroundColor: 'rgba(242, 243, 244, 0)', // Adjust the color and transparency as needed
+    cursor: 'pointer',
   },
 };
 
-export default function ProjectsTeam() {
+export default function ProdConCarousel() {
   const responsive = {
     0: { items: 2 },
     568: { items: 3 },
     1024: { items: 4 },
   };
 
-  const items = [pc1, pc2, pc3, pc5, pc6, pc7, pc8, pc9, pc10];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0); // Add this line
+
+  const items = [pc1, pc2, pc3, pc5, pc7, pc8, pc9, pc10];
 
   const renderNextButton = ({ isDisabled }) => {
     return (
-      <ArrowForwardIosIcon
-        style={{ position: 'absolute', right: '-2.3vw', top: '5vw' }}
-      />
+      <div class="prodcon_forward_arrow">
+        <ArrowForwardIosIcon />
+      </div>
     );
   };
 
   const renderPrevButton = ({ isDisabled }) => {
     return (
-      <ArrowBackIosIcon
-        style={{ position: 'absolute', left: '-1.7vw', top: '5vw' }}
-      />
+      <div class="prodcon_prev_arrow">
+        <ArrowBackIosIcon />
+      </div>
+    );
+  };
+
+  const renderCloseButton = (index) => {
+    return (
+      <div
+        className="close-button"
+        onClick={() => {
+          closeModal(index);
+        }}
+      >
+        <CloseButton variant="white" style={{ fontSize: '20px' }} />
+      </div>
     );
   };
 
@@ -60,6 +85,7 @@ export default function ProjectsTeam() {
   );
 
   const openModal = (index) => {
+    setCurrentImageIndex(index); // Add this line
     const updatedModalIsOpen = [...modalIsOpen];
     updatedModalIsOpen[index] = true;
     setModalIsOpen(updatedModalIsOpen);
@@ -69,6 +95,16 @@ export default function ProjectsTeam() {
     const updatedModalIsOpen = [...modalIsOpen];
     updatedModalIsOpen[index] = false;
     setModalIsOpen(updatedModalIsOpen);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % items.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? items.length - 1 : prevIndex - 1,
+    );
   };
 
   return (
@@ -83,21 +119,35 @@ export default function ProjectsTeam() {
                   src={item}
                   alt={`Image ${index + 1}`}
                   className="resized-image"
-                  onClick={() => openModal(index)}
+                  onClick={() => {
+                    if (modalIsOpen[index]) {
+                      closeModal(index);
+                    } else {
+                      openModal(index);
+                    }
+                  }}
                 />
                 <Modal
                   isOpen={modalIsOpen[index]}
                   onRequestClose={() => closeModal(index)}
                   style={customStyles}
                   contentLabel="Example Modal"
+                  class="small-modal"
                 >
-                  <h2>Hello</h2>
-                  <img
-                    src={item}
-                    alt={`Image ${index + 1}`}
-                    className="resized-image"
-                    onClick={() => closeModal(index)}
-                  />
+                  {renderCloseButton(index)}
+                  <div className="modal-content">
+                    <button className="modal_prev_arrow" onClick={prevImage}>
+                      <ArrowBackIosIcon />
+                    </button>
+                    <button className="modal_forward_arrow" onClick={nextImage}>
+                      <ArrowForwardIosIcon />
+                    </button>
+                    <img
+                      src={items[currentImageIndex]}
+                      alt={`Image ${currentImageIndex + 1}`}
+                      className="resized-image"
+                    />
+                  </div>
                 </Modal>
               </div>
             </div>

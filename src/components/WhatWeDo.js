@@ -1,7 +1,5 @@
 import React from 'react';
 import CustomCard from './CustomCard';
-import '../styles/Home.css';
-import '../App.css';
 
 import WhatWeDoImage1 from '../images/what-we-do-1.png';
 import WhatWeDoImage2 from '../images/what-we-do-2.png';
@@ -13,24 +11,18 @@ const cardData = [
   {
     title: 'Educate',
     description: 'Providing resources & training of product management skills',
-    button: 'EVENTS',
-    link: '/events',
     image: WhatWeDoImage1,
     alt: 'Presenters at a UWPM event',
   },
   {
     title: 'Exposure',
     description: 'Access to open opportunities in Canada & the US',
-    button: 'PM JOBS',
-    link: 'pm-jobs',
     image: WhatWeDoImage2,
     alt: 'A group of students holding DataDog shirts',
   },
   {
     title: 'Network',
     description: 'Connecting students and alumni in the industry',
-    button: 'COMMUNITY',
-    link: '/community',
     image: WhatWeDoImage3,
     alt: 'Students attending a UWPM presentation',
   },

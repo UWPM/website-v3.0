@@ -11,7 +11,6 @@ import logo from './images/uwpm-brand/pmlogo.svg';
 
 import Home from './pages/Home';
 import About from './pages/About';
-import Community from './pages/Community';
 import Events from './pages/Events';
 import PMJobs from './pages/PMJobs';
 import Contact from './pages/Contact';
@@ -52,12 +51,9 @@ function App() {
               <Nav.Link id="nav-link" as={Link} to="/">
                 Home
               </Nav.Link>
-              {/* <Nav.Link id="nav-link" as={Link} to="/about">
+              <Nav.Link id="nav-link" as={Link} to="/about">
                 About
-              </Nav.Link> */}
-              {/* <Nav.Link id="nav-link" as={Link} to="/community">
-                Community
-              </Nav.Link> */}
+              </Nav.Link>
               <Nav.Link id="nav-link" as={Link} to="/events">
                 Events
               </Nav.Link>
@@ -76,9 +72,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
-          <Route exact path="/community" element={<Community />} />
           <Route exact path="/events" element={<Events />} />
-          <Route exact path="/pm-jobs" element={<PMJobs />} />
+          {/* <Route exact path="/pm-jobs" element={<PMJobs />} /> */}
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </div>
