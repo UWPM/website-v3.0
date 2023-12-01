@@ -8,8 +8,11 @@ import innovationImg from '../images/about/Group 5850.png';
 import empowermentImg from '../images/about/Group 5851.png';
 import learningImg from '../images/about/Group 5852.png';
 import communityImg from '../images/about/Group 5853.png';
+import TeamProfileCard from '../components/TeamProfileCard';
+import { ExecList } from '../components/ExecList';
 
 export default function About({ show }) {
+  const Execs = ExecList;
   return (
     <>
       <Container>
@@ -98,10 +101,12 @@ export default function About({ show }) {
           </Col>
         </Row>
         <div>
-          <div className="values-title-wrapper">
-            <div className="title-div">
-              <h2>Values</h2>
-            </div>
+          <div className="values-title-wrapper" id="values">
+            <a className="title-div" href="#values">
+              <div>
+                <h2>Values</h2>
+              </div>
+            </a>
             <div className="grid-container">
               <div className="grid-item">
                 <img src={innovationImg} className="icons-image" />
@@ -159,6 +164,258 @@ export default function About({ show }) {
             </div>
           </div>
         </div>
+        <Row className="meet-team-container">
+          <Col>
+            <Row className="team-title-parent" id="meet-the-team">
+              <a className="team-title" href="#meet-the-team">
+                <h3 className="about-header-text">Meet the Team</h3>
+              </a>
+            </Row>
+            <Row>
+              <p className="team-paragraph">
+                The UW Product Management Club consists of a passionate group of
+                students with a great deal of skills in marketing,
+                communication, partnerships, finance, web development, and
+                graphic design.
+              </p>
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Internal</h3>
+              <p className="team-paragraph">
+                The Internal Team is the backbone of UW PM! They are responsible
+                for setting term goals and providing support and guidance to the
+                rest of the teams.
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <TeamProfileCard
+                name={Execs.YashInfo.name}
+                role={Execs.YashInfo.role}
+                link={Execs.YashInfo.link}
+                image={Execs.YashInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.MayInfo.name}
+                role={Execs.MayInfo.role}
+                link={Execs.MayInfo.link}
+                image={Execs.MayInfo.image}
+              />
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Events</h3>
+              <p className="team-paragraph">
+                Events is a fast-paced, ambitious team that is responsible for
+                organizing product-related events for our student community.
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <TeamProfileCard
+                name={Execs.PrakrutiInfo.name}
+                role={Execs.PrakrutiInfo.role}
+                link={Execs.PrakrutiInfo.link}
+                image={Execs.PrakrutiInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.MaggieInfo.name}
+                role={Execs.MaggieInfo.role}
+                link={Execs.MaggieInfo.link}
+                image={Execs.MaggieInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.AhmedInfo.name}
+                role={Execs.AhmedInfo.role}
+                link={Execs.AhmedInfo.link}
+                image={Execs.AhmedInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.SinehaInfo.name}
+                role={Execs.SinehaInfo.role}
+                link={Execs.SinehaInfo.link}
+                image={Execs.SinehaInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.ShushawnInfo.name}
+                role={Execs.ShushawnInfo.role}
+                link={Execs.ShushawnInfo.link}
+                image={Execs.ShushawnInfo.image}
+              />
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Outreach</h3>
+              <p className="team-paragraph">
+                The Outreach Team manages our finances and bridges the gap
+                between our university and industry partners.
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <TeamProfileCard
+                name={Execs.LauraInfo.name}
+                role={Execs.LauraInfo.role}
+                link={Execs.LauraInfo.link}
+                image={Execs.LauraInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.BrooklynInfo.name}
+                role={Execs.BrooklynInfo.role}
+                link={Execs.BrooklynInfo.link}
+                image={Execs.BrooklynInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.IsabelleInfo.name}
+                role={Execs.IsabelleInfo.role}
+                link={Execs.IsabelleInfo.link}
+                image={Execs.IsabelleInfo.image}
+              />
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Engineering</h3>
+              <p className="team-paragraph">
+                The Engineering Team works on multiple different assignments
+                throughout the term, including creating and updating the UW PM
+                website!
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <TeamProfileCard
+                name={Execs.JohnsonInfo.name}
+                role={Execs.JohnsonInfo.role}
+                link={Execs.JohnsonInfo.link}
+                image={Execs.JohnsonInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.JenniferInfo.name}
+                role={Execs.JenniferInfo.role}
+                link={Execs.JenniferInfo.link}
+                image={Execs.JenniferInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.NavdeepInfo.name}
+                role={Execs.NavdeepInfo.role}
+                link={Execs.NavdeepInfo.link}
+                image={Execs.NavdeepInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.DatInfo.name}
+                role={Execs.DatInfo.role}
+                link={Execs.DatInfo.link}
+                image={Execs.DatInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.KrishnaInfo.name}
+                role={Execs.KrishnaInfo.role}
+                link={Execs.KrishnaInfo.link}
+                image={Execs.KrishnaInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.SimonInfo.name}
+                role={Execs.SimonInfo.role}
+                link={Execs.SimonInfo.link}
+                image={Execs.SimonInfo.image}
+              />
+            </Row>
+            <Row className="team-type" id="marketing">
+              <h3 team-title>Marketing</h3>
+              <p className="team-paragraph">
+                The Marketing Team produces and distributes our promotional
+                content, including podcasts, newsletters, and announcements!
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <TeamProfileCard
+                name={Execs.RachelleInfo.name}
+                role={Execs.RachelleInfo.role}
+                link={Execs.RachelleInfo.link}
+                image={Execs.RachelleInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.JessicaInfo.name}
+                role={Execs.JessicaInfo.role}
+                link={Execs.JessicaInfo.link}
+                image={Execs.JessicaInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.ClorisInfo.name}
+                role={Execs.ClorisInfo.role}
+                link={Execs.ClorisInfo.link}
+                image={Execs.ClorisInfo.image}
+              />
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Podcast</h3>
+              <p className="team-paragraph">
+                The Podcast Team produces our weekly podcast about PM!
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <TeamProfileCard
+                name={Execs.AlbertInfo.name}
+                role={Execs.AlbertInfo.role}
+                link={Execs.AlbertInfo.link}
+                image={Execs.AlbertInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.PeterInfo.name}
+                role={Execs.PeterInfo.role}
+                link={Execs.PeterInfo.link}
+                image={Execs.PeterInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.JoshuaInfo.name}
+                role={Execs.JoshuaInfo.role}
+                link={Execs.JoshuaInfo.link}
+                image={Execs.JoshuaInfo.image}
+              />
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Newsletter</h3>
+              <p className="team-paragraph">
+                The Newsletter Team produces our weekly newsletter about PM!
+              </p>
+            </Row>
+            <Row className="profile-row">
+              <TeamProfileCard
+                name={Execs.PetchInfo.name}
+                role={Execs.PetchInfo.role}
+                link={Execs.PetchInfo.link}
+                image={Execs.PetchInfo.image}
+              />
+            </Row>
+            <Row className="team-type">
+              <h3 team-title>Design</h3>
+              <p className="team-paragraph">
+                The Design team collaborates with Marketing to create all the
+                cool graphics you see! They are also responsible for maintaining
+                our fabulous design system.
+              </p>
+            </Row>
+            <Row className="profile-row" style={{ marginBottom: '100px' }}>
+              <TeamProfileCard
+                name={Execs.HillaryInfo.name}
+                role={Execs.HillaryInfo.role}
+                link={Execs.HillaryInfo.link}
+                image={Execs.HillaryInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.FiannaInfo.name}
+                role={Execs.FiannaInfo.role}
+                link={Execs.FiannaInfo.link}
+                image={Execs.FiannaInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.AmieInfo.name}
+                role={Execs.AmieInfo.role}
+                link={Execs.AmieInfo.link}
+                image={Execs.AmieInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.PhuongInfo.name}
+                role={Execs.PhuongInfo.role}
+                link={Execs.PhuongInfo.link}
+                image={Execs.PhuongInfo.image}
+              />
+            </Row>
+          </Col>
+        </Row>
       </Container>
     </>
   );

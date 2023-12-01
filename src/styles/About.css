@@ -167,6 +167,67 @@ a:hover {
   justify-content: center;
 }
 
+.meet-team-container {
+  position: relative;
+  min-height: 830px;
+  display: flex;
+  margin-top: 100px;
+}
+
+.internal-team-row{
+  margin-top: 20px;
+}
+
+.team-type{
+  margin-top: 50px;
+}
+
+.team-title {
+  z-index: 100;
+  position: relative;
+  width: 377px;
+  height: 53px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 24px;
+  background: linear-gradient(0deg, rgba(255, 183, 179, 0.25), rgba(255, 183, 179, 0.25)),
+  linear-gradient(180deg, rgba(255, 238, 237, 0.04) 0%, rgba(7, 57, 72, 0.124) 100%);
+}
+
+.team-paragraph{
+  padding: 30px;
+  font-size: 18px;
+}
+
+.profile-row{
+  margin-bottom: 50px;
+}
+
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-pic{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.exec-text{
+  margin-top: 20px;
+}
+
+.centered-box{
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 1199px) {
   .about-us-card {
     width: 100vw;
@@ -198,11 +259,15 @@ a:hover {
   .big-about-card-body {
     padding: 70px;
   }
+  .profile-card{
+    width: 50%;
+  }
 }
 
 @media (max-width: 991px) {
   .what-we-do-row {
     margin-top: -20px;
+    height: 470px;
   }
   .card-title-parent {
     width: 400px;
@@ -218,6 +283,7 @@ a:hover {
 @media (max-width: 768px) {
   .what-we-do-row {
     margin-top: -15px;
+    height: 480px;
   }
   .about-card-body {
     width: 500px;
@@ -226,24 +292,30 @@ a:hover {
   .big-about-card-body {
     width: 500px;
     padding: 60px;
+  }
+  .team-title{
+    width: 350px;
+    height: 53px;
+    margin-left: 5px;
   }
 }
 
 @media (max-width: 550px) {
   .what-we-do-row {
     margin-top: 100px;
-    height: 600px;
+    height: 500px;
   }
-
   .about-card-body {
     width: 450px;
     padding: 60px;
   }
-
   .big-about-card-body {
     width: 450px;
     height: 550px;
     padding: 60px;
+  }
+  .team-title{
+    margin-left: 15px;
   }
 }
 
@@ -270,12 +342,15 @@ a:hover {
     height: 550px;
     padding: 60px;
   }
+  .profile-card{
+    width: 100%;
+  }
 }
 
 @media (max-width: 460px) {
   .what-we-do-row {
     margin-top: 175px;
-    height: 600px;
+    height: 650px;
   }
   .about-card-body {
     width: 350px;
@@ -300,6 +375,7 @@ a:hover {
   }
   .what-we-do-row {
     margin-top: 115px;
+    height: 550px;
   }
   .about-card-body {
     width: 325px;
@@ -326,28 +402,8 @@ a:hover {
     font-size: 25px;
   }
   .what-we-do-row {
-    margin-top: 120px;
-    height: 600px;
-  }
-  .about-card-body {
-    width: 300px;
-    padding: 40px;
-  }
-  .big-about-card-body {
-    width: 300px;
-    padding: 50px;
-  }
-}
-
-@media (max-width: 400px) {
-  .card-title-parent {
-    width: 275px;
-  }
-  .about-header-text {
-    font-size: 25px;
-  }
-  .what-we-do-row {
     margin-top: 145px;
+    height: 575px;
   }
   .about-card-body {
     width: 300px;
@@ -356,6 +412,10 @@ a:hover {
   .big-about-card-body {
     width: 300px;
     padding: 50px;
+  }
+  .team-title{
+    width: 300px;
+    margin-left: 15px;
   }
 }
 
@@ -368,6 +428,7 @@ a:hover {
   }
   .what-we-do-row {
     margin-top: 170px;
+    height: 600px;
   }
   .about-card-body {
     width: 275px;
@@ -388,6 +449,7 @@ a:hover {
   }
   .what-we-do-row {
     margin-top: 100px;
+    height: 525px;
   }
   .about-card-body {
     width: 250px;
@@ -402,6 +464,10 @@ a:hover {
   }
   .big-card-text {
     font-size: 13px;
+  }
+  .team-title{
+    width: 250px;
+    margin-left: 5px;
   }
 }
 
