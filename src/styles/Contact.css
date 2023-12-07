@@ -1,6 +1,7 @@
 .contact-container {
+  position: relative;
   margin-right: 150px;
-  margin-left: 150px;
+  margin-left: 15%;
   display: flex;
   justify-content: end;
   align-items: end;
@@ -52,5 +53,22 @@
   .contact-icons {
     max-width: 50px;
     max-height: 60px;
+  }
+  .grey-form {
+    background: linear-gradient(
+        0deg,
+        rgba(251, 234, 233, 0.1),
+        rgba(251, 234, 233, 0.1)
+      ),
+      linear-gradient(0deg, rgba(255, 238, 237, 0.5), rgba(255, 238, 237, 0.5));
+  }
+
+  .grey-form input:focus {
+    background: linear-gradient(
+        0deg,
+        rgba(251, 234, 233, 0.1),
+        rgba(251, 234, 233, 0.1)
+      ),
+      linear-gradient(0deg, rgba(255, 238, 237, 0.5), rgba(255, 238, 237, 0.5));
   }
 }
