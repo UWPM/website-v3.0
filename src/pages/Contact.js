@@ -82,12 +82,12 @@ export default function Contact({ show }) {
         </div>
       </>
       <Container>
-        <Row style={{ display: 'flex', marginTop: 'auto' }}>
+        <Row style={{ display: 'flex', marginTop: 'auto', marginLeft: '8%' }}>
           <Col>
             <h1>Shoot us a message!</h1>
             <Form onSubmit={handleSubmit}>
               <Form.Group className="py-4">
-                <Form.Label className="py-2" as="h1">
+                <Form.Label className="py-2" as="h3">
                   Name
                 </Form.Label>
                 <Form.Control
@@ -99,7 +99,7 @@ export default function Contact({ show }) {
                   placeholder="Enter your name"
                   className="grey-form"
                 />
-                <Form.Label className="py-2" as="h1">
+                <Form.Label className="py-2" as="h3">
                   Email
                 </Form.Label>
                 <Form.Control
@@ -111,7 +111,7 @@ export default function Contact({ show }) {
                   placeholder="Enter your email"
                   className="grey-form"
                 />
-                <Form.Label as="h1">Message</Form.Label>
+                <Form.Label as="h3">Message</Form.Label>
                 <Form.Control
                   required
                   as="textarea"

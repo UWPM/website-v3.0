@@ -60,9 +60,9 @@ function App() {
               {/* <Nav.Link id="nav-link" as={Link} to="/pm-jobs">
                 PM Jobs
               </Nav.Link> */}
-              {/* <Nav.Link id="nav-link" as={Link} to="/contact">
+              <Nav.Link id="nav-link" as={Link} to="/contact">
                 Contact
-              </Nav.Link> */}
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

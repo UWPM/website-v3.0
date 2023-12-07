@@ -1,6 +1,7 @@
 .contact-container {
+  position: relative;
   margin-right: 150px;
-  margin-left: 150px;
+  margin-left: 15%;
   display: flex;
   justify-content: end;
   align-items: end;

@@ -23,7 +23,7 @@ a:hover {
 }
 
 .about-caption {
-  position: absolute;
+  position: relative;
   top: 2rem;
   margin-top: 200px;
   margin-bottom: 100px;
