@@ -404,7 +404,7 @@
 .button-red-gradiant {
   /* position: absolute; */
   box-sizing: border-box;
-  width: 200px;
+  width: 150px;
   height: 52px;
   left: 134px;
   top: 597px;
@@ -436,14 +436,12 @@
 }
 
 .button-transparent {
-  /* position: absolute; */
   box-sizing: border-box;
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  /* identical to box height */
 
   color: #fdeceb;
 
@@ -459,7 +457,7 @@
   border-radius: 10px;
 }
 
-.inroduction-about-us {
+.introduction-about-us {
   margin-right: 50px;
 }
 

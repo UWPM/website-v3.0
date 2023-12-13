@@ -136,10 +136,10 @@ export default function Introduction({ show }) {
               Product Management Community @ UWaterloo.
             </h1>
           </div>
-          <a href="https://forms.gle/sBnTSueM3r5Gp2H28" target="_blank">
+          <a href="/about">
             <div className="button-container">
-              <button className="button-red-gradiant inroduction-about-us">
-                APPLY TO PRODCON
+              <button className="button-red-gradiant introduction-about-us">
+                ABOUT
               </button>
             </div>
           </a>
