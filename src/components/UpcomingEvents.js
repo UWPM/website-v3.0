@@ -1,22 +1,22 @@
 import React from 'react';
 import '../styles/Events.css';
-import upcomingEventPost from '../images/events/prodcon-event-post.png';
+import upcomingEventPost from '../images/events/blueprint2.jpeg';
 import { Container } from 'react-bootstrap';
 
 const UpcomingEventsCard = () => {
   const title = 'Upcoming Events';
-  const date = 'Saturday, November 18th 2023';
-  const location = 'Science Technology Center (STC 1012)';
+  const date = 'Thursday, March 7th 2024';
+  const location = 'E5 - 4106 (Engineering 5)';
   const callToAction = 'APPLY NOW';
   const about = 'About';
   const description =
-    'ProdCon UW PM’s flagship event that typically happens every fall. ProdCon is a day-long product management case study competition, where students compete in teams of two to five to tackle an industry product challenge.';
-  const subtitle = 'Why Attend ProdCon?';
+    'Product Night features an interactive case study with real interview prompts from top companies, helping students ace their PM interviews.';
+  const subtitle = 'Why Attend Product Night?';
   const points = [
-    'Network with industry PM and like-minded students',
-    'Build experiential product skills',
-    'Solve real-world problems',
-    'Win Prizes',
+    'Learn how to ace real interview questions',
+    'Explore PM strategies',
+    'Develop your problem solving skills',
+    'Network with like-minded students',
   ];
 
   return (
@@ -29,7 +29,7 @@ const UpcomingEventsCard = () => {
         <div className="upcoming-event-text">
           <div className="section">
             <div className="inner-section">
-              <h2 className>ProdCon</h2>
+              <h2 className>UWPM X Blueprint night</h2>
               <p>
                 {date} <br /> {location}
               </p>
