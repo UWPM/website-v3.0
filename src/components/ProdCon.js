@@ -7,7 +7,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import CloseButton from 'react-bootstrap/CloseButton';
 
-// ProdCon Event Photos 2023
+// ProdCon Event Photos
 import pc1 from '../images/prodcon/prodcon1.jpg';
 import pc2 from '../images/prodcon/prodcon2.jpg';
 import pc3 from '../images/prodcon/prodcon3.jpg';
