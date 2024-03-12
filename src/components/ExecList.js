@@ -24,11 +24,21 @@ import Joshua from '../images/about/exec-profiles/JoshuaHeadshot.png';
 import Peter from '../images/about/exec-profiles/PeterHeadshot.png';
 import Shushawn from '../images/about/exec-profiles/ShushawnHeadshot.png';
 import Petch from '../images/about/exec-profiles/PetchHeadshot.png';
+import Christina from '../images/about/exec-profiles/ChristinaHeadshot.jpeg';
+import Kirti from '../images/about/exec-profiles/KirtiHeadshot.png';
+import Michelle from '../images/about/exec-profiles/MichelleHeadshot.png';
+import Abhinav from '../images/about/exec-profiles/AbhinavHeadshot.png';
+import Palak from '../images/about/exec-profiles/PalakHeadshot.png';
+import Mayank from '../images/about/exec-profiles/MayankHeadshot.png';
+import Leann from '../images/about/exec-profiles/LeannHeadshot.png';
+import Wanyun from '../images/about/exec-profiles/WanyunHeadshot.png';
+import Resha from '../images/about/exec-profiles/ReshaHeadshot.jpeg';
+import Jane from '../images/about/exec-profiles/JaneHeadshot.jpeg';
 
 export const ExecList = {
   YashInfo: {
     name: 'Yash Gajaria',
-    role: 'President',
+    role: 'Projects Lead',
     link: 'https://www.linkedin.com/in/yashgajaria/',
     image: Yash,
   },
@@ -46,7 +56,7 @@ export const ExecList = {
   },
   MaggieInfo: {
     name: 'Maggie Li',
-    role: 'Events Director',
+    role: 'Co-President',
     link: 'https://www.linkedin.com/in/maggielii/',
     image: Maggie,
   },
@@ -58,7 +68,7 @@ export const ExecList = {
   },
   SinehaInfo: {
     name: 'Sineha Manivannan',
-    role: 'Events Director',
+    role: 'Case Director',
     link: 'https://www.linkedin.com/in/sineha-manivannan/',
     image: Sineha,
   },
@@ -100,7 +110,7 @@ export const ExecList = {
   },
   NavdeepInfo: {
     name: 'Navdeep Gill',
-    role: 'Full Stack Developer',
+    role: 'Case Lead',
     link: 'https://www.linkedin.com/in/navdeep-g/',
     image: Navdeep,
   },
@@ -124,7 +134,7 @@ export const ExecList = {
   },
   RachelleInfo: {
     name: 'Rachelle Dong',
-    role: 'Marketing Lead',
+    role: 'Co-President',
     link: 'https://www.linkedin.com/in/rachelle-dong-776959186/',
     image: Rachelle,
   },
@@ -187,5 +197,71 @@ export const ExecList = {
     role: 'Design Director',
     link: 'https://www.linkedin.com/in/phuong-tu/',
     image: Phuong,
+  },
+  ChristinaInfo: {
+    name: 'Christina Liang',
+    role: 'Events Director',
+    link: 'https://www.linkedin.com/in/christinaliangg/',
+    image: Christina,
+  },
+  KirtiInfo: {
+    name: 'Kirti Bansal',
+    role: 'Engineering Lead',
+    link: 'https://www.linkedin.com/in/kirti-bansal/',
+    image: Kirti,
+  },
+  MichelleInfo: {
+    name: 'Michelle Steen',
+    role: 'Case Director',
+    link: 'https://www.linkedin.com/in/michelleksteen/',
+    image: Michelle,
+  },
+  AbhinavInfo: {
+    name: 'Abhinav Sondhi',
+    role: 'Outreach Director',
+    link: 'https://www.linkedin.com/in/abhinavsondhi/',
+    image: Abhinav,
+  },
+  MayankInfo: {
+    name: 'Mayank Sachdeva',
+    role: 'Podcast Lead',
+    link: 'https://www.linkedin.com/in/mayanksachdeva/',
+    image: Mayank,
+  },
+  LeannInfo: {
+    name: 'Leann Fernandes',
+    role: 'Events Director',
+    link: 'https://www.linkedin.com/in/leann-fernandes/',
+    image: Leann,
+  },
+  JaneInfo: {
+    name: 'Jane Chen',
+    role: 'Product Design Director',
+    link: 'https://www.linkedin.com/in/janechen333/',
+    image: Jane,
+  },
+  PalakInfo: {
+    name: 'Palak Agarwal',
+    role: 'Podcast Director',
+    link: 'https://www.linkedin.com/in/palak06',
+    image: Palak,
+  },
+  WanyunInfo: {
+    name: 'Wanyun Xue',
+    role: 'Graphic Design Director',
+    link: 'https://www.linkedin.com/in/wanyun-xue/',
+    image: Wanyun,
+  },
+  ReshaInfo: {
+    name: 'Resha Shetty',
+    role: 'Podcast Director',
+    link: 'https://www.linkedin.com/in/resha-shetty/',
+    image: Resha,
+  },
+  AmandaInfo: {
+    name: 'Amanda Yuan',
+    role: 'Case Director',
+    link: 'https://www.linkedin.com/in/amanda-yuan100/',
+    image: PMHeadshot,
   },
 };
