@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 //Event Photos
 import win23IceCream from '../images/events/win23-ice-cream.png';
-import fall22Prodcon from '../images/events/fall22-prodcon.png';
+import livecasestudyies from '../images/events/live-case-studies.png';
+import mocktainandcheese from '../images/events/mocktain_and_cheese.png';
 import win23ProductPanel from '../images/events/win23-product-panel.png';
-import win23Resume from '../images/events/win23-resume-critique.png';
 
 export default function PastEventsCarousel({ show }) {
   let PastEventsCarousel = [
@@ -26,20 +26,20 @@ export default function PastEventsCarousel({ show }) {
       image: win23IceCream,
     },
     {
-      name: 'Resume Critique',
+      name: 'Live Case Study',
       date: 'Every Term',
       location: 'Virtual',
       description:
-        'Land your next co-op by preparing with Resume Critiques and Mock Interviews from your upper-year mentors.',
-      image: win23Resume,
+        'A bi-weekly initiative started in Winter 2024. The interactive sessions are designed to immerse participations in real-world product management scenarios and interview situations.',
+      image: livecasestudyies,
     },
     {
-      name: 'Prodcon',
+      name: 'Mocktail & Cheese',
       date: 'November 12, 2022',
       location: 'DC 1301',
       description:
-        'A product management case study conference where teams of 1-4 compete to present the best solution to the given case.',
-      image: fall22Prodcon,
+        'A delightful evening at our Mocktails and Cheese Night! Connect with like-minded individuals, indulge in delicious mocktails, and forge meaningful connections.',
+      image: mocktainandcheese,
     },
   ];
 

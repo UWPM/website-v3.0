@@ -5,9 +5,9 @@ import { Col, Container, Image, Row } from 'react-bootstrap';
 import speakerSneakPeak from '../images/events/speaker-sneakpeak.jpeg';
 import blueprintUWPM from '../images/events/blueprint-uwpm.jpeg';
 import win23ProductPanel from '../images/events/win23-product-panel.png';
-import win23ResumeCritique from '../images/events/win23-resume-critique.png';
 import win23IceCream from '../images/events/win23-ice-cream.png';
-import fall22Prodcon from '../images/events/fall22-prodcon2.jpeg';
+import livecasestudyies from '../images/events/live-case-studies.png';
+import mocktainandcheese from '../images/events/mocktain_and_cheese.png';
 
 export default function PastEvents() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -27,12 +27,12 @@ export default function PastEvents() {
 
   // Array of [imageUrl, instagramUrl]
   const flatImages = [
+    [mocktainandcheese, 'https://www.instagram.com/p/CzKKhsVIhOR/'],
+    [livecasestudyies, 'https://www.instagram.com/p/C2pvzogAyRk/?img_index=1'],
     [speakerSneakPeak, 'https://www.instagram.com/p/CuinX2tANsc/'],
     [blueprintUWPM, 'https://www.instagram.com/p/CuVlp-SJFqk/'],
     [win23ProductPanel, 'https://www.instagram.com/p/CqbWlGKgcaV/'],
     [win23IceCream, 'https://www.instagram.com/p/CpoA_B7gBpN/'],
-    [win23ResumeCritique, 'https://www.instagram.com/p/Co-ZyYNJR6D/'],
-    [fall22Prodcon, 'https://www.instagram.com/p/CjycXW0gcyo/'],
   ];
 
   // Change number of rows dynamically

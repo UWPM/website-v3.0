@@ -28,7 +28,7 @@ export default function Events({ show }) {
         {!show && (
           <>
             <div>
-              <h1 className="video_carousel_text">ProdCon 2022 Recap </h1>
+              <h1 className="video_carousel_text">ProdCon 2023 Recap </h1>
               <div className="video-responsive">
                 <iframe
                   src="https://www.youtube.com/embed/SzZuCmgPiFQ?si=m2YBCin5-ocj-hfh"
@@ -40,7 +40,7 @@ export default function Events({ show }) {
                 />{' '}
               </div>
               <h1 className="video_carousel_text">
-                ProdCon 2022 Recap Gallery
+                ProdCon 2023 Recap Gallery
               </h1>
             </div>
           </>
