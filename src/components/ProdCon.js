@@ -11,12 +11,11 @@ import CloseButton from 'react-bootstrap/CloseButton';
 import pc1 from '../images/prodcon/prodcon1.JPG';
 import pc2 from '../images/prodcon/prodcon2.JPG';
 import pc3 from '../images/prodcon/prodcon3.JPG';
+import pc4 from '../images/prodcon/prodcon4.JPG';
 import pc5 from '../images/prodcon/prodcon5.JPG';
-import pc7 from '../images/prodcon/prodcon6.JPG';
-import pc16 from '../images/prodcon/prodcon7.JPG';
+import pc6 from '../images/prodcon/prodcon6.JPG';
+import pc7 from '../images/prodcon/prodcon7.JPG';
 import pc8 from '../images/prodcon/prodcon8.JPG';
-import pc9 from '../images/prodcon/prodcon9.JPG';
-import pc10 from '../images/prodcon/prodcon10.JPG';
 
 const customStyles = {
   overlay: {
@@ -49,7 +48,7 @@ export default function ProdConCarousel() {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // Add this line
 
-  const items = [pc1, pc2, pc3, pc5, pc7, pc8, pc9, pc10];
+  const items = [pc1, pc2, pc3, pc4, pc5, pc6, pc7, pc8];
 
   const renderNextButton = ({ isDisabled }) => {
     return (
