@@ -10,6 +10,8 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "apify-client": "^2.9.3",
+    "axios": "^1.6.8",
     "bootstrap": "^5.2.3",
     "react": "^18.2.0",
     "react-alice-carousel": "^2.8.0",

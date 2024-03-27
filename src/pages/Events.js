@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import ProdCon from '../components/ProdCon';
 import '../styles/Events.css';
@@ -6,10 +6,13 @@ import '../App.css';
 import UpcomingEventsCard from '../components/UpcomingEvents.js';
 import PastEvents from '../components/PastEvents';
 import desktopHexagons from '../images/background/desktop-hexagons.svg';
+import axios from 'axios';
+import useInstagramPosts from '../hooks/useInstagramPosts.js';
 
 // TODO: Reorganize the following code into src/components. See src/pages/Home.js as a reference
 
 export default function Events({ show }) {
+  const [posts, setPosts] = useInstagramPosts();
   return (
     <Container>
       <div className="events-container">
