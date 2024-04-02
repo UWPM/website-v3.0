@@ -13,6 +13,7 @@ import useInstagramPosts from '../hooks/useInstagramPosts.js';
 
 export default function Events({ show }) {
   const [posts, setPosts] = useInstagramPosts();
+  console.log(posts);
   return (
     <Container>
       <div className="events-container">
