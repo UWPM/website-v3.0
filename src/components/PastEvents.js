@@ -8,6 +8,8 @@ import win23ProductPanel from '../images/events/win23-product-panel.png';
 import win23IceCream from '../images/events/win23-ice-cream.png';
 import livecasestudyies from '../images/events/live-case-studies.png';
 import mocktainandcheese from '../images/events/mocktain_and_cheese.png';
+import { InstagramEmbed } from 'react-social-media-embed';
+import useInstagramPosts from '../hooks/useInstagramPosts';
 
 export default function PastEvents() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -26,28 +28,19 @@ export default function PastEvents() {
   }, []);
 
   // Array of [imageUrl, instagramUrl]
-  const flatImages = [
-    [mocktainandcheese, 'https://www.instagram.com/p/CzKKhsVIhOR/'],
-    [livecasestudyies, 'https://www.instagram.com/p/C2pvzogAyRk/?img_index=1'],
-    [speakerSneakPeak, 'https://www.instagram.com/p/CuinX2tANsc/'],
-    [blueprintUWPM, 'https://www.instagram.com/p/CuVlp-SJFqk/'],
-    [win23ProductPanel, 'https://www.instagram.com/p/CqbWlGKgcaV/'],
-    [win23IceCream, 'https://www.instagram.com/p/CpoA_B7gBpN/'],
-  ];
+  const [posts, setPosts] = useInstagramPosts();
 
   // Change number of rows dynamically
   const getCols = (data) => {
     const colsPerRow = isMobile ? 2 : 3;
     const rows = [];
-
+    data = data?.map((x) => x.url);
     for (let i = 0; i < data.length; i += colsPerRow) {
       const rowImages = data.slice(i, i + colsPerRow);
 
-      const colComponents = rowImages.map(([imageUrl, instagramUrl], index) => (
+      const colComponents = rowImages.map((instagramUrl, index) => (
         <Col key={index} xs={6} md={4} className="p-4">
-          <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
-            <Image src={imageUrl} alt={`Image ${index + 1}`} fluid />
-          </a>
+          <InstagramEmbed url={instagramUrl} />
         </Col>
       ));
 
@@ -62,7 +55,7 @@ export default function PastEvents() {
       <h2>Past events</h2>
       <hr></hr>
       <Container className="my-10" fluid>
-        {getCols(flatImages)}
+        {getCols(posts)}
         <div className="spacer"></div>
       </Container>
     </Container>
