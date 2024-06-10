@@ -31,12 +31,6 @@
   margin-top: 50px;
 }
 
-.red-circle {
-  position: relative;
-  margin-bottom: -10px;
-  top: -12px;
-}
-
 .company-image {
   display: flex;
   justify-content: center;

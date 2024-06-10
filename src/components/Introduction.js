@@ -128,7 +128,7 @@ export default function Introduction({ show }) {
               <span className="position-relative z-2">
                 Creative{' '}
                 <img
-                  className="position-absolute red-circle z-n1 start-0 top-0"
+                  className="position-absolute red-circle z-n1 start-0 top-0 min-w-100 min-h-100"
                   alt="Red Circle"
                   src={require('../images/background/red-circle.png')}
                 />
