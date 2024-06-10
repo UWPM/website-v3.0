@@ -29,7 +29,7 @@ export default function About({ show }) {
                 <span className="position-relative d-inline z-2">
                   Creative
                   <img
-                    className="red-circle min-w-100 min-h-100 absolute start-0 top-0 z-n1"
+                    className="red-circle min-w-100 min-h-100 position-absolute start-0 top-0 z-n1"
                     alt="Red Circle"
                     src={require('../images/background/red-circle.png')}
                   ></img>
