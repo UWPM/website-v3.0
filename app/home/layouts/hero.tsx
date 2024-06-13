@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <header className="space-y-8">
-      <h1>
+    <header className="flex flex-col space-y-8 pt-32">
+      <h1 className="w-2/3 text-pretty text-5xl font-semibold">
         Fostering the
         <span className="relative">
           <span className="relative z-10">&nbsp;Creative&nbsp;</span>
@@ -12,8 +12,8 @@ export default function Hero() {
         Product Management Community @ UWaterloo
       </h1>
       <div className="space-x-4">
-        <Button>About</Button>
-        <Button variant="outline">Join Now</Button>
+        <Button>ABOUT</Button>
+        <Button variant="outline">JOIN NOW</Button>
       </div>
     </header>
   );

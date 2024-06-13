@@ -1,3 +1,4 @@
+import Template from "@/components/template";
 import Hero from "./layouts/hero";
 import PastEvents from "./layouts/past-events";
 import Showcase from "./layouts/showcase";
@@ -5,11 +6,11 @@ import UpcomingEvents from "./layouts/upcoming-events";
 
 export default function Events() {
   return (
-    <main className="container pt-16">
+    <Template>
       <Hero />
       <UpcomingEvents />
       <Showcase />
       <PastEvents />
-    </main>
+    </Template>
   );
 }

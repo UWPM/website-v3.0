@@ -1,3 +1,4 @@
+import Template from "@/components/template";
 import Hero from "./layouts/hero";
 import OurImpact from "./layouts/our-impact";
 import PastEvents from "./layouts/past-events";
@@ -6,13 +7,13 @@ import WorkExperience from "./layouts/work-experience";
 
 export default function Home() {
   return (
-    <main className="container pt-16">
+    <Template>
       <Hero />
       <WhatWeDo />
       <OurImpact />
       <PastEvents />
       {/* // TODO: Change the name for this component */}
       <WorkExperience />
-    </main>
+    </Template>
   );
 }

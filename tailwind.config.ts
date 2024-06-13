@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      transitionProperty: {
+        visibility: "display, opacity",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

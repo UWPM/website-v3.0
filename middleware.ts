@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+
 // * This file redirects the initial page (uwaterloopm.com) to the home page (uwaterloopm.com/home)
 // * This makes organization easier and a more consistent folder structure with every page be a directory in the app router
 
