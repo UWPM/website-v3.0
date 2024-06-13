@@ -123,16 +123,16 @@ export default function Introduction({ show }) {
         )}
         <div className="hero-text">
           <div className="title-text-box">
-            <h1 className="title-text">Fostering the </h1>
-            <div className="position-relative d-inline">
-              <img
-                className="red-circle"
-                alt="Red Circle"
-                src={require('../images/background/red-circle.png')}
-              ></img>
-              <h1 className="position-absolute start-0 title-text">Creative</h1>
-            </div>
             <h1 className="title-text">
+              Fostering the{' '}
+              <span className="position-relative z-2">
+                Creative{' '}
+                <img
+                  className="position-absolute red-circle z-n1 start-0 top-0 min-w-100 min-h-100"
+                  alt="Red Circle"
+                  src={require('../images/background/red-circle.png')}
+                />
+              </span>
               Product Management Community @ UWaterloo.
             </h1>
           </div>

@@ -24,20 +24,18 @@ export default function About({ show }) {
               <img src={desktopHexagons} alt="" />
             </div>
             <div className="about-caption">
-              <h1 className="title-text">Fostering the </h1>
-              <div className="position-relative d-inline">
-                <img
-                  className="red-circle"
-                  alt="Red Circle"
-                  src={require('../images/background/red-circle.png')}
-                ></img>
-                <h1 className="position-absolute start-0 title-text">
+              <h1 className="title-text">
+                Fostering the{' '}
+                <span className="position-relative d-inline z-2">
                   Creative
-                </h1>
-                <h1 className="title-text">
-                  Product Management Community @ UWaterloo.
-                </h1>
-              </div>
+                  <img
+                    className="red-circle min-w-100 min-h-100 position-absolute start-0 top-0 z-n1"
+                    alt="Red Circle"
+                    src={require('../images/background/red-circle.png')}
+                  ></img>
+                </span>
+                Product Management Community @ UWaterloo.
+              </h1>
             </div>
           </div>
         </Row>
