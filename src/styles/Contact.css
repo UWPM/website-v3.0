@@ -2,8 +2,8 @@
   margin-right: 150px;
   margin-left: 150px;
   display: flex;
-  justify-content: end;
-  align-items: end;
+  justify-content: flex-end;
+  align-items: flex-end;
   flex-direction: column;
 }
 

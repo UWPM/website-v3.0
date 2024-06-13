@@ -8,14 +8,14 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import CloseButton from 'react-bootstrap/CloseButton';
 
 // ProdCon Event Photos
-import pc1 from '../images/prodcon/prodcon1.jpg';
-import pc2 from '../images/prodcon/prodcon2.jpg';
-import pc3 from '../images/prodcon/prodcon3.jpg';
-import pc4 from '../images/prodcon/prodcon4.jpg';
-import pc5 from '../images/prodcon/prodcon5.jpg';
-import pc6 from '../images/prodcon/prodcon6.jpg';
-import pc7 from '../images/prodcon/prodcon7.jpg';
-import pc8 from '../images/prodcon/prodcon8.jpg';
+import pc1 from '../images/prodcon/prodcon1.JPG';
+import pc2 from '../images/prodcon/prodcon2.JPG';
+import pc3 from '../images/prodcon/prodcon3.JPG';
+import pc4 from '../images/prodcon/prodcon4.JPG';
+import pc5 from '../images/prodcon/prodcon5.JPG';
+import pc6 from '../images/prodcon/prodcon6.JPG';
+import pc7 from '../images/prodcon/prodcon7.JPG';
+import pc8 from '../images/prodcon/prodcon8.JPG';
 
 const customStyles = {
   overlay: {
