@@ -1,14 +1,16 @@
 export default function OurImpact() {
   return (
-    <section className="pt-32">
-      <h2 className="text-2xl font-bold">Our Impact</h2>
-      <hr className="my-4 h-1" />
-      <div className="flex justify-around">
-        <Statistic number="100+" label="Members" />
-        <Statistic number="50+" label="Workshops" />
-        <Statistic number="50+" label="Events" />
+    <section className="space-y-12 pt-32">
+      <h2 className="text-2xl font-bold md:text-3xl">Our Impact</h2>
+      <div className="space-y-6">
+        <hr className="h-1" />
+        <div className="flex justify-around">
+          <Statistic number="100+" label="Members" />
+          <Statistic number="50+" label="Workshops" />
+          <Statistic number="50+" label="Events" />
+        </div>
+        <hr className="h-1" />
       </div>
-      <hr className="my-4 h-1" />
     </section>
   );
 }
@@ -21,8 +23,8 @@ export default function OurImpact() {
 const Statistic = ({ number, label }: { number: string; label: string }) => {
   return (
     <div className="flex flex-col items-center">
-      <h3 className="text-xl font-bold">{number}</h3>
-      <p className="text-lg">{label}</p>
+      <h3 className="text-2xl font-bold">{number}</h3>
+      <p className="text-xl">{label}</p>
     </div>
   );
 };

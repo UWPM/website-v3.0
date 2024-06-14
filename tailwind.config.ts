@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       transitionProperty: {
-        visibility: "display, opacity",
+        visibility: "display, opacity", // ! THIS IS FOR ScrollToTop, remove if not necessary
       },
       colors: {
         border: "hsl(var(--border))",

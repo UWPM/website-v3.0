@@ -12,15 +12,15 @@ import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
 
 //TODO: Create a map with all the past events to display here and use the map function to map over it
-
+// TODO: Look into positioning next & prev buttons because they go off the screen on small screens
 export default function PastEvents() {
   const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
   return (
-    <section className="space-y-4 pt-32">
-      <h2 className="text-2xl font-bold">Past Events</h2>
-      <div className="flex flex-col gap-4">
+    <section className="space-y-12 pt-32">
+      <h2 className="text-2xl font-bold md:text-3xl">Past Events</h2>
+      <div className="flex flex-col space-y-12">
         <Carousel
-          className="rounded-md bg-zinc-300 p-32"
+          className="rounded-md bg-zinc-300 p-12 md:p-24"
           opts={{ loop: true }}
           plugins={[plugin.current]}
           onMouseEnter={plugin.current.stop}
@@ -55,8 +55,8 @@ export default function PastEvents() {
               />
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious variant="link" className="left-6" />
+          <CarouselNext variant="link" className="right-6" />
         </Carousel>
         <Button className="self-center">VIEW ALL EVENTS</Button>
       </div>
@@ -76,12 +76,15 @@ const EventItem = ({
   description: string;
 }) => {
   return (
-    <div className="w-1/2 space-y-4">
-      <div className="space-y-2">
-        <h3 className="text-xl font-bold">{title}</h3>
-        <p className="text-lg">{date}</p>
+    <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
+      <div className="max-w-[600px] space-y-4 text-center md:text-left">
+        <div className="space-y-2">
+          <h3 className="text-xl font-bold">{title}</h3>
+          <p className="text-lg">{date}</p>
+        </div>
+        <p className="text-lg">{description}</p>
       </div>
-      <p className="text-lg">{description}</p>
+      <div className="size-80 shrink-0 bg-zinc-50"></div>
     </div>
   );
 };

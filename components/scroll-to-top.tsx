@@ -24,7 +24,7 @@ export default function ScrollToTop() {
   return (
     <Button
       data-visible={visible}
-      className="fixed bottom-12 right-12 hidden rounded-full opacity-0 transition-[visibility] duration-500 data-[visible=true]:flex data-[visible=true]:opacity-100"
+      className="fixed bottom-24 right-2 hidden rounded-full duration-500 data-[visible=true]:flex md:right-12"
       size="icon"
       onClick={handleClick}
     >

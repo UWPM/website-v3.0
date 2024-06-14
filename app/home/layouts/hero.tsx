@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <header className="flex flex-col space-y-8 pt-32">
-      <h1 className="w-2/3 text-pretty text-5xl font-semibold">
+    <header className="flex flex-col space-y-16 py-52">
+      <h1 className="text-balance text-4xl font-semibold md:w-2/3 md:text-5xl">
         Fostering the
         <span className="relative">
           <span className="relative z-10">&nbsp;Creative&nbsp;</span>

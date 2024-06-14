@@ -24,9 +24,9 @@ const hexagonCards = [
 // TODO: Add that squigly line next to the first HexagonCard, should probably wrap the HexagonCard in a div for that
 export default function WhatWeDo() {
   return (
-    <section className="space-y-4 pt-32">
+    <section className="space-y-12 pt-32">
       <h2 className="text-2xl font-bold md:text-3xl">What We Do</h2>
-      <div className="flex flex-col items-center space-y-16">
+      <div className="flex flex-col items-center space-y-8">
         <HexagonCard {...hexagonCards[0]} className="md:self-start" />
         <HexagonCard {...hexagonCards[1]} />
         <HexagonCard {...hexagonCards[2]} className="md:self-end" />
@@ -38,7 +38,7 @@ export default function WhatWeDo() {
 /**
  * @param title: title of the card that appears in the red box
  * @param description: the one line description under the title
- * @param image: the image source // TODO: Image source or image component?
+ * @param image: the image source
  */
 const HexagonCard = ({
   title,
@@ -63,8 +63,8 @@ const HexagonCard = ({
           />
         </div>
       </div>
-      <div className="flex h-32 w-[300px] justify-center rounded-lg border bg-background/60 p-4 pl-16 shadow backdrop-blur md:h-48 md:w-[600px] md:p-8 md:pl-32">
-        <div className="flex flex-col items-center justify-center space-y-4">
+      <div className="flex h-32 w-[300px] rounded-lg border bg-background/60 p-4 pl-16 shadow backdrop-blur sm:w-[500px] md:h-48 md:w-[600px] md:p-8 md:pl-32">
+        <div className="flex w-full flex-col items-center justify-center space-y-4">
           <h3 className="w-full rounded bg-zinc-200 py-2 text-center">
             {title}
           </h3>
