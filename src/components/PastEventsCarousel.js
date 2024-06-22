@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 
-//Event Photos 
+//Event Photos
 //UPDATED
 import win24IceCream from '../images/events/win24-ice-cream.jpg';
 import riselivecasestudy from '../images/events/rise-live-case.jpg';
@@ -43,7 +43,7 @@ export default function PastEventsCarousel({ show }) {
       image: uwpmxblueprint,
     },
   ];
-//
+  //
   return (
     <>
       <h2 className="mb-5">Past Events</h2>
