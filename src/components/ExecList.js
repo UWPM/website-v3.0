@@ -34,6 +34,11 @@ import Leann from '../images/about/exec-profiles/LeannHeadshot.png';
 import Wanyun from '../images/about/exec-profiles/WanyunHeadshot.png';
 import Resha from '../images/about/exec-profiles/ReshaHeadshot.jpeg';
 import Jane from '../images/about/exec-profiles/JaneHeadshot.jpeg';
+import Mayank from '../images/about/exec-profiles/MayankHeadshot2.jpeg';
+import Fatimah from '../images/about/exec-profiles/FatimahHeadshot.jpeg';
+import Khali from '../images/about/exec-profiles/KhaliHeadshot.jpeg';
+import Ivy from '../images/about/exec-profiles/IvyHeadshot.jpeg';
+import David from '../images/about/exec-profiles/DavidHeadshot.jpeg';
 
 export const ExecList = {
   YashInfo: {
@@ -222,15 +227,9 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/abhinavsondhi/',
     image: Abhinav,
   },
-  MayankInfo: {
-    name: 'Mayank Sachdeva',
-    role: 'Podcast Lead',
-    link: 'https://www.linkedin.com/in/mayanksachdeva/',
-    image: Mayank,
-  },
   LeannInfo: {
     name: 'Leann Fernandes',
-    role: 'Events Director',
+    role: 'Events Lead',
     link: 'https://www.linkedin.com/in/leann-fernandes/',
     image: Leann,
   },
@@ -248,7 +247,7 @@ export const ExecList = {
   },
   WanyunInfo: {
     name: 'Wanyun Xue',
-    role: 'Graphic Design Director',
+    role: 'Design Director',
     link: 'https://www.linkedin.com/in/wanyun-xue/',
     image: Wanyun,
   },
@@ -263,5 +262,38 @@ export const ExecList = {
     role: 'Case Director',
     link: 'https://www.linkedin.com/in/amanda-yuan100/',
     image: PMHeadshot,
+  },
+  // Outreach team
+  MayankInfo: {
+    name: 'Mayank Sachdeva',
+    role: 'Outreach Lead',
+    link: 'https://www.linkedin.com/in/mayanksachdeva/',
+    image: Mayank,
+  },
+  FatimahInfo: {
+    name: 'Fatimah Nadir',
+    role: 'Outreach Director',
+    link: 'https://www.linkedin.com/in/fatimahnadir/',
+    image: Fatimah,
+  },
+  KhaliInfo: {
+    name: 'Khali Abdi',
+    role: 'Outreach Director',
+    link: 'https://www.linkedin.com/in/khali-abdi',
+    image: Khali,
+  },
+  // Events
+  IvyInfo: {
+    name: 'Ivy Lei',
+    role: 'Events Director',
+    link: 'https://www.linkedin.com/in/ivy-lei/',
+    image: Ivy,
+  },
+  // Finance team
+  DavidInfo: {
+    name: 'David Hood',
+    role: 'Finance Director',
+    link: 'https://www.linkedin.com/in/hood-david/',
+    image: David,
   },
 };
