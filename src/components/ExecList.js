@@ -29,7 +29,6 @@ import Kirti from '../images/about/exec-profiles/KirtiHeadshot.png';
 import Michelle from '../images/about/exec-profiles/MichelleHeadshot.png';
 import Abhinav from '../images/about/exec-profiles/AbhinavHeadshot.png';
 import Palak from '../images/about/exec-profiles/PalakHeadshot.png';
-import Mayank from '../images/about/exec-profiles/MayankHeadshot.png';
 import Leann from '../images/about/exec-profiles/LeannHeadshot.png';
 import Wanyun from '../images/about/exec-profiles/WanyunHeadshot.png';
 import Resha from '../images/about/exec-profiles/ReshaHeadshot.jpeg';

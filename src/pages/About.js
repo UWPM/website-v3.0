@@ -230,7 +230,7 @@ export default function About({ show }) {
               </p>
             </Row>
             <Row className="profile-row">
-            <TeamProfileCard
+              <TeamProfileCard
                 name={Execs.MayankInfo.name}
                 role={Execs.MayankInfo.role}
                 link={Execs.MayankInfo.link}
@@ -356,9 +356,7 @@ export default function About({ show }) {
             </Row>
             <Row className="team-type">
               <h3 team-title>Finance</h3>
-              <p className="team-paragraph">
-                lorem ipsum
-              </p>
+              <p className="team-paragraph">lorem ipsum</p>
             </Row>
             <Row className="profile-row">
               <TeamProfileCard
