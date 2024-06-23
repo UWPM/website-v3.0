@@ -36,7 +36,7 @@ import Jane from '../images/about/exec-profiles/JaneHeadshot.jpeg';
 import Mayank from '../images/about/exec-profiles/MayankHeadshot2.jpeg';
 import Fatimah from '../images/about/exec-profiles/FatimahHeadshot.jpeg';
 import Khali from '../images/about/exec-profiles/KhaliHeadshot.jpeg';
-import Ivy from '../images/about/exec-profiles/IvyHeadshot.jpeg';
+import Ivy from '../images/about/exec-profiles/IvyHeadshot.png';
 import David from '../images/about/exec-profiles/DavidHeadshot.jpeg';
 
 export const ExecList = {
