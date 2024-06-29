@@ -451,10 +451,6 @@
   border-radius: 10px;
 }
 
-.introduction-about-us {
-  margin-right: 50px;
-}
-
 @media (max-width: 767px) {
   .button-container {
     flex-wrap: nowrap;
