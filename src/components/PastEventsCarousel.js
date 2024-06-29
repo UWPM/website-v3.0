@@ -2,47 +2,48 @@ import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 
 //Event Photos
-import win23IceCream from '../images/events/win23-ice-cream.png';
-import livecasestudyies from '../images/events/live-case-studies.png';
-import mocktainandcheese from '../images/events/mocktain_and_cheese.png';
-import win23ProductPanel from '../images/events/win23-product-panel.png';
+//UPDATED
+import win24IceCream from '../images/events/win24-ice-cream.jpg';
+import riselivecasestudy from '../images/events/rise-live-case.jpg';
+import uwpmxblueprint from '../images/events/uwpm-blueprint.jpg';
+import sum24ResumeRevamp from '../images/events/resume-revamp.jpg';
 
 export default function PastEventsCarousel({ show }) {
   let PastEventsCarousel = [
     {
-      name: 'Product Panel',
-      date: 'April 2, 2023',
-      location: 'Virtual',
+      name: 'Resume Revamp',
+      date: 'June 13th, 2024',
+      location: 'E7 Ideas Clinic',
       description:
-        'An online panel with current and past UW PM executives discussing their experiences and how they landed a product management coop!',
-      image: win23ProductPanel,
+        'Ready to level up your career? Join us at UW PMs RESUME REVAMP! Experienced mentors will be there to provide you with valuable insights and 1:1 guidance.',
+      image: sum24ResumeRevamp,
     },
     {
-      name: 'Ice Cream PM Meetup',
-      date: 'March 14, 2023',
-      location: 'DC 1301',
+      name: 'Ice Cream Social',
+      date: 'May 30th, 2024',
+      location: 'DC Fishbowl',
       description:
         'Enjoy free ice cream and snacks while connecting with other students at UW who are just as interested in PM as you are.',
-      image: win23IceCream,
+      image: win24IceCream,
     },
     {
-      name: 'Live Case Study',
-      date: 'Every Term',
-      location: 'Virtual',
+      name: 'RISE Product Challenge',
+      date: 'March 14th, 2024',
+      location: 'MC 2034',
       description:
-        'A bi-weekly initiative started in Winter 2024. The interactive sessions are designed to immerse participations in real-world product management scenarios and interview situations.',
-      image: livecasestudyies,
+        'Join us for the RISE (Revolutionary Ideas, Strategy, and Execution) Product Challenge – your arena to showcase groundbreaking product management strategies that can change the game! This brand new event is a competitive version of the UWPM Live Case Study event.',
+      image: riselivecasestudy,
     },
     {
-      name: 'Mocktail & Cheese',
-      date: 'November 12, 2022',
-      location: 'DC 1301',
+      name: 'UWPM X BluePrint Product Night',
+      date: 'March 7th, 2024',
+      location: 'E5-4106',
       description:
-        'A delightful evening at our Mocktails and Cheese Night! Connect with like-minded individuals, indulge in delicious mocktails, and forge meaningful connections.',
-      image: mocktainandcheese,
+        'Blueprint and UWPM are proud to present Product Night which will feature an interactive case study with prompts taken from real PM interviews at large companies, and help you to learn how to ace your next PM interview.',
+      image: uwpmxblueprint,
     },
   ];
-
+  //
   return (
     <>
       <h2 className="mb-5">Past Events</h2>
