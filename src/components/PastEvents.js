@@ -34,12 +34,12 @@ export default function PastEvents() {
 
   // Array of [imageUrl, instagramUrl]
   const flatImages = [
-  //UPDATED
+    //UPDATED
     [sum24ResumeRevamp, 'https://www.instagram.com/p/C8ABdFYgV_3/'],
     [riselivecasestudy, 'https://www.instagram.com/p/C4OkY6nAmWi/'],
     [uwpmxblueprint, 'https://www.instagram.com/p/C4HGdkBAwjB/'],
     [win24IceCream, 'https://www.instagram.com/p/C7U5sSpgbim/'],
-  //
+    //
     [mocktainandcheese, 'https://www.instagram.com/p/CzKKhsVIhOR/'],
     [livecasestudyies, 'https://www.instagram.com/p/C2pvzogAyRk/?img_index=1'],
     [speakerSneakPeak, 'https://www.instagram.com/p/CuinX2tANsc/'],
