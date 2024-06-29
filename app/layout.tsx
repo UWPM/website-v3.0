@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import dynamic from "next/dynamic";
+import NoiseSVG from "@/components/noise-svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 const DynamicScrollToTop = dynamic(() => import("@/components/scroll-to-top"), {
   ssr: false,
 });
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <NoiseSVG />
         <Navbar />
         {children}
         <Footer />

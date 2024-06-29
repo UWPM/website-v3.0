@@ -5,8 +5,9 @@ export default function MissionStatement() {
   return (
     <section className="space-y-12 pt-32">
       <h2 className="text-2xl font-bold md:text-3xl">About Us</h2>
-      <div className="flex flex-col gap-12">
-        <div className="flex flex-col justify-center gap-12 md:flex-row md:gap-8">
+      <div className="flex flex-col gap-28">
+        <div className="relative flex flex-col justify-center gap-14 md:flex-row">
+          <div className="absolute bottom-0 left-1/2 z-10 hidden size-32 -translate-x-1/2 translate-y-1/2 rounded-full bg-red-200/50 md:block" />
           <StatementCard className="basis-auto md:basis-[450px]">
             <StatementCardHeader>Mission</StatementCardHeader>
             <StatementCardContent>
@@ -28,6 +29,7 @@ export default function MissionStatement() {
             </StatementCardContent>
           </StatementCard>
         </div>
+        {/* // TODO: Instead of using 3 paragraph elements, use whitepace-pre */}
         <StatementCard className="self-center md:max-w-[600px]">
           <StatementCardHeader>What Do We Do</StatementCardHeader>
           <StatementCardContent className="space-y-4 text-center">

@@ -41,7 +41,10 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
-    scroll-behavior: smooth;
+    @apply scroll-smooth bg-background text-foreground antialiased;
+  }
+  body::before {
+    @apply pointer-events-none fixed left-0 top-0 z-[1000] h-full w-full text-secondary opacity-20 content-[""];
+    filter: url(#grainy);
   }
 }

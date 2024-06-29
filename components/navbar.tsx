@@ -4,7 +4,6 @@ import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import Link from "next/link";
 
 export default function Navbar() {
-  // TODO: Make sticky and blur background
   return (
     <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/60 py-6 backdrop-blur">
       <div className="container flex px-4 md:px-8">
