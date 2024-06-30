@@ -38,8 +38,57 @@ import Fatimah from '../images/about/exec-profiles/FatimahHeadshot.jpeg';
 import Khali from '../images/about/exec-profiles/KhaliHeadshot.jpeg';
 import Ivy from '../images/about/exec-profiles/IvyHeadshot.png';
 import David from '../images/about/exec-profiles/DavidHeadshot.jpeg';
+import Aadhyaaa from '../images/about/exec-profiles/AadhyaaaHeadshot.jpg';
+import Gaurika from '../images/about/exec-profiles/GaurikaGuptaHeadshot-1.png';
+import Naman from '../images/about/exec-profiles/NamanModiHeadshot.jpeg';
+import JoshuaLi from '../images/about/exec-profiles/JoshuaLiHeadshot.jpg';
+import Prasana from '../images/about/exec-profiles/PrasanaDoshiHeadshot.jpeg';
+import Sunnie from '../images/about/exec-profiles/SunnieKaparHeadshot.jpeg';
+import Utkarsh from '../images/about/exec-profiles/UtkarshGuptaHeadshot.jpg';
 
 export const ExecList = {
+  AadhyaaaInfo: {
+    name: 'Aadhyaaa Mashru',
+    role: 'Engineering Lead',
+    link: 'https://www.linkedin.com/in/aadhyaaamashru/',
+    image: Aadhyaaa,
+  },
+  GaurikaInfo: {
+    name: 'Gaurika Gupta',
+    role: 'Full Stack Developer',
+    link: 'https://www.linkedin.com/in/gaurikagupta1/',
+    image: Gaurika,
+  },
+  NamanInfo: {
+    name: 'Naman Modi',
+    role: 'Full Stack Developer',
+    link: 'https://www.linkedin.com/in/naman-modi-b7023a246/',
+    image: Naman,
+  },
+  JoshuaLiInfo: {
+    name: 'Joshua Li',
+    role: 'Full Stack Developer',
+    link: 'https://www.linkedin.com/in/joshua-li-1354a01a9/',
+    image: JoshuaLi,
+  },
+  PrasanaInfo: {
+    name: 'Prasana Doshi',
+    role: 'Full Stack Developer',
+    link: 'https://www.linkedin.com/in/prasanaydoshi/',
+    image: Prasana,
+  },
+  SunnieInfo: {
+    name: 'Sunnie Kapar',
+    role: 'Full Stack Developer',
+    link: 'https://www.linkedin.com/in/sunnie-kapar/',
+    image: Sunnie,
+  },
+  UtkarshInfo: {
+    name: 'Utkarsh Gupta',
+    role: 'Full Stack Developer',
+    link: 'https://www.linkedin.com/in/utkarshg20/',
+    image: Utkarsh,
+  },
   YashInfo: {
     name: 'Yash Gajaria',
     role: 'Projects Lead',

@@ -259,24 +259,50 @@ export default function About({ show }) {
             </Row>
             <Row className="profile-row">
               <TeamProfileCard
-                name={Execs.KirtiInfo.name}
-                role={Execs.KirtiInfo.role}
-                link={Execs.KirtiInfo.link}
-                image={Execs.KirtiInfo.image}
+                name={Execs.AadhyaaaInfo.name}
+                role={Execs.AadhyaaaInfo.role}
+                link={Execs.AadhyaaaInfo.link}
+                image={Execs.AadhyaaaInfo.image}
+              />
+              {/* Adding new software team members */}
+              <TeamProfileCard
+                name={Execs.GaurikaInfo.name}
+                role={Execs.GaurikaInfo.role}
+                link={Execs.GaurikaInfo.link}
+                image={Execs.GaurikaInfo.image}
               />
               <TeamProfileCard
-                name={Execs.DatInfo.name}
-                role={Execs.DatInfo.role}
-                link={Execs.DatInfo.link}
-                image={Execs.DatInfo.image}
+                name={Execs.NamanInfo.name}
+                role={Execs.NamanInfo.role}
+                link={Execs.NamanInfo.link}
+                image={Execs.NamanInfo.image}
               />
               <TeamProfileCard
-                name={Execs.SimonInfo.name}
-                role={Execs.SimonInfo.role}
-                link={Execs.SimonInfo.link}
-                image={Execs.SimonInfo.image}
+                name={Execs.JoshuaLiInfo.name}
+                role={Execs.JoshuaLiInfo.role}
+                link={Execs.JoshuaLiInfo.link}
+                image={Execs.JoshuaLiInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.PrasanaInfo.name}
+                role={Execs.PrasanaInfo.role}
+                link={Execs.PrasanaInfo.link}
+                image={Execs.PrasanaInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.SunnieInfo.name}
+                role={Execs.SunnieInfo.role}
+                link={Execs.SunnieInfo.link}
+                image={Execs.SunnieInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.UtkarshInfo.name}
+                role={Execs.UtkarshInfo.role}
+                link={Execs.UtkarshInfo.link}
+                image={Execs.UtkarshInfo.image}
               />
             </Row>
+
             <Row className="team-type" id="marketing">
               <h3 team-title>Marketing</h3>
               <p className="team-paragraph">
