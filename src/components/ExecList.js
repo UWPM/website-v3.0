@@ -38,13 +38,13 @@ import Fatimah from '../images/about/exec-profiles/FatimahHeadshot.jpeg';
 import Khali from '../images/about/exec-profiles/KhaliHeadshot.jpeg';
 import Ivy from '../images/about/exec-profiles/IvyHeadshot.png';
 import David from '../images/about/exec-profiles/DavidHeadshot.jpeg';
-import Aadhyaaa from '../images/about/exec-profiles/AadhyaaaHeadshot.jpg';
+import Aadhyaaa from '../images/about/exec-profiles/AadhyaaaHeadshot.jpeg';
 import Gaurika from '../images/about/exec-profiles/GaurikaGuptaHeadshot-1.png';
 import Naman from '../images/about/exec-profiles/NamanModiHeadshot.jpeg';
-import JoshuaLi from '../images/about/exec-profiles/JoshuaLiHeadshot.jpg';
+import JoshuaLi from '../images/about/exec-profiles/JoshuaLiHeadshot.png';
 import Prasana from '../images/about/exec-profiles/PrasanaDoshiHeadshot.jpeg';
-import Sunnie from '../images/about/exec-profiles/SunnieKaparHeadshot.jpeg';
-import Utkarsh from '../images/about/exec-profiles/UtkarshGuptaHeadshot.jpg';
+import Sunnie from '../images/about/exec-profiles/SunnieKaparHeadshot.png';
+import Utkarsh from '../images/about/exec-profiles/UtkarshGuptaHeadshot.png';
 
 export const ExecList = {
   AadhyaaaInfo: {
