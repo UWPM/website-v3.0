@@ -38,8 +38,78 @@ import Fatimah from '../images/about/exec-profiles/FatimahHeadshot.jpeg';
 import Khali from '../images/about/exec-profiles/KhaliHeadshot.jpeg';
 import Ivy from '../images/about/exec-profiles/IvyHeadshot.png';
 import David from '../images/about/exec-profiles/DavidHeadshot.jpeg';
+import Aadhyaaa from '../images/about/exec-profiles/AadhyaaaHeadshot.png';
+import Gaurika from '../images/about/exec-profiles/GaurikaGuptaHeadshot.png';
+import Naman from '../images/about/exec-profiles/NamanModiHeadshot.jpeg';
+import JoshuaLi from '../images/about/exec-profiles/JoshuaLiHeadshot.png';
+import Prasana from '../images/about/exec-profiles/PrasanaDoshiHeadshot.jpeg';
+import Sunnie from '../images/about/exec-profiles/SunnieKaparHeadshot.png';
+import Utkarsh from '../images/about/exec-profiles/UtkarshGuptaHeadshot.png';
+import Ana from '../images/about/exec-profiles/AnaHeadshot.png';
+import Kamila from '../images/about/exec-profiles/KamilaHeadshot.png';
+import Aditi from '../images/about/exec-profiles/AditiHeadshot.png';
 
 export const ExecList = {
+  AditiInfo: {
+    name: 'Aditi Suresh',
+    role: 'Marketing Director',
+    link: 'https://www.linkedin.com/in/aditi-suresh-0b4673239/',
+    image: Aditi,
+  },
+  KamilaInfo: {
+    name: 'Kamila Alsya Farisaputri',
+    role: 'Marketing Director',
+    link: 'https://www.linkedin.com/in/kamila-aisya-farisaputri/',
+    image: Kamila,
+  },
+  AnaInfo: {
+    name: 'Ana Franco',
+    role: 'Podcast Director',
+    link: 'https://www.linkedin.com/in/anafranco1/',
+    image: Ana,
+  },
+  AadhyaaaInfo: {
+    name: 'Aadhyaaa Mashru',
+    role: 'Software Engineering Lead',
+    link: 'https://www.linkedin.com/in/aadhyaaamashru/',
+    image: Aadhyaaa,
+  },
+  GaurikaInfo: {
+    name: 'Gaurika Gupta',
+    role: 'Software Developer',
+    link: 'https://www.linkedin.com/in/gaurikagupta1/',
+    image: Gaurika,
+  },
+  NamanInfo: {
+    name: 'Naman Modi',
+    role: 'Software Developer',
+    link: 'https://www.linkedin.com/in/naman-modi-b7023a246/',
+    image: Naman,
+  },
+  JoshuaLiInfo: {
+    name: 'Joshua Li',
+    role: 'Software Developer',
+    link: 'https://www.linkedin.com/in/joshua-li-1354a01a9/',
+    image: JoshuaLi,
+  },
+  PrasanaInfo: {
+    name: 'Prasana Y Doshi',
+    role: 'Software Developer',
+    link: 'https://www.linkedin.com/in/prasanaydoshi/',
+    image: Prasana,
+  },
+  SunnieInfo: {
+    name: 'Sunnie Kapar',
+    role: 'Software Developer',
+    link: 'https://www.linkedin.com/in/sunnie-kapar/',
+    image: Sunnie,
+  },
+  UtkarshInfo: {
+    name: 'Utkarsh Gupta',
+    role: 'Software Developer',
+    link: 'https://www.linkedin.com/in/utkarshg20/',
+    image: Utkarsh,
+  },
   YashInfo: {
     name: 'Yash Gajaria',
     role: 'Projects Lead',
@@ -54,7 +124,7 @@ export const ExecList = {
   },
   PrakrutiInfo: {
     name: 'Prakruti Gajera',
-    role: 'Events Lead',
+    role: 'Co-President',
     link: 'https://www.linkedin.com/in/prakruti-gajera-a999b71b2/',
     image: Prakruti,
   },
@@ -162,7 +232,7 @@ export const ExecList = {
   },
   PeterInfo: {
     name: 'Peter Huang',
-    role: 'Podcast Director',
+    role: 'Podcast Lead',
     link: 'https://www.linkedin.com/in/hwhpeter/',
     image: Peter,
   },
@@ -192,7 +262,7 @@ export const ExecList = {
   },
   AmieInfo: {
     name: 'Amie Ahn',
-    role: 'Design Director',
+    role: 'Marketing Lead',
     link: 'https://www.linkedin.com/in/amieahn03/',
     image: PMHeadshot,
   },
@@ -240,7 +310,7 @@ export const ExecList = {
   },
   PalakInfo: {
     name: 'Palak Agarwal',
-    role: 'Podcast Director',
+    role: 'Co-President',
     link: 'https://www.linkedin.com/in/palak06',
     image: Palak,
   },
