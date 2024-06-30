@@ -45,8 +45,29 @@ import JoshuaLi from '../images/about/exec-profiles/JoshuaLiHeadshot.png';
 import Prasana from '../images/about/exec-profiles/PrasanaDoshiHeadshot.jpeg';
 import Sunnie from '../images/about/exec-profiles/SunnieKaparHeadshot.png';
 import Utkarsh from '../images/about/exec-profiles/UtkarshGuptaHeadshot.png';
+import Ana from '../images/about/exec-profiles/AnaHeadshot.png';
+import Kamila from '../images/about/exec-profiles/KamilaHeadshot.png';
+import Aditi from '../images/about/exec-profiles/AditiHeadshot.png';
 
 export const ExecList = {
+  AditiInfo: {
+    name: 'Aditi Suresh',
+    role: 'Marketing Director',
+    link: 'https://www.linkedin.com/in/aditi-suresh-0b4673239/',
+    image: Aditi,
+  },
+  KamilaInfo: {
+    name: 'Kamila Alsya Farisaputri',
+    role: 'Marketing Director',
+    link: 'https://www.linkedin.com/in/kamila-aisya-farisaputri/',
+    image: Kamila,
+  },
+  AnaInfo: {
+    name: 'Ana Franco',
+    role: 'Podcast Director',
+    link: 'https://www.linkedin.com/in/anafranco1/',
+    image: Ana,
+  },
   AadhyaaaInfo: {
     name: 'Aadhyaaa Mashru',
     role: 'Software Engineering Lead',
@@ -72,7 +93,7 @@ export const ExecList = {
     image: JoshuaLi,
   },
   PrasanaInfo: {
-    name: 'Prasana Doshi',
+    name: 'Prasana Y Doshi',
     role: 'Software Developer',
     link: 'https://www.linkedin.com/in/prasanaydoshi/',
     image: Prasana,
@@ -103,7 +124,7 @@ export const ExecList = {
   },
   PrakrutiInfo: {
     name: 'Prakruti Gajera',
-    role: 'Events Lead',
+    role: 'Co-President',
     link: 'https://www.linkedin.com/in/prakruti-gajera-a999b71b2/',
     image: Prakruti,
   },
@@ -211,7 +232,7 @@ export const ExecList = {
   },
   PeterInfo: {
     name: 'Peter Huang',
-    role: 'Podcast Director',
+    role: 'Podcast Lead',
     link: 'https://www.linkedin.com/in/hwhpeter/',
     image: Peter,
   },
@@ -241,7 +262,7 @@ export const ExecList = {
   },
   AmieInfo: {
     name: 'Amie Ahn',
-    role: 'Design Director',
+    role: 'Marketing Lead',
     link: 'https://www.linkedin.com/in/amieahn03/',
     image: PMHeadshot,
   },
@@ -289,7 +310,7 @@ export const ExecList = {
   },
   PalakInfo: {
     name: 'Palak Agarwal',
-    role: 'Podcast Director',
+    role: 'Co-President',
     link: 'https://www.linkedin.com/in/palak06',
     image: Palak,
   },
