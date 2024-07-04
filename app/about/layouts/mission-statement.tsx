@@ -3,7 +3,7 @@ import React from "react";
 
 export default function MissionStatement() {
   return (
-    <section className="space-y-12 pt-32">
+    <section className="space-y-12">
       <h2 className="text-2xl font-bold md:text-3xl">About Us</h2>
       <div className="flex flex-col gap-28">
         <div className="relative flex flex-col justify-center gap-14 md:flex-row">

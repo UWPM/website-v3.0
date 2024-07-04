@@ -6,7 +6,9 @@ import Footer from "@/components/footer";
 import dynamic from "next/dynamic";
 import NoiseSVG from "@/components/noise-svg";
 
-const inter = Inter({ subsets: ["latin"] });
+const spline = Inter({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Development",
@@ -24,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={spline.className}>
         <NoiseSVG />
         <Navbar />
         {children}

@@ -1,7 +1,7 @@
 export default function OurImpact() {
   return (
     <section className="space-y-12 pt-32">
-      <h2 className="text-2xl font-bold md:text-3xl">Our Impact</h2>
+      <h2 className="text-center">Our Impact</h2>
       <div className="space-y-6">
         <hr className="h-1" />
         <div className="flex justify-around">
@@ -23,8 +23,8 @@ export default function OurImpact() {
 const Statistic = ({ number, label }: { number: string; label: string }) => {
   return (
     <div className="flex flex-col items-center">
-      <h3 className="text-2xl font-bold">{number}</h3>
-      <p className="text-xl">{label}</p>
+      <h3>{number}</h3>
+      <p>{label}</p>
     </div>
   );
 };

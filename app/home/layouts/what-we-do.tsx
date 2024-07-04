@@ -1,8 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-// TODO: Wrap the component in the background image (we are uw pm.)
-
 const hexagonCards = [
   {
     title: "Educate",
@@ -24,9 +22,16 @@ const hexagonCards = [
 // TODO: Add that squigly line next to the first HexagonCard, should probably wrap the HexagonCard in a div for that
 export default function WhatWeDo() {
   return (
-    <section className="space-y-12 pt-32">
-      <h2 className="text-2xl font-bold md:text-3xl">What We Do</h2>
-      <div className="flex flex-col items-center space-y-8">
+    <section className="relative space-y-12 pt-32">
+      <Image
+        src="/images/we-are-uwpm.png"
+        width={320}
+        height={521}
+        alt="we are uwpm"
+        className="absolute -bottom-12 left-6"
+      />
+      <h2 className="font-bold">What We Do</h2>
+      <div className="flex flex-col items-center space-y-12">
         <HexagonCard {...hexagonCards[0]} className="md:self-start" />
         <HexagonCard {...hexagonCards[1]} />
         <HexagonCard {...hexagonCards[2]} className="md:self-end" />
@@ -40,6 +45,8 @@ export default function WhatWeDo() {
  * @param description: the one line description under the title
  * @param image: the image source
  */
+
+//TODO: Work on responsiveness of the cards on smaller screens
 const HexagonCard = ({
   title,
   description,
@@ -54,21 +61,22 @@ const HexagonCard = ({
   return (
     <div className={cn("flex items-start", className)}>
       <div className="flex items-center">
-        <div className="z-10 -ml-12 size-24 backdrop-blur-none md:-ml-24 md:size-48">
+        <div className="-ml-12 w-full md:-ml-24 md:h-48 md:w-fit">
           <Image
-            src="https://picsum.photos/300/300"
+            src="/images/home/what-we-do-1.png"
             alt="image"
-            fill
-            className="h-full w-full translate-x-1/2 shadow-lg"
+            width={250}
+            height={200}
+            className="relative z-10 h-full w-full translate-x-1/2"
           />
         </div>
       </div>
-      <div className="flex h-32 w-[300px] rounded-lg border bg-background/60 p-4 pl-16 shadow backdrop-blur sm:w-[500px] md:h-48 md:w-[600px] md:p-8 md:pl-32">
-        <div className="flex w-full flex-col items-center justify-center space-y-4">
-          <h3 className="w-full rounded bg-zinc-200 py-2 text-center">
+      <div className="pl-18 flex h-32 w-[300px] rounded-lg rounded-s-none bg-gradient-to-b from-primary/20 to-primary/5 p-4 pl-12 shadow-2xl sm:w-[500px] md:h-48 md:w-[650px] md:p-8 md:pl-36">
+        <div className="flex w-full flex-col items-center justify-center gap-4 text-center">
+          <h3 className="w-full rounded bg-gradient-to-b from-primary to-primary/80 bg-clip-text font-semibold text-transparent">
             {title}
           </h3>
-          <p className="text-xs">{description}</p>
+          <p className="text-primary/70">{description}</p>
         </div>
       </div>
     </div>
