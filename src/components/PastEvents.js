@@ -7,6 +7,7 @@ import { Col, Container, Image, Row } from 'react-bootstrap';
 import win24IceCream from '../images/events/win24-ice-cream.jpg';
 import riselivecasestudy from '../images/events/rise-live-case.jpg';
 import uwpmxblueprint from '../images/events/uwpm-blueprint.jpg';
+import uwpmxblueprint2 from '../images/events/uwpm-blueprint 2.jpg';
 import sum24ResumeRevamp from '../images/events/resume-revamp.jpg';
 //
 import speakerSneakPeak from '../images/events/speaker-sneakpeak.jpeg';
@@ -35,6 +36,7 @@ export default function PastEvents() {
   // Array of [imageUrl, instagramUrl]
   const flatImages = [
     //UPDATED
+    [uwpmxblueprint2, 'https://www.instagram.com/p/C878S99gl61/'],
     [sum24ResumeRevamp, 'https://www.instagram.com/p/C8ABdFYgV_3/'],
     [riselivecasestudy, 'https://www.instagram.com/p/C4OkY6nAmWi/'],
     [uwpmxblueprint, 'https://www.instagram.com/p/C4HGdkBAwjB/'],
