@@ -225,7 +225,8 @@ export default function About({ show }) {
             <Row className="team-type">
               <h3 team-title>Outreach</h3>
               <p className="team-paragraph">
-                The Outreach Team bridges the gap between our university and industry partners.
+                The Outreach Team bridges the gap between our university and
+                industry partners.
               </p>
             </Row>
             <Row className="profile-row">
