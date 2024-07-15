@@ -377,12 +377,6 @@
     width: 80%;
   }
 
-  .button-container {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-block: 100px;
-  }
   .event-name {
     font-size: 15px;
   }
@@ -429,6 +423,10 @@
   border-color: transparent !important;
 }
 
+.button-container {
+  max-width: fit-content;
+}
+
 .button-transparent {
   box-sizing: border-box;
   font-family: 'IBM Plex Mono';
@@ -451,15 +449,7 @@
   border-radius: 10px;
 }
 
-.introduction-about-us {
-  margin-right: 50px;
-}
-
 @media (max-width: 767px) {
-  .button-container {
-    flex-wrap: nowrap;
-  }
-
   .button-red-gradiant {
     margin-right: 20px;
   }
