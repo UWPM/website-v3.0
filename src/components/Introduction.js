@@ -1,6 +1,5 @@
 import { React, useState, useEffect } from 'react';
 import '../App.css';
-import { Link } from 'react-router-dom';
 import desktopHexagons from '../images/background/desktop-hexagons.svg';
 import gradCapHex from '../images/background/grad-cap-hex.svg';
 import micHex from '../images/background/mic-hex.svg';
@@ -13,6 +12,7 @@ import rectangle2 from '../images/popup-bubbles/Rectangle2.png';
 import rectangle3 from '../images/popup-bubbles/Rectangle3.png';
 import rectangle4 from '../images/popup-bubbles/Rectangle4.png';
 import rectangle5 from '../images/popup-bubbles/Rectangle5.png';
+import { Link } from 'react-router-dom';
 
 export default function Introduction({ show }) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -136,9 +136,11 @@ export default function Introduction({ show }) {
               Product Management Community @ UWaterloo.
             </h1>
           </div>
-          <button className="button-red-gradiant introduction-about-us">
-            <a href="/about">ABOUT</a>
-          </button>
+          <Link to="/about" className="button-container">
+            <button className="button-red-gradiant introduction-about-us">
+              ABOUT
+            </button>
+          </Link>
         </div>
       </div>
     </>
