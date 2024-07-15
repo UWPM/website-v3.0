@@ -377,12 +377,6 @@
     width: 80%;
   }
 
-  .button-container {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-block: 100px;
-  }
   .event-name {
     font-size: 15px;
   }
@@ -456,10 +450,6 @@
 }
 
 @media (max-width: 767px) {
-  .button-container {
-    flex-wrap: nowrap;
-  }
-
   .button-red-gradiant {
     margin-right: 20px;
   }

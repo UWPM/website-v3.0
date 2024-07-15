@@ -52,7 +52,7 @@ export default function ProdConCarousel() {
 
   const renderNextButton = ({ isDisabled }) => {
     return (
-      <div class="prodcon_forward_arrow">
+      <div className="prodcon_forward_arrow">
         <ArrowForwardIosIcon />
       </div>
     );
@@ -60,7 +60,7 @@ export default function ProdConCarousel() {
 
   const renderPrevButton = ({ isDisabled }) => {
     return (
-      <div class="prodcon_prev_arrow">
+      <div className="prodcon_prev_arrow">
         <ArrowBackIosIcon />
       </div>
     );
