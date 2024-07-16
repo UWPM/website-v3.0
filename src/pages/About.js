@@ -225,8 +225,8 @@ export default function About({ show }) {
             <Row className="team-type">
               <h3 team-title>Outreach</h3>
               <p className="team-paragraph">
-                The Outreach Team manages our finances and bridges the gap
-                between our university and industry partners.
+                The Outreach Team bridges the gap between our university and
+                industry partners.
               </p>
             </Row>
             <Row className="profile-row">
@@ -388,7 +388,9 @@ export default function About({ show }) {
             </Row>
             <Row className="team-type">
               <h3 team-title>Finance</h3>
-              <p className="team-paragraph">lorem ipsum</p>
+              <p className="team-paragraph">
+                The Finance Team manages the record of expenses and revenue.
+              </p>
             </Row>
             <Row className="profile-row">
               <TeamProfileCard
