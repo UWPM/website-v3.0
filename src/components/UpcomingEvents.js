@@ -1,12 +1,12 @@
 import React from 'react';
 import '../styles/Events.css';
-import upcomingEventPost from '../images/events/blueprint2.jpeg';
+import upcomingEventPost from '../images/events/uwpm-blueprint 2.jpg';
 import { Container } from 'react-bootstrap';
 
 const UpcomingEventsCard = () => {
   const title = 'Upcoming Events';
-  const date = 'Thursday, March 7th 2024';
-  const location = 'E5 - 4106 (Engineering 5)';
+  const date = 'Thursday, July 8th 2024';
+  const location = 'E7 - 4053 (Engineering 7)';
   const callToAction = 'APPLY NOW';
   const about = 'About';
   const description =
