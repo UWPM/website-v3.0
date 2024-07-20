@@ -136,9 +136,11 @@ export default function Introduction({ show }) {
               Product Management Community @ UWaterloo.
             </h1>
           </div>
+
           <Link to="/about" className="button-container">
             <button className="button-red-gradiant">ABOUT</button>
           </Link>
+
         </div>
       </div>
     </>
