@@ -140,7 +140,6 @@ export default function Introduction({ show }) {
           <Link to="/about" className="button-container">
             <button className="button-red-gradiant">ABOUT</button>
           </Link>
-
         </div>
       </div>
     </>
