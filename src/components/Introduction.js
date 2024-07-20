@@ -137,9 +137,7 @@ export default function Introduction({ show }) {
             </h1>
           </div>
           <Link to="/about" className="button-container">
-            <button className="button-red-gradiant">
-              ABOUT
-            </button>
+            <button className="button-red-gradiant">ABOUT</button>
           </Link>
         </div>
       </div>
