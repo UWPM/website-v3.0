@@ -6,10 +6,19 @@ import { Link } from 'react-router-dom';
 import win24IceCream from '../images/events/win24-ice-cream.jpg';
 import riselivecasestudy from '../images/events/rise-live-case.jpg';
 import uwpmxblueprint from '../images/events/uwpm-blueprint.jpg';
+import uwpmxblueprint2 from '../images/events/uwpm-blueprint 2.jpg';
 import sum24ResumeRevamp from '../images/events/resume-revamp.jpg';
 
 export default function PastEventsCarousel({ show }) {
   let PastEventsCarousel = [
+    {
+      name: 'UWPM X BluePrint Product Night',
+      date: 'July 8th, 2024',
+      location: 'E7-4053',
+      description:
+        'Blueprint and UWPM are proud to present Product Night which will feature an interactive case study with prompts taken from real PM interviews at large companies, and help you to learn how to ace your next PM interview.',
+      image: uwpmxblueprint2,
+    },
     {
       name: 'Resume Revamp',
       date: 'June 13th, 2024',
