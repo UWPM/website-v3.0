@@ -22,8 +22,9 @@ export default function Hero() {
 
         <div className="flex space-x-4">
           <Button className="flex-1">Learn more</Button>
-          <Button className="flex-1 shrink-0 group" variant="link">
-            Join our team <ArrowRight className="ml-1 w-4 scale-0 group-hover:scale-100 -translate-x-1 group-hover:translate-x-0 transition-all duration-200" />
+          <Button className="group flex-1 shrink-0" variant="link">
+            Join our team{" "}
+            <ArrowRight className="ml-1 w-4 -translate-x-1 scale-0 transition-all duration-200 group-hover:translate-x-0 group-hover:scale-100" />
           </Button>
         </div>
       </header>

@@ -6,7 +6,7 @@ import Logo from "./logo";
 
 export default function Navbar() {
   return (
-    <nav className="py-6 relative">
+    <nav className="relative py-6">
       <div className="container flex px-4 md:px-8">
         <Link href="/home" className="mr-auto">
           <Logo />
@@ -23,7 +23,7 @@ export default function Navbar() {
             <Link href="/events">Events</Link>
           </SheetContent>
         </Sheet>
-        <div className="hidden space-x-6 *:opacity-60 *:transition-opacity *:duration-300 hover:*:opacity-100 md:inline-flex items-center">
+        <div className="hidden items-center space-x-6 *:opacity-60 *:transition-opacity *:duration-300 hover:*:opacity-100 md:inline-flex">
           <Link href="/home">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/events">Events</Link>
@@ -33,4 +33,6 @@ export default function Navbar() {
   );
 }
 
-{/* <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/60 py-6 backdrop-blur"> */}
+{
+  /* <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/60 py-6 backdrop-blur"> */
+}

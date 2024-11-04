@@ -62,8 +62,8 @@ export default function Values() {
   return (
     <section className="space-y-6">
       <h2>Our Values</h2>
-      <div className=">:hover:not:hover-opacity-20 grid gap-6 md:grid-cols-2 lg:grid-cols-4 hover:*:shadow-2xl hover:*:-translate-y-3 *:transition-all *:duration-200">
-        <Card className="bg-transparent text-primary border-card/50 shadow-lg">
+      <div className=">:hover:not:hover-opacity-20 grid gap-6 *:transition-all *:duration-200 hover:*:-translate-y-3 hover:*:shadow-2xl md:grid-cols-2 lg:grid-cols-4">
+        <Card className="border-card/50 bg-transparent text-primary shadow-lg">
           <CardHeader className="flex items-center">
             <Image
               alt="test"

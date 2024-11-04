@@ -41,7 +41,7 @@
     @apply border-border;
   }
   body {
-    @apply relative scroll-smooth bg-background text-foreground antialiased bg-gradient-to-b from-[#3f313b] to-[150%] to-cyan-900;
+    @apply relative scroll-smooth bg-background bg-gradient-to-b from-[#3f313b] to-cyan-900 to-[150%] text-foreground antialiased;
   }
   body::before {
     @apply pointer-events-none fixed left-0 top-0 z-[1000] h-full w-full opacity-20 content-[""] md:[filter:url(#grainy)];

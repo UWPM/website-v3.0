@@ -45,7 +45,7 @@ export default function PastEvents() {
   return (
     <section className="space-y-12 pt-32">
       <h2 className="font-bold">Past Events</h2>
-      <div className="flex flex-col space-y-6 relative">
+      <div className="relative flex flex-col space-y-6">
         <Carousel
           className="rounded-md bg-gradient-to-b from-zinc-500 to-zinc-500/40 p-12 md:p-24"
           opts={{ loop: true }}
