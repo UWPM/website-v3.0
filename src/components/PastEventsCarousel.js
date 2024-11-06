@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 //Event Photos
 //UPDATED
+import fall24ProdCon from '../images/events/fall24-prodcon.jpg';
+//
 import win24IceCream from '../images/events/win24-ice-cream.jpg';
 import riselivecasestudy from '../images/events/rise-live-case.jpg';
 import uwpmxblueprint from '../images/events/uwpm-blueprint.jpg';
@@ -11,6 +13,14 @@ import sum24ResumeRevamp from '../images/events/resume-revamp.jpg';
 
 export default function PastEventsCarousel({ show }) {
   let PastEventsCarousel = [
+    {
+      name: 'ProdCon 2024',
+      date: 'November 16th, 2024',
+      location: 'TBD',
+      description:
+        "ProdCon is the University of Waterloo's product management case study competition. You will get an opportunity to solve a case, present it to judges and network with industry professionals!",
+      image: fall24ProdCon,
+    },
     {
       name: 'UWPM X BluePrint Product Night',
       date: 'July 8th, 2024',
