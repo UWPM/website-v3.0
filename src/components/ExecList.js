@@ -49,6 +49,23 @@ import Ana from '../images/about/exec-profiles/AnaHeadshot.png';
 import Kamila from '../images/about/exec-profiles/KamilaHeadshot.png';
 import Aditi from '../images/about/exec-profiles/AditiHeadshot.png';
 
+// Fall 2024 execs
+import Ahmed from '../images/about/exec-profiles/Ahmed Ahmed.jpeg';
+import Ajay from '../images/about/exec-profiles/Ajay Gupta.jpeg';
+import Leann from '../images/about/exec-profiles/LeannHeadshot.png';
+import Mayank from '../images/about/exec-profiles/Mayank.jpeg';
+// Events
+import Amanda from '../images/about/exec-profiles/Amanda Yu.jpeg';
+import Dhruv from '../images/about/exec-profiles/Dhruv.jpeg';
+import Winston from '../images/about/exec-profiles/Winston Yu.jpeg';
+// Engineering
+import Gaurika from '../images/about/exec-profiles/GaurikaGuptaHeadshot.png';
+import Utkarsh from '../images/about/exec-profiles/UtkarshGuptaHeadshot.png';
+import Sunnie from '../images/about/exec-profiles/SunnieKaparHeadshot.png';
+// Marketing
+
+
+
 export const ExecList = {
   AditiInfo: {
     name: 'Aditi Suresh',
@@ -68,15 +85,33 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/anafranco1/',
     image: Ana,
   },
+  AjayInfo: {
+    name: 'Ajay Gupta',
+    role: 'Secretary',
+    link: 'https://www.linkedin.com/in/ajaygupta3/',
+    image: Ajay,
+  },
   AadhyaaaInfo: {
     name: 'Aadhyaaa Mashru',
     role: 'Software Engineering Lead',
     link: 'https://www.linkedin.com/in/aadhyaaamashru/',
     image: Aadhyaaa,
   },
+  DhruvInfo: {
+    name: 'Dhruv Chopra',
+    role: 'Events Lead',
+    link: 'https://www.linkedin.com/in/d3chopra/',
+    image: Dhruv,
+  },
+  WinstonInfo: {
+    name: 'Winston Yu',
+    role: 'Events Director',
+    link: 'https://www.linkedin.com/in/winstonyou/',
+    image: Winston,
+  },
   GaurikaInfo: {
     name: 'Gaurika Gupta',
-    role: 'Software Developer',
+    role: 'Engineering Director',
     link: 'https://www.linkedin.com/in/gaurikagupta1/',
     image: Gaurika,
   },
@@ -100,13 +135,13 @@ export const ExecList = {
   },
   SunnieInfo: {
     name: 'Sunnie Kapar',
-    role: 'Software Developer',
+    role: 'Engineering Lead',
     link: 'https://www.linkedin.com/in/sunnie-kapar/',
     image: Sunnie,
   },
   UtkarshInfo: {
     name: 'Utkarsh Gupta',
-    role: 'Software Developer',
+    role: 'Engineering Director',
     link: 'https://www.linkedin.com/in/utkarshg20/',
     image: Utkarsh,
   },
@@ -136,7 +171,7 @@ export const ExecList = {
   },
   AhmedInfo: {
     name: 'Ahmed Ahmed',
-    role: 'Events Director',
+    role: 'Secretary',
     link: 'https://www.linkedin.com/in/ahmed-ahmed24/',
     image: Ahmed,
   },
@@ -298,7 +333,7 @@ export const ExecList = {
   },
   LeannInfo: {
     name: 'Leann Fernandes',
-    role: 'Events Lead',
+    role: 'President',
     link: 'https://www.linkedin.com/in/leann-fernandes/',
     image: Leann,
   },
@@ -328,14 +363,20 @@ export const ExecList = {
   },
   AmandaInfo: {
     name: 'Amanda Yuan',
-    role: 'Case Director',
+    role: 'Events Director',
     link: 'https://www.linkedin.com/in/amanda-yuan100/',
     image: PMHeadshot,
+  },
+  AmandaYuInfo: {
+    name: 'Amanda Yu',
+    role: 'Events Director',
+    link: 'https://www.linkedin.com/in/amandayu1/',
+    image: Amanda,
   },
   // Outreach team
   MayankInfo: {
     name: 'Mayank Sachdeva',
-    role: 'Outreach Lead',
+    role: 'President',
     link: 'https://www.linkedin.com/in/mayanksachdeva/',
     image: Mayank,
   },
