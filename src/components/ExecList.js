@@ -127,6 +127,12 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/jjudyyang/',
     image: Judy,
   },
+  MichelleInfo: {
+    name: 'Michelle Kwon',
+    role: 'Marketing Director',
+    link: 'https://www.linkedin.com/in/michellekwonnn/',
+    image: Michelle,
+  },
   BhoomaInfo: {
     name: 'Bhooma Chavadia',
     role: 'Finance Lead',
