@@ -429,7 +429,7 @@ export default function About({ show }) {
               <h3 team-title>Secretary</h3>
               <p className="team-paragraph">
                 {/*The Case study team focuses on developing case studies!*/}
-                NA
+                Internals
               </p>
             </Row>
             <Row className="profile-row" style={{ marginBottom: '100px' }}>
