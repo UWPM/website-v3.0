@@ -16,7 +16,7 @@
     "react-bootstrap": "^2.7.2",
     "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
-    "react-intersection-observer": "^9.13.0",
+    "react-intersection-observer": "^9.13.1",
     "react-modal": "^3.16.1",
     "react-modal-image": "^2.6.0",
     "react-responsive": "^9.0.2",
