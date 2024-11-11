@@ -2,7 +2,6 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 
-
 //Event Photos
 import fall24ProdCon from '../images/events/fall24-prodcon.jpg';
 import win24IceCream from '../images/events/win24-ice-cream.jpg';
