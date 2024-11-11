@@ -1,10 +1,9 @@
+import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 
 //Event Photos
-//UPDATED
 import fall24ProdCon from '../images/events/fall24-prodcon.jpg';
-//
 import win24IceCream from '../images/events/win24-ice-cream.jpg';
 import riselivecasestudy from '../images/events/rise-live-case.jpg';
 import uwpmxblueprint from '../images/events/uwpm-blueprint.jpg';
@@ -62,26 +61,26 @@ export default function PastEventsCarousel({ show }) {
       image: uwpmxblueprint,
     },
   ];
-  //
+
   return (
     <>
       <h2 className="mb-5">Past Events</h2>
       <Carousel>
-        {PastEventsCarousel.map((event) => (
-          <Carousel.Item>
-            <div className="">
+        {PastEventsCarousel.map((event, index) => (
+          <Carousel.Item key={index}>
+            <div className="carousel-item-wrapper">
               <img
-                className="d-block w-100"
+                className="d-block w-100 background-img"
                 src={require('../images/background/event-folder.png')}
                 alt="Carousel Slide"
               />
               <div className="file-contents">
+                <img className="event-img" src={event.image} alt="Event" />
                 <div className="event-text">
                   <h3 className="event-name">{event.name}</h3>
                   <p className="event-date">{event.date}</p>
                   <p className="event-description mt-5">{event.description}</p>
                 </div>
-                <img className="event-img" src={event.image} alt="Event"></img>
               </div>
             </div>
           </Carousel.Item>
@@ -89,7 +88,7 @@ export default function PastEventsCarousel({ show }) {
       </Carousel>
       <div className="d-flex justify-content-center my-4">
         <Link to="/events">
-          <button class="button-red-gradiant">VIEW ALL EVENTS</button>
+          <button className="button-red-gradiant">VIEW ALL EVENTS</button>
         </Link>
       </div>
     </>

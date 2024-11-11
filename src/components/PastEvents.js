@@ -2,16 +2,12 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Events.css';
 import '../App.css';
 import { Col, Container, Image, Row } from 'react-bootstrap';
-
-//UPDATED
 import fall24ProdCon from '../images/events/fall24-prodcon.jpg';
-//
 import win24IceCream from '../images/events/win24-ice-cream.jpg';
 import riselivecasestudy from '../images/events/rise-live-case.jpg';
 import uwpmxblueprint from '../images/events/uwpm-blueprint.jpg';
 import uwpmxblueprint2 from '../images/events/uwpm-blueprint 2.jpg';
 import sum24ResumeRevamp from '../images/events/resume-revamp.jpg';
-
 import speakerSneakPeak from '../images/events/speaker-sneakpeak.jpeg';
 import blueprintUWPM from '../images/events/blueprint-uwpm.jpeg';
 import win23ProductPanel from '../images/events/win23-product-panel.png';

@@ -343,6 +343,67 @@
   width: 75%;
 }
 
+/* 
+.file-contents {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden; 
+} */
+/* 
+.event-img {
+  max-width: 50%;
+  height: auto;
+  margin-right: 20px;
+} */
+/* 
+.event-text {
+  text-align: left;
+} */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .file-contents {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-direction: column;
+    padding-top: 60px;
+    gap: 12px;
+  }
+
+  .event-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 20px 0;
+  }
+
+  .event-text {
+    flex: 1;
+    text-align: center;
+  }
+  .background-img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    /* object-fit: cover; */
+  }
+}
+
+/* Existing styles */
 .event-description,
 .event-date {
   font-size: 20px;
@@ -358,13 +419,14 @@
   .carousel-control-prev {
     display: none;
   }
+
   .event-description {
     display: none;
   }
 
   .event-img {
-    width: 12rem;
-    height: 12rem;
+    width: 15rem;
+    height: 15rem;
   }
 }
 
@@ -380,12 +442,14 @@
   .event-name {
     font-size: 15px;
   }
+
   .event-date {
-    font-size: 15px;
+    display: none;
   }
+
   .event-img {
-    width: 8rem;
-    height: 8rem;
+    width: 15rem;
+    height: 15rem;
   }
 }
 
