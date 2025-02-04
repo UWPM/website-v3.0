@@ -352,7 +352,6 @@ export default function About({ show }) {
                 link={Execs.MayankInfo.link}
               />
             </Row>
-
             <Row className="team-type" id="marketing">
               <h3 team-title>Marketing</h3>
               <p className="team-paragraph">
@@ -386,23 +385,7 @@ export default function About({ show }) {
                 image={Execs.JewelInfo.image}
               />
             </Row>
-
-            <Row className="team-type">
-              <h3 team-title>Projects</h3>
-              <p className="team-paragraph">
-                The projects team is responsible for creating and maintaining
-                new initiatives from the Club!
-              </p>
-            </Row>
-            <Row className="profile-row">
-              <TeamProfileCard
-                name={Execs.YashInfo.name}
-                role={Execs.YashInfo.role}
-                link={Execs.YashInfo.link}
-                image={Execs.YashInfo.image}
-              />
-            </Row>
-            <Row className="team-type">
+            <Row className="team-type" id="podcast">
               <h3 team-title>Podcast</h3>
               <p className="team-paragraph">
                 The Podcast Team produces our weekly podcast about PM!
