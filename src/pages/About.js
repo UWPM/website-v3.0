@@ -255,6 +255,24 @@ export default function About({ show }) {
                 link={Execs.DhruvInfo.link}
                 image={Execs.DhruvInfo.image}
               />
+              <TeamProfileCard
+                name={Execs.MarcusInfo.name}
+                role={Execs.MarcusInfo.role}
+                link={Execs.MarcusInfo.link}
+                image={Execs.MarcusInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.CurtisInfo.name}
+                role={Execs.CurtisInfo.role}
+                link={Execs.CurtisInfo.link}
+                image={Execs.CurtisInfo.image}
+              />
+              <TeamProfileCard
+                name={Execs.MaeInfo.name}
+                role={Execs.MaeInfo.role}
+                link={Execs.MaeInfo.link}
+                image={Execs.MaeInfo.image}
+              />
             </Row>
             <Row className="team-type">
               <h3 team-title>Outreach</h3>
@@ -329,7 +347,7 @@ export default function About({ show }) {
                 image={Execs.DannyInfo.image}
               />
             </Row>
-            <Row className="team-type" id="content">
+            <Row className="team-type">
               <h3 team-title>Content</h3>
               <p className="team-paragraph">Lorem Ipsum</p>
             </Row>
@@ -350,6 +368,7 @@ export default function About({ show }) {
                 name={Execs.MayankInfo.name}
                 role={Execs.MayankInfo.role}
                 link={Execs.MayankInfo.link}
+                image={Execs.MayankInfo.image}
               />
             </Row>
             <Row className="team-type" id="marketing">

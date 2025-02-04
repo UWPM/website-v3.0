@@ -1,4 +1,4 @@
-// import PMHeadshot from '../images/about/exec-profiles/UWPMHeadshot.png';
+import PMHeadshot from '../images/about/exec-profiles/UWPMHeadshot.png';
 import Amie from '../images/about/exec-profiles/Amie.jpeg';
 import Aadhyaaa from '../images/about/exec-profiles/Aadhyaaa.jpeg';
 import Adila from '../images/about/exec-profiles/Adila.jpeg';
@@ -143,24 +143,24 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/d3chopra//',
     image: Dhruv,
   },
-  // MarcusInfo: {
-  //   name: 'Marcus Nguyen',
-  //   role: 'Events Director',
-  //   link: 'https://www.linkedin.com/in/johnsonduong/',
-  //   image: Marcus,
-  // },
-  // CurtisInfo: {
-  //   name: 'Curtis Sinopoli',
-  //   role: 'Events Director',
-  //   link: 'https://www.linkedin.com/in/curtis-sinopoli/',
-  //   image: Curtis,
-  // },
-  // MaeInfo: {
-  //   name: 'Mae-Lyn Nguyen',
-  //   role: 'Events Director',
-  //   link: '',
-  //   image: Mae,
-  // },
+  MarcusInfo: {
+    name: 'Marcus Nguyen',
+    role: 'Events Director',
+    link: '',
+    image: PMHeadshot,
+  },
+  CurtisInfo: {
+    name: 'Curtis Sinopoli',
+    role: 'Events Director',
+    link: 'https://www.linkedin.com/in/curtis-sinopoli/',
+    image: PMHeadshot,
+  },
+  MaeInfo: {
+    name: 'Mae-Lyn Nguyen',
+    role: 'Events Director',
+    link: '',
+    image: PMHeadshot,
+  },
   SunnieInfo: {
     name: 'Sunnie Kapar',
     role: 'VP Engineering',
@@ -207,7 +207,7 @@ export const ExecList = {
     name: 'Mayank Sachdeva',
     role: 'Content Director',
     link: 'https://www.linkedin.com/in/mayanksachdeva/',
-    // image: Mayank,
+    image: PMHeadshot,
   },
   BhoomaInfo: {
     name: 'Bhooma Chavadia',
