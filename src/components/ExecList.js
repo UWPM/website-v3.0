@@ -110,7 +110,7 @@ export const ExecList = {
   SaruthiInfo: {
     name: 'Saruthi Thirunavukkarasu',
     role: 'Outreach Director',
-    link: 'www.linkedin.com/in/saruthit',
+    link: 'https://www.linkedin.com/in/saruthit/',
     image: Saruthi,
   },
   RakshitaInfo: {
@@ -146,7 +146,7 @@ export const ExecList = {
   MarcusInfo: {
     name: 'Marcus Nguyen',
     role: 'Events Director',
-    link: '',
+    link: 'https://www.linkedin.com/in/marcusnguyen04/',
     image: PMHeadshot,
   },
   CurtisInfo: {
@@ -158,7 +158,7 @@ export const ExecList = {
   MaeInfo: {
     name: 'Mae-Lyn Nguyen',
     role: 'Events Director',
-    link: '',
+    link: 'https://www.linkedin.com/in/mae-lyn/',
     image: PMHeadshot,
   },
   SunnieInfo: {
