@@ -1,19 +1,19 @@
 import React from 'react';
 import '../styles/Events.css';
-import upcomingEventPost from '../images/events/uwpm-blueprint 2.jpg';
+import upcomingEventPost from '../images/events/fall24-prodcon.jpg';
 import { Container } from 'react-bootstrap';
 
 const UpcomingEventsCard = () => {
   const title = 'Upcoming Events';
-  const date = 'Thursday, July 8th 2024';
-  const location = 'E7 - 4053 (Engineering 7)';
-  const callToAction = 'APPLY NOW';
+  const date = 'Saturday, November 16th 2024';
+  const location = 'TBD';
+  const callToAction = 'APPLICATIONS CLOSED';
   const about = 'About';
   const description =
-    'Product Night features an interactive case study with real interview prompts from top companies, helping students ace their PM interviews.';
-  const subtitle = 'Why Attend Product Night?';
+    "ProdCon is the University of Waterloo's product management case study competition. You will get an opportunity to solve a case, present it to judges and network with industry professionals!";
+  const subtitle = 'Why Attend ProdCon?';
   const points = [
-    'Learn how to ace real interview questions',
+    'Learn how to ace real PM case studies',
     'Explore PM strategies',
     'Develop your problem solving skills',
     'Network with like-minded students',
@@ -29,7 +29,7 @@ const UpcomingEventsCard = () => {
         <div className="upcoming-event-text">
           <div className="section">
             <div className="inner-section">
-              <h2 className>UWPM X Blueprint night</h2>
+              <h2 className>ProdCon 2024</h2>
               <p>
                 {date} <br /> {location}
               </p>

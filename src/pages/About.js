@@ -321,6 +321,10 @@ export default function About({ show }) {
                 role={Execs.SunnieInfo.role}
                 link={Execs.SunnieInfo.link}
                 image={Execs.SunnieInfo.image}
+                name={Execs.SunnieInfo.name}
+                role={Execs.SunnieInfo.role}
+                link={Execs.SunnieInfo.link}
+                image={Execs.SunnieInfo.image}
               />
               <TeamProfileCard
                 name={Execs.GaurikaInfo.name}
