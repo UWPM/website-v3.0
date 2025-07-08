@@ -11,7 +11,7 @@ import Daniel from '../images/about/exec-profiles/Daniel.jpg';
 import Fahmid from '../images/about/exec-profiles/Fahmid.jpeg';
 import Iris from '../images/about/exec-profiles/Iris.jpg';
 import Ana from '../images/about/exec-profiles/Ana.jpeg';
-import Danny from '../images/about/exec-profiles/Danny.jpg';
+import Danny from '../images/about/exec-profiles/danny.jpg';
 import Dhruv from '../images/about/exec-profiles/Dhruv.jpeg';
 import Gaurika from '../images/about/exec-profiles/Gaurika.jpeg';
 import Janessa from '../images/about/exec-profiles/Janessa.jpg';
