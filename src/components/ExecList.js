@@ -1,52 +1,45 @@
 import PMHeadshot from '../images/about/exec-profiles/UWPMHeadshot.png';
-import Aadhyaaa from '../images/about/exec-profiles/Aadhyaaa.jpeg';
 import Adila from '../images/about/exec-profiles/Adila.jpeg';
-import Adon from '../images/about/exec-profiles/Adon.JPEG';
-import Aditi from '../images/about/exec-profiles/Aditi.jpeg';
-import August from '../images/about/exec-profiles/August.jpg';
-import Bianca from '../images/about/exec-profiles/Bianca.PNG';
-import Billie from '../images/about/exec-profiles/Billie.jpeg';
-import Carrie from '../images/about/exec-profiles/Carrie.jpg';
-import Daniel from '../images/about/exec-profiles/Daniel.jpg';
+import Muktha from '../images/about/exec-profiles/Muktha.jpg';
 import Fahmid from '../images/about/exec-profiles/Fahmid.jpeg';
+import Khushi from '../images/about/exec-profiles/Khushi.JPG';
+import Lily from '../images/about/exec-profiles/Lily.jpg';
+import Sinchana from '../images/about/exec-profiles/Sinchana.jpeg';
+import Emily from '../images/about/exec-profiles/Emily.jpg';
+import August from '../images/about/exec-profiles/August.jpg';
+import Samir from '../images/about/exec-profiles/Samir.JPG';
+import Milind from '../images/about/exec-profiles/Milind.png';
+import Aishwarya from '../images/about/exec-profiles/Aishwarya.jpg';
+import Vivan from '../images/about/exec-profiles/Vivan.JPG';
+import Samin from '../images/about/exec-profiles/Samin.jpeg';
+import Michelle from '../images/about/exec-profiles/Michelle.jpeg';
+import Bianca from '../images/about/exec-profiles/Bianca.PNG';
+import Aditi from '../images/about/exec-profiles/Aditi.jpeg';
 import Iris from '../images/about/exec-profiles/Iris.jpg';
-import Ana from '../images/about/exec-profiles/Ana.jpeg';
-import Danny from '../images/about/exec-profiles/danny.jpg';
-import Dhruv from '../images/about/exec-profiles/Dhruv.jpeg';
-import Gaurika from '../images/about/exec-profiles/Gaurika.jpeg';
-import Janessa from '../images/about/exec-profiles/Janessa.jpg';
-import Judy from '../images/about/exec-profiles/Judy.png';
-import Natalie from '../images/about/exec-profiles/Natalie.jpeg';
-import Saruthi from '../images/about/exec-profiles/Saruthi.jpg';
-import Sunnie from '../images/about/exec-profiles/Sunnie.jpeg';
-import Prisha from '../images/about/exec-profiles/Prisha.jpg';
-import Lynne from '../images/about/exec-profiles/Lynne.JPG';
+import EmilyK from '../images/about/exec-profiles/EmilyK.png';
+import Samuel from '../images/about/exec-profiles/Samuel.png';
+import Danny from '../images/about/exec-profiles/Danny.jpg';
+import Yash from '../images/about/exec-profiles/Yash.jpeg';
+import Owen from '../images/about/exec-profiles/Owen.png';
+import Gaurika from '../images/about/exec-profiles/Gaurika.jpg';
+import Jiya from '../images/about/exec-profiles/Jiya.JPG';
 import Puneet from '../images/about/exec-profiles/Puneet.jpg';
 import Avery from '../images/about/exec-profiles/Avery.png';
-import Mahi from '../images/about/exec-profiles/Mahi.JPG';
-import Yiming from '../images/about/exec-profiles/Yiming.JPG';
-import Sophia from '../images/about/exec-profiles/Sophia.jpeg';
-import Muktha from '../images/about/exec-profiles/Muktha.jpg';
-import Michelle from '../images/about/exec-profiles/Michelle.jpeg';
+import Joey from '../images/about/exec-profiles/Joey.jpg';
+import Billie from '../images/about/exec-profiles/Billie.jpeg';
 
 export const ExecList = {
-  Aadhyaaa: {
-    name: 'Aadhyaaa Mashru',
-    role: 'President',
-    link: 'https://www.linkedin.com/in/aadhyaaamashru/',
-    image: Aadhyaaa,
+  Adila: {
+    name: 'Adila Liu',
+    role: 'Co President',
+    link: 'https://www.linkedin.com/in/adilaliu',
+    image: Adila,
   },
-  Ana: {
-    name: 'Ana Franco',
-    role: 'President',
-    link: 'https://www.linkedin.com/in/anafranco1/',
-    image: Ana,
-  },
-  Billie: {
-    name: 'Billie Zhang',
-    role: 'Secretary',
-    link: 'https://www.linkedin.com/in/billiezhang/',
-    image: Billie,
+  Muktha: {
+    name: 'Muktha Kaja',
+    role: 'Co President',
+    link: 'https://www.linkedin.com/in/muktha-kaja-9a2803248/',
+    image: Muktha,
   },
   Fahmid: {
     name: 'Fahmid Ahmed',
@@ -54,95 +47,29 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/fahmidahmed1/',
     image: Fahmid,
   },
-  Sunnie: {
-    name: 'Sunnie Kapar',
-    role: 'VP Engineering',
-    link: '',
-    image: Sunnie,
-  },
-  Danny: {
-    name: 'Danny Liang',
-    role: 'Engineering Director',
-    link: 'https://www.linkedin.com/in/danny-liang-dl/',
-    image: Danny,
-  },
-  Gaurika: {
-    name: 'Gaurika Gupta',
-    role: 'Engineering Director',
-    link: 'https://www.linkedin.com/in/gaurikagupta1/',
-    image: Gaurika,
-  },
-  Adon: {
-    name: 'Adon Ojha',
-    role: 'Engineering Director',
-    link: 'https://www.linkedin.com/in/adonojha/',
-    image: Adon,
-  },
-  Dhruv: {
-    name: 'Dhruv Chopra',
-    role: 'VP Events',
-    link: 'https://www.linkedin.com/in/d3chopra/',
-    image: Dhruv,
-  },
-  Mahi: {
-    name: 'Mahi Rathi',
-    role: 'Events Director',
-    link: 'https://www.linkedin.com/in/mahi-rathi-b776001b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
-    image: Mahi,
-  },
-  Yiming: {
-    name: 'Yiming Ding',
-    role: 'VP Outreach',
-    link: 'https://www.linkedin.com/in/yiminng-ding/',
-    image: Yiming,
-  },
-  Janessa: {
-    name: 'Janessa Tang',
-    role: 'Outreach Director',
-    link: 'https://www.linkedin.com/in/janessatang/',
-    image: Janessa,
-  },
-  Saruthi: {
-    name: 'Saruthi Thirunavukkarasu',
-    role: 'Outreach Director',
-    link: 'http://www.linkedin.com/in/saruthit',
-    image: Saruthi,
-  },
-  Sophia: {
-    name: 'Sophia Lu',
-    role: 'Outreach Director',
-    link: 'https://www.linkedin.com/in/sophialu222/',
-    image: Sophia,
-  },
-  Aditi: {
-    name: 'Aditi Suresh',
+  Khushi: {
+    name: 'Khushi Adukia',
     role: 'VP Marketing',
-    link: 'https://linkedin.com/in/aditi-suresh-0b4673239',
-    image: Aditi,
+    link: 'https://www.linkedin.com/in/khushiadukia',
+    image: Khushi,
   },
-  Bianca: {
-    name: 'Bianca Batiao',
+  Lily: {
+    name: 'Lily Liu',
     role: 'Marketing Director',
-    link: '',
-    image: Bianca,
+    link: 'https://www.linkedin.com/in/lilyliu438/',
+    image: Lily,
   },
-  Lynne: {
-    name: 'Lynne Dai',
+  Sinchana: {
+    name: 'Sinchana Ananth',
     role: 'Marketing Director',
-    link: 'https://www.linkedin.com/in/lynnedai/',
-    image: Lynne,
+    link: 'https://www.linkedin.com/in/sinchana-ananth-a9a438233/',
+    image: Sinchana,
   },
-  Daniel: {
-    name: 'Daniel Wu',
+  Emily: {
+    name: 'Emily Truong',
     role: 'Marketing Director',
-    link: 'https://www.linkedin.com/in/dnlwu/',
-    image: Daniel,
-  },
-  Prisha: {
-    name: 'Prisha Kumar',
-    role: 'Marketing Director',
-    link: 'https://www.linkedin.com/in/prisha-kumar-575543322/',
-    image: Prisha,
+    link: 'https://www.linkedin.com/in/emilytruongg/',
+    image: Emily,
   },
   August: {
     name: 'August Tan',
@@ -150,41 +77,53 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/august-tan/',
     image: August,
   },
-  Judy: {
-    name: 'Judy Yang',
-    role: 'Podcast Lead',
-    link: 'https://www.linkedin.com/in/jjudyyang/',
-    image: Judy,
-  },
-  Carrie: {
-    name: 'Carrie Jiang',
+  Samir: {
+    name: 'Samir Sarwar',
     role: 'Podcast Director',
-    link: 'https://www.linkedin.com/in/carrierjiang',
-    image: Carrie,
+    link: 'https://www.linkedin.com/in/samir-sarwar-pm/',
+    image: Samir,
   },
-  Puneet: {
-    name: 'Puneet Bhullar',
-    role: 'Newsletter Dirctor',
-    link: 'https://www.linkedin.com/in/puneetbhullar/',
-    image: Puneet,
+  Milind: {
+    name: 'Milind Kumar',
+    role: 'Podcast Director',
+    link: 'https://www.linkedin.com/in/milind-kumar-7228191b7/',
+    image: Milind,
   },
-  Avery: {
-    name: 'Avery Li',
-    role: 'VP Finance',
-    link: 'https://www.linkedin.com/in/avery-li/',
-    image: Avery,
+  Aishwarya: {
+    name: 'Aishwarya Tandon',
+    role: 'VP Outreach',
+    link: 'https://www.linkedin.com/in/aishwarya-tandon-028776273',
+    image: Aishwarya,
   },
-  Natalie: {
-    name: 'Natalie Lo',
-    role: 'Finance Director',
-    link: 'https://www.linkedin.com/in/natalie-lo-13bb56261/',
-    image: Natalie,
+  Vivan: {
+    name: 'Vivan Yang',
+    role: 'Outreach Director',
+    link: 'https://www.linkedin.com/in/vivian-yyang1/',
+    image: Vivan,
   },
-  Adila: {
-    name: 'Adila Liu',
+  Samin: {
+    name: 'Samin Koleini',
+    role: 'Outreach Director',
+    link: 'https://www.linkedin.com/in/samin-koleini/',
+    image: Samin,
+  },
+  Michelle: {
+    name: 'Michelle Wang',
     role: 'VP Design',
+    link: 'https://www.linkedin.com/in/michelle-wng',
+    image: Michelle,
+  },
+  Bianca: {
+    name: 'Bianca Batiao',
+    role: 'Design Director',
     link: '',
-    image: Adila,
+    image: Bianca,
+  },
+  Aditi: {
+    name: 'Aditi Suresh',
+    role: 'Design Director',
+    link: 'https://linkedin.com/in/aditi-suresh-0b4673239',
+    image: Aditi,
   },
   Iris: {
     name: 'Iris Zhu',
@@ -192,22 +131,70 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/irisz06/',
     image: Iris,
   },
-  Michelle: {
-    name: 'Michelle Wang',
-    role: 'Design Director',
-    link: '',
-    image: Michelle,
+  EmilyK: {
+    name: 'Emily Kim',
+    role: 'VP Events',
+    link: 'https://www.linkedin.com/in/emilyhykim/',
+    image: EmilyK,
   },
-  Naomi: {
-    name: 'Naomi Laureece',
-    role: 'Design Director',
-    link: 'https://www.linkedin.com/in/naomilaureece/',
-    image: PMHeadshot,
+  Samuel: {
+    name: 'Samuel Huang',
+    role: 'Events Director',
+    link: 'https://www.linkedin.com/in/samuelzh/',
+    image: Samuel,
   },
-  Muktha: {
-    name: 'Muktha Kaja',
+  Danny: {
+    name: 'Danny Liang',
+    role: 'VP Engineering',
+    link: 'https://www.linkedin.com/in/danny-liang-dl/',
+    image: Danny,
+  },
+  Yash: {
+    name: 'Yash H. Barve',
+    role: 'Developer',
+    link: 'https://www.linkedin.com/in/yhbarve/',
+    image: Yash,
+  },
+  Owen: {
+    name: 'Owen Li',
+    role: 'Developer',
+    link: 'https://www.linkedin.com/in/owen-li-waterloo/',
+    image: Owen,
+  },
+  Gaurika: {
+    name: 'Gaurika Gupta',
+    role: 'Developer',
+    link: 'https://www.linkedin.com/in/gaurikagupta1/',
+    image: Gaurika,
+  },
+  Jiya: {
+    name: 'Jiya Anadkat',
     role: 'VP Content',
-    link: 'https://www.linkedin.com/in/muktha-kaja-9a2803248/',
-    image: Muktha,
+    link: 'https://www.linkedin.com/in/jiya-anadkat/',
+    image: Jiya,
+  },
+  Puneet: {
+    name: 'Puneet Bhullar',
+    role: 'Content Director',
+    link: 'https://www.linkedin.com/in/puneetbhullar/',
+    image: Puneet,
+  },
+  Avery: {
+    name: 'Avery Li',
+    role: 'VP Finance',
+    link: 'https://www.linkedin.com/in/avery-li/?originalSubdomain=ca',
+    image: Avery,
+  },
+  Joey: {
+    name: 'Joey Oh',
+    role: 'Finance Director',
+    link: 'https://www.linkedin.com/in/heeseungoh/',
+    image: Joey,
+  },
+  Billie: {
+    name: 'Billie Zhang',
+    role: 'Finance Director',
+    link: 'https://www.linkedin.com/in/billiezhang/',
+    image: Billie,
   },
 };
