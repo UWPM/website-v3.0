@@ -18,7 +18,7 @@ import Aditi from '../images/about/exec-profiles/Aditi.jpeg';
 import Iris from '../images/about/exec-profiles/Iris.jpg';
 import EmilyK from '../images/about/exec-profiles/EmilyK.png';
 import Samuel from '../images/about/exec-profiles/Samuel.png';
-import Danny from '../images/about/exec-profiles/Danny.jpg';
+import Danny from '../images/about/exec-profiles/danny.jpg';
 import Yash from '../images/about/exec-profiles/Yash.jpeg';
 import Owen from '../images/about/exec-profiles/Owen.png';
 import Gaurika from '../images/about/exec-profiles/Gaurika.jpg';
