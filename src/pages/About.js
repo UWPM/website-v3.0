@@ -208,39 +208,38 @@ export default function About({ show }) {
               />
             </Row>
             <Row className="team-type">
-              <h3 team-title>Design</h3>
+              <h3 team-title>Marketing</h3>
               <p className="team-paragraph">
-                The Design team collaborates with Marketing to create all the
-                cool graphics you see! They are also responsible for maintaining
-                our fabulous design system.
+                The Marketing Team produces and distributes our promotional
+                content, including podcasts, newsletters, and announcements!
               </p>
             </Row>
             <Row className="profile-row" style={{ marginBottom: '100px' }}>
-              <TeamProfileCard
-                name={Execs.Adila.name}
-                role={Execs.Adila.role}
-                link={Execs.Adila.link}
-                image={Execs.Adila.image}
-              />
-              <TeamProfileCard
-                name={Execs.Iris.name}
-                role={Execs.Iris.role}
-                link={Execs.Iris.link}
-                image={Execs.Iris.image}
-              />
-              <TeamProfileCard
-                name={Execs.Michelle.name}
-                role={Execs.Michelle.role}
-                link={Execs.Michelle.link}
-                image={Execs.Michelle.image}
-              />
-            </Row>
-            <Row className="profile-row">
               <TeamProfileCard
                 name={Execs.Khushi.name}
                 role={Execs.Khushi.role}
                 link={Execs.Khushi.link}
                 image={Execs.Khushi.image}
+              />
+              <TeamProfileCard
+                name={Execs.Bernice.name}
+                role={Execs.Bernice.role}
+                link={Execs.Bernice.link}
+                image={Execs.Bernice.image}
+              />
+              <TeamProfileCard
+                name={Execs.Lily.name}
+                role={Execs.Lily.role}
+                link={Execs.Lily.link}
+                image={Execs.Lily.image}
+              />
+            </Row>
+            <Row className="profile-row">
+              <TeamProfileCard
+                name={Execs.Sinchana.name}
+                role={Execs.Sinchana.role}
+                link={Execs.Sinchana.link}
+                image={Execs.Sinchana.image}
               />
               <TeamProfileCard
                 name={Execs.Emily.name}
@@ -277,6 +276,12 @@ export default function About({ show }) {
                 link={Execs.Milind.link}
                 image={Execs.Milind.image}
               />
+              <TeamProfileCard
+                name={Execs.Ria.name}
+                role={Execs.Ria.role}
+                link={Execs.Ria.link}
+                image={Execs.Ria.image}
+              />
             </Row>
 
             {/* ===== OUTREACH ===== */}
@@ -293,6 +298,12 @@ export default function About({ show }) {
                 role={Execs.Aishwarya.role}
                 link={Execs.Aishwarya.link}
                 image={Execs.Aishwarya.image}
+              />
+              <TeamProfileCard
+                name={Execs.Kaelen.name}
+                role={Execs.Kaelen.role}
+                link={Execs.Kaelen.link}
+                image={Execs.Kaelen.image}
               />
               <TeamProfileCard
                 name={Execs.Vivan.name}
@@ -359,6 +370,12 @@ export default function About({ show }) {
                 image={Execs.EmilyK.image}
               />
               <TeamProfileCard
+                name={Execs.Sai.name}
+                role={Execs.Sai.role}
+                link={Execs.Sai.link}
+                image={Execs.Sai.image}
+              />
+              <TeamProfileCard
                 name={Execs.Samuel.name}
                 role={Execs.Samuel.role}
                 link={Execs.Samuel.link}
@@ -415,6 +432,12 @@ export default function About({ show }) {
                 role={Execs.Jiya.role}
                 link={Execs.Jiya.link}
                 image={Execs.Jiya.image}
+              />
+              <TeamProfileCard
+                name={Execs.Arpit.name}
+                role={Execs.Arpit.role}
+                link={Execs.Arpit.link}
+                image={Execs.Arpit.image}
               />
               <TeamProfileCard
                 name={Execs.Puneet.name}
