@@ -3,14 +3,14 @@ import Adila from '../images/about/exec-profiles/Adila.jpeg';
 import Muktha from '../images/about/exec-profiles/Muktha.jpg';
 import Fahmid from '../images/about/exec-profiles/Fahmid.jpeg';
 import Khushi from '../images/about/exec-profiles/Khushi.JPG';
-import Bernice from '../images/about/exec-profiles/UWPMHeadshot.png'
+import Bernice from '../images/about/exec-profiles/UWPMHeadshot.png';
 import Lily from '../images/about/exec-profiles/Lily.jpg';
 import Sinchana from '../images/about/exec-profiles/Sinchana.jpeg';
 import Emily from '../images/about/exec-profiles/Emily.jpg';
 import August from '../images/about/exec-profiles/August.jpg';
 import Samir from '../images/about/exec-profiles/Samir.JPG';
 import Milind from '../images/about/exec-profiles/Milind.png';
-import Ria from '../images/about/exec-profiles/UWPMHeadshot.png'
+import Ria from '../images/about/exec-profiles/UWPMHeadshot.png';
 import Aishwarya from '../images/about/exec-profiles/Aishwarya.jpg';
 import Kaelen from '../images/about/exec-profiles/Kaelen.jpeg';
 import Vivan from '../images/about/exec-profiles/Vivan.JPG';
@@ -27,7 +27,7 @@ import Yash from '../images/about/exec-profiles/Yash.jpeg';
 import Owen from '../images/about/exec-profiles/Owen.png';
 import Gaurika from '../images/about/exec-profiles/Gaurika.jpg';
 import Jiya from '../images/about/exec-profiles/Jiya.JPG';
-import Arpit from '../images/about/exec-profiles/UWPMHeadshot.png'
+import Arpit from '../images/about/exec-profiles/UWPMHeadshot.png';
 import Puneet from '../images/about/exec-profiles/Puneet.jpg';
 import Avery from '../images/about/exec-profiles/Avery.png';
 import Joey from '../images/about/exec-profiles/Joey.jpg';
