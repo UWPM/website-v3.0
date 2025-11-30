@@ -1,14 +1,14 @@
 # Sprint Number + Ticket Name
 
 ## Description
-<!-- Describe your ticket and task. -->
+<!-- Updated exec list for Fall 2025 -->
 
 ## Details
-<!-- Include details on how you completed your ticket. -->
+<!-- Imported new members' images, and added and updated positions on ExecList.js -->
 
 ## Type of Change
 - [ ] Bug fix 
-- [ ] New feature 
+- [x] New feature 
 - [ ] Existing feature
 
 ## Screenshots
@@ -18,7 +18,7 @@
 <!-- Describe the tests that you ran to verify your changes. -->
 
 ## Checklist
-- [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] My code passes all builds and tests
+- [x] My code follows the style guidelines of this project
+- [x] I have performed a self-review of my code
+- [x] I have commented my code, particularly in hard-to-understand areas
+- [x] My code passes all builds and tests

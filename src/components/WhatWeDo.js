@@ -40,8 +40,8 @@ export default function WhatWeDo({ show }) {
           <div className="background-image"></div>
 
           {cardData.map((card, index) => (
-            <div className="card-container">
-              <CustomCard key={index} card={card} />
+            <div key={index} className="card-container">
+              <CustomCard card={card} />
               {index === 0 && (
                 <div>
                   <div className="arrow-container">
