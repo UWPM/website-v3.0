@@ -1,5 +1,5 @@
 # UW Product Management Website Redesign
-
+ 
 Welcome to the UW Product Management Club's website redesign project!
 
 ## Getting Started
