@@ -19,12 +19,12 @@ import Michelle from '../images/about/exec-profiles/Michelle.jpeg';
 import Bianca from '../images/about/exec-profiles/Bianca.PNG';
 import Aditi from '../images/about/exec-profiles/Aditi.jpeg';
 import Iris from '../images/about/exec-profiles/Iris.jpg';
-import EmilyK from '../images/about/exec-profiles/EmilyK.png';
-import Sai from '../images/about/exec-profiles/Sai.JPG';
-import Samuel from '../images/about/exec-profiles/Samuel.png';
+import Nicole from '../images/about/exec-profiles/Nicole.jpg';
+import Masudah from '../images/about/exec-profiles/Masudah.png';
+import Michael from '../images/about/exec-profiles/Michael.jpg';
 import Danny from '../images/about/exec-profiles/danny.jpg';
 import Yash from '../images/about/exec-profiles/Yash.jpeg';
-import Owen from '../images/about/exec-profiles/Owen.png';
+import Owen from '../images/about/exec-profiles/Owen.jpg';
 import Gaurika from '../images/about/exec-profiles/Gaurika.jpg';
 import Jiya from '../images/about/exec-profiles/Jiya.JPG';
 import Arpit from '../images/about/exec-profiles/UWPMHeadshot.png';
@@ -154,23 +154,23 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/irisz06/',
     image: Iris,
   },
-  EmilyK: {
-    name: 'Emily Kim',
+  Nicole: {
+    name: 'Nicole Tang',
     role: 'VP Events',
-    link: 'https://www.linkedin.com/in/emilyhykim/',
-    image: EmilyK,
+    link: '',
+    image: Nicole,
   },
-  Sai: {
-    name: 'Sai Pranavi Kasturi',
+  Masudah: {
+    name: 'Masudah Haque',
     role: 'Events Director',
-    link: 'https://www.linkedin.com/in/sai-pranavi-kasturi-704807298/',
-    image: Sai,
+    link: '',
+    image: Masudah,
   },
-  Samuel: {
-    name: 'Samuel Huang',
+  Michael: {
+    name: 'Michael Pasyechnyk',
     role: 'Events Director',
-    link: 'https://www.linkedin.com/in/samuelzh/',
-    image: Samuel,
+    link: '',
+    image: Michael,
   },
   Danny: {
     name: 'Danny Liang',
@@ -186,7 +186,7 @@ export const ExecList = {
   },
   Owen: {
     name: 'Owen Li',
-    role: 'Developer',
+    role: 'Events Director',
     link: 'https://www.linkedin.com/in/owen-li-waterloo/',
     image: Owen,
   },
