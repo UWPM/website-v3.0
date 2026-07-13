@@ -1,7 +1,4 @@
 import PMHeadshot from '../images/about/exec-profiles/UWPMHeadshot.png';
-import Adila from '../images/about/exec-profiles/Adila.jpeg';
-import Muktha from '../images/about/exec-profiles/Muktha.jpg';
-import Fahmid from '../images/about/exec-profiles/Fahmid.jpeg';
 import Khushi from '../images/about/exec-profiles/Khushi.JPG';
 import Bernice from '../images/about/exec-profiles/UWPMHeadshot.png';
 import Lily from '../images/about/exec-profiles/Lily.jpg';
@@ -11,7 +8,6 @@ import August from '../images/about/exec-profiles/August.jpg';
 import Samir from '../images/about/exec-profiles/Samir.JPG';
 import Milind from '../images/about/exec-profiles/Milind.png';
 import Ria from '../images/about/exec-profiles/UWPMHeadshot.png';
-import Aishwarya from '../images/about/exec-profiles/Aishwarya.jpg';
 import Kaelen from '../images/about/exec-profiles/Kaelen.jpeg';
 import Vivan from '../images/about/exec-profiles/Vivan.JPG';
 import Samin from '../images/about/exec-profiles/Samin.jpeg';
@@ -21,7 +17,6 @@ import Aditi from '../images/about/exec-profiles/Aditi.jpeg';
 import Iris from '../images/about/exec-profiles/Iris.jpg';
 import EmilyK from '../images/about/exec-profiles/EmilyK.png';
 import Sai from '../images/about/exec-profiles/Sai.JPG';
-import Samuel from '../images/about/exec-profiles/Samuel.png';
 import Danny from '../images/about/exec-profiles/danny.jpg';
 import Yash from '../images/about/exec-profiles/Yash.jpeg';
 import Owen from '../images/about/exec-profiles/Owen.png';
@@ -29,29 +24,12 @@ import Gaurika from '../images/about/exec-profiles/Gaurika.jpg';
 import Jiya from '../images/about/exec-profiles/Jiya.JPG';
 import Arpit from '../images/about/exec-profiles/UWPMHeadshot.png';
 import Puneet from '../images/about/exec-profiles/Puneet.jpg';
-import Avery from '../images/about/exec-profiles/Avery.png';
-import Joey from '../images/about/exec-profiles/Joey.jpg';
-import Billie from '../images/about/exec-profiles/Billie.jpeg';
+import Aishwarya from '../images/about/exec-profiles/AishwaryaT.jpeg';
+import Muktha from '../images/about/exec-profiles/MukthaK.jpeg';
+import Samuel from '../images/about/exec-profiles/SamuelH.jpeg';
+import Krish from '../images/about/exec-profiles/Krish.jpeg';
 
 export const ExecList = {
-  Adila: {
-    name: 'Adila Liu',
-    role: 'Co President',
-    link: 'https://www.linkedin.com/in/adilaliu',
-    image: Adila,
-  },
-  Muktha: {
-    name: 'Muktha Kaja',
-    role: 'Co President',
-    link: 'https://www.linkedin.com/in/muktha-kaja-9a2803248/',
-    image: Muktha,
-  },
-  Fahmid: {
-    name: 'Fahmid Ahmed',
-    role: 'Secretary',
-    link: 'https://www.linkedin.com/in/fahmidahmed1/',
-    image: Fahmid,
-  },
   Khushi: {
     name: 'Khushi Adukia',
     role: 'VP Marketing',
@@ -214,22 +192,31 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/puneetbhullar/',
     image: Puneet,
   },
-  Avery: {
-    name: 'Avery Li',
+
+  Aishwarya: {
+    name: 'Aishwarya Tandon',
+    role: 'Co President',
+    link: 'https://www.linkedin.com/in/aishwarya-tandon-028776273/',
+    image: Aishwarya,
+  },
+  Muktha: {
+    name: 'Muktha Kaja',
+    role: 'Co President',
+    link: 'https://www.linkedin.com/in/muktha-kaja-9a2803248/',
+    image: Muktha,
+  },
+  Samuel: {
+    name: 'Samuel Huang',
+    role: 'Co-President',
+    link: 'https://www.linkedin.com/in/samuelzh/',
+    image: Samuel,
+  },
+
+  // Finance team
+  Krish: {
+    name: 'KrishSuryavanshi',
     role: 'VP Finance',
-    link: 'https://www.linkedin.com/in/avery-li/?originalSubdomain=ca',
-    image: Avery,
-  },
-  Joey: {
-    name: 'Joey Oh',
-    role: 'Finance Director',
-    link: 'https://www.linkedin.com/in/heeseungoh/',
-    image: Joey,
-  },
-  Billie: {
-    name: 'Billie Zhang',
-    role: 'Finance Director',
-    link: 'https://www.linkedin.com/in/billiezhang/',
-    image: Billie,
+    link: 'https://www.linkedin.com/in/krish-suryavanshi/',
+    image: Krish,
   },
 };

@@ -189,10 +189,10 @@ export default function About({ show }) {
             </Row>
             <Row className="profile-row">
               <TeamProfileCard
-                name={Execs.Adila.name}
-                role={Execs.Adila.role}
-                link={Execs.Adila.link}
-                image={Execs.Adila.image}
+                name={Execs.Aishwarya.name}
+                role={Execs.Aishwarya.role}
+                link={Execs.Aishwarya.link}
+                image={Execs.Aishwarya.image}
               />
               <TeamProfileCard
                 name={Execs.Muktha.name}
@@ -201,10 +201,10 @@ export default function About({ show }) {
                 image={Execs.Muktha.image}
               />
               <TeamProfileCard
-                name={Execs.Fahmid.name}
-                role={Execs.Fahmid.role}
-                link={Execs.Fahmid.link}
-                image={Execs.Fahmid.image}
+                name={Execs.Samuel.name}
+                role={Execs.Samuel.role}
+                link={Execs.Samuel.link}
+                image={Execs.Samuel.image}
               />
             </Row>
             <Row className="team-type">
@@ -457,22 +457,10 @@ export default function About({ show }) {
             </Row>
             <Row className="profile-row" style={{ marginBottom: '100px' }}>
               <TeamProfileCard
-                name={Execs.Avery.name}
-                role={Execs.Avery.role}
-                link={Execs.Avery.link}
-                image={Execs.Avery.image}
-              />
-              <TeamProfileCard
-                name={Execs.Joey.name}
-                role={Execs.Joey.role}
-                link={Execs.Joey.link}
-                image={Execs.Joey.image}
-              />
-              <TeamProfileCard
-                name={Execs.Billie.name}
-                role={Execs.Billie.role}
-                link={Execs.Billie.link}
-                image={Execs.Billie.image}
+                name={Execs.Krish.name}
+                role={Execs.Krish.role}
+                link={Execs.Krish.link}
+                image={Execs.Krish.image}
               />
             </Row>
           </Col>
