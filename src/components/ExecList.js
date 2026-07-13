@@ -214,7 +214,7 @@ export const ExecList = {
 
   // Finance team
   Krish: {
-    name: 'KrishSuryavanshi',
+    name: 'Krish Suryavanshi',
     role: 'VP Finance',
     link: 'https://www.linkedin.com/in/krish-suryavanshi/',
     image: Krish,
