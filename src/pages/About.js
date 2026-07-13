@@ -222,30 +222,16 @@ export default function About({ show }) {
                 image={Execs.Khushi.image}
               />
               <TeamProfileCard
-                name={Execs.Bernice.name}
-                role={Execs.Bernice.role}
-                link={Execs.Bernice.link}
-                image={Execs.Bernice.image}
+                name={Execs.Evelyn.name}
+                role={Execs.Evelyn.role}
+                link={Execs.Evelyn.link}
+                image={Execs.Evelyn.image}
               />
               <TeamProfileCard
-                name={Execs.Lily.name}
-                role={Execs.Lily.role}
-                link={Execs.Lily.link}
-                image={Execs.Lily.image}
-              />
-            </Row>
-            <Row className="profile-row">
-              <TeamProfileCard
-                name={Execs.Sinchana.name}
-                role={Execs.Sinchana.role}
-                link={Execs.Sinchana.link}
-                image={Execs.Sinchana.image}
-              />
-              <TeamProfileCard
-                name={Execs.Emily.name}
-                role={Execs.Emily.role}
-                link={Execs.Emily.link}
-                image={Execs.Emily.image}
+                name={Execs.Orlando.name}
+                role={Execs.Orlando.role}
+                link={Execs.Orlando.link}
+                image={Execs.Orlando.image}
               />
             </Row>
 
