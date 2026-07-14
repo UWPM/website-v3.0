@@ -294,28 +294,22 @@ export default function About({ show }) {
             </Row>
             <Row className="profile-row">
               <TeamProfileCard
-                name={Execs.Aishwarya.name}
-                role={Execs.Aishwarya.role}
-                link={Execs.Aishwarya.link}
-                image={Execs.Aishwarya.image}
+                name={Execs.Fanelle.name}
+                role={Execs.Fanelle.role}
+                link={Execs.Fanelle.link}
+                image={Execs.Fanelle.image}
               />
               <TeamProfileCard
-                name={Execs.Kaelen.name}
-                role={Execs.Kaelen.role}
-                link={Execs.Kaelen.link}
-                image={Execs.Kaelen.image}
+                name={Execs.Evelyn.name}
+                role={Execs.Evelyn.role}
+                link={Execs.Evelyn.link}
+                image={Execs.Evelyn.image}
               />
               <TeamProfileCard
-                name={Execs.Vivan.name}
-                role={Execs.Vivan.role}
-                link={Execs.Vivan.link}
-                image={Execs.Vivan.image}
-              />
-              <TeamProfileCard
-                name={Execs.Samin.name}
-                role={Execs.Samin.role}
-                link={Execs.Samin.link}
-                image={Execs.Samin.image}
+                name={Execs.Maurya.name}
+                role={Execs.Maurya.role}
+                link={Execs.Maurya.link}
+                image={Execs.Maurya.image}
               />
             </Row>
 
@@ -329,28 +323,22 @@ export default function About({ show }) {
             </Row>
             <Row className="profile-row" style={{ marginBottom: '100px' }}>
               <TeamProfileCard
-                name={Execs.Michelle.name}
-                role={Execs.Michelle.role}
-                link={Execs.Michelle.link}
-                image={Execs.Michelle.image}
+                name={Execs.Ellie.name}
+                role={Execs.Ellie.role}
+                link={Execs.Ellie.link}
+                image={Execs.Ellie.image}
               />
               <TeamProfileCard
-                name={Execs.Bianca.name}
-                role={Execs.Bianca.role}
-                link={Execs.Bianca.link}
-                image={Execs.Bianca.image}
+                name={Execs.Evan.name}
+                role={Execs.Evan.role}
+                link={Execs.Evan.link}
+                image={Execs.Evan.image}
               />
               <TeamProfileCard
-                name={Execs.Aditi.name}
-                role={Execs.Aditi.role}
-                link={Execs.Aditi.link}
-                image={Execs.Aditi.image}
-              />
-              <TeamProfileCard
-                name={Execs.Iris.name}
-                role={Execs.Iris.role}
-                link={Execs.Iris.link}
-                image={Execs.Iris.image}
+                name={Execs.Nemesha.name}
+                role={Execs.Nemesha.role}
+                link={Execs.Nemesha.link}
+                image={Execs.Nemesha.image}
               />
             </Row>
 
@@ -467,12 +455,6 @@ export default function About({ show }) {
                 role={Execs.Joey.role}
                 link={Execs.Joey.link}
                 image={Execs.Joey.image}
-              />
-              <TeamProfileCard
-                name={Execs.Billie.name}
-                role={Execs.Billie.role}
-                link={Execs.Billie.link}
-                image={Execs.Billie.image}
               />
             </Row>
           </Col>
