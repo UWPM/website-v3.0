@@ -22,10 +22,12 @@ import Iris from '../images/about/exec-profiles/Iris.jpg';
 import EmilyK from '../images/about/exec-profiles/EmilyK.png';
 import Sai from '../images/about/exec-profiles/Sai.JPG';
 import Samuel from '../images/about/exec-profiles/Samuel.png';
-import Danny from '../images/about/exec-profiles/danny.jpg';
-import Yash from '../images/about/exec-profiles/Yash.jpeg';
-import Owen from '../images/about/exec-profiles/Owen.png';
-import Gaurika from '../images/about/exec-profiles/Gaurika.jpg';
+import Cedric from '../images/about/exec-profiles/Cedric.png';
+import Gaurika from '../images/about/exec-profiles/Gaurika.jpeg';
+import Krish from '../images/about/exec-profiles/Krish.jpg';
+import Lalithya from '../images/about/exec-profiles/Lalithya.jpg';
+import Naysha from '../images/about/exec-profiles/Naysha.jpeg';
+import Sherya from '../images/about/exec-profiles/Shreya.jpeg';
 import Jiya from '../images/about/exec-profiles/Jiya.JPG';
 import Arpit from '../images/about/exec-profiles/UWPMHeadshot.png';
 import Puneet from '../images/about/exec-profiles/Puneet.jpg';
@@ -172,29 +174,41 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/samuelzh/',
     image: Samuel,
   },
-  Danny: {
-    name: 'Danny Liang',
-    role: 'VP Engineering',
-    link: 'https://www.linkedin.com/in/danny-liang-dl/',
-    image: Danny,
-  },
-  Yash: {
-    name: 'Yash H. Barve',
-    role: 'Developer',
-    link: 'https://www.linkedin.com/in/yhbarve/',
-    image: Yash,
-  },
-  Owen: {
-    name: 'Owen Li',
-    role: 'Developer',
-    link: 'https://www.linkedin.com/in/owen-li-waterloo/',
-    image: Owen,
+  Cedric: {
+    name: 'Cedric Leung',
+    role: 'Engineering Director',
+    link: 'https://www.linkedin.com/in/cedric-leungg/',
+    image: Cedric,
   },
   Gaurika: {
     name: 'Gaurika Gupta',
-    role: 'Developer',
+    role: 'Engineering Director',
     link: 'https://www.linkedin.com/in/gaurikagupta1/',
     image: Gaurika,
+  },
+  Krish: {
+    name: 'Krish Suryavanshi',
+    role: 'Engineering Director',
+    link: 'https://www.linkedin.com/in/krish-suryavanshi/',
+    image: Krish,
+  },
+  Lalithya: {
+    name: 'Lalithya Raavi',
+    role: 'Engineering Director',
+    link: 'https://www.linkedin.com/in/lalithyaraavi/',
+    image: Lalithya,
+  },
+  Naysha: {
+    name: 'Naysha Gakhar',
+    role: 'Engineering Director',
+    link: 'https://www.linkedin.com/in/naysha-gakhar/',
+    image: Naysha,
+  },
+  Sherya: {
+    name: 'Shreya Sharma',
+    role: 'VP Engineering',
+    link: 'https://www.linkedin.com/in/shreya-sharma-821826321/',
+    image: Sherya,
   },
   Jiya: {
     name: 'Jiya Anadkat',
