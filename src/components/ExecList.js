@@ -195,13 +195,13 @@ export const ExecList = {
 
   Aishwarya: {
     name: 'Aishwarya Tandon',
-    role: 'Co President',
+    role: 'Co-President',
     link: 'https://www.linkedin.com/in/aishwarya-tandon-028776273/',
     image: Aishwarya,
   },
   Muktha: {
     name: 'Muktha Kaja',
-    role: 'Co President',
+    role: 'Co-President',
     link: 'https://www.linkedin.com/in/muktha-kaja-9a2803248/',
     image: Muktha,
   },
