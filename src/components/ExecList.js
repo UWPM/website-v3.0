@@ -3,7 +3,7 @@ import Adila from '../images/about/exec-profiles/Adila.jpeg';
 import Muktha from '../images/about/exec-profiles/Muktha.jpg';
 import Fahmid from '../images/about/exec-profiles/Fahmid.jpeg';
 import Khushi from '../images/about/exec-profiles/Khushi.JPG';
-import Evelyn from '../images/about/exec-profiles/Evelyn.jpg';
+import EvelynT from '../images/about/exec-profiles/Evelyn.jpg';
 import Orlando from '../images/about/exec-profiles/Orlando.jpeg';
 import August from '../images/about/exec-profiles/August.jpg';
 import Samir from '../images/about/exec-profiles/Samir.JPG';
@@ -31,7 +31,7 @@ import Avery from '../images/about/exec-profiles/Avery.png';
 import Joey from '../images/about/exec-profiles/Joey.jpg';
 import Fanelle from '../images/about/exec-profiles/Fanelle.jpeg';
 import Maurya from '../images/about/exec-profiles/Maurya.jpeg';
-import Evelyn from '../images/about/exec-profiles/Evelyn.jpeg';
+import EvelynW from '../images/about/exec-profiles/Evelyn.jpeg';
 import Evan from '../images/about/exec-profiles/Evan.jpeg';
 import Ellie from '../images/about/exec-profiles/Ellie.jpeg';
 import Nemesha from '../images/about/exec-profiles/Nemesha.jpeg';
@@ -61,7 +61,7 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/khushiadukia',
     image: Khushi,
   },
-  Evelyn: {
+  EvelynT: {
     name: 'Evelyn Thomas',
     role: 'Marketing Director',
     link: 'https://www.linkedin.com/in/evelyn-thomas-et100/',
@@ -229,7 +229,7 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/maurya-patel-2ab8b0234/',
     image: Maurya,
   },
-  Evelyn: {
+  EvelynW: {
     name: 'Evelyn Wang',
     role: 'Outreach Director',
     link: '',
