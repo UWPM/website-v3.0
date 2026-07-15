@@ -65,7 +65,7 @@ export const ExecList = {
     name: 'Evelyn Thomas',
     role: 'Marketing Director',
     link: 'https://www.linkedin.com/in/evelyn-thomas-et100/',
-    image: Evelyn,
+    image: EvelynT,
   },
   Orlando: {
     name: 'Orlando Zhou',
@@ -233,7 +233,7 @@ export const ExecList = {
     name: 'Evelyn Wang',
     role: 'Outreach Director',
     link: '',
-    image: Evelyn,
+    image: EvelynW,
   },
   Evan: {
     name: 'Evan Liem',
