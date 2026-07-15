@@ -23,7 +23,7 @@ import Michael from '../images/about/exec-profiles/Michael.jpg';
 import Danny from '../images/about/exec-profiles/danny.jpg';
 import Yash from '../images/about/exec-profiles/Yash.jpeg';
 import Owen from '../images/about/exec-profiles/Owen.jpg';
-import Gaurika from '../images/about/exec-profiles/Gaurika.jpg';
+import Gaurika from '../images/about/exec-profiles/Gaurika.jpeg';
 import Jiya from '../images/about/exec-profiles/Jiya.JPG';
 import Arpit from '../images/about/exec-profiles/UWPMHeadshot.png';
 import Puneet from '../images/about/exec-profiles/Puneet.jpg';
@@ -35,6 +35,11 @@ import EvelynW from '../images/about/exec-profiles/Evelyn.jpeg';
 import Evan from '../images/about/exec-profiles/Evan.jpeg';
 import Ellie from '../images/about/exec-profiles/Ellie.jpeg';
 import Nemesha from '../images/about/exec-profiles/Nemesha.jpeg';
+import Cedric from '../images/about/exec-profiles/Cedric.png';
+import Krish from '../images/about/exec-profiles/Krish.jpg';
+import Lalithya from '../images/about/exec-profiles/Lalithya.jpg';
+import Naysha from '../images/about/exec-profiles/Naysha.jpeg';
+import Shreya from '../images/about/exec-profiles/Shreya.jpeg';
 
 export const ExecList = {
   Adila: {
@@ -183,9 +188,39 @@ export const ExecList = {
   },
   Gaurika: {
     name: 'Gaurika Gupta',
-    role: 'Developer',
+    role: 'Engineering Director',
     link: 'https://www.linkedin.com/in/gaurikagupta1/',
     image: Gaurika,
+  },
+  Shreya: {
+    name: 'Shreya Sharma',
+    role: 'VP Engineering',
+    link: 'https://www.linkedin.com/in/shreya-sharma-821826321/',
+    image: Shreya,
+  },
+  Krish: {
+    name: 'Krish Suryavanshi',
+    role: 'Engineering Director',
+    link: 'https://www.linkedin.com/in/krish-suryavanshi/',
+    image: Krish,
+  },
+  Cedric: {
+    name: 'Cedric Leung',
+    role: 'Engineering Director',
+    link: 'https://www.linkedin.com/in/cedric-leungg/',
+    image: Cedric,
+  },
+  Lalithya: {
+    name: 'Lalithya Raavi',
+    role: 'Engineering Director',
+    link: 'https://www.linkedin.com/in/lalithyaraavi/',
+    image: Lalithya,
+  },
+  Naysha: {
+    name: 'Naysha Gakhar',
+    role: 'Engineering Director',
+    link: 'https://www.linkedin.com/in/naysha-gakhar/',
+    image: Naysha,
   },
   Jiya: {
     name: 'Jiya Anadkat',
