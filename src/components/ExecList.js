@@ -1,9 +1,7 @@
 import PMHeadshot from '../images/about/exec-profiles/UWPMHeadshot.png';
 import Khushi from '../images/about/exec-profiles/Khushi.JPG';
-import Bernice from '../images/about/exec-profiles/UWPMHeadshot.png';
-import Lily from '../images/about/exec-profiles/Lily.jpg';
-import Sinchana from '../images/about/exec-profiles/Sinchana.jpeg';
-import Emily from '../images/about/exec-profiles/Emily.jpg';
+import Evelyn from '../images/about/exec-profiles/Evelyn.jpg';
+import Orlando from '../images/about/exec-profiles/Orlando.jpeg';
 import August from '../images/about/exec-profiles/August.jpg';
 import Samir from '../images/about/exec-profiles/Samir.JPG';
 import Milind from '../images/about/exec-profiles/Milind.png';
@@ -17,9 +15,12 @@ import Aditi from '../images/about/exec-profiles/Aditi.jpeg';
 import Iris from '../images/about/exec-profiles/Iris.jpg';
 import EmilyK from '../images/about/exec-profiles/EmilyK.png';
 import Sai from '../images/about/exec-profiles/Sai.JPG';
+import Nicole from '../images/about/exec-profiles/Nicole.jpg';
+import Masudah from '../images/about/exec-profiles/Masudah.png';
+import Michael from '../images/about/exec-profiles/Michael.jpg';
 import Danny from '../images/about/exec-profiles/danny.jpg';
 import Yash from '../images/about/exec-profiles/Yash.jpeg';
-import Owen from '../images/about/exec-profiles/Owen.png';
+import Owen from '../images/about/exec-profiles/Owen.jpg';
 import Gaurika from '../images/about/exec-profiles/Gaurika.jpg';
 import Jiya from '../images/about/exec-profiles/Jiya.JPG';
 import Arpit from '../images/about/exec-profiles/UWPMHeadshot.png';
@@ -36,29 +37,17 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/khushiadukia',
     image: Khushi,
   },
-  Bernice: {
-    name: 'Bernice Tang',
+  Evelyn: {
+    name: 'Evelyn Thomas',
     role: 'Marketing Director',
-    link: 'https://www.linkedin.com/in/bernice-tang-218462381/',
-    image: Bernice,
+    link: 'https://www.linkedin.com/in/evelyn-thomas-et100/',
+    image: Evelyn,
   },
-  Lily: {
-    name: 'Lily Liu',
+  Orlando: {
+    name: 'Orlando Zhou',
     role: 'Marketing Director',
-    link: 'https://www.linkedin.com/in/lilyliu438/',
-    image: Lily,
-  },
-  Sinchana: {
-    name: 'Sinchana Ananth',
-    role: 'Marketing Director',
-    link: 'https://www.linkedin.com/in/sinchana-ananth-a9a438233/',
-    image: Sinchana,
-  },
-  Emily: {
-    name: 'Emily Truong',
-    role: 'Marketing Director',
-    link: 'https://www.linkedin.com/in/emilytruongg/',
-    image: Emily,
+    link: 'https://www.linkedin.com/in/orlando-zhou/',
+    image: Orlando,
   },
   August: {
     name: 'August Tan',
@@ -132,23 +121,23 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/irisz06/',
     image: Iris,
   },
-  EmilyK: {
-    name: 'Emily Kim',
+  Nicole: {
+    name: 'Nicole Tang',
     role: 'VP Events',
-    link: 'https://www.linkedin.com/in/emilyhykim/',
-    image: EmilyK,
+    link: '',
+    image: Nicole,
   },
-  Sai: {
-    name: 'Sai Pranavi Kasturi',
+  Masudah: {
+    name: 'Masudah Haque',
     role: 'Events Director',
-    link: 'https://www.linkedin.com/in/sai-pranavi-kasturi-704807298/',
-    image: Sai,
+    link: '',
+    image: Masudah,
   },
-  Samuel: {
-    name: 'Samuel Huang',
+  Michael: {
+    name: 'Michael Pasyechnyk',
     role: 'Events Director',
-    link: 'https://www.linkedin.com/in/samuelzh/',
-    image: Samuel,
+    link: '',
+    image: Michael,
   },
   Danny: {
     name: 'Danny Liang',
@@ -164,7 +153,7 @@ export const ExecList = {
   },
   Owen: {
     name: 'Owen Li',
-    role: 'Developer',
+    role: 'Events Director',
     link: 'https://www.linkedin.com/in/owen-li-waterloo/',
     image: Owen,
   },
