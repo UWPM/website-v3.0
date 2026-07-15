@@ -222,10 +222,10 @@ export default function About({ show }) {
                 image={Execs.Khushi.image}
               />
               <TeamProfileCard
-                name={Execs.Evelyn.name}
-                role={Execs.Evelyn.role}
-                link={Execs.Evelyn.link}
-                image={Execs.Evelyn.image}
+                name={Execs.EvelynT.name}
+                role={Execs.EvelynT.role}
+                link={Execs.EvelynT.link}
+                image={Execs.EvelynT.image}
               />
               <TeamProfileCard
                 name={Execs.Orlando.name}
@@ -286,10 +286,10 @@ export default function About({ show }) {
                 image={Execs.Fanelle.image}
               />
               <TeamProfileCard
-                name={Execs.Evelyn.name}
-                role={Execs.Evelyn.role}
-                link={Execs.Evelyn.link}
-                image={Execs.Evelyn.image}
+                name={Execs.EvelynW.name}
+                role={Execs.EvelynW.role}
+                link={Execs.EvelynW.link}
+                image={Execs.EvelynW.image}
               />
               <TeamProfileCard
                 name={Execs.Maurya.name}
