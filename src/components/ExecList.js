@@ -17,6 +17,7 @@ import Michelle from '../images/about/exec-profiles/Michelle.jpeg';
 import Bianca from '../images/about/exec-profiles/Bianca.PNG';
 import Aditi from '../images/about/exec-profiles/Aditi.jpeg';
 import Iris from '../images/about/exec-profiles/Iris.jpg';
+import Nicole from '../images/about/exec-profiles/Nicole.jpg';
 import Cedric from '../images/about/exec-profiles/Cedric.png';
 import Gaurika from '../images/about/exec-profiles/Gaurika.jpeg';
 import Krish from '../images/about/exec-profiles/Krish.jpg';
