@@ -13,7 +13,6 @@ import Michelle from '../images/about/exec-profiles/Michelle.jpeg';
 import Bianca from '../images/about/exec-profiles/Bianca.PNG';
 import Aditi from '../images/about/exec-profiles/Aditi.jpeg';
 import Iris from '../images/about/exec-profiles/Iris.jpg';
-import Sai from '../images/about/exec-profiles/Sai.JPG';
 import Nicole from '../images/about/exec-profiles/Nicole.jpg';
 import Masudah from '../images/about/exec-profiles/Masudah.png';
 import Michael from '../images/about/exec-profiles/Michael.jpg';
