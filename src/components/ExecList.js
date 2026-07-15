@@ -3,10 +3,8 @@ import Adila from '../images/about/exec-profiles/Adila.jpeg';
 import Muktha from '../images/about/exec-profiles/Muktha.jpg';
 import Fahmid from '../images/about/exec-profiles/Fahmid.jpeg';
 import Khushi from '../images/about/exec-profiles/Khushi.JPG';
-import Bernice from '../images/about/exec-profiles/UWPMHeadshot.png';
-import Lily from '../images/about/exec-profiles/Lily.jpg';
-import Sinchana from '../images/about/exec-profiles/Sinchana.jpeg';
-import Emily from '../images/about/exec-profiles/Emily.jpg';
+import EvelynT from '../images/about/exec-profiles/Evelyn.jpg';
+import Orlando from '../images/about/exec-profiles/Orlando.jpeg';
 import August from '../images/about/exec-profiles/August.jpg';
 import Samir from '../images/about/exec-profiles/Samir.JPG';
 import Milind from '../images/about/exec-profiles/Milind.png';
@@ -33,7 +31,12 @@ import Arpit from '../images/about/exec-profiles/UWPMHeadshot.png';
 import Puneet from '../images/about/exec-profiles/Puneet.jpg';
 import Avery from '../images/about/exec-profiles/Avery.png';
 import Joey from '../images/about/exec-profiles/Joey.jpg';
-import Billie from '../images/about/exec-profiles/Billie.jpeg';
+import Fanelle from '../images/about/exec-profiles/Fanelle.jpeg';
+import Maurya from '../images/about/exec-profiles/Maurya.jpeg';
+import EvelynW from '../images/about/exec-profiles/Evelyn.jpeg';
+import Evan from '../images/about/exec-profiles/Evan.jpeg';
+import Ellie from '../images/about/exec-profiles/Ellie.jpeg';
+import Nemesha from '../images/about/exec-profiles/Nemesha.jpeg';
 
 export const ExecList = {
   Adila: {
@@ -60,29 +63,17 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/khushiadukia',
     image: Khushi,
   },
-  Bernice: {
-    name: 'Bernice Tang',
+  EvelynT: {
+    name: 'Evelyn Thomas',
     role: 'Marketing Director',
-    link: 'https://www.linkedin.com/in/bernice-tang-218462381/',
-    image: Bernice,
+    link: 'https://www.linkedin.com/in/evelyn-thomas-et100/',
+    image: EvelynT,
   },
-  Lily: {
-    name: 'Lily Liu',
+  Orlando: {
+    name: 'Orlando Zhou',
     role: 'Marketing Director',
-    link: 'https://www.linkedin.com/in/lilyliu438/',
-    image: Lily,
-  },
-  Sinchana: {
-    name: 'Sinchana Ananth',
-    role: 'Marketing Director',
-    link: 'https://www.linkedin.com/in/sinchana-ananth-a9a438233/',
-    image: Sinchana,
-  },
-  Emily: {
-    name: 'Emily Truong',
-    role: 'Marketing Director',
-    link: 'https://www.linkedin.com/in/emilytruongg/',
-    image: Emily,
+    link: 'https://www.linkedin.com/in/orlando-zhou/',
+    image: Orlando,
   },
   August: {
     name: 'August Tan',
@@ -156,23 +147,23 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/irisz06/',
     image: Iris,
   },
-  EmilyK: {
-    name: 'Emily Kim',
+  Nicole: {
+    name: 'Nicole Tang',
     role: 'VP Events',
-    link: 'https://www.linkedin.com/in/emilyhykim/',
-    image: EmilyK,
+    link: '',
+    image: Nicole,
   },
-  Sai: {
-    name: 'Sai Pranavi Kasturi',
+  Masudah: {
+    name: 'Masudah Haque',
     role: 'Events Director',
-    link: 'https://www.linkedin.com/in/sai-pranavi-kasturi-704807298/',
-    image: Sai,
+    link: '',
+    image: Masudah,
   },
-  Samuel: {
-    name: 'Samuel Huang',
+  Michael: {
+    name: 'Michael Pasyechnyk',
     role: 'Events Director',
-    link: 'https://www.linkedin.com/in/samuelzh/',
-    image: Samuel,
+    link: '',
+    image: Michael,
   },
   Cedric: {
     name: 'Cedric Leung',
@@ -240,10 +231,40 @@ export const ExecList = {
     link: 'https://www.linkedin.com/in/heeseungoh/',
     image: Joey,
   },
-  Billie: {
-    name: 'Billie Zhang',
-    role: 'Finance Director',
-    link: 'https://www.linkedin.com/in/billiezhang/',
-    image: Billie,
+  Fanelle: {
+    name: 'Fanelle Pang',
+    role: 'VP Outreach',
+    link: 'https://www.linkedin.com/in/fanelle-pang/',
+    image: Fanelle,
+  },
+  Maurya: {
+    name: 'Maurya Patel',
+    role: 'Outreach Director ',
+    link: 'https://www.linkedin.com/in/maurya-patel-2ab8b0234/',
+    image: Maurya,
+  },
+  EvelynW: {
+    name: 'Evelyn Wang',
+    role: 'Outreach Director',
+    link: '',
+    image: EvelynW,
+  },
+  Evan: {
+    name: 'Evan Liem',
+    role: 'Design Director',
+    link: 'linkedin.com/in/evan-liem-178443340/?skipRedirect=true',
+    image: Evan,
+  },
+  Ellie: {
+    name: 'Ellie Chan',
+    role: 'VP Design',
+    link: 'https://www.linkedin.com/in/elliechan25/',
+    image: Ellie,
+  },
+  Nemesha: {
+    name: 'Nemesha De Silva',
+    role: 'Design Director',
+    link: 'https://www.linkedin.com/in/nemeshadesilva/',
+    image: Nemesha,
   },
 };
