@@ -373,22 +373,40 @@ export default function About({ show }) {
             </Row>
             <Row className="profile-row">
               <TeamProfileCard
-                name={Execs.Danny.name}
-                role={Execs.Danny.role}
-                link={Execs.Danny.link}
-                image={Execs.Danny.image}
+                name={Execs.Shreya.name}
+                role={Execs.Shreya.role}
+                link={Execs.Shreya.link}
+                image={Execs.Shreya.image}
               />
               <TeamProfileCard
-                name={Execs.Yash.name}
-                role={Execs.Yash.role}
-                link={Execs.Yash.link}
-                image={Execs.Yash.image}
+                name={Execs.Krish.name}
+                role={Execs.Krish.role}
+                link={Execs.Krish.link}
+                image={Execs.Krish.image}
+              />
+              <TeamProfileCard
+                name={Execs.Cedric.name}
+                role={Execs.Cedric.role}
+                link={Execs.Cedric.link}
+                image={Execs.Cedric.image}
               />
               <TeamProfileCard
                 name={Execs.Gaurika.name}
                 role={Execs.Gaurika.role}
                 link={Execs.Gaurika.link}
                 image={Execs.Gaurika.image}
+              />
+              <TeamProfileCard
+                name={Execs.Lalithya.name}
+                role={Execs.Lalithya.role}
+                link={Execs.Lalithya.link}
+                image={Execs.Lalithya.image}
+              />
+              <TeamProfileCard
+                name={Execs.Naysha.name}
+                role={Execs.Naysha.role}
+                link={Execs.Naysha.link}
+                image={Execs.Naysha.image}
               />
             </Row>
 
