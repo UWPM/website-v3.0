@@ -50,8 +50,22 @@ p {
 
 .logo {
   margin-left: 15px;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: auto;
+}
+
+/* Media query for tablets and larger phones */
+@media (max-width: 768px) {
+  .logo {
+    width: 70px;
+  }
+}
+
+/* Media query for smaller phones */
+@media (max-width: 480px) {
+  .logo {
+    width: 60px;
+  }
 }
 
 .nav-right {
