@@ -49,6 +49,9 @@ export default function Home() {
           <a className="home-hero__nav-link" href="#events">
             Events
           </a>
+          <a className="home-hero__nav-link" href="#teams">
+            Teams
+          </a>
         </nav>
       </section>
       <WhatWeDo />
