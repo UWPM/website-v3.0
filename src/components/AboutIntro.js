@@ -1,17 +1,8 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import '../styles/AboutIntro.css';
-import missionPhoto from '../images/prodcon/prodcon1.JPG';
-import whatWeDoPhoto from '../images/events/win23-product-panel.png';
-
-function TornPhoto({ src, alt, tilt }) {
-  return (
-    <div className={`torn-photo torn-photo--tilt-${tilt}`}>
-      <span className="torn-photo__backing" aria-hidden="true" />
-      <img className="torn-photo__img" src={src} alt={alt} />
-    </div>
-  );
-}
+import missionPhoto from '../images/about/mission-photo.jpg';
+import whatWeDoPhoto from '../images/about/what-we-do-photo.jpg';
 
 export default function AboutIntro() {
   const { ref, inView } = useInView({
@@ -38,20 +29,20 @@ export default function AboutIntro() {
           </p>
         </div>
         <div className="about-intro__media">
-          <TornPhoto
+          <img
+            className="about-intro__photo"
             src={missionPhoto}
             alt="Students attending a UW PM event"
-            tilt="right"
           />
         </div>
       </div>
 
       <div className="about-intro__row about-intro__row--what-we-do">
         <div className="about-intro__media">
-          <TornPhoto
+          <img
+            className="about-intro__photo"
             src={whatWeDoPhoto}
-            alt="Panelists speaking at a UW PM fireside chat"
-            tilt="left"
+            alt="Fireside chat panel with Derek Fei, Product Manager at Google, and Bjorn Dawson, Senior Product Manager at Shopify"
           />
         </div>
         <div className="about-intro__copy">
