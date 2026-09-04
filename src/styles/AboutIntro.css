@@ -80,76 +80,18 @@
   min-width: 0;
 }
 
-.torn-photo {
-  position: relative;
-  width: 100%;
-  max-width: 420px;
-}
-
-.torn-photo__backing {
-  position: absolute;
-  inset: -4% -6% -9% -5%;
-  background: var(--ai-paper-white);
-  clip-path: polygon(
-    2% 6%,
-    14% 1%,
-    27% 5%,
-    41% 0%,
-    56% 4%,
-    70% 0%,
-    84% 5%,
-    97% 1%,
-    100% 12%,
-    96% 24%,
-    100% 37%,
-    97% 50%,
-    100% 63%,
-    95% 75%,
-    100% 88%,
-    92% 96%,
-    100% 100%,
-    83% 97%,
-    68% 100%,
-    54% 96%,
-    39% 100%,
-    24% 96%,
-    10% 100%,
-    3% 92%,
-    6% 78%,
-    0% 65%,
-    5% 52%,
-    0% 39%,
-    4% 26%,
-    0% 14%
-  );
-  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.18);
-  transform: rotate(-3deg);
-}
-
-.torn-photo__img {
-  position: relative;
-  z-index: 1;
+.about-intro__photo {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  max-width: 420px;
+  height: auto;
+  transition: transform 0.4s var(--ai-ease);
 }
 
-.torn-photo--tilt-right {
-  transform: rotate(3deg);
-}
-
-.torn-photo--tilt-right .torn-photo__backing {
-  transform: rotate(6deg);
-}
-
-.torn-photo--tilt-left {
-  transform: rotate(-3deg);
-}
-
-.torn-photo--tilt-left .torn-photo__backing {
-  transform: rotate(-6deg);
+@media (hover: hover) and (min-width: 768px) {
+  .about-intro__photo:hover {
+    transform: translateY(-6px);
+  }
 }
 
 @media (max-width: 900px) {
