@@ -5,6 +5,7 @@ import WhatWeDo from '../components/WhatWeDo';
 import OurImpact from '../components/OurImpact';
 import Footer from '../components/Footer';
 import '../styles/Home.css';
+import EventsSection from '../components/eventsV4/EventsSection';
 
 export default function Home() {
   return (
@@ -56,6 +57,7 @@ export default function Home() {
       </section>
       <WhatWeDo />
       <OurImpact />
+      <EventsSection />
       <Footer />
     </>
   );
