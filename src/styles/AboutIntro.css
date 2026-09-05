@@ -1,0 +1,131 @@
+.about-intro {
+  --ai-paper: #f2efef;
+  --ai-ink: #1c1b1a;
+  --ai-paper-white: #fdfcfb;
+  --ai-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  width: 100%;
+  padding: clamp(56px, 7vw, 110px) clamp(34px, 6.6vw, 100px);
+  background: var(--ai-paper);
+  color: var(--ai-ink);
+  font-family: 'Manrope', system-ui, sans-serif;
+}
+
+.about-intro__row {
+  display: flex;
+  align-items: center;
+  gap: clamp(32px, 6vw, 96px);
+  max-width: 1320px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.8s var(--ai-ease),
+    transform 0.8s var(--ai-ease);
+}
+
+.about-intro__row--what-we-do {
+  margin-top: clamp(72px, 9vw, 140px);
+  transition-delay: 0.12s;
+}
+
+.about-intro--visible .about-intro__row {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-intro__copy {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.about-intro__row--mission .about-intro__copy {
+  text-align: left;
+}
+
+.about-intro__row--what-we-do .about-intro__copy {
+  text-align: right;
+}
+
+.about-intro__title {
+  margin: 0 0 clamp(16px, 2vw, 28px);
+  font:
+    700 clamp(2.2rem, 4vw, 3.6rem) / 1 'Syne',
+    'Manrope',
+    system-ui,
+    sans-serif;
+}
+
+.about-intro__text {
+  margin: 0 0 1em;
+  max-width: 46ch;
+  font-size: clamp(1rem, 1.25vw, 1.2rem);
+  line-height: 1.55;
+}
+
+.about-intro__row--mission .about-intro__text {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.about-intro__row--what-we-do .about-intro__text {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.about-intro__media {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.about-intro__photo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  transition: transform 0.4s var(--ai-ease);
+}
+
+@media (hover: hover) and (min-width: 768px) {
+  .about-intro__photo:hover {
+    transform: translateY(-6px);
+  }
+}
+
+@media (max-width: 900px) {
+  .about-intro__row,
+  .about-intro__row--what-we-do {
+    flex-direction: column;
+    text-align: left;
+    gap: 32px;
+  }
+
+  .about-intro__row--mission .about-intro__copy,
+  .about-intro__row--what-we-do .about-intro__copy {
+    text-align: left;
+  }
+
+  .about-intro__row--mission .about-intro__text,
+  .about-intro__row--what-we-do .about-intro__text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-intro__row--what-we-do {
+    flex-direction: column-reverse;
+  }
+
+  .torn-photo {
+    max-width: 340px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-intro__row {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
