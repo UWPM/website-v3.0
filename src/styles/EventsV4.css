@@ -175,7 +175,8 @@
   flex-direction: column;
   justify-content: center;
   padding-top: clamp(30px, 4vh, 60px);
-  padding-bottom: clamp(60px, 8vh, 120px);
+  /* enough room under the cards that their bottom edges read */
+  padding-bottom: clamp(110px, 14vh, 200px);
 }
 
 .events-v4 .pw__band {
@@ -412,19 +413,38 @@
 }
 
 /* ------------------------------------------------------------------
-   Compact hero used on the dedicated /events route — just the top nav
-   bar (logo + links), without the full-height home artwork.
+   Compact hero for the /events route — just the top bar.
+   The home hero sizes its logo and nav as percentages of a 1512x982
+   box (so its height is 64.95vw). Those percentages mean nothing here
+   because this bar has no fixed aspect ratio, so the equivalent vw
+   values are used instead and the two pages match.
 ------------------------------------------------------------------ */
 .home-hero--compact {
+  position: relative;
   aspect-ratio: auto;
   margin-bottom: 0;
-  padding-block: clamp(18px, 2.4vw, 30px);
   min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: clamp(16px, 2vw, 26px);
 }
+
+.home-hero--compact .home-hero__brand {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+  width: 5.74vw;
+  height: 2.73vw;
+}
+
 .home-hero--compact .home-hero__nav {
   position: static;
-  margin-inline: auto;
   transform: none;
+  width: 21.33vw;
+  height: 3.25vw;
+  padding: 0.33vw;
 }
 
 /* ------------------------------------------------------------------

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import EventsSection from '../components/eventsV4/EventsSection';
+import Footer from '../components/Footer';
 import pmLogo from '../images/uwpm-brand/pmlogo.svg';
 import '../styles/Home.css';
 
@@ -32,6 +33,7 @@ export default function Events() {
         </nav>
       </section>
       <EventsSection />
+      <Footer />
     </>
   );
 }
