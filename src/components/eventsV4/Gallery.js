@@ -8,6 +8,7 @@ import productNightS24 from '../../images/events/posters/product-night-s24.jpg';
 import resumeRevamp from '../../images/events/posters/resume-revamp.jpg';
 import iceCream from '../../images/events/posters/ice-cream-social.jpg';
 import rise2024 from '../../images/events/posters/rise-2024.jpg';
+import paperPlain from '../../images/deco/paper-plain.png';
 
 // `lift` is a signed share of the band's sway; `tilt` is degrees.
 const posters = [
@@ -86,6 +87,12 @@ export default function Gallery() {
       ref={band}
       aria-label="Posters from past UWPM events"
     >
+      <img
+        src={paperPlain}
+        alt=""
+        aria-hidden="true"
+        className="gallery__paper"
+      />
       {posters.map((p, i) => (
         <div
           className="gallery__item"

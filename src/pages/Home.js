@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import homeHeroArtwork from '../images/home-hero.svg';
 import pmLogo from '../images/uwpm-brand/pmlogo.svg';
 import WhatWeDo from '../components/WhatWeDo';
 import OurImpact from '../components/OurImpact';
 import Footer from '../components/Footer';
 import '../styles/Home.css';
-import EventsSection from '../components/eventsV4/EventsSection';
 
 export default function Home() {
   return (
@@ -22,12 +22,12 @@ export default function Home() {
             Fostering the creative product management community @ UWaterloo
           </h1>
           <div className="home-hero__actions">
-            <a
+            <Link
               className="home-hero__button home-hero__button--primary"
-              href="#what-we-do"
+              to="/events"
             >
               Learn more
-            </a>
+            </Link>
             <a
               className="home-hero__button home-hero__button--secondary"
               href="mailto:hello@uwpm.ca"
@@ -47,9 +47,9 @@ export default function Home() {
           <a className="home-hero__nav-link" href="#what-we-do">
             About
           </a>
-          <a className="home-hero__nav-link" href="#events">
+          <Link className="home-hero__nav-link" to="/events">
             Events
-          </a>
+          </Link>
           <a className="home-hero__nav-link" href="#teams">
             Teams
           </a>
@@ -57,7 +57,6 @@ export default function Home() {
       </section>
       <WhatWeDo />
       <OurImpact />
-      <EventsSection />
       <Footer />
     </>
   );

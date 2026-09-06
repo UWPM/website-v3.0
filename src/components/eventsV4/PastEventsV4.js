@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import prodconGroup from '../../images/prodcon/group.webp';
+import paperLined from '../../images/deco/paper-lined.png';
 
 // Add entries here and the carousel controls activate automatically.
 const events = [
   {
     title: 'ProdCon 2025',
-    date: 'November 16th, 2024',
+    date: 'November 16th, 2025',
     copy: "ProdCon is the University of Waterloo's product management case study competition. You will get an opportunity to solve a case, present it to judges and network with industry professionals.",
     image: prodconGroup,
   },
@@ -49,10 +50,16 @@ export default function PastEventsV4() {
 
   return (
     <section className="ev">
+      <img
+        src={paperLined}
+        alt=""
+        aria-hidden="true"
+        className="ev__paper ev__paper--right"
+      />
       <div className="container">
         <div className="ev4-head">
           <h2>Past events</h2>
-          <a className="link-arrow" href="#events">
+          <span className="link-arrow link-arrow--muted" aria-disabled="true">
             View all events
             <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path
@@ -62,7 +69,7 @@ export default function PastEventsV4() {
                 strokeLinecap="square"
               />
             </svg>
-          </a>
+          </span>
         </div>
 
         <div className="ev__slide">

@@ -5,7 +5,7 @@
 ------------------------------------------------------------------ */
 
 .events-v4 {
-  --paper: #ffffff;
+  --paper: #f2efef;
   --ink: #000000;
   --signal: #ff4d56;
   --mute: #767676;
@@ -37,7 +37,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding-block: var(--pad-y);
+  padding-block: var(--pad-y) 0;
+  margin-bottom: calc(var(--pad-y) * -0.5);
 }
 
 .events-v4 .ev4-head h2 {
@@ -68,6 +69,15 @@
 
 .events-v4 .link-arrow:hover svg {
   transform: translateX(5px);
+}
+
+/* Non-clickable until an events-listing page exists. */
+.events-v4 .link-arrow--muted {
+  cursor: default;
+  opacity: 0.45;
+}
+.events-v4 .link-arrow--muted:hover svg {
+  transform: none;
 }
 
 /* ==================================================================
@@ -185,7 +195,10 @@
 }
 
 .events-v4 .pw__col {
-  flex: 0 0 clamp(360px, 42vw, 560px);
+  /* Matches the v4 design repo: three cards sit on screen together, so
+     every description is readable as the section scrolls in rather than
+     only after scrolling through the pinned track. */
+  flex: 0 0 clamp(320px, 32vw, 480px);
   display: flex;
   flex-direction: column;
 }
@@ -198,11 +211,15 @@
   background: var(--paper);
   display: flex;
   flex-direction: column;
-  transition: border-color 0.35s var(--ease);
+  transition:
+    border-color 0.35s var(--ease),
+    transform 0.35s var(--ease);
 }
 
+/* hover anywhere on the card box, not just the image */
 .events-v4 .pw__col:hover .pw__box {
   border-color: var(--signal);
+  transform: translateY(-6px);
 }
 
 .events-v4 .pw__img-wrap {
@@ -269,8 +286,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--pad-y) calc(var(--pad-x) * 2);
-  padding: var(--pad-y) var(--pad-x);
-  align-items: center;
+  /* Sits close under the heading, with room before the poster band. */
+  padding: 0 var(--pad-x) var(--pad-y);
+  align-items: start;
 }
 
 .events-v4 .ev__title {
@@ -302,9 +320,10 @@
 }
 
 .events-v4 .ev__arrow {
-  width: 46px;
-  height: 46px;
-  border: 1px solid var(--rule-strong);
+  width: 52px;
+  height: 52px;
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -319,12 +338,13 @@
   color: var(--paper);
 }
 .events-v4 .ev__arrow:disabled {
-  opacity: 0.28;
+  opacity: 0.55;
   cursor: not-allowed;
 }
 .events-v4 .ev__arrow svg {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
+  stroke-width: 2;
 }
 
 .events-v4 .ev__media {
@@ -349,13 +369,13 @@
   z-index: 1;
   overflow: hidden;
   background: var(--paper);
-  margin-top: calc(var(--pad-y) / -2);
+  margin-top: calc(var(--pad-y) * 1.4);
 
   --poster: clamp(148px, 21vw, 440px);
   --sway: calc(var(--poster) * 0.055);
   --turned: calc(var(--poster) * 1.12);
   --band-h: calc(var(--turned) + var(--sway) * 2);
-  height: calc(var(--band-h) + var(--pad-y));
+  min-height: calc(var(--band-h) + var(--pad-y) * 0.5);
 }
 
 .events-v4 .gallery__item {
@@ -388,5 +408,79 @@
 @media (max-width: 900px) {
   .events-v4 .ev__slide {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Compact hero used on the dedicated /events route — just the top nav
+   bar (logo + links), without the full-height home artwork.
+------------------------------------------------------------------ */
+.home-hero--compact {
+  aspect-ratio: auto;
+  margin-bottom: 0;
+  padding-block: clamp(18px, 2.4vw, 30px);
+  min-height: 0;
+}
+.home-hero--compact .home-hero__nav {
+  position: static;
+  margin-inline: auto;
+  transform: none;
+}
+
+/* ------------------------------------------------------------------
+   Paper texture accents (assets from the Figma). These are WHITE sheets
+   that sit on the cream page — the white is the point, it creates the
+   lighter patches in the design. Do NOT use mix-blend-mode: multiply
+   here; multiply makes white pixels take the colour underneath, which
+   erases the sheet and leaves only the crinkle lines.
+------------------------------------------------------------------ */
+.events-v4 .ev {
+  overflow: hidden;
+}
+
+.events-v4 .ev__paper {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: 1;
+}
+
+/* Lined sheet, right side — sits well into the page, not just at the edge. */
+.events-v4 .ev__paper--right {
+  top: -22%;
+  right: 0;
+  /* capped at the PNG's native 822px so it is never upscaled */
+  height: min(175%, 822px);
+  width: auto;
+  transform: translateX(14%) rotate(3deg);
+}
+
+/* keep the Past events content above the paper */
+.events-v4 .ev .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Plain crumpled sheet anchored to the bottom-left of the poster band,
+   sitting behind the posters (which carry z-index 1). */
+.events-v4 .gallery__paper {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  bottom: -12%;
+  left: 0;
+  /* capped at the PNG's native 932px so it is never upscaled */
+  height: min(190%, 932px);
+  width: auto;
+  transform: translateX(-6%) rotate(-4deg);
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .events-v4 .ev__paper,
+  .events-v4 .gallery__paper {
+    display: none;
   }
 }
