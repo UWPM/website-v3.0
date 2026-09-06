@@ -1,8 +1,8 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import '../styles/AboutIntro.css';
-import missionPhoto from '../images/about/mission-photo.jpg';
-import whatWeDoPhoto from '../images/about/what-we-do-photo.jpg';
+import missionPhoto from '../images/about/mission-photo.webp';
+import whatWeDoPhoto from '../images/about/what-we-do-photo.webp';
 
 export default function AboutIntro() {
   const { ref, inView } = useInView({

@@ -44,9 +44,9 @@ export default function Home() {
           >
             Home
           </a>
-          <a className="home-hero__nav-link" href="#what-we-do">
+          <Link className="home-hero__nav-link" to="/about">
             About
-          </a>
+          </Link>
           <Link className="home-hero__nav-link" to="/events">
             Events
           </Link>

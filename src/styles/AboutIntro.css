@@ -50,8 +50,7 @@
 .about-intro__title {
   margin: 0 0 clamp(16px, 2vw, 28px);
   font:
-    700 clamp(2.2rem, 4vw, 3.6rem) / 1 'Syne',
-    'Manrope',
+    800 clamp(2.2rem, 4vw, 3.6rem) / 1 'Manrope',
     system-ui,
     sans-serif;
 }
