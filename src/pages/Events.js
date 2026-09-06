@@ -1,53 +1,37 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import ProdCon from '../components/ProdCon';
-import '../styles/Events.css';
-import '../App.css';
-import UpcomingEventsCard from '../components/UpcomingEvents.js';
-import PastEvents from '../components/PastEvents';
-import desktopHexagons from '../images/background/desktop-hexagons.svg';
+import { Link } from 'react-router-dom';
+import EventsSection from '../components/eventsV4/EventsSection';
+import pmLogo from '../images/uwpm-brand/pmlogo.svg';
+import '../styles/Home.css';
 
-// TODO: Reorganize the following code into src/components. See src/pages/Home.js as a reference
-
-export default function Events({ show }) {
+// Dedicated Events route (/events). Reuses the hero nav styling from Home so
+// the top navigation stays consistent, then renders the Events section.
+export default function Events() {
   return (
-    <Container>
-      <div className="events-container">
-        <div className="hex-container">
-          <img src={desktopHexagons} alt="" />
-        </div>
-        <div className="figCaption">
-          <h1 className="title-text">
-            Gain product skills through our case competition, workshops, and
-            more.
-          </h1>
-        </div>
-      </div>
-      <UpcomingEventsCard />
-      <div>
-        {!show && (
-          <>
-            <div>
-              <h1 className="video_carousel_text">ProdCon 2023 Recap </h1>
-              <div className="video-responsive">
-                <iframe
-                  src="https://www.youtube.com/embed/SzZuCmgPiFQ?si=m2YBCin5-ocj-hfh"
-                  width="853"
-                  height="480"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  title="Embedded youtube"
-                />{' '}
-              </div>
-              <h1 className="video_carousel_text">
-                ProdCon 2023 Recap Gallery
-              </h1>
-            </div>
-          </>
-        )}
-      </div>
-      <ProdCon />
-      <PastEvents />
-    </Container>
+    <>
+      <section className="home-hero home-hero--compact" aria-label="Events">
+        <Link className="home-hero__brand" to="/" aria-label="UW PM home">
+          <img src={pmLogo} alt="UW PM" />
+        </Link>
+        <nav className="home-hero__nav" aria-label="Primary navigation">
+          <Link className="home-hero__nav-link" to="/">
+            Home
+          </Link>
+          <Link className="home-hero__nav-link" to="/#what-we-do">
+            About
+          </Link>
+          <Link
+            className="home-hero__nav-link home-hero__nav-link--active"
+            to="/events"
+          >
+            Events
+          </Link>
+          <Link className="home-hero__nav-link" to="/#teams">
+            Teams
+          </Link>
+        </nav>
+      </section>
+      <EventsSection />
+    </>
   );
 }

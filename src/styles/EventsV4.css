@@ -1,0 +1,486 @@
+/* ------------------------------------------------------------------
+   Events v4 — ported from the v4 design (cedricicic/uwpm-v4).
+   Scoped under .events-v4 so it can't leak into the rest of the site.
+   Values (spacing, type scale, colors) match the Figma / design repo.
+------------------------------------------------------------------ */
+
+.events-v4 {
+  --paper: #f2efef;
+  --ink: #000000;
+  --signal: #ff4d56;
+  --mute: #767676;
+  --rule: rgba(0, 0, 0, 0.17);
+  --rule-strong: rgba(0, 0, 0, 0.3);
+
+  --gutter: clamp(18px, 4.2vw, 56px);
+  --pad-x: clamp(18px, 2.2vw, 34px);
+  --pad-y: clamp(26px, 3.1vw, 46px);
+  --maxw: 1560px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  position: relative;
+  background: var(--paper);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+.events-v4 .container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* ---- Section headings ---- */
+.events-v4 .ev4-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: var(--pad-y) 0;
+  margin-bottom: calc(var(--pad-y) * -0.5);
+}
+
+.events-v4 .ev4-head h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.events-v4 .link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+  position: relative;
+  cursor: pointer;
+}
+
+.events-v4 .link-arrow svg {
+  width: 14px;
+  height: 14px;
+  color: var(--signal);
+  transition: transform 0.45s var(--ease);
+}
+
+.events-v4 .link-arrow:hover svg {
+  transform: translateX(5px);
+}
+
+/* Non-clickable until an events-listing page exists. */
+.events-v4 .link-arrow--muted {
+  cursor: default;
+  opacity: 0.45;
+}
+.events-v4 .link-arrow--muted:hover svg {
+  transform: none;
+}
+
+/* ==================================================================
+   PAST WINNERS — pinned horizontal scroll (GSAP)
+================================================================== */
+.events-v4 .pw {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.events-v4 .pw__decorations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.events-v4 .pw__svg {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+
+.events-v4 .pw__svg--highlight {
+  top: clamp(35px, 5vh, 75px);
+  left: clamp(480px, 56vw, 860px);
+  width: clamp(36px, 3.5vw, 54px);
+  opacity: 0.85;
+  animation: ev4Float1 5s ease-in-out infinite alternate;
+}
+.events-v4 .pw__svg--vector {
+  bottom: clamp(30px, 6vh, 90px);
+  left: clamp(20px, 3.5vw, 70px);
+  width: clamp(80px, 8vw, 130px);
+  opacity: 0.65;
+  transform: rotate(-10deg);
+  animation: ev4Float2 6s ease-in-out infinite alternate;
+}
+.events-v4 .pw__svg--star-solid {
+  top: clamp(60px, 10vh, 140px);
+  right: clamp(20px, 4vw, 80px);
+  width: clamp(40px, 4.5vw, 65px);
+  opacity: 0.7;
+  animation: ev4Float3 4.5s ease-in-out infinite alternate;
+}
+.events-v4 .pw__svg--star-outline {
+  bottom: clamp(50px, 8vh, 120px);
+  right: clamp(30px, 7vw, 140px);
+  width: clamp(50px, 5vw, 75px);
+  opacity: 0.6;
+  animation: ev4Float4 5.5s ease-in-out infinite alternate;
+}
+
+@keyframes ev4Float1 {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-6px) rotate(8deg);
+  }
+}
+@keyframes ev4Float2 {
+  0% {
+    transform: translateY(0) rotate(-10deg) scale(1);
+  }
+  100% {
+    transform: translateY(-8px) rotate(-4deg) scale(1.04);
+  }
+}
+@keyframes ev4Float3 {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  100% {
+    transform: translateY(-9px) rotate(15deg) scale(1.08);
+  }
+}
+@keyframes ev4Float4 {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-7px) rotate(-12deg);
+  }
+}
+
+.events-v4 .pw__inner {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: clamp(30px, 4vh, 60px);
+  padding-bottom: clamp(60px, 8vh, 120px);
+}
+
+.events-v4 .pw__band {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  padding-block: calc(var(--pad-y) * 0.75);
+}
+
+.events-v4 .pw__track {
+  display: flex;
+  gap: clamp(28px, 3.5vw, 56px);
+  padding-inline: calc(var(--gutter) + var(--pad-x));
+  width: max-content;
+  will-change: transform;
+}
+
+.events-v4 .pw__col {
+  /* Matches the v4 design repo: three cards sit on screen together, so
+     every description is readable as the section scrolls in rather than
+     only after scrolling through the pinned track. */
+  flex: 0 0 clamp(320px, 32vw, 480px);
+  display: flex;
+  flex-direction: column;
+}
+
+.events-v4 .pw__box {
+  position: relative;
+  height: 100%;
+  padding: clamp(16px, 2.2vw, 28px);
+  border: 1px dashed var(--rule-strong);
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+  transition:
+    border-color 0.35s var(--ease),
+    transform 0.35s var(--ease);
+}
+
+/* hover anywhere on the card box, not just the image */
+.events-v4 .pw__col:hover .pw__box {
+  border-color: var(--signal);
+  transform: translateY(-6px);
+}
+
+.events-v4 .pw__img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--rule);
+  background: #f5f5f7;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.events-v4 .pw__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(0.9);
+}
+
+.events-v4 .pw__award {
+  color: var(--signal);
+  font-weight: 600;
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.events-v4 .pw__title {
+  font-size: clamp(2rem, 3.2vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+
+.events-v4 .pw__team {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--mute);
+  margin-bottom: 16px;
+  line-height: 1.45;
+}
+
+.events-v4 .pw__desc {
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  color: var(--mute);
+  line-height: 1.55;
+  flex-grow: 1;
+}
+
+/* ==================================================================
+   PAST EVENTS — ProdCon feature + carousel
+================================================================== */
+.events-v4 .ev {
+  position: relative;
+  z-index: 1;
+  background: var(--paper);
+}
+
+.events-v4 .ev__slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--pad-y) calc(var(--pad-x) * 2);
+  /* Sits close under the heading, with room before the poster band. */
+  padding: 0 var(--pad-x) var(--pad-y);
+  align-items: start;
+}
+
+.events-v4 .ev__title {
+  font-size: clamp(2.1rem, 5.2vw, 4.4rem);
+  font-weight: 700;
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+}
+
+.events-v4 .ev__date {
+  color: var(--signal);
+  margin-top: 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.events-v4 .ev__copy {
+  margin-top: 24px;
+  color: var(--mute);
+  line-height: 1.6;
+  max-width: 48ch;
+}
+
+.events-v4 .ev__arrows {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.events-v4 .ev__arrow {
+  width: 52px;
+  height: 52px;
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition:
+    background 0.35s var(--ease),
+    color 0.35s var(--ease),
+    border-color 0.35s var(--ease);
+}
+.events-v4 .ev__arrow:not(:disabled):hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+.events-v4 .ev__arrow:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.events-v4 .ev__arrow svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2;
+}
+
+.events-v4 .ev__media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.events-v4 .ev__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(0.9);
+}
+
+/* ==================================================================
+   GALLERY — poster row, expand-on-scroll parallax (GSAP)
+================================================================== */
+.events-v4 .gallery {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: var(--paper);
+  margin-top: calc(var(--pad-y) * 1.4);
+
+  --poster: clamp(148px, 21vw, 440px);
+  --sway: calc(var(--poster) * 0.055);
+  --turned: calc(var(--poster) * 1.12);
+  --band-h: calc(var(--turned) + var(--sway) * 2);
+  min-height: calc(var(--band-h) + var(--pad-y) * 0.5);
+}
+
+.events-v4 .gallery__item {
+  position: absolute;
+  z-index: 1;
+  left: var(--lane);
+  top: calc(var(--band-h) / 2 + var(--lift) * var(--sway));
+  translate: -50% -50%;
+  width: var(--poster);
+  aspect-ratio: 1;
+  will-change: transform;
+}
+
+.events-v4 .gallery__poster {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  rotate: var(--tilt);
+}
+
+.events-v4 .gallery__poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(0.9);
+}
+
+/* ---- Tablet: stack the ProdCon feature, keep winners readable ---- */
+@media (max-width: 900px) {
+  .events-v4 .ev__slide {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Compact hero used on the dedicated /events route — just the top nav
+   bar (logo + links), without the full-height home artwork.
+------------------------------------------------------------------ */
+.home-hero--compact {
+  aspect-ratio: auto;
+  margin-bottom: 0;
+  padding-block: clamp(18px, 2.4vw, 30px);
+  min-height: 0;
+}
+.home-hero--compact .home-hero__nav {
+  position: static;
+  margin-inline: auto;
+  transform: none;
+}
+
+/* ------------------------------------------------------------------
+   Paper texture accents (assets from the Figma). These are WHITE sheets
+   that sit on the cream page — the white is the point, it creates the
+   lighter patches in the design. Do NOT use mix-blend-mode: multiply
+   here; multiply makes white pixels take the colour underneath, which
+   erases the sheet and leaves only the crinkle lines.
+------------------------------------------------------------------ */
+.events-v4 .ev {
+  overflow: hidden;
+}
+
+.events-v4 .ev__paper {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: 1;
+}
+
+/* Lined sheet, right side — sits well into the page, not just at the edge. */
+.events-v4 .ev__paper--right {
+  top: -22%;
+  right: 0;
+  /* capped at the PNG's native 822px so it is never upscaled */
+  height: min(175%, 822px);
+  width: auto;
+  transform: translateX(14%) rotate(3deg);
+}
+
+/* keep the Past events content above the paper */
+.events-v4 .ev .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Plain crumpled sheet anchored to the bottom-left of the poster band,
+   sitting behind the posters (which carry z-index 1). */
+.events-v4 .gallery__paper {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  bottom: -12%;
+  left: 0;
+  /* capped at the PNG's native 932px so it is never upscaled */
+  height: min(190%, 932px);
+  width: auto;
+  transform: translateX(-6%) rotate(-4deg);
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .events-v4 .ev__paper,
+  .events-v4 .gallery__paper {
+    display: none;
+  }
+}
