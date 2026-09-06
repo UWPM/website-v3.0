@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import homeHeroArtwork from '../images/home-hero.svg';
 import pmLogo from '../images/uwpm-brand/pmlogo.svg';
 import WhatWeDo from '../components/WhatWeDo';
@@ -43,9 +44,9 @@ export default function Home() {
           >
             Home
           </a>
-          <a className="home-hero__nav-link" href="#what-we-do">
+          <Link className="home-hero__nav-link" to="/about">
             About
-          </a>
+          </Link>
           <a className="home-hero__nav-link" href="#events">
             Events
           </a>
