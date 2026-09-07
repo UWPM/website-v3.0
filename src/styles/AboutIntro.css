@@ -47,19 +47,26 @@
   text-align: right;
 }
 
+/* Typography tokens from Figma (UWPM file, Mission/What Do We Do frames):
+   Heading -> Manrope SemiBold 64px, line-height Auto, letter-spacing 0%
+   Body    -> IBM Plex Mono Medium 24px, line-height Auto, letter-spacing 0% */
 .about-intro__title {
   margin: 0 0 clamp(16px, 2vw, 28px);
   font:
-    800 clamp(2.2rem, 4vw, 3.6rem) / 1 'Manrope',
+    600 clamp(2rem, 5.2vw, 4rem) / 1.1 'Manrope',
     system-ui,
     sans-serif;
+  letter-spacing: 0;
 }
 
 .about-intro__text {
   margin: 0 0 1em;
   max-width: 46ch;
-  font-size: clamp(1rem, 1.25vw, 1.2rem);
-  line-height: 1.55;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-weight: 500;
+  font-size: clamp(0.95rem, 1.35vw, 1.5rem);
+  line-height: 1.45;
+  letter-spacing: 0;
 }
 
 .about-intro__row--mission .about-intro__text {
@@ -79,16 +86,48 @@
   min-width: 0;
 }
 
-.about-intro__photo {
-  display: block;
+/* Layered "paper" card: a torn/crumpled paper texture peeks out from
+   behind the photo, echoing the notebook-paper motif used elsewhere
+   on the page. */
+.paper-photo {
+  position: relative;
   width: 100%;
   max-width: 420px;
+}
+
+.paper-photo__paper {
+  position: absolute;
+  z-index: 0;
+  width: 58%;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.08));
+}
+
+.paper-photo--tilt-right .paper-photo__paper {
+  top: -7%;
+  right: -9%;
+  transform: rotate(9deg);
+}
+
+.paper-photo--tilt-left .paper-photo__paper {
+  top: -7%;
+  left: -9%;
+  transform: rotate(-9deg);
+}
+
+.paper-photo__photo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
   height: auto;
   transition: transform 0.4s var(--ai-ease);
 }
 
 @media (hover: hover) and (min-width: 768px) {
-  .about-intro__photo:hover {
+  .paper-photo__photo:hover {
     transform: translateY(-6px);
   }
 }
@@ -116,7 +155,7 @@
     flex-direction: column-reverse;
   }
 
-  .torn-photo {
+  .paper-photo {
     max-width: 340px;
   }
 }
