@@ -1,0 +1,85 @@
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.team-page-title {
+  font-family: 'Manrope';
+  font-weight: 800;
+  font-size: 32px;
+  color: #1a1a1a !important;
+}
+
+.team-subtitle {
+  max-width: 300px;
+  text-align: left;
+  font-family: 'Manrope';
+  font-weight: 800;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.team-banner {
+  position: relative;
+  height: 500px;
+  margin-bottom: 40px;
+  transition: width 0.1s ease-out, margin-left 0.1s ease-out;
+}
+
+.team-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  filter: brightness(0.25);
+  border-radius: 12px;
+}
+
+.values-carousel-wrapper {
+  margin-bottom: 60px;
+}
+
+.values-carousel-title {
+  font-family: 'Manrope';
+  font-weight: 800;
+  font-size: 32px;
+  color: #1a1a1a !important;
+  margin-bottom: 20px;
+}
+
+.value-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: 220px;
+  height: 220px;
+}
+
+.value-card h3,
+.value-card p {
+  font-family: 'Manrope';
+  color: #1a1a1a !important;
+}
+
+.value-card h3 {
+  font-size: 20px !important;
+}
+
+.value-card p {
+  font-size: 14px !important;
+}
+
+.values-swiper .swiper-slide {
+  width: 300px !important;
+  height: 220px !important;
+}
+
+.values-swiper .swiper-button-next,
+.values-swiper .swiper-button-prev {
+  color: black;
+}

@@ -14,6 +14,7 @@ import About from './pages/About';
 import Events from './pages/Events';
 import PMJobs from './pages/PMJobs';
 import Contact from './pages/Contact';
+import Team from './pages/Team';
 
 import ScrollTop from './components/ScrollTop';
 
@@ -57,6 +58,9 @@ function App() {
               <Nav.Link id="nav-link" as={Link} to="/events">
                 Events
               </Nav.Link>
+              <Nav.Link id="nav-link" as={Link} to="/team">
+                Team
+              </Nav.Link>
               {/* <Nav.Link id="nav-link" as={Link} to="/pm-jobs">
                 PM Jobs
               </Nav.Link> */}
@@ -73,6 +77,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/events" element={<Events />} />
+          <Route exact path="/team" element={<Team />} />
           {/* <Route exact path="/pm-jobs" element={<PMJobs />} /> */}
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
