@@ -104,33 +104,18 @@ export default function About({ show }) {
           <div className="values-title-wrapper" id="values">
             <a className="title-div" href="#values">
               <div>
-                <h2>Values</h2>
+                <h2 className="values-heading">Values</h2>
               </div>
             </a>
             <div className="grid-container">
               <div className="grid-item">
                 <img src={innovationImg} className="icons-image" />
                 <div className="text-box">
-                  <h3>Innovation</h3>
+                  <h3>Network</h3>
                   <p>
-                    We value innovation as the driving force behind successful
-                    products, that comes from encouraging creative thinking, the
-                    exploration of new ideas, and the pursuit of inventive
+                    We believe innovation drives great products by fostering
+                    creativity, exploring new ideas, and finding inventive
                     solutions to real-world problems.
-                  </p>
-                </div>
-              </div>
-              <div className="grid-item">
-                {' '}
-                <img src={empowermentImg} className="icons-image" />
-                <div className="text-box">
-                  <h3>Empowerment</h3>
-                  <p>
-                    We empower anyone to succeed and break into the world of
-                    product management by providing the resources, knowledge,
-                    and opportunities necessary to succeed. We believe in
-                    equipping individuals with the skills and experiences to
-                    work in product, no matter their background.
                   </p>
                 </div>
               </div>
@@ -138,13 +123,22 @@ export default function About({ show }) {
                 {' '}
                 <img src={learningImg} className="icons-image" />
                 <div className="text-box">
+                  <h3>Empowerment</h3>
+                  <p>
+                    We help people break into product management by providing
+                    the resources, skills, and opportunities they need to
+                    succeed, regardless of their background.
+                  </p>
+                </div>
+              </div>
+              <div className="grid-item">
+                {' '}
+                <img src={empowermentImg} className="icons-image" />
+                <div className="text-box">
                   <h3>Continuous Learning</h3>
                   <p>
-                    We embrace a growth mindset and value continuous learning
-                    for all our members. Members are encouraged to expand their
-                    horizons on the world of product from learning from everyone
-                    around them to strive for personal and professional
-                    development.
+                    We embrace a growth mindset, encouraging continuous learning
+                    and development through shared knowledge and experiences.
                   </p>
                 </div>
               </div>
@@ -154,10 +148,9 @@ export default function About({ show }) {
                 <div className="text-box">
                   <h3>Community Engagement</h3>
                   <p>
-                    We actively engage with the Waterloo product management
-                    community, both with alumni, current students and beyond, to
-                    exchange knowledge and build valuable long-lasting
-                    connections.
+                    We engage with the Waterloo product management community —
+                    alumni, students, and beyond — to share knowledge and build
+                    lasting connections.
                   </p>
                 </div>
               </div>

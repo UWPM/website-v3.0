@@ -503,28 +503,16 @@ a:hover {
 }
 
 .title-div {
-  background: linear-gradient(
-      0deg,
-      rgba(240, 92, 91, 0.7),
-      rgba(240, 92, 91, 0.7)
-    ),
-    linear-gradient(
-      180deg,
-      rgba(255, 238, 237, 0.04) 0%,
-      rgba(7, 57, 72, 0.124) 100%
-    );
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-top: 5px;
+  padding: 0;
+  margin-bottom: 20px;
   z-index: 100;
   position: relative;
   border-radius: 10px;
 }
-
 .values-title-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -551,9 +539,9 @@ a:hover {
   .grid-item {
     flex-direction: column;
   }
+
   .text-box {
-    margin-top: 40px;
-    margin-bottom: 10px;
+    font-size: 16.82px;
   }
 
   .title-div {
@@ -581,4 +569,11 @@ a:hover {
   .title-div {
     margin-left: 40px;
   }
+}
+
+.values-heading {
+  color: black !important;
+  text-align: left;
+  font-size: 64px !important;
+  font-weight: 600 !important;
 }
