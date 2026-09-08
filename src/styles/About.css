@@ -11,21 +11,31 @@ a:hover {
   color: rgb(222, 222, 222);
 }
 
-.about-container {
+.about-hero {
   position: relative;
-  min-height: 830px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  aspect-ratio: auto;
+  min-height: 0;
+  padding: clamp(16px, 2vw, 26px) 0;
+  margin-bottom: 0;
 }
 
-.about-caption {
+.about-hero .home-hero__brand {
   position: absolute;
-  top: 2rem;
-  margin-top: 200px;
-  margin-bottom: 100px;
-  margin-right: 20%;
-  width: 60%;
+  top: 50%;
+  width: 5.74vw;
+  height: 2.73vw;
+  transform: translateY(-50%);
+}
+
+.about-hero .home-hero__nav {
+  position: static;
+  width: 21.33vw;
+  height: 3.25vw;
+  padding: 0.33vw;
+  transform: none;
 }
 
 .mission-vision-row {
@@ -479,103 +489,102 @@ a:hover {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
-  padding: 20px 20px 20px 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(48px, 5vw, 76px) clamp(44px, 6vw, 92px);
+  width: 100%;
+  margin-top: clamp(42px, 5vw, 72px);
+  padding: 0;
 }
 
 .grid-item {
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: clamp(130px, 13vw, 190px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(24px, 3vw, 44px);
+  min-width: 0;
+  margin: 0;
+  padding: 0;
   text-align: left;
-  margin: 10px 30px 10px 30px;
 }
 
 .icons-image {
-  height: 150px;
-  width: 200px;
-  margin-right: 50px;
+  display: block;
+  width: 100%;
+  height: clamp(100px, 10vw, 150px);
+  object-fit: contain;
+}
+
+.icons-image--small {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.text-box h3 {
+  margin: 0 0 10px;
+  color: #000000;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+.text-box p {
+  margin: 0;
+  color: #767676;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-weight: 400;
+  line-height: 1.55;
 }
 
 .title-div {
-  background: linear-gradient(
-      0deg,
-      rgba(240, 92, 91, 0.7),
-      rgba(240, 92, 91, 0.7)
-    ),
-    linear-gradient(
-      180deg,
-      rgba(255, 238, 237, 0.04) 0%,
-      rgba(7, 57, 72, 0.124) 100%
-    );
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-top: 5px;
-  z-index: 100;
-  position: relative;
-  border-radius: 10px;
+  align-self: flex-start;
+  color: #000000;
+}
+
+.title-div:hover {
+  color: #000000;
+}
+
+.title-div h2 {
+  margin: 0;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 .values-title-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-}
-
-@media screen and (max-width: 1368px) {
-  .grid-container {
-    padding: 20px 20px 20px 20px;
-  }
-}
-
-@media screen and (max-width: 1252px) {
-  .grid-item {
-    margin: 10px;
-  }
-  .grid-container {
-    padding: 20px 10px 20px 10px;
-  }
+  align-items: stretch;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: clamp(56px, 7vw, 110px) clamp(18px, 2.2vw, 34px)
+    clamp(80px, 9vw, 140px);
 }
 
 @media screen and (max-width: 992px) {
   .grid-container {
-    grid-template-columns: auto;
-    padding: 20px 10px 20px 10px;
-  }
-  .grid-item {
-    flex-direction: column;
-  }
-  .text-box {
-    margin-top: 40px;
-    margin-bottom: 10px;
-  }
-
-  .title-div {
-    align-self: self-start;
-    margin-left: 40px;
+    grid-template-columns: 1fr;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+  .values-title-wrapper {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
   .grid-container {
-    padding: 20px 2px 20px 20px;
+    gap: 44px;
   }
-  .title-div {
-    margin-left: 50px;
-  }
-}
 
-@media screen and (max-width: 400px) {
-  .title-div {
-    margin-left: 55px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .title-div {
-    margin-left: 40px;
+  .grid-item {
+    grid-template-columns: minmax(92px, 30%) minmax(0, 1fr);
+    gap: 20px;
   }
 }

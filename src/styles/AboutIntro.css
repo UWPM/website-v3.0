@@ -9,6 +9,7 @@
   background: var(--ai-paper);
   color: var(--ai-ink);
   font-family: 'Manrope', system-ui, sans-serif;
+  overflow: hidden;
 }
 
 .about-intro__row {
@@ -47,25 +48,25 @@
   text-align: right;
 }
 
-/* Typography tokens from Figma (UWPM file, Mission/What Do We Do frames):
-   Heading -> Manrope SemiBold 64px, line-height Auto, letter-spacing 0%
-   Body    -> IBM Plex Mono Medium 24px, line-height Auto, letter-spacing 0% */
+/* Keep the About page on the same type system as the Events feature cards. */
 .about-intro__title {
-  margin: 0 0 clamp(16px, 2vw, 28px);
-  font:
-    600 clamp(2rem, 5.2vw, 4rem) / 1.1 'Manrope',
-    system-ui,
-    sans-serif;
-  letter-spacing: 0;
+  margin: 0 0 24px;
+  color: #000000;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 .about-intro__text {
   margin: 0 0 1em;
-  max-width: 46ch;
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
-  font-weight: 500;
-  font-size: clamp(0.95rem, 1.35vw, 1.5rem);
-  line-height: 1.45;
+  max-width: 48ch;
+  color: #767676;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-weight: 400;
+  line-height: 1.6;
   letter-spacing: 0;
 }
 
@@ -98,7 +99,6 @@
 .paper-photo__paper {
   position: absolute;
   z-index: 0;
-  width: 58%;
   height: auto;
   pointer-events: none;
   user-select: none;
@@ -106,15 +106,17 @@
 }
 
 .paper-photo--tilt-right .paper-photo__paper {
-  top: -7%;
-  right: -9%;
-  transform: rotate(9deg);
+  width: 150%;
+  top: -30%;
+  right: -80%;
+  transform: none;
 }
 
 .paper-photo--tilt-left .paper-photo__paper {
-  top: -7%;
-  left: -9%;
-  transform: rotate(-9deg);
+  width: 100%;
+  top: -10%;
+  left: -70%;
+  transform: none;
 }
 
 .paper-photo__photo {

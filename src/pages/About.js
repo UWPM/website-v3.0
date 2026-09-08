@@ -1,13 +1,15 @@
 import React from 'react';
-import desktopHexagons from '../images/background/desktop-hexagons.svg';
-import uwPMCircleLogo from '../images/uw-pm-circle-logo.svg';
+import { Link } from 'react-router-dom';
+
+import pmLogo from '../images/uwpm-brand/pmlogo.svg';
+import '../styles/Home.css';
 import '../styles/About.css';
 import '../App.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import innovationImg from '../images/about/Group 5850.png';
-import empowermentImg from '../images/about/Group 5851.png';
-import learningImg from '../images/about/Group 5852.png';
-import communityImg from '../images/about/Group 5853.png';
+import innovationImg from '../images/about/network.png';
+import empowermentImg from '../images/about/empowerment.png';
+import learningImg from '../images/about/learning.png';
+import communityImg from '../images/about/engagement.png';
 import TeamProfileCard from '../components/TeamProfileCard';
 import { ExecList } from '../components/ExecList';
 import AboutIntro from '../components/AboutIntro';
@@ -18,36 +20,35 @@ export default function About({ show }) {
   const Execs = ExecList;
   return (
     <>
-      <Container>
-        <Row>
-          <div className="about-container">
-            <div className="hex-container">
-              <img src={desktopHexagons} alt="" />
-            </div>
-            <div className="about-caption">
-              <h1 className="title-text">
-                Fostering the{' '}
-                <span className="position-relative d-inline z-2">
-                  Creative
-                  <img
-                    className="red-circle min-w-100 min-h-100 position-absolute start-0 top-0 z-n1"
-                    alt="Red Circle"
-                    src={require('../images/background/red-circle.png')}
-                  ></img>
-                </span>
-                Product Management Community @ UWaterloo.
-              </h1>
-            </div>
-          </div>
-        </Row>
-      </Container>
+      <section
+        className="home-hero home-hero--compact about-hero"
+        aria-label="About"
+      >
+        <Link className="home-hero__brand" to="/" aria-label="UW PM home">
+          <img src={pmLogo} alt="UW PM" />
+        </Link>
+
+        <nav className="home-hero__nav" aria-label="Primary navigation">
+          <Link className="home-hero__nav-link" to="/">
+            Home
+          </Link>
+          <Link
+            className="home-hero__nav-link home-hero__nav-link--active"
+            to="/about"
+            aria-current="page"
+          >
+            About
+          </Link>
+          <Link className="home-hero__nav-link" to="/events">
+            Events
+          </Link>
+          <Link className="home-hero__nav-link" to="/#teams">
+            Teams
+          </Link>
+        </nav>
+      </section>
       <AboutIntro />
       <Container>
-        <Row className="logo-row">
-          <Col sm={2} className="logo-container">
-            <img src={uwPMCircleLogo} alt="" />
-          </Col>
-        </Row>
         <div>
           <div className="values-title-wrapper" id="values">
             <a className="title-div" href="#values">
@@ -57,7 +58,12 @@ export default function About({ show }) {
             </a>
             <div className="grid-container">
               <div className="grid-item">
-                <img src={innovationImg} className="icons-image" />
+                <img
+                  src={innovationImg}
+                  className="icons-image"
+                  alt=""
+                  aria-hidden="true"
+                />
                 <div className="text-box">
                   <h3>Innovation</h3>
                   <p>
@@ -69,8 +75,12 @@ export default function About({ show }) {
                 </div>
               </div>
               <div className="grid-item">
-                {' '}
-                <img src={empowermentImg} className="icons-image" />
+                <img
+                  src={empowermentImg}
+                  className="icons-image"
+                  alt=""
+                  aria-hidden="true"
+                />
                 <div className="text-box">
                   <h3>Empowerment</h3>
                   <p>
@@ -83,8 +93,12 @@ export default function About({ show }) {
                 </div>
               </div>
               <div className="grid-item">
-                {' '}
-                <img src={learningImg} className="icons-image" />
+                <img
+                  src={learningImg}
+                  className="icons-image icons-image--small"
+                  alt=""
+                  aria-hidden="true"
+                />
                 <div className="text-box">
                   <h3>Continuous Learning</h3>
                   <p>
@@ -97,8 +111,12 @@ export default function About({ show }) {
                 </div>
               </div>
               <div className="grid-item">
-                {' '}
-                <img src={communityImg} className="icons-image" />
+                <img
+                  src={communityImg}
+                  className="icons-image icons-image--small"
+                  alt=""
+                  aria-hidden="true"
+                />
                 <div className="text-box">
                   <h3>Community Engagement</h3>
                   <p>
