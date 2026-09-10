@@ -42,8 +42,8 @@ export default function About({ show }) {
           <Link className="home-hero__nav-link" to="/events">
             Events
           </Link>
-          <Link className="home-hero__nav-link" to="/#teams">
-            Teams
+          <Link className="home-hero__nav-link" to="/team">
+            Team
           </Link>
         </nav>
       </section>

@@ -50,9 +50,9 @@ export default function Home() {
           <Link className="home-hero__nav-link" to="/events">
             Events
           </Link>
-          <a className="home-hero__nav-link" href="#teams">
-            Teams
-          </a>
+          <Link className="home-hero__nav-link" to="/team">
+            Team
+          </Link>
         </nav>
       </section>
       <WhatWeDo />
