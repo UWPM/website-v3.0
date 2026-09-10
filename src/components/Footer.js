@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
 
 const exploreLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'What we do', href: '#what-we-do' },
-  { label: 'Our impact', href: '#our-impact' },
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Events', href: '/events' },
+  { label: 'Team', href: '/team' },
 ];
 
 const socialLinks = [
@@ -20,13 +22,13 @@ function FooterLinks({ title, links }) {
       <ul>
         {links.map(({ label, href }) => (
           <li key={label}>
-            <a
-              href={href}
-              target={href.startsWith('http') ? '_blank' : undefined}
-              rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-            >
-              {label}
-            </a>
+            {href.startsWith('http') ? (
+              <a href={href} target="_blank" rel="noopener noreferrer">
+                {label}
+              </a>
+            ) : (
+              <Link to={href}>{label}</Link>
+            )}
           </li>
         ))}
       </ul>

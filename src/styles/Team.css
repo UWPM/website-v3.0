@@ -7,26 +7,31 @@
 }
 
 .team-page-title {
-  font-family: 'Manrope';
-  font-weight: 800;
-  font-size: 32px;
-  color: #1a1a1a !important;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  letter-spacing: -0.02em;
+  color: #000000 !important;
 }
 
 .team-subtitle {
-  max-width: 300px;
+  max-width: 320px;
   text-align: left;
-  font-family: 'Manrope';
-  font-weight: 800;
-  font-size: 14px;
-  color: #1a1a1a;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.92rem, 1.1vw, 1.05rem);
+  color: #767676;
+  line-height: 1.5;
 }
 
 .team-banner {
   position: relative;
   height: 500px;
+  margin-top: 24px;
   margin-bottom: 40px;
-  transition: width 0.1s ease-out, margin-left 0.1s ease-out;
+  transition:
+    width 0.1s ease-out,
+    margin-left 0.1s ease-out;
 }
 
 .team-banner-img {
@@ -41,13 +46,15 @@
 
 .values-carousel-wrapper {
   margin-bottom: 60px;
+  padding: 0 clamp(16px, 3vw, 36px);
 }
 
 .values-carousel-title {
-  font-family: 'Manrope';
-  font-weight: 800;
-  font-size: 32px;
-  color: #1a1a1a !important;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  letter-spacing: -0.02em;
+  color: #000000 !important;
   margin-bottom: 20px;
 }
 
@@ -62,16 +69,20 @@
 
 .value-card h3,
 .value-card p {
-  font-family: 'Manrope';
-  color: #1a1a1a !important;
+  font-family: 'Manrope', system-ui, sans-serif;
 }
 
 .value-card h3 {
   font-size: 20px !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #000000 !important;
 }
 
 .value-card p {
   font-size: 14px !important;
+  color: #767676 !important;
+  line-height: 1.55;
 }
 
 .values-swiper .swiper-slide {
@@ -82,4 +93,120 @@
 .values-swiper .swiper-button-next,
 .values-swiper .swiper-button-prev {
   color: black;
+}
+
+.our-team-wrapper {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  padding: 0 clamp(16px, 3vw, 36px);
+}
+
+.our-team-title {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  letter-spacing: -0.02em;
+  color: #000000 !important;
+  margin-bottom: 36px;
+}
+
+.team-group {
+  margin-bottom: 48px;
+}
+
+.team-group-title {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+  letter-spacing: -0.02em;
+  color: #000000 !important;
+  margin-bottom: 24px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px 24px;
+}
+
+@media (max-width: 860px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 16px;
+  }
+}
+
+.team-member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.team-member-avatar-wrap {
+  width: clamp(100px, 9vw, 130px);
+  height: clamp(100px, 9vw, 130px);
+  margin-bottom: 14px;
+}
+
+.team-member-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.team-member-link:hover {
+  transform: scale(1.05);
+}
+
+.team-member-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.team-member-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #626772;
+  display: block;
+}
+
+.team-member-name-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.team-member-name-link:hover .team-member-name {
+  color: #ff4d56 !important;
+}
+
+.team-member-name {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  color: #000000 !important;
+  margin: 0 0 4px;
+  line-height: 1.25;
+  transition: color 0.2s ease;
+}
+
+.team-member-role {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.82rem, 0.95vw, 0.9rem);
+  color: #767676 !important;
+  margin: 0;
+  line-height: 1.3;
 }

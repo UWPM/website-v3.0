@@ -13,6 +13,7 @@ import communityImg from '../images/about/engagement.png';
 import TeamProfileCard from '../components/TeamProfileCard';
 import { ExecList } from '../components/ExecList';
 import AboutIntro from '../components/AboutIntro';
+import Footer from '../components/Footer';
 
 // TODO: Reorganize the following code into src/components. See src/pages/Home.js as a reference
 
@@ -428,6 +429,7 @@ export default function About({ show }) {
           </Row>
         )}
       </Container>
+      <Footer />
     </>
   );
 }
