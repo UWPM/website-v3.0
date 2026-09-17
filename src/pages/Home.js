@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import homeHeroArtwork from '../images/home-hero.svg';
-import pmLogo from '../images/uwpm-brand/pmlogo.svg';
+import mascotPencil from '../images/home/mascot-pencil.png';
+import mascotMic from '../images/home/mascot-mic.png';
+import mascotGrad from '../images/home/mascot-grad.png';
+import starsOutline from '../images/home/stars-outline.png';
+import starsFilled from '../images/deco/stars.svg';
+import Header, { NavCapsule } from '../components/Header';
 import WhatWeDo from '../components/WhatWeDo';
 import OurImpact from '../components/OurImpact';
 import Footer from '../components/Footer';
@@ -11,49 +15,89 @@ export default function Home() {
   return (
     <>
       <section id="home" className="home-hero" aria-label="UW PM introduction">
-        <img className="home-hero__artwork" src={homeHeroArtwork} alt="" />
+        <Header hideNav active="home" />
 
-        <a className="home-hero__brand" href="#home" aria-label="UW PM home">
-          <img src={pmLogo} alt="UW PM" />
-        </a>
+        <div className="home-hero__stage">
+          <div
+            className="home-hero__figure-wrap home-hero__figure-wrap--pencil"
+            aria-hidden="true"
+          >
+            <img
+              className="home-hero__figure home-hero__figure--pencil"
+              src={mascotPencil}
+              alt="UW PM Mascot with pencil"
+            />
+          </div>
 
-        <div className="home-hero__content">
-          <h1>
-            Fostering the creative product management community @ UWaterloo
-          </h1>
-          <div className="home-hero__actions">
-            <Link
-              className="home-hero__button home-hero__button--primary"
-              to="/events"
-            >
-              Learn more
-            </Link>
-            <a
-              className="home-hero__button home-hero__button--secondary"
-              href="mailto:hello@uwpm.ca"
-            >
-              Join our team
-            </a>
+          <div className="home-hero__content">
+            <h1 className="home-hero__headline">
+              <span className="home-hero__headline-part">
+                <span>Fostering</span> <span>the creative</span>
+              </span>
+              <span className="home-hero__highlight-wrap">
+                <span className="home-hero__glow" aria-hidden="true" />
+                <span className="home-hero__highlight-text">
+                  <span>product </span>
+                  <span>management </span>
+                  <span>community</span>
+                </span>
+              </span>
+              <span className="home-hero__headline-line--sub">
+                <span className="home-hero__waterloo-wrap">
+                  @&nbsp;UWaterloo.
+                </span>
+                <img
+                  className="home-hero__star home-hero__star--inline"
+                  src={starsFilled}
+                  alt=""
+                  aria-hidden="true"
+                />
+              </span>
+            </h1>
+
+            <div className="home-hero__actions">
+              <Link
+                className="home-hero__button home-hero__button--primary"
+                to="/events"
+              >
+                Learn more
+              </Link>
+              <a
+                className="home-hero__button home-hero__button--secondary"
+                href="mailto:hello@uwpm.ca"
+              >
+                Join our team
+              </a>
+            </div>
+
+            <div className="home-hero__star-outline-wrap" aria-hidden="true">
+              <img
+                className="home-hero__star home-hero__star--outline"
+                src={starsOutline}
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div className="home-hero__figures-bottom" aria-hidden="true">
+            <div className="home-hero__figure-wrap home-hero__figure-wrap--mic">
+              <img
+                className="home-hero__figure home-hero__figure--mic"
+                src={mascotMic}
+                alt="UW PM Mascot with microphone"
+              />
+            </div>
+            <div className="home-hero__figure-wrap home-hero__figure-wrap--grad">
+              <img
+                className="home-hero__figure home-hero__figure--grad"
+                src={mascotGrad}
+                alt="UW PM Mascot with graduation cap"
+              />
+            </div>
           </div>
         </div>
 
-        <nav className="home-hero__nav" aria-label="Primary navigation">
-          <a
-            className="home-hero__nav-link home-hero__nav-link--active"
-            href="#home"
-          >
-            Home
-          </a>
-          <Link className="home-hero__nav-link" to="/about">
-            About
-          </Link>
-          <Link className="home-hero__nav-link" to="/events">
-            Events
-          </Link>
-          <Link className="home-hero__nav-link" to="/team">
-            Team
-          </Link>
-        </nav>
+        <NavCapsule active="home" className="home-hero__nav--home" />
       </section>
       <WhatWeDo />
       <OurImpact />

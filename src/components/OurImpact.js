@@ -3,6 +3,9 @@ import blueMascot from '../images/background/bow-hex.svg';
 import yellowMascot from '../images/background/flower-hex.svg';
 import pencilMascot from '../images/background/pencil-hex.svg';
 import pinkMascot from '../images/background/pink-bow-hex.svg';
+import mascotBlueSticker from '../images/mascot.svg';
+import mascotYellowSticker from '../images/mascot-yellow.svg';
+import mascotPinkSticker from '../images/mascot-pink.svg';
 import salesforce from '../images/company-logos/salesforce.png';
 import meta from '../images/company-logos/meta.png';
 import microsoft from '../images/company-logos/microsoft.png';
@@ -26,16 +29,40 @@ const impactStats = [
         <img src={yellowMascot} alt="" />
       </div>
     ),
+    mobileArtwork: (
+      <img
+        src={mascotBlueSticker}
+        alt="UW PM blue mascot"
+        aria-hidden="true"
+        className="impact-stat__sticker impact-stat__sticker--blue"
+      />
+    ),
   },
   {
     value: '50+',
     label: 'workshops',
     artwork: <img src={pencilMascot} alt="" aria-hidden="true" />,
+    mobileArtwork: (
+      <img
+        src={mascotYellowSticker}
+        alt="UW PM yellow mascot"
+        aria-hidden="true"
+        className="impact-stat__sticker impact-stat__sticker--yellow"
+      />
+    ),
   },
   {
     value: '50+',
     label: 'events',
     artwork: <img src={pinkMascot} alt="" aria-hidden="true" />,
+    mobileArtwork: (
+      <img
+        src={mascotPinkSticker}
+        alt="UW PM pink mascot"
+        aria-hidden="true"
+        className="impact-stat__sticker impact-stat__sticker--pink"
+      />
+    ),
   },
 ];
 
@@ -67,15 +94,28 @@ export default function OurImpact() {
         </h2>
 
         <dl className="impact-stats">
-          {impactStats.map(({ value, label, artwork }) => (
-            <div className="impact-stat" key={label}>
-              <div className="impact-stat__artwork">{artwork}</div>
-              <div className="impact-stat__copy">
-                <dt>{label}</dt>
-                <dd>{value}</dd>
+          {impactStats.map(
+            ({ value, label, artwork, mobileArtwork }, index) => (
+              <div className={`impact-stat impact-stat--${index}`} key={label}>
+                <div
+                  className="impact-stat__artwork impact-stat__artwork--desktop"
+                  aria-hidden="true"
+                >
+                  {artwork}
+                </div>
+                <div
+                  className="impact-stat__artwork impact-stat__artwork--mobile"
+                  aria-hidden="true"
+                >
+                  {mobileArtwork}
+                </div>
+                <div className="impact-stat__copy">
+                  <dt>{label}</dt>
+                  <dd>{value}</dd>
+                </div>
               </div>
-            </div>
-          ))}
+            ),
+          )}
         </dl>
 
         <h2 className="our-impact__community-title">

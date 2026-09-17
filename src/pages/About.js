@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-import pmLogo from '../images/uwpm-brand/pmlogo.svg';
+import Header from '../components/Header';
 import '../styles/Home.css';
 import '../styles/About.css';
 import '../App.css';
@@ -21,33 +19,7 @@ export default function About({ show }) {
   const Execs = ExecList;
   return (
     <>
-      <section
-        className="home-hero home-hero--compact about-hero"
-        aria-label="About"
-      >
-        <Link className="home-hero__brand" to="/" aria-label="UW PM home">
-          <img src={pmLogo} alt="UW PM" />
-        </Link>
-
-        <nav className="home-hero__nav" aria-label="Primary navigation">
-          <Link className="home-hero__nav-link" to="/">
-            Home
-          </Link>
-          <Link
-            className="home-hero__nav-link home-hero__nav-link--active"
-            to="/about"
-            aria-current="page"
-          >
-            About
-          </Link>
-          <Link className="home-hero__nav-link" to="/events">
-            Events
-          </Link>
-          <Link className="home-hero__nav-link" to="/team">
-            Team
-          </Link>
-        </nav>
-      </section>
+      <Header active="about" className="about-hero" />
       <AboutIntro />
       <Container>
         <div>

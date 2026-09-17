@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import { Mousewheel } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,7 +6,7 @@ import 'swiper/css';
 
 import { ExecList } from '../components/ExecList';
 import Footer from '../components/Footer';
-import pmLogo from '../images/uwpm-brand/pmlogo.svg';
+import Header from '../components/Header';
 import teamPhoto from '../images/prodcon/prodcon1.JPG';
 import '../styles/Home.css';
 import '../styles/EventsV4.css';
@@ -86,28 +85,7 @@ export default function Team() {
 
   return (
     <>
-      <section className="home-hero home-hero--compact" aria-label="Team">
-        <Link className="home-hero__brand" to="/" aria-label="UW PM home">
-          <img src={pmLogo} alt="UW PM" />
-        </Link>
-        <nav className="home-hero__nav" aria-label="Primary navigation">
-          <Link className="home-hero__nav-link" to="/">
-            Home
-          </Link>
-          <Link className="home-hero__nav-link" to="/#what-we-do">
-            About
-          </Link>
-          <Link className="home-hero__nav-link" to="/events">
-            Events
-          </Link>
-          <Link
-            className="home-hero__nav-link home-hero__nav-link--active"
-            to="/team"
-          >
-            Team
-          </Link>
-        </nav>
-      </section>
+      <Header active="team" />
 
       <Container>
         <div className="team-page">

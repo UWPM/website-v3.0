@@ -1,0 +1,107 @@
+/* ==================================================================
+   Canonical UW PM Header & Navigation Bar
+   Used across all pages (About, Events, Team, Home) for consistent
+   pixel-perfect logo positioning and nav styling.
+   ================================================================== */
+
+.home-hero--compact {
+  position: relative;
+  width: 100%;
+  aspect-ratio: auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: clamp(16px, 2vw, 26px);
+  padding-inline: 4%;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+/* On Home, provide breathing room before the hero stage below */
+.home-hero--compact.home-hero--standalone-brand {
+  margin-bottom: clamp(24px, 3.5vw, 48px);
+}
+
+.home-hero--compact .home-hero__brand {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+  width: 5.74vw;
+  height: 2.73vw;
+  min-width: 64px;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  border-radius: 4px;
+}
+
+.home-hero--compact .home-hero__brand img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.home-hero__nav-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hidden slot preserves in-flow layout & height while hiding navigation */
+.home-hero__nav-slot--hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.home-hero--compact .home-hero__nav {
+  position: static;
+  transform: none;
+  display: flex;
+  align-items: center;
+  width: clamp(270px, 21.33vw, 340px);
+  height: clamp(38px, 3.25vw, 46px);
+  padding: clamp(3px, 0.33vw, 5px);
+  margin: 0;
+  border-radius: 999px;
+  background: var(--hero-nav, rgba(38, 37, 35, 0.05));
+  box-sizing: border-box;
+}
+
+.home-hero__nav-link {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 999px;
+  color: var(--hero-ink, #262523);
+  font-size: clamp(0.85rem, 1.06vw, 1rem);
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
+  white-space: nowrap;
+}
+
+.home-hero__nav-link:hover {
+  background: var(--hero-border, rgba(38, 37, 35, 0.2));
+  color: inherit;
+}
+
+.home-hero__nav-link--active,
+.home-hero__nav-link--active:hover {
+  background: var(--hero-ink, #262523);
+  color: #ffffff;
+}
+
+.home-hero__brand:focus-visible,
+.home-hero__nav-link:focus-visible {
+  outline: 2px solid var(--hero-ink, #262523);
+  outline-offset: 3px;
+}
