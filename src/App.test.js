@@ -23,7 +23,7 @@ test('renders the supplied UW PM hero artwork', () => {
   );
   expect(screen.getByRole('link', { name: /join our team/i })).toHaveAttribute(
     'href',
-    'mailto:hello@uwpm.ca',
+    'https://linktr.ee/uwaterloopm',
   );
   expect(
     screen.getByRole('heading', { name: /our impact/i }),

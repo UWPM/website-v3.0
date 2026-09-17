@@ -65,7 +65,9 @@ export default function Home() {
               </Link>
               <a
                 className="home-hero__button home-hero__button--secondary"
-                href="mailto:hello@uwpm.ca"
+                href="https://linktr.ee/uwaterloopm"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Join our team
               </a>
