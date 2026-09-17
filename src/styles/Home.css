@@ -16,48 +16,14 @@
   flex-direction: column;
 }
 
-.home-hero__nav--home {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  width: clamp(270px, 21.33vw, 330px);
-  height: clamp(38px, 3.2vw, 46px);
-  padding: 4px;
+/* Home renders the nav at the bottom of the hero, so it only needs the
+   extra vertical rhythm; sizing and colours come from Navbar.css. */
+.uwpm-navbar.home-hero__nav--home {
   margin: clamp(16px, 2vw, 28px) auto clamp(28px, 3.5vw, 44px);
-  border-radius: 999px;
-  background: var(--hero-nav);
-}
-
-.home-hero__nav-link {
-  display: flex;
-  flex: 1 1 0;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  border-radius: 999px;
-  color: var(--hero-ink);
-  font-size: clamp(0.85rem, 1.06vw, 1rem);
-  font-weight: 500;
-  text-decoration: none;
-  transition:
-    background-color 160ms ease,
-    color 160ms ease;
-}
-
-.home-hero__nav-link:hover {
-  background: var(--hero-border);
-}
-
-.home-hero__nav-link--active,
-.home-hero__nav-link--active:hover {
-  background: var(--hero-ink);
-  color: #ffffff;
 }
 
 .home-hero__brand:focus-visible,
-.home-hero__button:focus-visible,
-.home-hero__nav-link:focus-visible {
+.home-hero__button:focus-visible {
   outline: 2px solid var(--hero-ink);
   outline-offset: 3px;
 }
@@ -461,8 +427,7 @@
     transform: rotate(3deg);
   }
 
-  .home-hero__nav--home {
-    width: min(340px, 90vw);
+  .uwpm-navbar.home-hero__nav--home {
     margin: 16px auto 36px;
   }
 }

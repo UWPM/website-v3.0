@@ -5,7 +5,8 @@ import mascotMic from '../images/home/mascot-mic.png';
 import mascotGrad from '../images/home/mascot-grad.png';
 import starsOutline from '../images/home/stars-outline.png';
 import starsFilled from '../images/deco/stars.svg';
-import Header, { NavCapsule } from '../components/Header';
+import Header from '../components/Header';
+import Navbar from '../components/Navbar';
 import WhatWeDo from '../components/WhatWeDo';
 import OurImpact from '../components/OurImpact';
 import Footer from '../components/Footer';
@@ -97,7 +98,7 @@ export default function Home() {
           </div>
         </div>
 
-        <NavCapsule active="home" className="home-hero__nav--home" />
+        <Navbar active="home" className="home-hero__nav--home" />
       </section>
       <WhatWeDo />
       <OurImpact />

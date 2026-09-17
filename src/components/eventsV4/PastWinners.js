@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { gsap, ScrollTrigger, prefersReducedMotion } from './motion';
 
 import highlight from '../../images/deco/highlight-29.svg';
@@ -62,12 +62,54 @@ const projects = [
   },
 ];
 
+// A pinned, full-height horizontal track needs room a phone doesn't have, so
+// below this width the track becomes a plain swipeable carousel instead
+// (see EventsV4.css) and the pin is skipped.
+const COMPACT = '(max-width: 640px)';
+
+// Only rendered at phone widths, where the track is a snap carousel.
+function TrackArrow({ dir, onClick }) {
+  const back = dir === 'prev';
+  return (
+    <button
+      type="button"
+      className={`pw__nav pw__nav--${dir}`}
+      onClick={onClick}
+      aria-label={back ? 'Previous winner' : 'Next winner'}
+    >
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path
+          d={back ? 'M14 8H2m5-5L2 8l5 5' : 'M2 8h12M9 3l5 5-5 5'}
+          stroke="currentColor"
+          strokeWidth="1.6"
+          strokeLinecap="square"
+        />
+      </svg>
+    </button>
+  );
+}
+
 export default function PastWinners() {
   const sectionRef = useRef(null);
   const trackRef = useRef(null);
+  const [compact, setCompact] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia(COMPACT).matches,
+  );
+
+  useEffect(() => {
+    const query = window.matchMedia(COMPACT);
+    const onChange = (event) => setCompact(event.matches);
+    query.addEventListener('change', onChange);
+    return () => query.removeEventListener('change', onChange);
+  }, []);
 
   useLayoutEffect(() => {
-    if (!sectionRef.current || !trackRef.current || prefersReducedMotion()) {
+    if (
+      compact ||
+      !sectionRef.current ||
+      !trackRef.current ||
+      prefersReducedMotion()
+    ) {
       return undefined;
     }
 
@@ -143,7 +185,19 @@ export default function PastWinners() {
     ScrollTrigger.refresh();
 
     return () => ctx.revert();
-  }, []);
+  }, [compact]);
+
+  // Advance the snap carousel by exactly one card.
+  const step = (direction) => {
+    const track = trackRef.current;
+    const card = track && track.firstElementChild;
+    if (!card) return;
+    const gap = parseFloat(window.getComputedStyle(track).columnGap) || 0;
+    track.scrollBy({
+      left: direction * (card.offsetWidth + gap),
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <section className="pw" id="winners" ref={sectionRef}>
@@ -166,6 +220,8 @@ export default function PastWinners() {
         </div>
 
         <div className="pw__band">
+          <TrackArrow dir="prev" onClick={() => step(-1)} />
+          <TrackArrow dir="next" onClick={() => step(1)} />
           <div className="pw__track" ref={trackRef}>
             {projects.map((p) => (
               <div className="pw__col" key={p.title}>

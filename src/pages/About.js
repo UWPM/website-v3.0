@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import Navbar from '../components/Navbar';
 import '../styles/Home.css';
 import '../styles/About.css';
 import '../App.css';
@@ -19,8 +20,23 @@ export default function About({ show }) {
   const Execs = ExecList;
   return (
     <>
-      <Header active="about" className="about-hero" />
+      <section className="page-hero" aria-label="About UW PM hero">
+        <Header hideNav active="about" className="page-hero__header" />
+        <div className="page-hero__title-wrap">
+          <h1 className="page-hero__title">About Us</h1>
+        </div>
+        <div
+          className="about-hero-placeholder"
+          role="img"
+          aria-label="About us banner placeholder"
+        />
+        <div className="page-hero__nav-wrap">
+          <Navbar active="about" />
+        </div>
+      </section>
+
       <AboutIntro />
+
       <Container>
         <div>
           <div className="values-title-wrapper" id="values">
@@ -29,74 +45,78 @@ export default function About({ show }) {
                 <h2>Values</h2>
               </div>
             </a>
-            <div className="grid-container">
-              <div className="grid-item">
-                <img
-                  src={innovationImg}
-                  className="icons-image"
-                  alt=""
-                  aria-hidden="true"
-                />
-                <div className="text-box">
-                  <h3>Innovation</h3>
+            <div className="values-grid">
+              <div className="value-item value-item--network">
+                <div className="value-item__media">
+                  <img
+                    src={innovationImg}
+                    className="icons-image"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="value-item__copy">
+                  <h3>Network</h3>
                   <p>
-                    We value innovation as the driving force behind successful
-                    products, that comes from encouraging creative thinking, the
-                    exploration of new ideas, and the pursuit of inventive
+                    We believe innovation drives great products by fostering
+                    creativity, exploring new ideas, and finding inventive
                     solutions to real-world problems.
                   </p>
                 </div>
               </div>
-              <div className="grid-item">
-                <img
-                  src={empowermentImg}
-                  className="icons-image"
-                  alt=""
-                  aria-hidden="true"
-                />
-                <div className="text-box">
+
+              <div className="value-item value-item--empowerment">
+                <div className="value-item__media">
+                  <img
+                    src={empowermentImg}
+                    className="icons-image"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="value-item__copy">
                   <h3>Empowerment</h3>
                   <p>
-                    We empower anyone to succeed and break into the world of
-                    product management by providing the resources, knowledge,
-                    and opportunities necessary to succeed. We believe in
-                    equipping individuals with the skills and experiences to
-                    work in product, no matter their background.
+                    We help people break into product management by providing
+                    the resources, skills, and opportunities they need to
+                    succeed, regardless of their background.
                   </p>
                 </div>
               </div>
-              <div className="grid-item">
-                <img
-                  src={learningImg}
-                  className="icons-image icons-image--small"
-                  alt=""
-                  aria-hidden="true"
-                />
-                <div className="text-box">
+
+              <div className="value-item value-item--learning">
+                <div className="value-item__media">
+                  <img
+                    src={learningImg}
+                    className="icons-image icons-image--small"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="value-item__copy">
                   <h3>Continuous Learning</h3>
                   <p>
-                    We embrace a growth mindset and value continuous learning
-                    for all our members. Members are encouraged to expand their
-                    horizons on the world of product from learning from everyone
-                    around them to strive for personal and professional
-                    development.
+                    We embrace a growth mindset, encouraging continuous learning
+                    and development through shared knowledge and experiences.
                   </p>
                 </div>
               </div>
-              <div className="grid-item">
-                <img
-                  src={communityImg}
-                  className="icons-image icons-image--small"
-                  alt=""
-                  aria-hidden="true"
-                />
-                <div className="text-box">
+
+              <div className="value-item value-item--engagement">
+                <div className="value-item__media">
+                  <img
+                    src={communityImg}
+                    className="icons-image icons-image--small"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+                <div className="value-item__copy">
                   <h3>Community Engagement</h3>
                   <p>
-                    We actively engage with the Waterloo product management
-                    community, both with alumni, current students and beyond, to
-                    exchange knowledge and build valuable long-lasting
-                    connections.
+                    We engage with the Waterloo product management community —
+                    alumni, students, and beyond — to share knowledge and build
+                    lasting connections.
                   </p>
                 </div>
               </div>

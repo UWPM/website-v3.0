@@ -187,6 +187,11 @@
   padding-block: calc(var(--pad-y) * 0.75);
 }
 
+/* Carousel controls, phone only — the desktop track is scrubbed by GSAP. */
+.events-v4 .pw__nav {
+  display: none;
+}
+
 .events-v4 .pw__track {
   display: flex;
   gap: clamp(28px, 3.5vw, 56px);
@@ -374,16 +379,24 @@
 
   --poster: clamp(148px, 21vw, 440px);
   --sway: calc(var(--poster) * 0.055);
+  /* A square tilted up to 7deg needs ~1.12x its side to fit its corners.
+     The sway is added four times, not twice, so that the lift can push a
+     poster a full sway off centre and still clear the band's edges — at
+     twice it fits exactly, and rounding clips the tilted corners. */
   --turned: calc(var(--poster) * 1.12);
-  --band-h: calc(var(--turned) + var(--sway) * 2);
-  min-height: calc(var(--band-h) + var(--pad-y) * 0.5);
+  --band-h: calc(var(--turned) + var(--sway) * 4);
+  /* Clear space kept below the posters, before whatever follows. */
+  --band-foot: clamp(28px, 4.5vw, 84px);
+  min-height: calc(var(--band-h) + var(--band-foot));
 }
 
 .events-v4 .gallery__item {
   position: absolute;
   z-index: 1;
   left: var(--lane);
-  top: calc(var(--band-h) / 2 + var(--lift) * var(--sway));
+  /* Centred in the band as rendered, minus the foot, so the posters stay
+     clear of both edges even if the section ends up taller than --band-h. */
+  top: calc((100% - var(--band-foot)) / 2 + var(--lift) * var(--sway));
   translate: -50% -50%;
   width: var(--poster);
   aspect-ratio: 1;
@@ -410,41 +423,6 @@
   .events-v4 .ev__slide {
     grid-template-columns: 1fr;
   }
-}
-
-/* ------------------------------------------------------------------
-   Compact hero for the /events route — just the top bar.
-   The home hero sizes its logo and nav as percentages of a 1512x982
-   box (so its height is 64.95vw). Those percentages mean nothing here
-   because this bar has no fixed aspect ratio, so the equivalent vw
-   values are used instead and the two pages match.
------------------------------------------------------------------- */
-.home-hero--compact {
-  position: relative;
-  aspect-ratio: auto;
-  margin-bottom: 0;
-  min-height: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-block: clamp(16px, 2vw, 26px);
-}
-
-.home-hero--compact .home-hero__brand {
-  position: absolute;
-  top: 50%;
-  left: 4%;
-  transform: translateY(-50%);
-  width: 5.74vw;
-  height: 2.73vw;
-}
-
-.home-hero--compact .home-hero__nav {
-  position: static;
-  transform: none;
-  width: 21.33vw;
-  height: 3.25vw;
-  padding: 0.33vw;
 }
 
 /* ------------------------------------------------------------------
@@ -502,5 +480,215 @@
   .events-v4 .ev__paper,
   .events-v4 .gallery__paper {
     display: none;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Phone layout. The winners track can't be pinned and scrolled
+   horizontally at this size, so it becomes a snap-scrolling carousel
+   showing one card at a time; PastWinners.js skips the GSAP pin to
+   match. Cards switch to the solid white treatment from the mobile
+   design, with their copy centred.
+------------------------------------------------------------------ */
+@media (max-width: 640px) {
+  .events-v4 .ev4-head {
+    padding-block: clamp(26px, 8vw, 40px) 0;
+    margin-bottom: 0;
+    gap: 12px;
+  }
+
+  .events-v4 .ev4-head h2 {
+    font-size: clamp(1.6rem, 7.5vw, 2rem);
+  }
+
+  /* The phone design leads straight into the card. Kept in the a11y tree
+     rather than removed, so the section still has a heading. */
+  .events-v4 .pw .ev4-head {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .events-v4 .pw__inner {
+    min-height: 0;
+    padding-top: clamp(20px, 6vw, 34px);
+    padding-bottom: clamp(36px, 10vw, 60px);
+  }
+
+  .events-v4 .pw__band {
+    padding-block: 0;
+  }
+
+  .events-v4 .pw__track {
+    width: auto;
+    gap: 14px;
+    padding-inline: 10%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .events-v4 .pw__track::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Basis resolves against the track's content box, so each card fills
+     the viewport between the gutters. */
+  .events-v4 .pw__col {
+    flex-basis: 100%;
+    scroll-snap-align: center;
+  }
+
+  .events-v4 .pw__nav {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 77, 86, 0.12);
+    color: var(--signal);
+    translate: 0 -50%;
+    cursor: pointer;
+  }
+
+  .events-v4 .pw__nav--prev {
+    left: 4px;
+  }
+
+  .events-v4 .pw__nav--next {
+    right: 4px;
+  }
+
+  .events-v4 .pw__nav svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .events-v4 .pw__box {
+    padding: 14px 14px 26px;
+    border: 0;
+    background: #ffffff;
+    text-align: center;
+  }
+
+  /* Hover sticks after a tap on touch devices. */
+  .events-v4 .pw__col:hover .pw__box {
+    transform: none;
+  }
+
+  .events-v4 .pw__img-wrap {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 18px;
+  }
+
+  .events-v4 .pw__award {
+    font-size: 0.72rem;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+
+  .events-v4 .pw__title {
+    font-size: clamp(1.7rem, 8.5vw, 2.2rem);
+    margin-bottom: 10px;
+  }
+
+  .events-v4 .pw__team {
+    font-size: 0.58rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  .events-v4 .pw__desc {
+    font-size: 0.8rem;
+    line-height: 1.75;
+    color: var(--ink);
+    flex-grow: 0;
+  }
+
+  /* Nav capsule sits between the carousel and Past events here. */
+  .events-v4 .page-hero__nav-wrap {
+    padding-block: clamp(30px, 9vw, 52px) clamp(24px, 7vw, 40px);
+  }
+
+  /* Decorations are placed against desktop widths and land off-screen or
+     on top of the copy here. */
+  .events-v4 .pw__svg--highlight {
+    top: 8px;
+    left: auto;
+    right: 22%;
+    width: 24px;
+  }
+
+  .events-v4 .pw__svg--vector {
+    top: 0;
+    bottom: auto;
+    left: auto;
+    right: -8px;
+    width: 72px;
+  }
+
+  .events-v4 .pw__svg--star-solid {
+    top: 56px;
+    right: 8%;
+    width: 28px;
+  }
+
+  .events-v4 .pw__svg--star-outline {
+    top: auto;
+    bottom: 6%;
+    left: 6%;
+    right: auto;
+    width: 44px;
+  }
+
+  .events-v4 .ev__slide {
+    gap: 20px;
+    padding: 0 var(--pad-x) clamp(28px, 8vw, 44px);
+  }
+
+  .events-v4 .ev__title {
+    font-size: clamp(1.6rem, 8vw, 2.1rem);
+  }
+
+  .events-v4 .ev__date {
+    margin-top: 10px;
+    font-size: 0.76rem;
+  }
+
+  .events-v4 .ev__copy {
+    margin-top: 16px;
+    font-size: 0.85rem;
+  }
+
+  .events-v4 .ev__arrows {
+    margin-top: 20px;
+    gap: 12px;
+  }
+
+  .events-v4 .ev__arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .events-v4 .ev__arrow svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .events-v4 .gallery {
+    margin-top: clamp(20px, 6vw, 32px);
+    --poster: clamp(120px, 40vw, 180px);
   }
 }

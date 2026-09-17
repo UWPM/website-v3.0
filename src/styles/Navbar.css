@@ -1,0 +1,79 @@
+/* ==================================================================
+   UW PM Golden Navigation Bar Component
+   Canonical pill capsule navigation used across all pages:
+   Home, About, Events, Team.
+   ================================================================== */
+
+:root {
+  --nav-ink: #262523;
+  --nav-bg: rgba(38, 37, 35, 0.05);
+  --nav-hover: rgba(38, 37, 35, 0.2);
+  --nav-active-bg: #262523;
+  --nav-active-text: #ffffff;
+}
+
+.uwpm-navbar {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* The hero sections that host this nav are column flexboxes; without this
+     the pill is compressed out of shape when hero content is tall. */
+  flex: 0 0 auto;
+  width: clamp(270px, 21.33vw, 330px);
+  height: clamp(38px, 3.2vw, 46px);
+  padding: 4px;
+  margin: 0 auto;
+  border-radius: 999px;
+  background: var(--nav-bg);
+  box-sizing: border-box;
+}
+
+.uwpm-navbar__link {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 999px;
+  color: var(--nav-ink);
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: clamp(0.85rem, 1.06vw, 1rem);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
+  box-sizing: border-box;
+}
+
+.uwpm-navbar__link:hover {
+  background: var(--nav-hover);
+  color: var(--nav-ink);
+}
+
+.uwpm-navbar__link--active,
+.uwpm-navbar__link--active:hover {
+  background: var(--nav-active-bg);
+  color: var(--nav-active-text);
+}
+
+.uwpm-navbar__link:focus-visible {
+  outline: 2px solid var(--nav-ink);
+  outline-offset: 3px;
+}
+
+/* Mobile responsive sizing */
+@media screen and (max-width: 640px) {
+  .uwpm-navbar {
+    width: min(340px, 90vw);
+    height: 42px;
+    padding: 3px;
+  }
+
+  .uwpm-navbar__link {
+    font-size: 0.88rem;
+  }
+}
