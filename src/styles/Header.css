@@ -126,13 +126,13 @@
    Scales the heading down, indents it to match the brand mark, and opens up
    the space between the two. */
 @media screen and (max-width: 640px) {
-  .page-hero__header.home-hero--standalone-brand {
+  .home-hero--compact.home-hero--standalone-brand {
     padding-block: 24px;
     padding-inline: 5%;
     margin-bottom: 44px;
   }
 
-  .page-hero__header .home-hero__brand {
+  .home-hero--standalone-brand .home-hero__brand {
     width: 22vw;
     height: 11vw;
     min-width: 84px;

@@ -2,8 +2,8 @@ import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import EventsSection from '../components/eventsV4/EventsSection';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
 import Navbar from '../components/Navbar';
+import PageHero from '../components/PageHero';
 import '../styles/Home.css';
 
 // Dedicated Events route (/events). Opens with the shared page hero
@@ -21,13 +21,12 @@ export default function Events() {
 
   return (
     <>
-      <section className="page-hero" aria-label="UW PM events hero">
-        <Header hideNav active="events" className="page-hero__header" />
-        <div className="page-hero__title-wrap">
-          <h1 className="page-hero__title">Events</h1>
-        </div>
-        {!isPhone && nav}
-      </section>
+      <PageHero
+        active="events"
+        title="Events"
+        ariaLabel="UW PM events hero"
+        showNav={!isPhone}
+      />
       <EventsSection navSlot={isPhone ? nav : null} />
       <Footer />
     </>

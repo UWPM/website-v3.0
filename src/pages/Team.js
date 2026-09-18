@@ -6,7 +6,7 @@ import 'swiper/css';
 
 import { ExecList } from '../components/ExecList';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
+import PageHero from '../components/PageHero';
 import teamPhoto from '../images/prodcon/prodcon1.JPG';
 import '../styles/Home.css';
 import '../styles/EventsV4.css';
@@ -85,7 +85,7 @@ export default function Team() {
 
   return (
     <>
-      <Header active="team" />
+      <PageHero active="team" title="Team" ariaLabel="UW PM team hero" />
 
       <Container>
         <div className="team-page">

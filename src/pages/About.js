@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
-import Navbar from '../components/Navbar';
+import PageHero from '../components/PageHero';
 import '../styles/Home.css';
 import '../styles/About.css';
 import '../App.css';
@@ -20,20 +19,13 @@ export default function About({ show }) {
   const Execs = ExecList;
   return (
     <>
-      <section className="page-hero" aria-label="About UW PM hero">
-        <Header hideNav active="about" className="page-hero__header" />
-        <div className="page-hero__title-wrap">
-          <h1 className="page-hero__title">About Us</h1>
-        </div>
+      <PageHero active="about" title="About Us" ariaLabel="About UW PM hero">
         <div
           className="about-hero-placeholder"
           role="img"
           aria-label="About us banner placeholder"
         />
-        <div className="page-hero__nav-wrap">
-          <Navbar active="about" />
-        </div>
-      </section>
+      </PageHero>
 
       <AboutIntro />
 
