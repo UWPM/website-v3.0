@@ -1,0 +1,249 @@
+.portal-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.portal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.portal-header__logo {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.portal-header__right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.portal-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid #111;
+  text-decoration: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.portal-button--primary {
+  background: #111;
+  color: #fff;
+}
+
+.portal-button--outline {
+  background: transparent;
+  color: #111;
+}
+
+/* 1. Landing */
+.portal-landing__hero {
+  text-align: left;
+  max-width: 480px;
+}
+
+/* 2-4. Auth pages */
+.portal-auth__card {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.portal-auth__card form,
+.portal-apply__content form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.portal-auth__card input,
+.portal-apply__content input,
+.portal-apply__content select,
+.portal-apply__content textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+/* 5-8. Application wizard */
+.application-stepper {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.application-stepper__step {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.application-stepper__number {
+  border: 1px solid;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-apply__body {
+  display: flex;
+  gap: 32px;
+}
+
+.apply-sidebar {
+  flex: 0 0 200px;
+}
+
+.apply-sidebar__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.apply-sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.apply-sidebar__number {
+  border: 1px solid;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.portal-apply__content {
+  flex: 1;
+}
+
+.portal-apply__content textarea {
+  min-height: 80px;
+}
+
+.portal-apply__char-count {
+  align-self: flex-end;
+  font-size: 0.85em;
+}
+
+.portal-apply__checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.portal-apply__actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.portal-apply__review {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 24px;
+}
+
+.portal-apply__review dt {
+  font-weight: 600;
+}
+
+/* 9-10. Confirmation */
+.portal-confirmation__card,
+.portal-email__card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.portal-email__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+/* 11-12. Dashboard */
+.portal-dashboard__body {
+  display: flex;
+  gap: 32px;
+}
+
+.dashboard-sidebar {
+  flex: 0 0 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dashboard-sidebar__link {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dashboard-sidebar__link--disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.portal-dashboard__content {
+  flex: 1;
+}
+
+.portal-dashboard__checklist {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.portal-dashboard__checklist li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  padding-bottom: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .portal-apply__body,
+  .portal-dashboard__body {
+    flex-direction: column;
+  }
+
+  .apply-sidebar,
+  .dashboard-sidebar {
+    flex: none;
+  }
+
+  .portal-apply__review {
+    grid-template-columns: 1fr;
+  }
+
+  .application-stepper {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+}
