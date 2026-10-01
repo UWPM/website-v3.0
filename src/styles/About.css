@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
-
 html {
   scroll-behavior: smooth;
 }
@@ -14,571 +11,235 @@ a:hover {
   color: rgb(222, 222, 222);
 }
 
-.about-container {
-  position: relative;
-  min-height: 830px;
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
+/* The About hero uses the shared `.page-hero` block in Header.css; only the
+   banner placeholder is specific to this page. */
+.about-hero-placeholder {
+  width: 100%;
+  height: clamp(280px, 38vw, 500px);
+  background-color: #d9d9d9;
+  display: block;
 }
 
-.about-caption {
-  position: absolute;
-  top: 2rem;
-  margin-top: 200px;
-  margin-bottom: 100px;
-  margin-right: 20%;
-  width: 60%;
-}
-
-.mission-vision-row {
-  margin-top: -205px;
-  z-index: 10;
-}
-
-.what-we-do-row {
-  margin-top: -50px;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  height: 425px;
-}
-
-.about-us-card {
-  margin-top: -200;
-  padding: 50px;
-  height: 325px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.card-bg {
-  padding: 50px;
-  background-color: rgb(83, 71, 71);
-  border-radius: 10px;
-}
-
-.card-title-parent {
-  display: flex;
-  justify-content: center;
-}
-
-.card-title {
-  z-index: 100;
-  position: relative;
-  width: 250px;
-  height: 60px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 10px;
-  background: linear-gradient(
-      0deg,
-      rgba(240, 92, 91, 0.7),
-      rgba(240, 92, 91, 0.7)
-    ),
-    linear-gradient(
-      180deg,
-      rgba(255, 238, 237, 0.04) 0%,
-      rgba(7, 57, 72, 0.124) 100%
-    );
-}
-
-.big-card-title {
-  z-index: 100;
-  position: relative;
-  width: 400px;
-  height: 60px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 10px;
-  background: linear-gradient(
-      0deg,
-      rgba(240, 92, 91, 0.7),
-      rgba(240, 92, 91, 0.7)
-    ),
-    linear-gradient(
-      180deg,
-      rgba(255, 238, 237, 0.04) 0%,
-      rgba(7, 57, 72, 0.124) 100%
-    );
-}
-
-.about-card-body {
-  margin-top: -30px;
-  z-index: 99;
-  height: 220px;
-  padding: 35px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgba(204, 171, 170, 0.414);
-}
-
-.big-about-card-body {
-  margin-top: -30px;
-  z-index: 99;
-  height: 420px;
-  padding: 60px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgba(204, 171, 170, 0.414);
-}
-
-.about-header-text {
-  font-family: 'Syne';
-  font-weight: 700;
-  font-style: unset;
-  font-size: 35px;
-  text-align: center;
-}
-
-.mission-text {
-  text-align: center;
-  font-family: 'Montserrat';
-  font-size: 17px;
-  color: white;
-}
-
-.big-card-text {
-  font-family: 'Montserrat';
-  font-size: 17px;
-  color: white;
-}
-
-.logo-row {
-  position: relative;
-  z-index: 101;
-  margin-top: -140px;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-}
-
-.meet-team-container {
-  position: relative;
-  min-height: 830px;
-  display: flex;
-  margin-top: 100px;
-}
-
-.internal-team-row {
-  margin-top: 20px;
-}
-
-.team-type {
-  margin-top: 50px;
-}
-
-.team-title {
-  z-index: 100;
-  position: relative;
-  width: 377px;
-  height: 53px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 24px;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 183, 179, 0.25),
-      rgba(255, 183, 179, 0.25)
-    ),
-    linear-gradient(
-      180deg,
-      rgba(255, 238, 237, 0.04) 0%,
-      rgba(7, 57, 72, 0.124) 100%
-    );
-}
-
-.team-paragraph {
-  padding: 30px;
-  font-size: 18px;
-}
-
-.profile-row {
-  margin-bottom: 50px;
-}
-
-.profile-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.exec-text {
-  margin-top: 20px;
-}
-
-.centered-box {
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 1199px) {
-  .about-us-card {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-  }
-  .logo-row {
-    visibility: hidden;
-    border: 1px solid white;
-  }
-  .mission-vision-row {
-    width: 100%;
-  }
-  .what-we-do-row {
-    margin-top: -60px;
-    width: 100%;
-  }
-  .card-title-parent {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 0px;
-  }
-  .about-card-body {
-    padding: 70px;
-  }
-  .mission-text {
-    text-align: left;
-  }
-  .big-about-card-body {
-    padding: 70px;
-  }
-  .profile-card {
-    width: 50%;
-  }
-}
-
-@media (max-width: 991px) {
-  .what-we-do-row {
-    margin-top: -20px;
-    height: 470px;
-  }
-  .card-title-parent {
-    width: 400px;
-  }
-  .about-card-body {
-    padding: 60px;
-  }
-  .big-about-card-body {
-    padding: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  .what-we-do-row {
-    margin-top: -15px;
-    height: 480px;
-  }
-  .about-card-body {
-    width: 500px;
-    padding: 60px;
-  }
-  .big-about-card-body {
-    width: 500px;
-    padding: 60px;
-  }
-  .team-title {
-    width: 350px;
-    height: 53px;
-    margin-left: 5px;
-  }
-}
-
-@media (max-width: 550px) {
-  .what-we-do-row {
-    margin-top: 100px;
-    height: 500px;
-  }
-  .about-card-body {
-    width: 450px;
-    padding: 60px;
-  }
-  .big-about-card-body {
-    width: 450px;
-    height: 550px;
-    padding: 60px;
-  }
-  .team-title {
-    margin-left: 15px;
-  }
-}
-
-@media (max-width: 500px) {
-  .card-title-parent {
-    width: 350px;
-  }
-  .about-header-text {
-    font-size: 30px;
-  }
-  .about-us-card {
-    height: 400px;
-  }
-  .what-we-do-row {
-    margin-top: 115px;
-    height: 600px;
-  }
-  .about-card-body {
-    width: 400px;
-    padding: 60px;
-  }
-  .big-about-card-body {
-    width: 400px;
-    height: 550px;
-    padding: 60px;
-  }
-  .profile-card {
-    width: 100%;
-  }
-}
-
-@media (max-width: 460px) {
-  .what-we-do-row {
-    margin-top: 175px;
-    height: 650px;
-  }
-  .about-card-body {
-    width: 350px;
-    padding: 60px;
-  }
-  .big-about-card-body {
-    width: 350px;
-    height: 600px;
-    padding: 60px;
-  }
-}
-
-@media (max-width: 425px) {
-  .card-title-parent {
-    width: 300px;
-  }
-  .about-us-card {
-    height: 350px;
-  }
-  .about-header-text {
-    font-size: 25px;
-  }
-  .what-we-do-row {
-    margin-top: 115px;
-    height: 550px;
-  }
-  .about-card-body {
-    width: 325px;
-    padding: 50px;
-  }
-  .big-about-card-body {
-    width: 325px;
-    height: 700px;
-    padding: 50px;
-  }
-  .mission-text {
-    font-size: 15px;
-  }
-  .big-card-text {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 400px) {
-  .card-title-parent {
-    width: 275px;
-  }
-  .about-header-text {
-    font-size: 25px;
-  }
-  .what-we-do-row {
-    margin-top: 145px;
-    height: 575px;
-  }
-  .about-card-body {
-    width: 300px;
-    padding: 30px;
-  }
-  .big-about-card-body {
-    width: 300px;
-    padding: 50px;
-  }
-  .team-title {
-    width: 300px;
-    margin-left: 15px;
-  }
-}
-
-@media (max-width: 375px) {
-  .card-title-parent {
-    width: 250px;
-  }
-  .about-header-text {
-    font-size: 22px;
-  }
-  .what-we-do-row {
-    margin-top: 170px;
-    height: 600px;
-  }
-  .about-card-body {
-    width: 275px;
-    padding: 30px;
-  }
-  .big-about-card-body {
-    width: 275px;
-    padding: 50px;
-  }
-}
-
-@media (max-width: 330px) {
-  .card-title-parent {
-    width: 200px;
-  }
-  .about-header-text {
-    font-size: 18px;
-  }
-  .what-we-do-row {
-    margin-top: 100px;
-    height: 525px;
-  }
-  .about-card-body {
-    width: 250px;
-    padding: 30px;
-  }
-  .big-about-card-body {
-    width: 250px;
-    padding: 40px;
-  }
-  .mission-text {
-    font-size: 13px;
-  }
-  .big-card-text {
-    font-size: 13px;
-  }
-  .team-title {
-    width: 250px;
-    margin-left: 5px;
-  }
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 20px 20px 20px 20px;
-}
-
-.grid-item {
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-  margin: 10px 30px 10px 30px;
-}
-
-.icons-image {
-  height: 150px;
-  width: 200px;
-  margin-right: 50px;
-}
-
-.title-div {
-  background: linear-gradient(
-      0deg,
-      rgba(240, 92, 91, 0.7),
-      rgba(240, 92, 91, 0.7)
-    ),
-    linear-gradient(
-      180deg,
-      rgba(255, 238, 237, 0.04) 0%,
-      rgba(7, 57, 72, 0.124) 100%
-    );
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-top: 5px;
-  z-index: 100;
-  position: relative;
-  border-radius: 10px;
-}
+/* ==================================================================
+   Values Section: Desktop 2x2 Grid & Mobile 2-Column Staggered Layout
+   ================================================================== */
 
 .values-title-wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: clamp(56px, 7vw, 110px) clamp(18px, 2.2vw, 34px)
+    clamp(80px, 9vw, 140px);
+}
+
+.title-div {
+  align-self: flex-start;
+  color: #000000;
+}
+
+.title-div:hover {
+  color: #000000;
+}
+
+.title-div h2 {
+  margin: 0;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(48px, 5vw, 76px) clamp(44px, 6vw, 92px);
+  width: 100%;
+  margin-top: clamp(42px, 5vw, 72px);
+  padding: 0;
+}
+
+.value-item {
+  display: grid;
+  grid-template-columns: clamp(130px, 13vw, 190px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(24px, 3vw, 44px);
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.value-item__media {
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-@media screen and (max-width: 1368px) {
-  .grid-container {
-    padding: 20px 20px 20px 20px;
+.value-item__media .icons-image {
+  display: block;
+  width: 100%;
+  height: clamp(100px, 10vw, 150px);
+  object-fit: contain;
+}
+
+.value-item__media .icons-image--small {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.value-item__copy h3 {
+  margin: 0 0 10px;
+  color: #f05c5b;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+.value-item__copy p {
+  margin: 0;
+  color: #767676;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+/* Tablet & Intermediate Screen Breakpoint */
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
   }
 }
 
-@media screen and (max-width: 1252px) {
-  .grid-item {
-    margin: 10px;
+/* Mobile Staggered 2-Column Layout (Figma Mobile Specification) */
+@media screen and (max-width: 768px) {
+  .values-title-wrapper {
+    padding: clamp(36px, 7vw, 60px) 14px clamp(50px, 8vw, 80px);
+    align-items: center;
   }
-  .grid-container {
-    padding: 20px 10px 20px 10px;
-  }
-}
 
-@media screen and (max-width: 992px) {
-  .grid-container {
-    grid-template-columns: auto;
-    padding: 20px 10px 20px 10px;
+  .title-div {
+    align-self: center;
+    width: 100%;
+    text-align: center;
   }
-  .grid-item {
+
+  .title-div h2 {
+    text-align: center;
+    font-size: clamp(2rem, 7vw, 2.5rem);
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(14px, 3.5vw, 28px);
+    row-gap: clamp(32px, 7vw, 48px);
+    width: 100%;
+    margin-top: clamp(24px, 5vw, 36px);
+    align-items: center;
+  }
+
+  .value-item {
+    display: contents;
+  }
+
+  /* Staggered Row 1: Left = Network Copy, Right = Empowerment Media */
+  .value-item--network .value-item__copy {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .value-item--empowerment .value-item__media {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* Staggered Row 2: Left = Network Media, Right = Empowerment Copy */
+  .value-item--network .value-item__media {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .value-item--empowerment .value-item__copy {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  /* Staggered Row 3: Left = Continuous Learning Copy, Right = Continuous Learning Media */
+  .value-item--learning .value-item__copy {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .value-item--learning .value-item__media {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  /* Staggered Row 4: Left = Community Engagement Media, Right = Community Engagement Copy */
+  .value-item--engagement .value-item__media {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .value-item--engagement .value-item__copy {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  /* Mobile Content Typography & Styling */
+  .value-item__copy {
+    display: flex;
     flex-direction: column;
-  }
-  .text-box {
-    margin-top: 40px;
-    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    padding-inline: 2px;
   }
 
-  .title-div {
-    align-self: self-start;
-    margin-left: 40px;
+  .value-item__copy h3 {
+    margin: 0 0 8px;
+    color: #f05c5b !important;
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: clamp(0.95rem, 3.6vw, 1.2rem);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    text-align: center;
   }
-}
 
-@media screen and (max-width: 700px) {
-  .grid-container {
-    padding: 20px 2px 20px 20px;
+  .value-item__copy p {
+    margin: 0;
+    color: #000000 !important;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: clamp(0.72rem, 2.3vw, 0.84rem);
+    font-weight: 400;
+    line-height: 1.45;
+    text-align: center;
   }
-  .title-div {
-    margin-left: 50px;
-  }
-}
 
-@media screen and (max-width: 400px) {
-  .title-div {
-    margin-left: 55px;
+  /* Mobile Media Sizing & Centering */
+  .value-item__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4px 0;
   }
-}
 
-@media screen and (max-width: 350px) {
-  .title-div {
-    margin-left: 40px;
+  .value-item__media .icons-image {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    max-height: clamp(80px, 18vw, 120px);
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .value-item__media .icons-image--small {
+    width: 90%;
+    max-width: 160px;
   }
 }

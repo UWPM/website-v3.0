@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "additionalDirectories": [
+      "/Users/cedric.leung/website-v3.0"
+    ],
+    "allow": [
+      "Bash(npm run lint*)",
+      "Bash(npm run format*)",
+      "Bash(npm run fix*)",
+      "Bash(npm test*)",
+      "Bash(npm run build*)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git branch*)",
+      "Bash(git rev-parse*)",
+      "Bash(gh pr view*)",
+      "Bash(gh pr list*)",
+      "Bash(node *)"
+    ],
+    "deny": [
+      "Bash(git commit*)",
+      "Bash(git push*)"
+    ]
+  }
+}

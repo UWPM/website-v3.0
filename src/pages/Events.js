@@ -1,53 +1,34 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import ProdCon from '../components/ProdCon';
-import '../styles/Events.css';
-import '../App.css';
-import UpcomingEventsCard from '../components/UpcomingEvents.js';
-import PastEvents from '../components/PastEvents';
-import desktopHexagons from '../images/background/desktop-hexagons.svg';
+import { useMediaQuery } from 'react-responsive';
+import EventsSection from '../components/eventsV4/EventsSection';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import PageHero from '../components/PageHero';
+import '../styles/Home.css';
 
-// TODO: Reorganize the following code into src/components. See src/pages/Home.js as a reference
+// Dedicated Events route (/events). Opens with the shared page hero
+// (brand, title, nav) so it matches About, then renders the Events section.
+export default function Events() {
+  // The phone design moves the nav capsule below the winners carousel
+  // instead of sitting directly under the title.
+  const isPhone = useMediaQuery({ maxWidth: 640 });
 
-export default function Events({ show }) {
+  const nav = (
+    <div className="page-hero__nav-wrap">
+      <Navbar active="events" />
+    </div>
+  );
+
   return (
-    <Container>
-      <div className="events-container">
-        <div className="hex-container">
-          <img src={desktopHexagons} alt="" />
-        </div>
-        <div className="figCaption">
-          <h1 className="title-text">
-            Gain product skills through our case competition, workshops, and
-            more.
-          </h1>
-        </div>
-      </div>
-      <UpcomingEventsCard />
-      <div>
-        {!show && (
-          <>
-            <div>
-              <h1 className="video_carousel_text">ProdCon 2023 Recap </h1>
-              <div className="video-responsive">
-                <iframe
-                  src="https://www.youtube.com/embed/SzZuCmgPiFQ?si=m2YBCin5-ocj-hfh"
-                  width="853"
-                  height="480"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  title="Embedded youtube"
-                />{' '}
-              </div>
-              <h1 className="video_carousel_text">
-                ProdCon 2023 Recap Gallery
-              </h1>
-            </div>
-          </>
-        )}
-      </div>
-      <ProdCon />
-      <PastEvents />
-    </Container>
+    <>
+      <PageHero
+        active="events"
+        title="Events"
+        ariaLabel="UW PM events hero"
+        showNav={!isPhone}
+      />
+      <EventsSection navSlot={isPhone ? nav : null} />
+      <Footer />
+    </>
   );
 }
